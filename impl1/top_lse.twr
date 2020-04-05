@@ -1,0 +1,1483 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Apr 05 20:40:22 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 12.500000 -name clk2 [get_nets CIC1_out_clkSin]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 48.973ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \AMDemodulator1/ISquare_i25  (from CIC1_out_clkSin +)
+   Destination:    FD1S3AX    D              \AMDemodulator1/d_out_d__0_i1  (to CIC1_out_clkSin +)
+
+   Delay:                  61.313ns  (50.2% logic, 49.8% route), 105 logic levels.
+
+ Constraint Details:
+
+     61.313ns data_path \AMDemodulator1/ISquare_i25 to \AMDemodulator1/d_out_d__0_i1 violates
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 48.973ns
+
+ Path Details: \AMDemodulator1/ISquare_i25 to \AMDemodulator1/d_out_d__0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \AMDemodulator1/ISquare_i25 (from CIC1_out_clkSin)
+Route        40   e 2.110                                  \AMDemodulator1/ISquare[31]
+LUT4        ---     0.493              A to Z              \AMDemodulator1/i1326_1_lut
+Route         2   e 1.141                                  \AMDemodulator1/n209
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3288_4
+Route         1   e 0.020                                  \AMDemodulator1/n12274
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3288_6
+Route         1   e 0.020                                  \AMDemodulator1/n12275
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3288_8
+Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1871[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_617_1
+Route         1   e 0.020                                  \AMDemodulator1/n11521
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_3
+Route         1   e 0.020                                  \AMDemodulator1/n11522
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_5
+Route         1   e 0.020                                  \AMDemodulator1/n11523
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_7
+Route         1   e 0.020                                  \AMDemodulator1/n11524
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_9
+Route         1   e 0.020                                  \AMDemodulator1/n11525
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_617_11
+Route        22   e 2.179                                  \AMDemodulator1/d_out_d_11__N_1873[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_597_1
+Route         1   e 0.020                                  \AMDemodulator1/n11531
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_3
+Route         1   e 0.020                                  \AMDemodulator1/n11532
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_5
+Route         1   e 0.020                                  \AMDemodulator1/n11533
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_7
+Route         1   e 0.020                                  \AMDemodulator1/n11534
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_9
+Route         1   e 0.020                                  \AMDemodulator1/n11535
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_11
+Route         1   e 0.020                                  \AMDemodulator1/n11536
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_597_13
+Route        23   e 2.182                                  \AMDemodulator1/d_out_d_11__N_1875[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_577_1
+Route         1   e 0.020                                  \AMDemodulator1/n11542
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_3
+Route         1   e 0.020                                  \AMDemodulator1/n11543
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_5
+Route         1   e 0.020                                  \AMDemodulator1/n11544
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_7
+Route         1   e 0.020                                  \AMDemodulator1/n11545
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_9
+Route         1   e 0.020                                  \AMDemodulator1/n11546
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_11
+Route         1   e 0.020                                  \AMDemodulator1/n11547
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_13
+Route         1   e 0.020                                  \AMDemodulator1/n11548
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_577_15
+Route        24   e 2.184                                  \AMDemodulator1/d_out_d_11__N_1877[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_557_1
+Route         1   e 0.020                                  \AMDemodulator1/n12168
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_3
+Route         1   e 0.020                                  \AMDemodulator1/n12169
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_5
+Route         1   e 0.020                                  \AMDemodulator1/n12170
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_7
+Route         1   e 0.020                                  \AMDemodulator1/n12171
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_9
+Route         1   e 0.020                                  \AMDemodulator1/n12172
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_11
+Route         1   e 0.020                                  \AMDemodulator1/n12173
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_13
+Route         1   e 0.020                                  \AMDemodulator1/n12174
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_15
+Route         1   e 0.020                                  \AMDemodulator1/n12175
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_557_17
+Route        25   e 2.186                                  \AMDemodulator1/d_out_d_11__N_1879[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_537_1
+Route         1   e 0.020                                  \AMDemodulator1/n11507
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_3
+Route         1   e 0.020                                  \AMDemodulator1/n11508
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_5
+Route         1   e 0.020                                  \AMDemodulator1/n11509
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_7
+Route         1   e 0.020                                  \AMDemodulator1/n11510
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_9
+Route         1   e 0.020                                  \AMDemodulator1/n11511
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_11
+Route         1   e 0.020                                  \AMDemodulator1/n11512
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_13
+Route         1   e 0.020                                  \AMDemodulator1/n11513
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_15
+Route         1   e 0.020                                  \AMDemodulator1/n11514
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_17
+Route         1   e 0.020                                  \AMDemodulator1/n11515
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_537_19
+Route        24   e 2.184                                  \AMDemodulator1/d_out_d_11__N_1881[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_517_1
+Route         1   e 0.020                                  \AMDemodulator1/n12140
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_3
+Route         1   e 0.020                                  \AMDemodulator1/n12141
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_5
+Route         1   e 0.020                                  \AMDemodulator1/n12142
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_7
+Route         1   e 0.020                                  \AMDemodulator1/n12143
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_9
+Route         1   e 0.020                                  \AMDemodulator1/n12144
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_11
+Route         1   e 0.020                                  \AMDemodulator1/n12145
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_13
+Route         1   e 0.020                                  \AMDemodulator1/n12146
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_15
+Route         1   e 0.020                                  \AMDemodulator1/n12147
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_17
+Route         1   e 0.020                                  \AMDemodulator1/n12148
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_517_19
+Route        23   e 2.182                                  \AMDemodulator1/d_out_d_11__N_1883[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_477_1
+Route         1   e 0.020                                  \AMDemodulator1/n11493
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_3
+Route         1   e 0.020                                  \AMDemodulator1/n11494
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_5
+Route         1   e 0.020                                  \AMDemodulator1/n11495
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_7
+Route         1   e 0.020                                  \AMDemodulator1/n11496
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_9
+Route         1   e 0.020                                  \AMDemodulator1/n11497
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_11
+Route         1   e 0.020                                  \AMDemodulator1/n11498
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_13
+Route         1   e 0.020                                  \AMDemodulator1/n11499
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_15
+Route         1   e 0.020                                  \AMDemodulator1/n11500
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_17
+Route         1   e 0.020                                  \AMDemodulator1/n11501
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_477_19
+Route        22   e 2.179                                  \AMDemodulator1/d_out_d_11__N_1885[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_457_1
+Route         1   e 0.020                                  \AMDemodulator1/n12225
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_3
+Route         1   e 0.020                                  \AMDemodulator1/n12226
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_5
+Route         1   e 0.020                                  \AMDemodulator1/n12227
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_7
+Route         1   e 0.020                                  \AMDemodulator1/n12228
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_9
+Route         1   e 0.020                                  \AMDemodulator1/n12229
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_11
+Route         1   e 0.020                                  \AMDemodulator1/n12230
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_13
+Route         1   e 0.020                                  \AMDemodulator1/n12231
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_15
+Route         1   e 0.020                                  \AMDemodulator1/n12232
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_17
+Route         1   e 0.020                                  \AMDemodulator1/n12233
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_457_19
+Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1887[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_437_1
+Route         1   e 0.020                                  \AMDemodulator1/n11201
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_3
+Route         1   e 0.020                                  \AMDemodulator1/n11202
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_5
+Route         1   e 0.020                                  \AMDemodulator1/n11203
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_7
+Route         1   e 0.020                                  \AMDemodulator1/n11204
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_9
+Route         1   e 0.020                                  \AMDemodulator1/n11205
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_11
+Route         1   e 0.020                                  \AMDemodulator1/n11206
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_13
+Route         1   e 0.020                                  \AMDemodulator1/n11207
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_15
+Route         1   e 0.020                                  \AMDemodulator1/n11208
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_17
+Route         1   e 0.020                                  \AMDemodulator1/n11209
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_437_19
+Route        20   e 2.173                                  \AMDemodulator1/d_out_d_11__N_1889[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_497_1
+Route         1   e 0.020                                  \AMDemodulator1/n12154
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_3
+Route         1   e 0.020                                  \AMDemodulator1/n12155
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_5
+Route         1   e 0.020                                  \AMDemodulator1/n12156
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_7
+Route         1   e 0.020                                  \AMDemodulator1/n12157
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_9
+Route         1   e 0.020                                  \AMDemodulator1/n12158
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_11
+Route         1   e 0.020                                  \AMDemodulator1/n12159
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_13
+Route         1   e 0.020                                  \AMDemodulator1/n12160
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_15
+Route         1   e 0.020                                  \AMDemodulator1/n12161
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_17
+Route         1   e 0.020                                  \AMDemodulator1/n12162
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_497_19
+Route         6   e 1.803                                  \AMDemodulator1/d_out_d_11__N_1891[17]
+A1_TO_FCO   ---     0.827           B[2] to COUT           \AMDemodulator1/add_148_1
+Route         1   e 0.020                                  \AMDemodulator1/n12262
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_3
+Route         1   e 0.020                                  \AMDemodulator1/n12263
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_5
+Route         1   e 0.020                                  \AMDemodulator1/n12264
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_7
+Route         1   e 0.020                                  \AMDemodulator1/n12265
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_9
+Route         1   e 0.020                                  \AMDemodulator1/n12266
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_11
+Route         1   e 0.020                                  \AMDemodulator1/n12267
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_13
+Route         1   e 0.020                                  \AMDemodulator1/n12268
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_148_15
+Route         1   e 0.020                                  \AMDemodulator1/n12269
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_148_17
+Route         1   e 0.941                                  \AMDemodulator1/d_out_d_11__N_2352[17]
+LUT4        ---     0.493              B to Z              \AMDemodulator1/mux_74_i1_3_lut
+Route         1   e 0.941                                  \AMDemodulator1/d_out_d_11__N_1893[17]
+                  --------
+                   61.313  (50.2% logic, 49.8% route), 105 logic levels.
+
+
+Error:  The following path violates requirements by 48.973ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \AMDemodulator1/ISquare_i25  (from CIC1_out_clkSin +)
+   Destination:    FD1S3AX    D              \AMDemodulator1/d_out_d__0_i1  (to CIC1_out_clkSin +)
+
+   Delay:                  61.313ns  (50.2% logic, 49.8% route), 105 logic levels.
+
+ Constraint Details:
+
+     61.313ns data_path \AMDemodulator1/ISquare_i25 to \AMDemodulator1/d_out_d__0_i1 violates
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 48.973ns
+
+ Path Details: \AMDemodulator1/ISquare_i25 to \AMDemodulator1/d_out_d__0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \AMDemodulator1/ISquare_i25 (from CIC1_out_clkSin)
+Route        40   e 2.110                                  \AMDemodulator1/ISquare[31]
+LUT4        ---     0.493              A to Z              \AMDemodulator1/i1326_1_lut
+Route         2   e 1.141                                  \AMDemodulator1/n209
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3288_4
+Route         1   e 0.020                                  \AMDemodulator1/n12274
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3288_6
+Route         1   e 0.020                                  \AMDemodulator1/n12275
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3288_8
+Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1871[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_617_1
+Route         1   e 0.020                                  \AMDemodulator1/n11521
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_3
+Route         1   e 0.020                                  \AMDemodulator1/n11522
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_5
+Route         1   e 0.020                                  \AMDemodulator1/n11523
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_7
+Route         1   e 0.020                                  \AMDemodulator1/n11524
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_617_9
+Route         1   e 0.020                                  \AMDemodulator1/n11525
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_617_11
+Route        22   e 2.179                                  \AMDemodulator1/d_out_d_11__N_1873[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_597_1
+Route         1   e 0.020                                  \AMDemodulator1/n11531
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_3
+Route         1   e 0.020                                  \AMDemodulator1/n11532
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_5
+Route         1   e 0.020                                  \AMDemodulator1/n11533
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_7
+Route         1   e 0.020                                  \AMDemodulator1/n11534
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_9
+Route         1   e 0.020                                  \AMDemodulator1/n11535
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_11
+Route         1   e 0.020                                  \AMDemodulator1/n11536
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_597_13
+Route        23   e 2.182                                  \AMDemodulator1/d_out_d_11__N_1875[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_577_1
+Route         1   e 0.020                                  \AMDemodulator1/n11542
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_3
+Route         1   e 0.020                                  \AMDemodulator1/n11543
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_5
+Route         1   e 0.020                                  \AMDemodulator1/n11544
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_7
+Route         1   e 0.020                                  \AMDemodulator1/n11545
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_9
+Route         1   e 0.020                                  \AMDemodulator1/n11546
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_11
+Route         1   e 0.020                                  \AMDemodulator1/n11547
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_13
+Route         1   e 0.020                                  \AMDemodulator1/n11548
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_577_15
+Route        24   e 2.184                                  \AMDemodulator1/d_out_d_11__N_1877[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_557_1
+Route         1   e 0.020                                  \AMDemodulator1/n12168
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_3
+Route         1   e 0.020                                  \AMDemodulator1/n12169
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_5
+Route         1   e 0.020                                  \AMDemodulator1/n12170
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_7
+Route         1   e 0.020                                  \AMDemodulator1/n12171
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_9
+Route         1   e 0.020                                  \AMDemodulator1/n12172
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_11
+Route         1   e 0.020                                  \AMDemodulator1/n12173
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_13
+Route         1   e 0.020                                  \AMDemodulator1/n12174
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_15
+Route         1   e 0.020                                  \AMDemodulator1/n12175
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_557_17
+Route        25   e 2.186                                  \AMDemodulator1/d_out_d_11__N_1879[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_537_1
+Route         1   e 0.020                                  \AMDemodulator1/n11507
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_3
+Route         1   e 0.020                                  \AMDemodulator1/n11508
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_5
+Route         1   e 0.020                                  \AMDemodulator1/n11509
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_7
+Route         1   e 0.020                                  \AMDemodulator1/n11510
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_9
+Route         1   e 0.020                                  \AMDemodulator1/n11511
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_11
+Route         1   e 0.020                                  \AMDemodulator1/n11512
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_13
+Route         1   e 0.020                                  \AMDemodulator1/n11513
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_15
+Route         1   e 0.020                                  \AMDemodulator1/n11514
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_17
+Route         1   e 0.020                                  \AMDemodulator1/n11515
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_537_19
+Route        24   e 2.184                                  \AMDemodulator1/d_out_d_11__N_1881[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_517_1
+Route         1   e 0.020                                  \AMDemodulator1/n12140
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_3
+Route         1   e 0.020                                  \AMDemodulator1/n12141
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_5
+Route         1   e 0.020                                  \AMDemodulator1/n12142
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_7
+Route         1   e 0.020                                  \AMDemodulator1/n12143
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_9
+Route         1   e 0.020                                  \AMDemodulator1/n12144
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_11
+Route         1   e 0.020                                  \AMDemodulator1/n12145
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_13
+Route         1   e 0.020                                  \AMDemodulator1/n12146
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_15
+Route         1   e 0.020                                  \AMDemodulator1/n12147
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_17
+Route         1   e 0.020                                  \AMDemodulator1/n12148
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_517_19
+Route        23   e 2.182                                  \AMDemodulator1/d_out_d_11__N_1883[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_477_1
+Route         1   e 0.020                                  \AMDemodulator1/n11493
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_3
+Route         1   e 0.020                                  \AMDemodulator1/n11494
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_5
+Route         1   e 0.020                                  \AMDemodulator1/n11495
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_7
+Route         1   e 0.020                                  \AMDemodulator1/n11496
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_9
+Route         1   e 0.020                                  \AMDemodulator1/n11497
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_11
+Route         1   e 0.020                                  \AMDemodulator1/n11498
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_13
+Route         1   e 0.020                                  \AMDemodulator1/n11499
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_15
+Route         1   e 0.020                                  \AMDemodulator1/n11500
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_17
+Route         1   e 0.020                                  \AMDemodulator1/n11501
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_477_19
+Route        22   e 2.179                                  \AMDemodulator1/d_out_d_11__N_1885[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_457_1
+Route         1   e 0.020                                  \AMDemodulator1/n12225
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_3
+Route         1   e 0.020                                  \AMDemodulator1/n12226
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_5
+Route         1   e 0.020                                  \AMDemodulator1/n12227
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_7
+Route         1   e 0.020                                  \AMDemodulator1/n12228
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_9
+Route         1   e 0.020                                  \AMDemodulator1/n12229
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_11
+Route         1   e 0.020                                  \AMDemodulator1/n12230
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_13
+Route         1   e 0.020                                  \AMDemodulator1/n12231
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_15
+Route         1   e 0.020                                  \AMDemodulator1/n12232
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_17
+Route         1   e 0.020                                  \AMDemodulator1/n12233
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_457_19
+Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1887[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_437_1
+Route         1   e 0.020                                  \AMDemodulator1/n11201
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_3
+Route         1   e 0.020                                  \AMDemodulator1/n11202
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_5
+Route         1   e 0.020                                  \AMDemodulator1/n11203
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_7
+Route         1   e 0.020                                  \AMDemodulator1/n11204
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_9
+Route         1   e 0.020                                  \AMDemodulator1/n11205
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_11
+Route         1   e 0.020                                  \AMDemodulator1/n11206
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_13
+Route         1   e 0.020                                  \AMDemodulator1/n11207
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_15
+Route         1   e 0.020                                  \AMDemodulator1/n11208
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_17
+Route         1   e 0.020                                  \AMDemodulator1/n11209
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_437_19
+Route        20   e 2.173                                  \AMDemodulator1/d_out_d_11__N_1889[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_497_1
+Route         1   e 0.020                                  \AMDemodulator1/n12154
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_3
+Route         1   e 0.020                                  \AMDemodulator1/n12155
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_5
+Route         1   e 0.020                                  \AMDemodulator1/n12156
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_7
+Route         1   e 0.020                                  \AMDemodulator1/n12157
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_9
+Route         1   e 0.020                                  \AMDemodulator1/n12158
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_11
+Route         1   e 0.020                                  \AMDemodulator1/n12159
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_13
+Route         1   e 0.020                                  \AMDemodulator1/n12160
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_15
+Route         1   e 0.020                                  \AMDemodulator1/n12161
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_17
+Route         1   e 0.020                                  \AMDemodulator1/n12162
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_497_19
+Route         6   e 1.803                                  \AMDemodulator1/d_out_d_11__N_1891[17]
+A1_TO_FCO   ---     0.827           B[2] to COUT           \AMDemodulator1/sub_78_add_2_2
+Route         1   e 0.020                                  \AMDemodulator1/n12177
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_4
+Route         1   e 0.020                                  \AMDemodulator1/n12178
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_6
+Route         1   e 0.020                                  \AMDemodulator1/n12179
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_8
+Route         1   e 0.020                                  \AMDemodulator1/n12180
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_10
+Route         1   e 0.020                                  \AMDemodulator1/n12181
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_12
+Route         1   e 0.020                                  \AMDemodulator1/n12182
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_14
+Route         1   e 0.020                                  \AMDemodulator1/n12183
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_16
+Route         1   e 0.020                                  \AMDemodulator1/n12184
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/sub_78_add_2_18
+Route         1   e 0.941                                  \AMDemodulator1/d_out_d_11__N_2334[17]
+LUT4        ---     0.493              A to Z              \AMDemodulator1/mux_74_i1_3_lut
+Route         1   e 0.941                                  \AMDemodulator1/d_out_d_11__N_1893[17]
+                  --------
+                   61.313  (50.2% logic, 49.8% route), 105 logic levels.
+
+
+Error:  The following path violates requirements by 48.947ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \AMDemodulator1/ISquare_i25  (from CIC1_out_clkSin +)
+   Destination:    FD1S3AX    D              \AMDemodulator1/d_out_d__0_i1  (to CIC1_out_clkSin +)
+
+   Delay:                  61.287ns  (48.5% logic, 51.5% route), 101 logic levels.
+
+ Constraint Details:
+
+     61.287ns data_path \AMDemodulator1/ISquare_i25 to \AMDemodulator1/d_out_d__0_i1 violates
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 48.947ns
+
+ Path Details: \AMDemodulator1/ISquare_i25 to \AMDemodulator1/d_out_d__0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \AMDemodulator1/ISquare_i25 (from CIC1_out_clkSin)
+Route        40   e 2.110                                  \AMDemodulator1/ISquare[31]
+LUT4        ---     0.493              A to Z              \AMDemodulator1/i1326_1_lut
+Route         2   e 1.141                                  \AMDemodulator1/n209
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3288_4
+Route         1   e 0.020                                  \AMDemodulator1/n12274
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3288_6
+Route         1   e 0.020                                  \AMDemodulator1/n12275
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3288_8
+Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1871[17]
+LUT4        ---     0.493              A to Z              \AMDemodulator1/d_out_d_11__I_0_1_lut
+Route         2   e 1.141                                  \AMDemodulator1/d_out_d_11__N_1870
+A1_TO_F     ---     0.493           B[2] to S[2]           \AMDemodulator1/add_617_11
+Route        22   e 2.179                                  \AMDemodulator1/d_out_d_11__N_1873[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_597_1
+Route         1   e 0.020                                  \AMDemodulator1/n11531
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_3
+Route         1   e 0.020                                  \AMDemodulator1/n11532
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_5
+Route         1   e 0.020                                  \AMDemodulator1/n11533
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_7
+Route         1   e 0.020                                  \AMDemodulator1/n11534
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_9
+Route         1   e 0.020                                  \AMDemodulator1/n11535
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_597_11
+Route         1   e 0.020                                  \AMDemodulator1/n11536
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_597_13
+Route        23   e 2.182                                  \AMDemodulator1/d_out_d_11__N_1875[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_577_1
+Route         1   e 0.020                                  \AMDemodulator1/n11542
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_3
+Route         1   e 0.020                                  \AMDemodulator1/n11543
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_5
+Route         1   e 0.020                                  \AMDemodulator1/n11544
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_7
+Route         1   e 0.020                                  \AMDemodulator1/n11545
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_9
+Route         1   e 0.020                                  \AMDemodulator1/n11546
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_11
+Route         1   e 0.020                                  \AMDemodulator1/n11547
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_577_13
+Route         1   e 0.020                                  \AMDemodulator1/n11548
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_577_15
+Route        24   e 2.184                                  \AMDemodulator1/d_out_d_11__N_1877[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_557_1
+Route         1   e 0.020                                  \AMDemodulator1/n12168
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_3
+Route         1   e 0.020                                  \AMDemodulator1/n12169
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_5
+Route         1   e 0.020                                  \AMDemodulator1/n12170
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_7
+Route         1   e 0.020                                  \AMDemodulator1/n12171
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_9
+Route         1   e 0.020                                  \AMDemodulator1/n12172
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_11
+Route         1   e 0.020                                  \AMDemodulator1/n12173
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_13
+Route         1   e 0.020                                  \AMDemodulator1/n12174
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_557_15
+Route         1   e 0.020                                  \AMDemodulator1/n12175
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_557_17
+Route        25   e 2.186                                  \AMDemodulator1/d_out_d_11__N_1879[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_537_1
+Route         1   e 0.020                                  \AMDemodulator1/n11507
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_3
+Route         1   e 0.020                                  \AMDemodulator1/n11508
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_5
+Route         1   e 0.020                                  \AMDemodulator1/n11509
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_7
+Route         1   e 0.020                                  \AMDemodulator1/n11510
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_9
+Route         1   e 0.020                                  \AMDemodulator1/n11511
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_11
+Route         1   e 0.020                                  \AMDemodulator1/n11512
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_13
+Route         1   e 0.020                                  \AMDemodulator1/n11513
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_15
+Route         1   e 0.020                                  \AMDemodulator1/n11514
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_537_17
+Route         1   e 0.020                                  \AMDemodulator1/n11515
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_537_19
+Route        24   e 2.184                                  \AMDemodulator1/d_out_d_11__N_1881[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_517_1
+Route         1   e 0.020                                  \AMDemodulator1/n12140
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_3
+Route         1   e 0.020                                  \AMDemodulator1/n12141
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_5
+Route         1   e 0.020                                  \AMDemodulator1/n12142
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_7
+Route         1   e 0.020                                  \AMDemodulator1/n12143
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_9
+Route         1   e 0.020                                  \AMDemodulator1/n12144
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_11
+Route         1   e 0.020                                  \AMDemodulator1/n12145
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_13
+Route         1   e 0.020                                  \AMDemodulator1/n12146
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_15
+Route         1   e 0.020                                  \AMDemodulator1/n12147
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_517_17
+Route         1   e 0.020                                  \AMDemodulator1/n12148
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_517_19
+Route        23   e 2.182                                  \AMDemodulator1/d_out_d_11__N_1883[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_477_1
+Route         1   e 0.020                                  \AMDemodulator1/n11493
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_3
+Route         1   e 0.020                                  \AMDemodulator1/n11494
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_5
+Route         1   e 0.020                                  \AMDemodulator1/n11495
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_7
+Route         1   e 0.020                                  \AMDemodulator1/n11496
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_9
+Route         1   e 0.020                                  \AMDemodulator1/n11497
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_11
+Route         1   e 0.020                                  \AMDemodulator1/n11498
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_13
+Route         1   e 0.020                                  \AMDemodulator1/n11499
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_15
+Route         1   e 0.020                                  \AMDemodulator1/n11500
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_477_17
+Route         1   e 0.020                                  \AMDemodulator1/n11501
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_477_19
+Route        22   e 2.179                                  \AMDemodulator1/d_out_d_11__N_1885[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_457_1
+Route         1   e 0.020                                  \AMDemodulator1/n12225
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_3
+Route         1   e 0.020                                  \AMDemodulator1/n12226
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_5
+Route         1   e 0.020                                  \AMDemodulator1/n12227
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_7
+Route         1   e 0.020                                  \AMDemodulator1/n12228
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_9
+Route         1   e 0.020                                  \AMDemodulator1/n12229
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_11
+Route         1   e 0.020                                  \AMDemodulator1/n12230
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_13
+Route         1   e 0.020                                  \AMDemodulator1/n12231
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_15
+Route         1   e 0.020                                  \AMDemodulator1/n12232
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_457_17
+Route         1   e 0.020                                  \AMDemodulator1/n12233
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_457_19
+Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1887[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_437_1
+Route         1   e 0.020                                  \AMDemodulator1/n11201
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_3
+Route         1   e 0.020                                  \AMDemodulator1/n11202
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_5
+Route         1   e 0.020                                  \AMDemodulator1/n11203
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_7
+Route         1   e 0.020                                  \AMDemodulator1/n11204
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_9
+Route         1   e 0.020                                  \AMDemodulator1/n11205
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_11
+Route         1   e 0.020                                  \AMDemodulator1/n11206
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_13
+Route         1   e 0.020                                  \AMDemodulator1/n11207
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_15
+Route         1   e 0.020                                  \AMDemodulator1/n11208
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_437_17
+Route         1   e 0.020                                  \AMDemodulator1/n11209
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_437_19
+Route        20   e 2.173                                  \AMDemodulator1/d_out_d_11__N_1889[17]
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_497_1
+Route         1   e 0.020                                  \AMDemodulator1/n12154
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_3
+Route         1   e 0.020                                  \AMDemodulator1/n12155
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_5
+Route         1   e 0.020                                  \AMDemodulator1/n12156
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_7
+Route         1   e 0.020                                  \AMDemodulator1/n12157
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_9
+Route         1   e 0.020                                  \AMDemodulator1/n12158
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_11
+Route         1   e 0.020                                  \AMDemodulator1/n12159
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_13
+Route         1   e 0.020                                  \AMDemodulator1/n12160
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_15
+Route         1   e 0.020                                  \AMDemodulator1/n12161
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_497_17
+Route         1   e 0.020                                  \AMDemodulator1/n12162
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_497_19
+Route         6   e 1.803                                  \AMDemodulator1/d_out_d_11__N_1891[17]
+A1_TO_FCO   ---     0.827           B[2] to COUT           \AMDemodulator1/sub_78_add_2_2
+Route         1   e 0.020                                  \AMDemodulator1/n12177
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_4
+Route         1   e 0.020                                  \AMDemodulator1/n12178
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_6
+Route         1   e 0.020                                  \AMDemodulator1/n12179
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_8
+Route         1   e 0.020                                  \AMDemodulator1/n12180
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_10
+Route         1   e 0.020                                  \AMDemodulator1/n12181
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_12
+Route         1   e 0.020                                  \AMDemodulator1/n12182
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_14
+Route         1   e 0.020                                  \AMDemodulator1/n12183
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/sub_78_add_2_16
+Route         1   e 0.020                                  \AMDemodulator1/n12184
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/sub_78_add_2_18
+Route         1   e 0.941                                  \AMDemodulator1/d_out_d_11__N_2334[17]
+LUT4        ---     0.493              A to Z              \AMDemodulator1/mux_74_i1_3_lut
+Route         1   e 0.941                                  \AMDemodulator1/d_out_d_11__N_1893[17]
+                  --------
+                   61.287  (48.5% logic, 51.5% route), 101 logic levels.
+
+Warning: 61.473 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 12.500000 -name clk1 [get_nets UartClk[2]]
+            1737 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.812ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_932__i15  (from UartClk[2] +)
+   Destination:    FD1P3IX    SP             \uart_rx1/r_Clock_Count_932__i1  (to UartClk[2] +)
+
+   Delay:                  10.403ns  (28.0% logic, 72.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.403ns data_path \uart_rx1/r_Clock_Count_932__i15 to \uart_rx1/r_Clock_Count_932__i1 meets
+     12.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 12.215ns) by 1.812ns
+
+ Path Details: \uart_rx1/r_Clock_Count_932__i15 to \uart_rx1/r_Clock_Count_932__i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_932__i15 (from UartClk[2])
+Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              D to Z              \uart_rx1/i1_4_lut_adj_32
+Route         1   e 0.941                                  \uart_rx1/n13171
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_31
+Route         2   e 1.141                                  \uart_rx1/n12870
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_28
+Route         3   e 1.258                                  \uart_rx1/n12362
+LUT4        ---     0.493              D to Z              \uart_rx1/i1_2_lut_rep_163_4_lut
+Route         2   e 1.141                                  \uart_rx1/n13756
+LUT4        ---     0.493              C to Z              \uart_rx1/i5904_4_lut
+Route        16   e 1.815                                  \uart_rx1/UartClk[2]_enable_56
+                  --------
+                   10.403  (28.0% logic, 72.0% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 1.812ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_932__i15  (from UartClk[2] +)
+   Destination:    FD1P3IX    SP             \uart_rx1/r_Clock_Count_932__i15  (to UartClk[2] +)
+
+   Delay:                  10.403ns  (28.0% logic, 72.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.403ns data_path \uart_rx1/r_Clock_Count_932__i15 to \uart_rx1/r_Clock_Count_932__i15 meets
+     12.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 12.215ns) by 1.812ns
+
+ Path Details: \uart_rx1/r_Clock_Count_932__i15 to \uart_rx1/r_Clock_Count_932__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_932__i15 (from UartClk[2])
+Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              D to Z              \uart_rx1/i1_4_lut_adj_32
+Route         1   e 0.941                                  \uart_rx1/n13171
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_31
+Route         2   e 1.141                                  \uart_rx1/n12870
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_28
+Route         3   e 1.258                                  \uart_rx1/n12362
+LUT4        ---     0.493              D to Z              \uart_rx1/i1_2_lut_rep_163_4_lut
+Route         2   e 1.141                                  \uart_rx1/n13756
+LUT4        ---     0.493              C to Z              \uart_rx1/i5904_4_lut
+Route        16   e 1.815                                  \uart_rx1/UartClk[2]_enable_56
+                  --------
+                   10.403  (28.0% logic, 72.0% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 1.812ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_932__i15  (from UartClk[2] +)
+   Destination:    FD1P3IX    SP             \uart_rx1/r_Clock_Count_932__i14  (to UartClk[2] +)
+
+   Delay:                  10.403ns  (28.0% logic, 72.0% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.403ns data_path \uart_rx1/r_Clock_Count_932__i15 to \uart_rx1/r_Clock_Count_932__i14 meets
+     12.500ns delay constraint less
+      0.285ns LCE_S requirement (totaling 12.215ns) by 1.812ns
+
+ Path Details: \uart_rx1/r_Clock_Count_932__i15 to \uart_rx1/r_Clock_Count_932__i14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_932__i15 (from UartClk[2])
+Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              D to Z              \uart_rx1/i1_4_lut_adj_32
+Route         1   e 0.941                                  \uart_rx1/n13171
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_31
+Route         2   e 1.141                                  \uart_rx1/n12870
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_28
+Route         3   e 1.258                                  \uart_rx1/n12362
+LUT4        ---     0.493              D to Z              \uart_rx1/i1_2_lut_rep_163_4_lut
+Route         2   e 1.141                                  \uart_rx1/n13756
+LUT4        ---     0.493              C to Z              \uart_rx1/i5904_4_lut
+Route        16   e 1.815                                  \uart_rx1/UartClk[2]_enable_56
+                  --------
+                   10.403  (28.0% logic, 72.0% route), 6 logic levels.
+
+Report: 10.688 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 12.500000 -name clk0 [get_nets osc_clk]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 3.626ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             phase_inc_carrGen_i0_i2  (from osc_clk +)
+   Destination:    FD1P3AX    D              phase_inc_carrGen_i0_i63  (to osc_clk +)
+
+   Delay:                  15.966ns  (58.4% logic, 41.6% route), 37 logic levels.
+
+ Constraint Details:
+
+     15.966ns data_path phase_inc_carrGen_i0_i2 to phase_inc_carrGen_i0_i63 violates
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 3.626ns
+
+ Path Details: phase_inc_carrGen_i0_i2 to phase_inc_carrGen_i0_i63
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              phase_inc_carrGen_i0_i2 (from osc_clk)
+Route         3   e 1.315                                  phase_inc_carrGen[2]
+A1_TO_FCO   ---     0.827           A[2] to COUT           sub_37_add_2_1
+Route         1   e 0.020                                  n11581
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_3
+Route         1   e 0.020                                  n11582
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_5
+Route         1   e 0.020                                  n11583
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_7
+Route         1   e 0.020                                  n11584
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_9
+Route         1   e 0.020                                  n11585
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_11
+Route         1   e 0.020                                  n11586
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_13
+Route         1   e 0.020                                  n11587
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_15
+Route         1   e 0.020                                  n11588
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_17
+Route         1   e 0.020                                  n11589
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_19
+Route         1   e 0.020                                  n11590
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_21
+Route         1   e 0.020                                  n11591
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_23
+Route         1   e 0.020                                  n11592
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_25
+Route         1   e 0.020                                  n11593
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_27
+Route         1   e 0.020                                  n11594
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_29
+Route         1   e 0.020                                  n11595
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_31
+Route         1   e 0.020                                  n11596
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_33
+Route         1   e 0.020                                  n11597
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_35
+Route         1   e 0.020                                  n11598
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_37
+Route         1   e 0.020                                  n11599
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_39
+Route         1   e 0.020                                  n11600
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_41
+Route         1   e 0.020                                  n11601
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_43
+Route         1   e 0.020                                  n11602
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_45
+Route         1   e 0.020                                  n11603
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_47
+Route         1   e 0.020                                  n11604
+FCI_TO_F    ---     0.598            CIN to S[2]           sub_37_add_2_49
+Route         1   e 0.941                                  n894
+LUT4        ---     0.493              B to Z              mux_375_i50_3_lut
+Route         1   e 0.941                                  n2559
+LUT4        ---     0.493              B to Z              mux_378_i50_3_lut
+Route         1   e 0.941                                  n2690
+LUT4        ---     0.493              A to Z              mux_367_i50_4_lut
+Route         1   e 0.941                                  n2231
+A1_TO_FCO   ---     0.827           C[2] to COUT           add_702_49
+Route         1   e 0.020                                  n12213
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_51
+Route         1   e 0.020                                  n12214
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_53
+Route         1   e 0.020                                  n12215
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_55
+Route         1   e 0.020                                  n12216
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_57
+Route         1   e 0.020                                  n12217
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_59
+Route         1   e 0.020                                  n12218
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_61
+Route         1   e 0.020                                  n12219
+FCI_TO_F    ---     0.598            CIN to S[2]           add_702_63
+Route         1   e 0.941                                  n2875
+                  --------
+                   15.966  (58.4% logic, 41.6% route), 37 logic levels.
+
+
+Error:  The following path violates requirements by 3.626ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             phase_inc_carrGen_i0_i2  (from osc_clk +)
+   Destination:    FD1P3AX    D              phase_inc_carrGen_i0_i63  (to osc_clk +)
+
+   Delay:                  15.966ns  (58.4% logic, 41.6% route), 37 logic levels.
+
+ Constraint Details:
+
+     15.966ns data_path phase_inc_carrGen_i0_i2 to phase_inc_carrGen_i0_i63 violates
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 3.626ns
+
+ Path Details: phase_inc_carrGen_i0_i2 to phase_inc_carrGen_i0_i63
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              phase_inc_carrGen_i0_i2 (from osc_clk)
+Route         3   e 1.315                                  phase_inc_carrGen[2]
+A1_TO_FCO   ---     0.827           A[2] to COUT           sub_37_add_2_1
+Route         1   e 0.020                                  n11581
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_3
+Route         1   e 0.020                                  n11582
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_5
+Route         1   e 0.020                                  n11583
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_7
+Route         1   e 0.020                                  n11584
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_9
+Route         1   e 0.020                                  n11585
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_11
+Route         1   e 0.020                                  n11586
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_13
+Route         1   e 0.020                                  n11587
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_15
+Route         1   e 0.020                                  n11588
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_17
+Route         1   e 0.020                                  n11589
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_19
+Route         1   e 0.020                                  n11590
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_21
+Route         1   e 0.020                                  n11591
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_23
+Route         1   e 0.020                                  n11592
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_25
+Route         1   e 0.020                                  n11593
+FCI_TO_F    ---     0.598            CIN to S[2]           sub_37_add_2_27
+Route         1   e 0.941                                  n916
+LUT4        ---     0.493              B to Z              mux_375_i28_3_lut
+Route         1   e 0.941                                  n2581
+LUT4        ---     0.493              D to Z              mux_378_i28_3_lut_4_lut
+Route         1   e 0.941                                  n2712
+LUT4        ---     0.493              A to Z              mux_367_i28_4_lut
+Route         1   e 0.941                                  n2253
+A1_TO_FCO   ---     0.827           C[2] to COUT           add_702_27
+Route         1   e 0.020                                  n12202
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_29
+Route         1   e 0.020                                  n12203
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_31
+Route         1   e 0.020                                  n12204
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_33
+Route         1   e 0.020                                  n12205
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_35
+Route         1   e 0.020                                  n12206
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_37
+Route         1   e 0.020                                  n12207
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_39
+Route         1   e 0.020                                  n12208
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_41
+Route         1   e 0.020                                  n12209
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_43
+Route         1   e 0.020                                  n12210
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_45
+Route         1   e 0.020                                  n12211
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_47
+Route         1   e 0.020                                  n12212
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_49
+Route         1   e 0.020                                  n12213
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_51
+Route         1   e 0.020                                  n12214
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_53
+Route         1   e 0.020                                  n12215
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_55
+Route         1   e 0.020                                  n12216
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_57
+Route         1   e 0.020                                  n12217
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_59
+Route         1   e 0.020                                  n12218
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_61
+Route         1   e 0.020                                  n12219
+FCI_TO_F    ---     0.598            CIN to S[2]           add_702_63
+Route         1   e 0.941                                  n2875
+                  --------
+                   15.966  (58.4% logic, 41.6% route), 37 logic levels.
+
+
+Error:  The following path violates requirements by 3.626ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             phase_inc_carrGen_i0_i2  (from osc_clk +)
+   Destination:    FD1P3AX    D              phase_inc_carrGen_i0_i63  (to osc_clk +)
+
+   Delay:                  15.966ns  (58.4% logic, 41.6% route), 37 logic levels.
+
+ Constraint Details:
+
+     15.966ns data_path phase_inc_carrGen_i0_i2 to phase_inc_carrGen_i0_i63 violates
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 3.626ns
+
+ Path Details: phase_inc_carrGen_i0_i2 to phase_inc_carrGen_i0_i63
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              phase_inc_carrGen_i0_i2 (from osc_clk)
+Route         3   e 1.315                                  phase_inc_carrGen[2]
+A1_TO_FCO   ---     0.827           A[2] to COUT           sub_37_add_2_1
+Route         1   e 0.020                                  n11581
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_3
+Route         1   e 0.020                                  n11582
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_5
+Route         1   e 0.020                                  n11583
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_7
+Route         1   e 0.020                                  n11584
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_9
+Route         1   e 0.020                                  n11585
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_11
+Route         1   e 0.020                                  n11586
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_13
+Route         1   e 0.020                                  n11587
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_15
+Route         1   e 0.020                                  n11588
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_17
+Route         1   e 0.020                                  n11589
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_19
+Route         1   e 0.020                                  n11590
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_21
+Route         1   e 0.020                                  n11591
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_23
+Route         1   e 0.020                                  n11592
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_25
+Route         1   e 0.020                                  n11593
+FCI_TO_FCO  ---     0.157            CIN to COUT           sub_37_add_2_27
+Route         1   e 0.020                                  n11594
+FCI_TO_F    ---     0.598            CIN to S[2]           sub_37_add_2_29
+Route         1   e 0.941                                  n914
+LUT4        ---     0.493              B to Z              mux_375_i30_3_lut
+Route         1   e 0.941                                  n2579
+LUT4        ---     0.493              D to Z              mux_378_i30_3_lut_4_lut
+Route         1   e 0.941                                  n2710
+LUT4        ---     0.493              A to Z              mux_367_i30_4_lut
+Route         1   e 0.941                                  n2251
+A1_TO_FCO   ---     0.827           C[2] to COUT           add_702_29
+Route         1   e 0.020                                  n12203
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_31
+Route         1   e 0.020                                  n12204
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_33
+Route         1   e 0.020                                  n12205
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_35
+Route         1   e 0.020                                  n12206
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_37
+Route         1   e 0.020                                  n12207
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_39
+Route         1   e 0.020                                  n12208
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_41
+Route         1   e 0.020                                  n12209
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_43
+Route         1   e 0.020                                  n12210
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_45
+Route         1   e 0.020                                  n12211
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_47
+Route         1   e 0.020                                  n12212
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_49
+Route         1   e 0.020                                  n12213
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_51
+Route         1   e 0.020                                  n12214
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_53
+Route         1   e 0.020                                  n12215
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_55
+Route         1   e 0.020                                  n12216
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_57
+Route         1   e 0.020                                  n12217
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_59
+Route         1   e 0.020                                  n12218
+FCI_TO_FCO  ---     0.157            CIN to COUT           add_702_61
+Route         1   e 0.020                                  n12219
+FCI_TO_F    ---     0.598            CIN to S[2]           add_702_63
+Route         1   e 0.941                                  n2875
+                  --------
+                   15.966  (58.4% logic, 41.6% route), 37 logic levels.
+
+Warning: 16.126 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk2 [get_nets CIC1_out_clkSin]         |    12.500 ns|    61.473 ns|   105 *
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk1 [get_nets UartClk[2]]              |    12.500 ns|    10.688 ns|     6  
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk0 [get_nets osc_clk]                 |    12.500 ns|    16.126 ns|    37 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\AMDemodulator1/ISquare[31]             |      40|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1871[17]  |      21|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1873[17]  |      22|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1875[17]  |      23|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1877[17]  |      24|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1879[17]  |      25|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1881[17]  |      24|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1883[17]  |      23|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1885[17]  |      22|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1887[17]  |      21|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1889[17]  |      20|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1891[17]  |       6|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1893[17]  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n209                    |       2|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11204                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11205                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11206                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11207                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11208                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11209                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11496                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11497                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11498                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11499                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11500                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11501                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12143                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12144                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12145                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12146                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12147                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12148                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12157                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12158                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12159                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12160                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12161                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12162                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12228                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12229                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12230                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12231                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12232                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12233                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n12275                  |       1|    4096|     50.00%
+                                        |        |        |
+\AMDemodulator1/n11510                  |       1|    4086|     49.88%
+                                        |        |        |
+\AMDemodulator1/n11511                  |       1|    4086|     49.88%
+                                        |        |        |
+\AMDemodulator1/n11512                  |       1|    4086|     49.88%
+                                        |        |        |
+\AMDemodulator1/n11513                  |       1|    4086|     49.88%
+                                        |        |        |
+\AMDemodulator1/n11514                  |       1|    4086|     49.88%
+                                        |        |        |
+\AMDemodulator1/n11515                  |       1|    4086|     49.88%
+                                        |        |        |
+\AMDemodulator1/n11203                  |       1|    4084|     49.85%
+                                        |        |        |
+\AMDemodulator1/n11495                  |       1|    4084|     49.85%
+                                        |        |        |
+\AMDemodulator1/n12142                  |       1|    4084|     49.85%
+                                        |        |        |
+\AMDemodulator1/n12156                  |       1|    4084|     49.85%
+                                        |        |        |
+\AMDemodulator1/n12227                  |       1|    4084|     49.85%
+                                        |        |        |
+\AMDemodulator1/n11509                  |       1|    4074|     49.73%
+                                        |        |        |
+\AMDemodulator1/n11202                  |       1|    3992|     48.73%
+                                        |        |        |
+\AMDemodulator1/n11494                  |       1|    3992|     48.73%
+                                        |        |        |
+\AMDemodulator1/n12141                  |       1|    3992|     48.73%
+                                        |        |        |
+\AMDemodulator1/n12155                  |       1|    3992|     48.73%
+                                        |        |        |
+\AMDemodulator1/n12226                  |       1|    3992|     48.73%
+                                        |        |        |
+\AMDemodulator1/n11508                  |       1|    3982|     48.61%
+                                        |        |        |
+\AMDemodulator1/n12171                  |       1|    3970|     48.46%
+                                        |        |        |
+\AMDemodulator1/n12172                  |       1|    3970|     48.46%
+                                        |        |        |
+\AMDemodulator1/n12173                  |       1|    3970|     48.46%
+                                        |        |        |
+\AMDemodulator1/n12174                  |       1|    3970|     48.46%
+                                        |        |        |
+\AMDemodulator1/n12175                  |       1|    3970|     48.46%
+                                        |        |        |
+\AMDemodulator1/n12170                  |       1|    3958|     48.32%
+                                        |        |        |
+\AMDemodulator1/n12169                  |       1|    3866|     47.19%
+                                        |        |        |
+n12214                                  |       1|    3598|     43.92%
+                                        |        |        |
+n12213                                  |       1|    3550|     43.33%
+                                        |        |        |
+n12212                                  |       1|    3482|     42.50%
+                                        |        |        |
+\AMDemodulator1/n12274                  |       1|    3434|     41.92%
+                                        |        |        |
+n12211                                  |       1|    3330|     40.65%
+                                        |        |        |
+\AMDemodulator1/n11201                  |       1|    3324|     40.58%
+                                        |        |        |
+\AMDemodulator1/n11493                  |       1|    3324|     40.58%
+                                        |        |        |
+\AMDemodulator1/n12154                  |       1|    3324|     40.58%
+                                        |        |        |
+\AMDemodulator1/n12225                  |       1|    3324|     40.58%
+                                        |        |        |
+\AMDemodulator1/n12140                  |       1|    3323|     40.56%
+                                        |        |        |
+\AMDemodulator1/n11507                  |       1|    3313|     40.44%
+                                        |        |        |
+n12215                                  |       1|    3274|     39.97%
+                                        |        |        |
+n11587                                  |       1|    3227|     39.39%
+                                        |        |        |
+\AMDemodulator1/n11545                  |       1|    3226|     39.38%
+                                        |        |        |
+\AMDemodulator1/n11546                  |       1|    3226|     39.38%
+                                        |        |        |
+\AMDemodulator1/n11547                  |       1|    3226|     39.38%
+                                        |        |        |
+\AMDemodulator1/n11548                  |       1|    3226|     39.38%
+                                        |        |        |
+\AMDemodulator1/n11544                  |       1|    3214|     39.23%
+                                        |        |        |
+\AMDemodulator1/n12168                  |       1|    3208|     39.16%
+                                        |        |        |
+\AMDemodulator1/n11534                  |       1|    3188|     38.92%
+                                        |        |        |
+\AMDemodulator1/n11535                  |       1|    3188|     38.92%
+                                        |        |        |
+\AMDemodulator1/n11536                  |       1|    3188|     38.92%
+                                        |        |        |
+n12210                                  |       1|    3178|     38.79%
+                                        |        |        |
+\AMDemodulator1/n11533                  |       1|    3176|     38.77%
+                                        |        |        |
+n11586                                  |       1|    3139|     38.32%
+                                        |        |        |
+\AMDemodulator1/n11543                  |       1|    3134|     38.26%
+                                        |        |        |
+\AMDemodulator1/n11532                  |       1|    3098|     37.82%
+                                        |        |        |
+n11588                                  |       1|    3062|     37.38%
+                                        |        |        |
+n11585                                  |       1|    3058|     37.33%
+                                        |        |        |
+n12209                                  |       1|    2966|     36.21%
+                                        |        |        |
+n11589                                  |       1|    2938|     35.86%
+                                        |        |        |
+n11590                                  |       1|    2938|     35.86%
+                                        |        |        |
+n12216                                  |       1|    2846|     34.74%
+                                        |        |        |
+n12208                                  |       1|    2814|     34.35%
+                                        |        |        |
+n11591                                  |       1|    2722|     33.23%
+                                        |        |        |
+n11592                                  |       1|    2722|     33.23%
+                                        |        |        |
+n11593                                  |       1|    2722|     33.23%
+                                        |        |        |
+n12207                                  |       1|    2696|     32.91%
+                                        |        |        |
+n11584                                  |       1|    2644|     32.28%
+                                        |        |        |
+\AMDemodulator1/n11542                  |       1|    2592|     31.64%
+                                        |        |        |
+\AMDemodulator1/n11531                  |       1|    2572|     31.40%
+                                        |        |        |
+n12217                                  |       1|    2492|     30.42%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1870      |       2|    2482|     30.30%
+                                        |        |        |
+n11594                                  |       1|    2452|     29.93%
+                                        |        |        |
+n12206                                  |       1|    2426|     29.61%
+                                        |        |        |
+n12205                                  |       1|    2274|     27.76%
+                                        |        |        |
+n11595                                  |       1|    2182|     26.64%
+                                        |        |        |
+n11583                                  |       1|    2170|     26.49%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_2334[17]  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12178                  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12179                  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12180                  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12181                  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12182                  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12183                  |       1|    2083|     25.43%
+                                        |        |        |
+\AMDemodulator1/n12184                  |       1|    2083|     25.43%
+                                        |        |        |
+n12204                                  |       1|    2060|     25.15%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_2352[17]  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12263                  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12264                  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12265                  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12266                  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12267                  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12268                  |       1|    2013|     24.57%
+                                        |        |        |
+\AMDemodulator1/n12269                  |       1|    2013|     24.57%
+                                        |        |        |
+n11596                                  |       1|    1912|     23.34%
+                                        |        |        |
+n12218                                  |       1|    1844|     22.51%
+                                        |        |        |
+n11597                                  |       1|    1816|     22.17%
+                                        |        |        |
+n12203                                  |       1|    1790|     21.85%
+                                        |        |        |
+\AMDemodulator1/n12177                  |       1|    1742|     21.26%
+                                        |        |        |
+\AMDemodulator1/n12262                  |       1|    1672|     20.41%
+                                        |        |        |
+\AMDemodulator1/n11524                  |       1|    1614|     19.70%
+                                        |        |        |
+\AMDemodulator1/n11525                  |       1|    1614|     19.70%
+                                        |        |        |
+\AMDemodulator1/n11523                  |       1|    1610|     19.65%
+                                        |        |        |
+\AMDemodulator1/n11522                  |       1|    1578|     19.26%
+                                        |        |        |
+n11598                                  |       1|    1546|     18.87%
+                                        |        |        |
+n12202                                  |       1|    1520|     18.55%
+                                        |        |        |
+n11582                                  |       1|    1414|     17.26%
+                                        |        |        |
+n12200                                  |       1|    1368|     16.70%
+                                        |        |        |
+n12201                                  |       1|    1368|     16.70%
+                                        |        |        |
+\AMDemodulator1/n11521                  |       1|    1328|     16.21%
+                                        |        |        |
+n11599                                  |       1|    1276|     15.58%
+                                        |        |        |
+n11600                                  |       1|    1276|     15.58%
+                                        |        |        |
+n12199                                  |       1|    1248|     15.23%
+                                        |        |        |
+n12197                                  |       1|    1140|     13.92%
+                                        |        |        |
+n12198                                  |       1|    1140|     13.92%
+                                        |        |        |
+n11601                                  |       1|    1064|     12.99%
+                                        |        |        |
+n12219                                  |       1|     988|     12.06%
+                                        |        |        |
+n11602                                  |       1|     912|     11.13%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1872      |       2|     908|     11.08%
+                                        |        |        |
+n12196                                  |       1|     873|     10.66%
+                                        |        |        |
+\AMDemodulator1/d_out_d_11__N_1874      |       3|     870|     10.62%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 8192  Score: 209607354
+
+Constraints cover >4294967295 paths, 7735 nets, and 15655 connections (83.7% coverage)
+
+
+Peak memory: 157597696 bytes, TRCE: 48009216 bytes, DLYMAN: 946176 bytes
+CPU_TIME_REPORT: 1 secs 

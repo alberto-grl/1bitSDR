@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="NCOAdder" module="NCOAdder" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2020 03 29 16:12:06.945" version="3.5" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="NCOAdder.lpc" type="lpc" modified="2020 03 29 16:12:04.431"/>
+		<File name="NCOAdder.v" type="top_level_verilog" modified="2020 03 29 16:12:04.538"/>
+		<File name="NCOAdder_tmpl.v" type="template_verilog" modified="2020 03 29 16:12:04.538"/>
+		<File name="tb_NCOAdder_tmpl.v" type="testbench_verilog" modified="2020 03 29 16:12:04.546"/>
+  </Package>
+</DiamondModule>

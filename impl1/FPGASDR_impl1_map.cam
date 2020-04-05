@@ -1,0 +1,689 @@
+[ START MERGED ]
+uart_tx1/UartClk_2_enable_41 uart_tx1/r_SM_Main_2
+SinCos1/rom_addr0_r_inv SinCos1/rom_addr0_r
+SinCos1/rom_addr0_r_1_inv SinCos1/rom_addr0_r_1
+SinCos1/rom_addr0_r_2_inv SinCos1/rom_addr0_r_2
+SinCos1/rom_addr0_r_3_inv SinCos1/rom_addr0_r_3
+SinCos1/rom_addr0_r_4_inv SinCos1/rom_addr0_r_4
+SinCos1/rom_addr0_r_5_inv SinCos1/rom_addr0_r_5
+SinCos1/rom_dout_1_inv SinCos1/rom_dout_1
+SinCos1/rom_dout_2_inv SinCos1/rom_dout_2
+SinCos1/rom_dout_3_inv SinCos1/rom_dout_3
+SinCos1/rom_dout_4_inv SinCos1/rom_dout_4
+SinCos1/rom_dout_5_inv SinCos1/rom_dout_5
+SinCos1/rom_dout_6_inv SinCos1/rom_dout_6
+SinCos1/rom_dout_7_inv SinCos1/rom_dout_7
+SinCos1/rom_dout_8_inv SinCos1/rom_dout_8
+SinCos1/rom_dout_9_inv SinCos1/rom_dout_9
+SinCos1/rom_dout_10_inv SinCos1/rom_dout_10
+SinCos1/rom_dout_11_inv SinCos1/rom_dout_11
+SinCos1/rom_dout_12_inv SinCos1/rom_dout_12
+SinCos1/rom_dout_13_inv SinCos1/rom_dout_13
+SinCos1/rom_dout_14_inv SinCos1/rom_dout_14
+SinCos1/rom_dout_15_inv SinCos1/rom_dout_15
+SinCos1/rom_dout_16_inv SinCos1/rom_dout_16
+SinCos1/rom_dout_17_inv SinCos1/rom_dout_17
+SinCos1/rom_dout_18_inv SinCos1/rom_dout_18
+SinCos1/rom_dout_19_inv SinCos1/rom_dout_19
+SinCos1/rom_dout_20_inv SinCos1/rom_dout_20
+SinCos1/rom_dout_21_inv SinCos1/rom_dout_21
+SinCos1/rom_dout_22_inv SinCos1/rom_dout_22
+SinCos1/rom_dout_23_inv SinCos1/rom_dout_23
+SinCos1/rom_dout_24_inv SinCos1/rom_dout_24
+SinCos1/rom_dout_25_inv SinCos1/rom_dout_25
+SinCos1/rom_dout_inv SinCos1/rom_dout
+SinCos1/lx_ne0_inv SinCos1/lx_ne0
+uart_rx1/n8365 uart_rx1/r_Rx_DV
+uart_rx1/n13780 uart_rx1/r_SM_Main_1
+AMDemodulator1/Multiplier2/Multiplier_0_pp_0_0 AMDemodulator1/Multiplier2/regb_b_0
+AMDemodulator1/Multiplier1/Multiplier_0_pp_0_0 AMDemodulator1/Multiplier1/regb_b_0
+[ END MERGED ]
+[ START CLIPPED ]
+SinCos1/rom_dout_25_ffin
+SinCos1/rom_dout_11_ffin
+SinCos1/rom_dout_12_ffin
+AMDemodulator1/Multiplier1/t_Multiplier_0_add_4_9/S1
+AMDemodulator1/Multiplier1/t_Multiplier_0_add_4_9/COUT
+AMDemodulator1/Multiplier1/Cadd_t_Multiplier_0_4_1/S0
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_3_11/S1
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_3_11/COUT
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_3_1/S0
+AMDemodulator1/Multiplier1/Multiplier_0_add_2_8/S1
+AMDemodulator1/Multiplier1/Multiplier_0_add_2_8/COUT
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_2_1/S0
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_1_9/S1
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_1_9/COUT
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_1_1/S0
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_0_9/S1
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_0_9/COUT
+AMDemodulator1/Multiplier1/Cadd_Multiplier_0_0_1/S0
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_10_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_10_6/COUT
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_10/S1
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_10/S0
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_8_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_8_6/COUT
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_8/S1
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_8/S0
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_6_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_6_6/COUT
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_6/S0
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_4_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_4_6/COUT
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_4/S1
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_4/S0
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_2_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_2_6/COUT
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_2/S1
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_2/S0
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_0_6/S1
+AMDemodulator1/Multiplier1/Multiplier_0_Cadd_0_6/COUT
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_0/S1
+AMDemodulator1/Multiplier1/Multiplier_0_cin_lr_add_0/S0
+AMDemodulator1/Multiplier2/t_Multiplier_0_add_4_9/S1
+AMDemodulator1/Multiplier2/t_Multiplier_0_add_4_9/COUT
+AMDemodulator1/Multiplier2/Cadd_t_Multiplier_0_4_1/S0
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_3_11/S1
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_3_11/COUT
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_3_1/S0
+AMDemodulator1/Multiplier2/Multiplier_0_add_2_8/S1
+AMDemodulator1/Multiplier2/Multiplier_0_add_2_8/COUT
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_2_1/S0
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_1_9/S1
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_1_9/COUT
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_1_1/S0
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_0_9/S1
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_0_9/COUT
+AMDemodulator1/Multiplier2/Cadd_Multiplier_0_0_1/S0
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_10_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_10_6/COUT
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_10/S1
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_10/S0
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_8_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_8_6/COUT
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_8/S1
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_8/S0
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_6_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_6_6/COUT
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_6/S0
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_4_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_4_6/COUT
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_4/S1
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_4/S0
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_2_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_2_6/COUT
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_2/S1
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_2/S0
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_0_6/S1
+AMDemodulator1/Multiplier2/Multiplier_0_Cadd_0_6/COUT
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_0/S1
+AMDemodulator1/Multiplier2/Multiplier_0_cin_lr_add_0/S0
+AMDemodulator1/add_517_1/S1
+AMDemodulator1/add_517_1/S0
+AMDemodulator1/add_517_1/CI
+AMDemodulator1/add_517_3/S0
+AMDemodulator1/add_517_19/CO
+AMDemodulator1/add_497_1/S1
+AMDemodulator1/add_497_1/S0
+AMDemodulator1/add_497_1/CI
+AMDemodulator1/add_497_3/S0
+AMDemodulator1/add_497_19/CO
+AMDemodulator1/add_557_1/S1
+AMDemodulator1/add_557_1/S0
+AMDemodulator1/add_557_1/CI
+AMDemodulator1/add_557_3/S0
+AMDemodulator1/add_557_17/CO
+AMDemodulator1/sub_78_add_2_2/S1
+AMDemodulator1/sub_78_add_2_2/S0
+AMDemodulator1/sub_78_add_2_2/CI
+AMDemodulator1/sub_78_add_2_4/S1
+AMDemodulator1/sub_78_add_2_4/S0
+AMDemodulator1/sub_78_add_2_6/S1
+AMDemodulator1/sub_78_add_2_6/S0
+AMDemodulator1/sub_78_add_2_8/S1
+AMDemodulator1/sub_78_add_2_8/S0
+AMDemodulator1/add_477_1/S1
+AMDemodulator1/add_477_1/S0
+AMDemodulator1/add_477_1/CI
+AMDemodulator1/add_477_3/S0
+AMDemodulator1/add_477_19/CO
+AMDemodulator1/add_537_1/S1
+AMDemodulator1/add_537_1/S0
+AMDemodulator1/add_537_1/CI
+AMDemodulator1/add_537_3/S0
+AMDemodulator1/add_537_19/CO
+AMDemodulator1/add_617_1/S1
+AMDemodulator1/add_617_1/S0
+AMDemodulator1/add_617_1/CI
+AMDemodulator1/add_617_3/S0
+AMDemodulator1/add_617_11/CO
+AMDemodulator1/add_597_1/S1
+AMDemodulator1/add_597_1/S0
+AMDemodulator1/add_597_1/CI
+AMDemodulator1/add_597_3/S0
+AMDemodulator1/add_597_13/CO
+AMDemodulator1/add_577_1/S1
+AMDemodulator1/add_577_1/S0
+AMDemodulator1/add_577_1/CI
+AMDemodulator1/add_577_3/S0
+AMDemodulator1/add_577_15/CO
+AMDemodulator1/sub_78_add_2_10/S1
+AMDemodulator1/sub_78_add_2_10/S0
+AMDemodulator1/sub_78_add_2_12/S1
+AMDemodulator1/sub_78_add_2_12/S0
+AMDemodulator1/sub_78_add_2_14/S1
+AMDemodulator1/sub_78_add_2_14/S0
+AMDemodulator1/sub_78_add_2_16/S1
+AMDemodulator1/sub_78_add_2_16/S0
+AMDemodulator1/sub_78_add_2_18/S0
+AMDemodulator1/sub_78_add_2_18/CO
+AMDemodulator1/MultResult1_23__I_0_2/S0
+AMDemodulator1/MultResult1_23__I_0_2/CI
+AMDemodulator1/MultResult1_23__I_0_26/S1
+AMDemodulator1/MultResult1_23__I_0_26/CO
+AMDemodulator1/add_457_1/S1
+AMDemodulator1/add_457_1/S0
+AMDemodulator1/add_457_1/CI
+AMDemodulator1/add_457_3/S0
+AMDemodulator1/add_457_19/CO
+AMDemodulator1/add_437_1/S1
+AMDemodulator1/add_437_1/S0
+AMDemodulator1/add_437_1/CI
+AMDemodulator1/add_437_3/S0
+AMDemodulator1/add_437_19/CO
+AMDemodulator1/add_148_1/S1
+AMDemodulator1/add_148_1/S0
+AMDemodulator1/add_148_1/CI
+AMDemodulator1/add_148_3/S1
+AMDemodulator1/add_148_3/S0
+AMDemodulator1/add_148_5/S1
+AMDemodulator1/add_148_5/S0
+AMDemodulator1/add_148_7/S1
+AMDemodulator1/add_148_7/S0
+AMDemodulator1/add_148_9/S1
+AMDemodulator1/add_148_9/S0
+AMDemodulator1/add_148_11/S1
+AMDemodulator1/add_148_11/S0
+AMDemodulator1/add_148_13/S1
+AMDemodulator1/add_148_13/S0
+AMDemodulator1/add_148_15/S1
+AMDemodulator1/add_148_15/S0
+AMDemodulator1/add_148_17/S0
+AMDemodulator1/add_148_17/CO
+AMDemodulator1/add_3288_2/S0
+AMDemodulator1/add_3288_2/CI
+AMDemodulator1/add_3288_8/S1
+AMDemodulator1/add_3288_8/CO
+uart_rx1/r_Clock_Count_932_add_4_1/S0
+uart_rx1/r_Clock_Count_932_add_4_1/CI
+uart_rx1/r_Clock_Count_932_add_4_17/S1
+uart_rx1/r_Clock_Count_932_add_4_17/CO
+CIC1Cos/add_1019_37/CO
+CIC1Cos/add_1013_36/CO
+CIC1Cos/add_1009_1/S1
+CIC1Cos/add_1009_1/S0
+CIC1Cos/add_1009_1/CI
+CIC1Cos/add_1009_37/CO
+CIC1Cos/add_1008_2/S0
+CIC1Cos/add_1008_2/CI
+CIC1Cos/add_1008_36/CO
+CIC1Cos/add_1018_36/CO
+CIC1Cos/add_1018_2/S0
+CIC1Cos/add_1018_2/CI
+CIC1Cos/add_1053_37/S1
+CIC1Cos/add_1053_37/CO
+CIC1Cos/add_1049_1/S1
+CIC1Cos/add_1049_1/S0
+CIC1Cos/add_1049_1/CI
+CIC1Cos/add_1049_37/CO
+CIC1Cos/add_1048_1/S0
+CIC1Cos/add_1048_1/CI
+CIC1Cos/add_1048_37/S1
+CIC1Cos/add_1048_37/CO
+CIC1Cos/add_1044_1/S1
+CIC1Cos/add_1044_1/S0
+CIC1Cos/add_1044_1/CI
+CIC1Cos/add_1044_37/CO
+CIC1Cos/add_1043_1/S0
+CIC1Cos/add_1043_1/CI
+CIC1Cos/add_1007_2/S0
+CIC1Cos/add_1007_2/CI
+CIC1Cos/add_1007_cout/S1
+CIC1Cos/add_1007_cout/CO
+CIC1Cos/add_1012_2/S0
+CIC1Cos/add_1012_2/CI
+CIC1Cos/add_1012_cout/S1
+CIC1Cos/add_1012_cout/CO
+CIC1Cos/add_1017_2/S0
+CIC1Cos/add_1017_2/CI
+CIC1Cos/add_1017_cout/S1
+CIC1Cos/add_1017_cout/CO
+CIC1Cos/add_1022_2/S0
+CIC1Cos/add_1022_2/CI
+CIC1Cos/add_1022_cout/S1
+CIC1Cos/add_1022_cout/CO
+CIC1Cos/add_1027_2/S0
+CIC1Cos/add_1027_2/CI
+CIC1Cos/add_1027_cout/S1
+CIC1Cos/add_1027_cout/CO
+CIC1Cos/add_10_1/S0
+CIC1Cos/add_10_1/CI
+CIC1Cos/add_10_17/S1
+CIC1Cos/add_10_17/CO
+CIC1Cos/add_1042_1/S0
+CIC1Cos/add_1042_1/CI
+CIC1Cos/add_1042_37/CO
+CIC1Cos/add_1047_1/S0
+CIC1Cos/add_1047_1/CI
+CIC1Cos/add_1047_37/CO
+CIC1Cos/add_1052_1/S0
+CIC1Cos/add_1052_1/CI
+CIC1Cos/add_1052_37/CO
+CIC1Cos/add_1067_1/S0
+CIC1Cos/add_1067_1/CI
+CIC1Cos/add_1067_37/CO
+CIC1Cos/add_1072_1/S1
+CIC1Cos/add_1072_1/S0
+CIC1Cos/add_1072_1/CI
+CIC1Cos/add_1072_3/S1
+CIC1Cos/add_1072_3/S0
+CIC1Cos/add_1072_5/S1
+CIC1Cos/add_1072_5/S0
+CIC1Cos/add_1072_7/S1
+CIC1Cos/add_1072_7/S0
+CIC1Cos/add_1072_9/S1
+CIC1Cos/add_1072_9/S0
+CIC1Cos/add_1072_11/S1
+CIC1Cos/add_1072_11/S0
+CIC1Cos/add_1072_13/S1
+CIC1Cos/add_1072_13/S0
+CIC1Cos/add_1072_15/S1
+CIC1Cos/add_1072_15/S0
+CIC1Cos/add_1072_17/S1
+CIC1Cos/add_1072_17/S0
+CIC1Cos/add_1072_19/S1
+CIC1Cos/add_1072_19/S0
+CIC1Cos/add_1072_21/S1
+CIC1Cos/add_1072_21/S0
+CIC1Cos/add_1072_23/S1
+CIC1Cos/add_1072_23/S0
+CIC1Cos/add_1072_25/S1
+CIC1Cos/add_1072_25/S0
+CIC1Cos/add_1072_27/S1
+CIC1Cos/add_1072_27/S0
+CIC1Cos/add_1072_29/S1
+CIC1Cos/add_1072_29/S0
+CIC1Cos/add_1072_31/S1
+CIC1Cos/add_1072_31/S0
+CIC1Cos/add_1072_33/S1
+CIC1Cos/add_1072_33/S0
+CIC1Cos/add_1072_35/S1
+CIC1Cos/add_1072_35/S0
+CIC1Cos/add_1072_37/S0
+CIC1Cos/add_1072_37/CO
+CIC1Cos/add_1043_37/S1
+CIC1Cos/add_1043_37/CO
+CIC1Cos/add_1074_1/S1
+CIC1Cos/add_1074_1/S0
+CIC1Cos/add_1074_1/CI
+CIC1Cos/add_1074_3/S1
+CIC1Cos/add_1074_3/S0
+CIC1Cos/add_1074_5/S1
+CIC1Cos/add_1074_5/S0
+CIC1Cos/add_1074_7/S1
+CIC1Cos/add_1074_7/S0
+CIC1Cos/add_1074_9/S1
+CIC1Cos/add_1074_9/S0
+CIC1Cos/add_1074_11/S1
+CIC1Cos/add_1074_11/S0
+CIC1Cos/add_1074_13/S1
+CIC1Cos/add_1074_13/S0
+CIC1Cos/add_1074_15/S1
+CIC1Cos/add_1074_15/S0
+CIC1Cos/add_1074_17/S1
+CIC1Cos/add_1074_17/S0
+CIC1Cos/add_1074_19/S1
+CIC1Cos/add_1074_19/S0
+CIC1Cos/add_1074_21/S1
+CIC1Cos/add_1074_21/S0
+CIC1Cos/add_1074_37/S1
+CIC1Cos/add_1074_37/CO
+CIC1Cos/add_1073_1/S1
+CIC1Cos/add_1073_1/S0
+CIC1Cos/add_1073_1/CI
+CIC1Cos/add_1073_3/S1
+CIC1Cos/add_1073_3/S0
+CIC1Cos/add_1073_5/S1
+CIC1Cos/add_1073_5/S0
+CIC1Cos/add_1073_7/S1
+CIC1Cos/add_1073_7/S0
+CIC1Cos/add_1073_9/S1
+CIC1Cos/add_1073_9/S0
+CIC1Cos/add_1073_11/S1
+CIC1Cos/add_1073_11/S0
+CIC1Cos/add_1073_13/S1
+CIC1Cos/add_1073_13/S0
+CIC1Cos/add_1073_15/S1
+CIC1Cos/add_1073_15/S0
+CIC1Cos/add_1073_17/S1
+CIC1Cos/add_1073_17/S0
+CIC1Cos/add_1073_19/S1
+CIC1Cos/add_1073_19/S0
+CIC1Cos/add_1073_21/S1
+CIC1Cos/add_1073_21/S0
+CIC1Cos/add_1073_37/S1
+CIC1Cos/add_1073_37/CO
+CIC1Cos/add_1069_1/S1
+CIC1Cos/add_1069_1/S0
+CIC1Cos/add_1069_1/CI
+CIC1Cos/add_1069_37/CO
+CIC1Cos/add_1068_1/S0
+CIC1Cos/add_1068_1/CI
+CIC1Cos/add_1068_37/S1
+CIC1Cos/add_1068_37/CO
+CIC1Cos/add_1014_1/S1
+CIC1Cos/add_1014_1/S0
+CIC1Cos/add_1014_1/CI
+CIC1Cos/add_1054_1/S1
+CIC1Cos/add_1054_1/S0
+CIC1Cos/add_1054_1/CI
+CIC1Cos/add_1029_1/S1
+CIC1Cos/add_1029_1/S0
+CIC1Cos/add_1029_1/CI
+CIC1Cos/add_1029_37/CO
+CIC1Cos/add_1028_2/S0
+CIC1Cos/add_1028_2/CI
+CIC1Cos/add_1054_37/CO
+CIC1Cos/add_1053_1/S0
+CIC1Cos/add_1053_1/CI
+CIC1Cos/add_1024_37/CO
+CIC1Cos/add_1028_36/CO
+CIC1Cos/add_1024_1/S1
+CIC1Cos/add_1024_1/S0
+CIC1Cos/add_1024_1/CI
+CIC1Cos/add_1023_2/S0
+CIC1Cos/add_1023_2/CI
+CIC1Cos/add_1023_36/CO
+CIC1Cos/add_1019_1/S1
+CIC1Cos/add_1019_1/S0
+CIC1Cos/add_1019_1/CI
+CIC1Cos/add_1014_37/CO
+CIC1Cos/add_1013_2/S0
+CIC1Cos/add_1013_2/CI
+ncoGen/phase_accum_63__I_0_12_2/S0
+ncoGen/phase_accum_63__I_0_12_2/CI
+ncoGen/phase_accum_63__I_0_12_64/CO
+CIC1Sin/add_1004_1/S1
+CIC1Sin/add_1004_1/S0
+CIC1Sin/add_1004_1/CI
+CIC1Sin/add_1004_37/CO
+CIC1Sin/add_1003_2/S0
+CIC1Sin/add_1003_2/CI
+CIC1Sin/add_989_37/CO
+CIC1Sin/add_988_2/S0
+CIC1Sin/add_988_2/CI
+CIC1Sin/add_988_36/CO
+CIC1Sin/add_984_2/S0
+CIC1Sin/add_984_2/CI
+CIC1Sin/add_984_36/CO
+CIC1Sin/add_1003_36/CO
+CIC1Sin/add_999_1/S1
+CIC1Sin/add_999_1/S0
+CIC1Sin/add_999_1/CI
+CIC1Sin/add_987_2/S0
+CIC1Sin/add_987_2/CI
+CIC1Sin/add_987_cout/S1
+CIC1Sin/add_987_cout/CO
+CIC1Sin/add_992_2/S0
+CIC1Sin/add_992_2/CI
+CIC1Sin/add_992_cout/S1
+CIC1Sin/add_992_cout/CO
+CIC1Sin/add_997_2/S0
+CIC1Sin/add_997_2/CI
+CIC1Sin/add_997_cout/S1
+CIC1Sin/add_997_cout/CO
+CIC1Sin/add_1002_2/S0
+CIC1Sin/add_1002_2/CI
+CIC1Sin/add_1002_cout/S1
+CIC1Sin/add_1002_cout/CO
+CIC1Sin/add_10_1/S0
+CIC1Sin/add_10_1/CI
+CIC1Sin/add_10_17/S1
+CIC1Sin/add_10_17/CO
+CIC1Sin/add_1032_1/S0
+CIC1Sin/add_1032_1/CI
+CIC1Sin/add_1032_37/CO
+CIC1Sin/add_1037_1/S0
+CIC1Sin/add_1037_1/CI
+CIC1Sin/add_1037_37/CO
+CIC1Sin/add_1057_1/S1
+CIC1Sin/add_1057_1/S0
+CIC1Sin/add_1057_1/CI
+CIC1Sin/add_1057_3/S1
+CIC1Sin/add_1057_3/S0
+CIC1Sin/add_1057_5/S1
+CIC1Sin/add_1057_5/S0
+CIC1Sin/add_1057_7/S1
+CIC1Sin/add_1057_7/S0
+CIC1Sin/add_1057_9/S1
+CIC1Sin/add_1057_9/S0
+CIC1Sin/add_1057_11/S1
+CIC1Sin/add_1057_11/S0
+CIC1Sin/add_1057_13/S1
+CIC1Sin/add_1057_13/S0
+CIC1Sin/add_1057_15/S1
+CIC1Sin/add_1057_15/S0
+CIC1Sin/add_1057_17/S1
+CIC1Sin/add_1057_17/S0
+CIC1Sin/add_1057_19/S1
+CIC1Sin/add_1057_19/S0
+CIC1Sin/add_1057_21/S1
+CIC1Sin/add_1057_21/S0
+CIC1Sin/add_1057_23/S1
+CIC1Sin/add_1057_23/S0
+CIC1Sin/add_1057_25/S1
+CIC1Sin/add_1057_25/S0
+CIC1Sin/add_1057_27/S1
+CIC1Sin/add_1057_27/S0
+CIC1Sin/add_1057_29/S1
+CIC1Sin/add_1057_29/S0
+CIC1Sin/add_1057_31/S1
+CIC1Sin/add_1057_31/S0
+CIC1Sin/add_1057_33/S1
+CIC1Sin/add_1057_33/S0
+CIC1Sin/add_1057_35/S1
+CIC1Sin/add_1057_35/S0
+CIC1Sin/add_1057_37/S0
+CIC1Sin/add_1057_37/CO
+CIC1Sin/add_1062_1/S0
+CIC1Sin/add_1062_1/CI
+CIC1Sin/add_1062_37/CO
+CIC1Sin/add_1077_1/S0
+CIC1Sin/add_1077_1/CI
+CIC1Sin/add_1077_37/CO
+CIC1Sin/add_983_1/S1
+CIC1Sin/add_983_1/S0
+CIC1Sin/add_983_1/CI
+CIC1Sin/add_1039_1/S1
+CIC1Sin/add_1039_1/S0
+CIC1Sin/add_1039_1/CI
+CIC1Sin/add_999_37/CO
+CIC1Sin/add_998_2/S0
+CIC1Sin/add_998_2/CI
+CIC1Sin/add_1034_37/CO
+CIC1Sin/add_983_37/CO
+CIC1Sin/add_1079_1/S1
+CIC1Sin/add_1079_1/S0
+CIC1Sin/add_1079_1/CI
+CIC1Sin/add_1079_37/CO
+CIC1Sin/add_1078_1/S0
+CIC1Sin/add_1078_1/CI
+CIC1Sin/add_1078_37/S1
+CIC1Sin/add_1078_37/CO
+CIC1Sin/add_1064_1/S1
+CIC1Sin/add_1064_1/S0
+CIC1Sin/add_1064_1/CI
+CIC1Sin/add_1064_37/CO
+CIC1Sin/add_1063_1/S0
+CIC1Sin/add_1063_1/CI
+CIC1Sin/add_1039_37/CO
+CIC1Sin/add_1038_1/S0
+CIC1Sin/add_1038_1/CI
+CIC1Sin/add_982_2/S0
+CIC1Sin/add_982_2/CI
+CIC1Sin/add_998_36/CO
+CIC1Sin/add_994_1/S1
+CIC1Sin/add_994_1/S0
+CIC1Sin/add_994_1/CI
+CIC1Sin/add_1063_37/S1
+CIC1Sin/add_1063_37/CO
+CIC1Sin/add_1059_1/S1
+CIC1Sin/add_1059_1/S0
+CIC1Sin/add_1059_1/CI
+CIC1Sin/add_1059_3/S1
+CIC1Sin/add_1059_3/S0
+CIC1Sin/add_1059_5/S1
+CIC1Sin/add_1059_5/S0
+CIC1Sin/add_1059_7/S1
+CIC1Sin/add_1059_7/S0
+CIC1Sin/add_1059_9/S1
+CIC1Sin/add_1059_9/S0
+CIC1Sin/add_1059_11/S1
+CIC1Sin/add_1059_11/S0
+CIC1Sin/add_1059_13/S1
+CIC1Sin/add_1059_13/S0
+CIC1Sin/add_1059_15/S1
+CIC1Sin/add_1059_15/S0
+CIC1Sin/add_1059_17/S1
+CIC1Sin/add_1059_17/S0
+CIC1Sin/add_1059_19/S1
+CIC1Sin/add_1059_19/S0
+CIC1Sin/add_1059_21/S1
+CIC1Sin/add_1059_21/S0
+CIC1Sin/add_1059_37/S1
+CIC1Sin/add_1059_37/CO
+CIC1Sin/add_1058_1/S1
+CIC1Sin/add_1058_1/S0
+CIC1Sin/add_1058_1/CI
+CIC1Sin/add_1058_3/S1
+CIC1Sin/add_1058_3/S0
+CIC1Sin/add_1058_5/S1
+CIC1Sin/add_1058_5/S0
+CIC1Sin/add_1058_7/S1
+CIC1Sin/add_1058_7/S0
+CIC1Sin/add_1058_9/S1
+CIC1Sin/add_1058_9/S0
+CIC1Sin/add_1058_11/S1
+CIC1Sin/add_1058_11/S0
+CIC1Sin/add_1058_13/S1
+CIC1Sin/add_1058_13/S0
+CIC1Sin/add_1058_15/S1
+CIC1Sin/add_1058_15/S0
+CIC1Sin/add_1058_17/S1
+CIC1Sin/add_1058_17/S0
+CIC1Sin/add_1058_19/S1
+CIC1Sin/add_1058_19/S0
+CIC1Sin/add_1058_21/S1
+CIC1Sin/add_1058_21/S0
+CIC1Sin/add_1058_37/S1
+CIC1Sin/add_1058_37/CO
+CIC1Sin/add_994_37/CO
+CIC1Sin/add_993_2/S0
+CIC1Sin/add_993_2/CI
+CIC1Sin/add_1033_1/S0
+CIC1Sin/add_1033_1/CI
+CIC1Sin/add_1033_37/S1
+CIC1Sin/add_1033_37/CO
+CIC1Sin/add_982_cout/S1
+CIC1Sin/add_982_cout/CO
+CIC1Sin/add_1038_37/S1
+CIC1Sin/add_1038_37/CO
+CIC1Sin/add_1034_1/S1
+CIC1Sin/add_1034_1/S0
+CIC1Sin/add_1034_1/CI
+CIC1Sin/add_993_36/CO
+CIC1Sin/add_989_1/S1
+CIC1Sin/add_989_1/S0
+CIC1Sin/add_989_1/CI
+sub_38_add_2_1/S0
+sub_38_add_2_1/CI
+sub_38_add_2_61/CO
+sub_37_add_2_1/S0
+sub_37_add_2_1/CI
+sub_37_add_2_63/S1
+sub_37_add_2_63/CO
+add_702_1/S1
+add_702_1/S0
+add_702_1/CI
+SinCos1/neg_rom_dout_s_n_0/S1
+SinCos1/neg_rom_dout_s_n_0/S0
+SinCos1/neg_rom_dout_c_n_6/COUT
+SinCos1/neg_rom_dout_c_n_0/S1
+SinCos1/neg_rom_dout_c_n_0/S0
+SinCos1/neg_rom_dout_s_n_6/COUT
+SinCos1/neg_rom_addr0_r_n_3/S1
+SinCos1/neg_rom_addr0_r_n_3/COUT
+SinCos1/neg_rom_addr0_r_n_0/S0
+add_702_63/CO
+uart_tx1/UartClk_933_965_add_4_1/S0
+uart_tx1/UartClk_933_965_add_4_1/CI
+uart_tx1/UartClk_933_965_add_4_3/CO
+uart_tx1/r_Clock_Count_935_add_4_1/S0
+uart_tx1/r_Clock_Count_935_add_4_1/CI
+uart_tx1/r_Clock_Count_935_add_4_17/S1
+uart_tx1/r_Clock_Count_935_add_4_17/CO
+PWM1/counter_929_add_4_1/S0
+PWM1/counter_929_add_4_1/CI
+PWM1/counter_929_add_4_11/S1
+PWM1/counter_929_add_4_11/CO
+PWM1/sub_718_add_2_1/S1
+PWM1/sub_718_add_2_1/S0
+PWM1/sub_718_add_2_1/CI
+PWM1/sub_718_add_2_3/S1
+PWM1/sub_718_add_2_3/S0
+PWM1/sub_718_add_2_5/S1
+PWM1/sub_718_add_2_5/S0
+PWM1/sub_718_add_2_7/S1
+PWM1/sub_718_add_2_7/S0
+PWM1/sub_718_add_2_9/S1
+PWM1/sub_718_add_2_9/S0
+PWM1/sub_718_add_2_11/S0
+PWM1/sub_718_add_2_11/CO
+Mixer1/unary_minus_6_add_3_1/S0
+Mixer1/unary_minus_6_add_3_1/CI
+Mixer1/unary_minus_6_add_3_13/S1
+Mixer1/unary_minus_6_add_3_13/CO
+Mixer1/unary_minus_7_add_3_1/S0
+Mixer1/unary_minus_7_add_3_1/CI
+Mixer1/unary_minus_7_add_3_13/S1
+Mixer1/unary_minus_7_add_3_13/CO
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.11.2.446 -- WARNING: Map write only section -- Sun Apr 05 20:40:29 2020
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+LOCATE COMP "o_Tx_Serial" SITE "74" ;
+LOCATE COMP "MYLED[7]" SITE "107" ;
+LOCATE COMP "MYLED[6]" SITE "106" ;
+LOCATE COMP "MYLED[5]" SITE "105" ;
+LOCATE COMP "MYLED[4]" SITE "104" ;
+LOCATE COMP "MYLED[3]" SITE "100" ;
+LOCATE COMP "MYLED[2]" SITE "99" ;
+LOCATE COMP "MYLED[1]" SITE "98" ;
+LOCATE COMP "MYLED[0]" SITE "97" ;
+LOCATE COMP "XOut" SITE "58" ;
+LOCATE COMP "DiffOut" SITE "122" ;
+LOCATE COMP "PWMOut" SITE "43" ;
+LOCATE COMP "sinGen" SITE "142" ;
+LOCATE COMP "sin_out" SITE "54" ;
+LOCATE COMP "i_Rx_Serial" SITE "73" ;
+LOCATE COMP "XIn" SITE "3" ;
+LOCATE COMP "RFIn" SITE "133" ;
+FREQUENCY NET "osc_clk" 80.000000 MHz ;
+USE PRIMARY NET "osc_clk" ;
+FREQUENCY NET "XIn_c" 8.000000 MHz ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

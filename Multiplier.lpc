@@ -1,0 +1,44 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-7000HE
+PartName=LCMXO2-7000HE-4TG144C
+SpeedGrade=4
+Package=TQFP144
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Multiplier
+CoreRevision=4.9
+ModuleName=Multiplier
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=01/10/2020
+Time=19:55:32
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+pmi_implemenntation=LUT
+pmi_const_coeff=No
+pmi_coeff_value=2
+pmi_ram_mult=No
+pmi_dataa_width=12
+pmi_datab_width=12
+pmi_datap_width=24
+pmi_signa=Signed
+pmi_signb=Signed
+pmi_additional_pipeline=1
+pmi_input_reg=Yes
+pmi_output_reg=Yes
+
+[Command]
+cmd_line= -w -n Multiplier -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type dspmult -simple_portname -pfu_mult -widtha 12 -widthb 12 -widthp 24 -signed -PL_stages 1 -input_reg -output_reg -clk0 -ce0 -rst0

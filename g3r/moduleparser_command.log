@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.10_x64/bin/nt64/moduleparser.exe -PROJ g3r -pf C:/lscc/diamond/3.10_x64/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pkg C:/lscc/diamond/3.10_x64/cae_library/vhdl_packages/vdbs -lst C:/Users/user/lattice/FPGASDR/g3r/source_files.lst

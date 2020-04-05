@@ -1,0 +1,2 @@
+@W: MT246 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\pll.v":64:12:64:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock PLL|CLKOP_inferred_clock with period 8.14ns. Please declare a user-defined clock on object "n:PLL1.CLKOP"

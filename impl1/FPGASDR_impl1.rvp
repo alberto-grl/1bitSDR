@@ -1,0 +1,47 @@
+#-- Lattice Semiconductor Corporation Ltd.
+#-- Bali Reveal project file
+
+#device options
+[Device]
+part = LCMXO2-7000HE-4TG144C
+family = MachXO2
+device = LCMXO2-7000HE
+speed = 4
+package = TQFP144
+operation = Commercial
+
+#design options
+[Design]
+title = FPGASDR
+path = C:/Users/user/lattice/FPGASDR_3/impl1
+core_generate = C:/Users/user/lattice/FPGASDR_3/impl1
+search_path = C:/Users/user/lattice/FPGASDR_3
+top = top
+lpf = C:/Users/user/lattice/FPGASDR_3/FPGASDR.lpf
+synthesis = lse
+
+#strategy options
+VHDL2008 = false
+
+#HDLs options
+[HDLs]
+C:/Users/user/lattice/FPGASDR_3/impl1/source/top.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/impl1/source/UartRX.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/impl1/source/UartTX.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/NCO.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/Mixer.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/CIC.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/PWM.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/Multiplier.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/HP_shift.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/AMDemod.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/SinCos.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/PLL.v = Verilog
+C:/Users/user/lattice/FPGASDR_3/NCOAdder.v = Verilog
+[HDL_Defines]
+SBP_SYNTHESIS=
+[HDL_Param]
+[Generated]
+C:/Users/user/lattice/FPGASDR_3/impl1/reveal_workspace/tmpreveal/top_la0_trig_gen.v=Verilog
+C:/Users/user/lattice/FPGASDR_3/impl1/reveal_workspace/tmpreveal/top_la0_gen.v=Verilog
+C:/Users/user/lattice/FPGASDR_3/impl1/reveal_workspace/tmpreveal/top_rvl.v=Verilog,work

@@ -1,0 +1,18 @@
+FREQUENCY NET "osc_clk" 80.000000 MHz ;
+FREQUENCY NET "XIn_c" 8.000000 MHz ;
+RVL_ALIAS "osc_clk" "ncoGen/clk"; 
+RVL_ALIAS "osc_clk" "Mixer1/clk"; 
+RVL_ALIAS "osc_clk" "Mixer1/clk"; 
+RVL_ALIAS "osc_clk" "Mixer1/clk"; 
+RVL_ALIAS "osc_clk" "Mixer1/clk"; 
+RVL_ALIAS "CIC_out_clkCos" "CIC2Cos/d_clk"; 
+RVL_ALIAS "CIC1_out_clkCos" "CIC1_out_clkCos"; 
+RVL_ALIAS "CIC1_out_clkSin" "CIC1_out_clkSin"; 
+RVL_ALIAS "osc_clk" "osc_clk"; 
+RVL_ALIAS "osc_clk" "osc_clk"; 
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" ;
+BLOCK JTAGPATHS ;
+OUTPUT PORT "DiffOut" LOAD 0.000000 pF ;
+COMMERCIAL ;

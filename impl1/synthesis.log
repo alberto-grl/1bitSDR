@@ -1,0 +1,1386 @@
+synthesis:  version Diamond (64-bit) 3.11.2.446
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Apr 05 20:40:03 2020
+
+
+Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is TQFP144.
+The -d option is LCMXO2-7000HE.
+Using package TQFP144.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-7000HE
+
+### Package : TQFP144
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Timing
+Top-level module name = top.
+Target frequency = 80.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/user/lattice/1BitADCFPGASDR (searchpath added)
+-p C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data (searchpath added)
+-p C:/Users/user/lattice/1BitADCFPGASDR/impl1 (searchpath added)
+-p C:/Users/user/lattice/1BitADCFPGASDR (searchpath added)
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/top.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/UartRX.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/UartTX.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/NCO.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/Mixer.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/CIC.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/PWM.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/Multiplier.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/AMDemod.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/SinCos.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/PLL.v
+Verilog design file = C:/Users/user/lattice/1BitADCFPGASDR/NCOAdder.v
+NGD file = FPGASDR_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uartrx.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uarttx.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/nco.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/mixer.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/cic.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/pwm.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/multiplier.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/amdemod.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/sincos.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/pll.v. VERI-1482
+Analyzing Verilog file c:/users/user/lattice/1bitadcfpgasdr/ncoadder.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): top
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v(38): compiling module top. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1032): compiling module PUR. VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/sincos.v(8): compiling module SinCos. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1173): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1051): compiling module ROM16X1A(initval=16'b1111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(723): compiling module MUX21. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): compiling module FADD2B. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111111111111111111111111111111111111111110000000000000000000000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111111111111111111111111111100000000000001111111111100000000000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111111111111111111100000000011111110000001111110000011111000000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111111111111100000011111000011110001110001110001110011100111000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111111111000011100011100110011001001101101101001001011010110100). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111111000110011011010010101010100101001001001101100110001100110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111100100101010110011000000000001110011011010110101010110101010). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1110010110011100010101001111111101101010110011100000000011110000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1101000010100011001111010111110011001100010101100000000011001100). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1111011011100010010110111011101001110011000000100111110010101010). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1000100101001010011001010111111001010010011110001001001001111000). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b01). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b01111111111111111111111111111111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0111111111110000000000000111111111111111111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b011111000001111110000001111111000000000111111111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b011100111001110001110001110001111000011111000000111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0101101011010010010110110110010011001100111000111000011111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1100110001100110110010010010100101010101001011011001100011111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1010101101010101101011011001110000000000011001101010100100111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b01111000000000111001101010110111111110010101000111001101001110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b0110011000000000110101000110011001111101011110011000101000010110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b1010101001111100100000011001110010111011101101001000111011011110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): compiling module ROM64X1A(initval=64'b011110010010010001111001001010011111101010011001010010100100010). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/nco.v(13): compiling module nco_sig. VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/mixer.v(2): compiling module Mixer. VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/cic.v(20): compiling module CIC(width=72,decimation_ratio=4096). VERI-1018
+WARNING - synthesis: c:/users/user/lattice/1bitadcfpgasdr/cic.v(119): expression size 72 truncated to fit in target size 12. VERI-1209
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/pwm.v(1): compiling module PWM. VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/pll.v(8): compiling module PLL. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKFB_DIV=10,CLKOP_DIV=6,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE="DISABLED",CLKOS2_ENABLE="DISABLED",CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=5,CLKOS_TRIM_POL="FALLING"). VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/amdemod.v(8): compiling module AMDemodulator. VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/multiplier.v(8): compiling module Multiplier. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): compiling module ND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): compiling module MULT2. VERI-1018
+Removed duplicate sequential element MultDataD(12 bit), because it is equivalent to MultDataC
+
+Removed duplicate sequential element MultDataA(12 bit), because it is equivalent to MultDataB
+
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uartrx.v(19): compiling module uart_rx(CLKS_PER_BIT=87). VERI-1018
+INFO - synthesis: c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uarttx.v(14): compiling module uart_tx(CLKS_PER_BIT=87). VERI-1018
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Top-level module name = top.
+WARNING - synthesis: I/O Port MYLED[7] 's net has no driver and is unused.
+WARNING - synthesis: I/O Port XOut 's net has no driver and is unused.
+WARNING - synthesis: I/O Port sin_out 's net has no driver and is unused.
+WARNING - synthesis: I/O Port CIC_out_clkSin 's net has no driver and is unused.
+######## Missing driver on net MYLED[7]. Patching with GND.
+######## Missing driver on net XOut. Patching with GND.
+######## Missing driver on net sin_out. Patching with GND.
+######## Missing driver on net CIC_out_clkSin. Patching with GND.
+
+
+
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+WARNING - synthesis: Bit 0 of Register CICGain is stuck at Zero
+WARNING - synthesis: Bit 1 of Register CICGain is stuck at Zero
+WARNING - synthesis: Bit 2 of Register CICGain is stuck at Zero
+WARNING - synthesis: Bit 3 of Register CICGain is stuck at Zero
+WARNING - synthesis: Bit 4 of Register CICGain is stuck at Zero
+WARNING - synthesis: Bit 5 of Register CICGain is stuck at Zero
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Applying 80.000000 MHz constraint to all clocks
+
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FPGASDR_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 2922 of 7209 (40 % )
+AND2 => 13
+CCU2D => 1446
+EHXPLLJ => 1
+FADD2B => 134
+FD1P3AX => 1600
+FD1P3DX => 259
+FD1P3IX => 32
+FD1P3JX => 2
+FD1S3AX => 985
+FD1S3AY => 4
+FD1S3IX => 39
+FD1S3JX => 1
+GSR => 1
+IB => 3
+INV => 33
+L6MUX21 => 1
+LUT4 => 453
+MULT2 => 72
+MUX21 => 54
+ND2 => 44
+OB => 24
+PFUMX => 28
+PUR => 1
+ROM16X1A => 2
+ROM64X1A => 26
+XOR2 => 1
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 4
+  Net : osc_clk, loads : 2584
+  Net : CIC1Sin/CIC1_out_clkSin, loads : 267
+  Net : uart_tx1/UartClk_2, loads : 73
+  Net : XIn_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 52
+Top 10 highest fanout Clock Enables:
+  Net : CIC1Cos/osc_clk_enable_743, loads : 63
+  Net : osc_clk_enable_1457, loads : 63
+  Net : CIC1Cos/osc_clk_enable_783, loads : 50
+  Net : CIC1Cos/osc_clk_enable_833, loads : 50
+  Net : CIC1Sin/osc_clk_enable_646, loads : 50
+  Net : CIC1Sin/osc_clk_enable_696, loads : 50
+  Net : CIC1Sin/osc_clk_enable_596, loads : 50
+  Net : CIC1Sin/osc_clk_enable_546, loads : 50
+  Net : CIC1Cos/osc_clk_enable_1383, loads : 50
+  Net : CIC1Sin/osc_clk_enable_1395, loads : 50
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : CIC1Sin/osc_clk_enable_62, loads : 100
+  Net : CIC1Sin/osc_clk_enable_146, loads : 100
+  Net : CIC1Sin/osc_clk_enable_196, loads : 100
+  Net : CIC1Sin/osc_clk_enable_246, loads : 100
+  Net : CIC1Sin/osc_clk_enable_296, loads : 100
+  Net : CIC1Sin/osc_clk_enable_346, loads : 100
+  Net : CIC1Sin/osc_clk_enable_396, loads : 100
+  Net : CIC1Sin/osc_clk_enable_446, loads : 100
+  Net : CIC1Sin/osc_clk_enable_496, loads : 100
+  Net : CIC1Cos/osc_clk_enable_883, loads : 100
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk2 [get_nets CIC1_out_clkSin]         |   80.000 MHz|   16.267 MHz|   105 *
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk1 [get_nets UartClk[2]]              |   80.000 MHz|   93.563 MHz|     6  
+                                        |             |             |
+create_clock -period 12.500000 -name    |             |             |
+clk0 [get_nets osc_clk]                 |   80.000 MHz|   62.012 MHz|    37 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 150.867  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 22.807  secs
+--------------------------------------------------------------

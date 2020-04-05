@@ -1,0 +1,542 @@
+
+Loading design for application trce from file fpgasdr_impl1_map.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-7000HE
+Package:     TQFP144
+Performance: 4
+Loading device for application trce from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.11_x64/ispfpga.
+Package Status:                     Final          Version 1.39.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.2.446
+Sun Apr 05 20:40:32 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FPGASDR_impl1.tw1 -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml FPGASDR_impl1_map.ncd FPGASDR_impl1.prf 
+Design file:     fpgasdr_impl1_map.ncd
+Preference file: fpgasdr_impl1.prf
+Device,speed:    LCMXO2-7000HE,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "osc_clk" 80.000000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 2.784ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              phase_inc_carrGen_i0_i2  (from osc_clk +)
+   Destination:    FF         Data in        phase_inc_carrGen_i0_i63  (to osc_clk +)
+
+   Delay:              15.118ns  (64.0% logic, 36.0% route), 36 logic levels.
+
+ Constraint Details:
+
+     15.118ns physical path delay SLICE_85 to SLICE_37 exceeds
+     12.500ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 12.334ns) by 2.784ns
+
+ Physical Path Details:
+
+      Data path SLICE_85 to SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452   SLICE_85.CLK to    SLICE_85.Q0 SLICE_85 (from osc_clk)
+ROUTE         3   e 1.234    SLICE_85.Q0 to   SLICE_118.A1 phase_inc_carrGen_2
+C1TOFCO_DE  ---     0.889   SLICE_118.A1 to  SLICE_118.FCO SLICE_118
+ROUTE         1   e 0.001  SLICE_118.FCO to  SLICE_117.FCI n11581
+FCITOFCO_D  ---     0.162  SLICE_117.FCI to  SLICE_117.FCO SLICE_117
+ROUTE         1   e 0.001  SLICE_117.FCO to  SLICE_116.FCI n11582
+FCITOFCO_D  ---     0.162  SLICE_116.FCI to  SLICE_116.FCO SLICE_116
+ROUTE         1   e 0.001  SLICE_116.FCO to  SLICE_115.FCI n11583
+FCITOFCO_D  ---     0.162  SLICE_115.FCI to  SLICE_115.FCO SLICE_115
+ROUTE         1   e 0.001  SLICE_115.FCO to  SLICE_114.FCI n11584
+FCITOFCO_D  ---     0.162  SLICE_114.FCI to  SLICE_114.FCO SLICE_114
+ROUTE         1   e 0.001  SLICE_114.FCO to  SLICE_113.FCI n11585
+FCITOFCO_D  ---     0.162  SLICE_113.FCI to  SLICE_113.FCO SLICE_113
+ROUTE         1   e 0.001  SLICE_113.FCO to  SLICE_112.FCI n11586
+FCITOFCO_D  ---     0.162  SLICE_112.FCI to  SLICE_112.FCO SLICE_112
+ROUTE         1   e 0.001  SLICE_112.FCO to  SLICE_111.FCI n11587
+FCITOFCO_D  ---     0.162  SLICE_111.FCI to  SLICE_111.FCO SLICE_111
+ROUTE         1   e 0.001  SLICE_111.FCO to  SLICE_110.FCI n11588
+FCITOFCO_D  ---     0.162  SLICE_110.FCI to  SLICE_110.FCO SLICE_110
+ROUTE         1   e 0.001  SLICE_110.FCO to  SLICE_109.FCI n11589
+FCITOFCO_D  ---     0.162  SLICE_109.FCI to  SLICE_109.FCO SLICE_109
+ROUTE         1   e 0.001  SLICE_109.FCO to  SLICE_108.FCI n11590
+FCITOFCO_D  ---     0.162  SLICE_108.FCI to  SLICE_108.FCO SLICE_108
+ROUTE         1   e 0.001  SLICE_108.FCO to  SLICE_107.FCI n11591
+FCITOFCO_D  ---     0.162  SLICE_107.FCI to  SLICE_107.FCO SLICE_107
+ROUTE         1   e 0.001  SLICE_107.FCO to  SLICE_106.FCI n11592
+FCITOFCO_D  ---     0.162  SLICE_106.FCI to  SLICE_106.FCO SLICE_106
+ROUTE         1   e 0.001  SLICE_106.FCO to  SLICE_105.FCI n11593
+FCITOFCO_D  ---     0.162  SLICE_105.FCI to  SLICE_105.FCO SLICE_105
+ROUTE         1   e 0.001  SLICE_105.FCO to  SLICE_104.FCI n11594
+FCITOFCO_D  ---     0.162  SLICE_104.FCI to  SLICE_104.FCO SLICE_104
+ROUTE         1   e 0.001  SLICE_104.FCO to  SLICE_103.FCI n11595
+FCITOFCO_D  ---     0.162  SLICE_103.FCI to  SLICE_103.FCO SLICE_103
+ROUTE         1   e 0.001  SLICE_103.FCO to  SLICE_102.FCI n11596
+FCITOFCO_D  ---     0.162  SLICE_102.FCI to  SLICE_102.FCO SLICE_102
+ROUTE         1   e 0.001  SLICE_102.FCO to  SLICE_101.FCI n11597
+FCITOFCO_D  ---     0.162  SLICE_101.FCI to  SLICE_101.FCO SLICE_101
+ROUTE         1   e 0.001  SLICE_101.FCO to  SLICE_100.FCI n11598
+FCITOF1_DE  ---     0.643  SLICE_100.FCI to   SLICE_100.F1 SLICE_100
+ROUTE         1   e 1.234   SLICE_100.F1 to  SLICE_2395.B1 n905
+CTOF_DEL    ---     0.495  SLICE_2395.B1 to  SLICE_2395.F1 SLICE_2395
+ROUTE         1   e 0.480  SLICE_2395.F1 to  SLICE_2395.D0 n2570
+CTOF_DEL    ---     0.495  SLICE_2395.D0 to  SLICE_2395.F0 SLICE_2395
+ROUTE         1   e 1.234  SLICE_2395.F0 to  SLICE_2516.A0 n2701
+CTOF_DEL    ---     0.495  SLICE_2516.A0 to  SLICE_2516.F0 SLICE_2516
+ROUTE         1   e 1.234  SLICE_2516.F0 to    SLICE_67.C0 n2242
+C0TOFCO_DE  ---     1.023    SLICE_67.C0 to   SLICE_67.FCO SLICE_67
+ROUTE         1   e 0.001   SLICE_67.FCO to   SLICE_66.FCI n12208
+FCITOFCO_D  ---     0.162   SLICE_66.FCI to   SLICE_66.FCO SLICE_66
+ROUTE         1   e 0.001   SLICE_66.FCO to   SLICE_65.FCI n12209
+FCITOFCO_D  ---     0.162   SLICE_65.FCI to   SLICE_65.FCO SLICE_65
+ROUTE         1   e 0.001   SLICE_65.FCO to   SLICE_46.FCI n12210
+FCITOFCO_D  ---     0.162   SLICE_46.FCI to   SLICE_46.FCO SLICE_46
+ROUTE         1   e 0.001   SLICE_46.FCO to   SLICE_45.FCI n12211
+FCITOFCO_D  ---     0.162   SLICE_45.FCI to   SLICE_45.FCO SLICE_45
+ROUTE         1   e 0.001   SLICE_45.FCO to   SLICE_44.FCI n12212
+FCITOFCO_D  ---     0.162   SLICE_44.FCI to   SLICE_44.FCO SLICE_44
+ROUTE         1   e 0.001   SLICE_44.FCO to   SLICE_43.FCI n12213
+FCITOFCO_D  ---     0.162   SLICE_43.FCI to   SLICE_43.FCO SLICE_43
+ROUTE         1   e 0.001   SLICE_43.FCO to   SLICE_42.FCI n12214
+FCITOFCO_D  ---     0.162   SLICE_42.FCI to   SLICE_42.FCO SLICE_42
+ROUTE         1   e 0.001   SLICE_42.FCO to   SLICE_41.FCI n12215
+FCITOFCO_D  ---     0.162   SLICE_41.FCI to   SLICE_41.FCO SLICE_41
+ROUTE         1   e 0.001   SLICE_41.FCO to   SLICE_40.FCI n12216
+FCITOFCO_D  ---     0.162   SLICE_40.FCI to   SLICE_40.FCO SLICE_40
+ROUTE         1   e 0.001   SLICE_40.FCO to   SLICE_39.FCI n12217
+FCITOFCO_D  ---     0.162   SLICE_39.FCI to   SLICE_39.FCO SLICE_39
+ROUTE         1   e 0.001   SLICE_39.FCO to   SLICE_38.FCI n12218
+FCITOFCO_D  ---     0.162   SLICE_38.FCI to   SLICE_38.FCO SLICE_38
+ROUTE         1   e 0.001   SLICE_38.FCO to   SLICE_37.FCI n12219
+FCITOF1_DE  ---     0.643   SLICE_37.FCI to    SLICE_37.F1 SLICE_37
+ROUTE         1   e 0.001    SLICE_37.F1 to   SLICE_37.DI1 n2875 (to osc_clk)
+                  --------
+                   15.118   (64.0% logic, 36.0% route), 36 logic levels.
+
+Warning:  65.428MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "XIn_c" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 11.903ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ncoGen/phase_accum_i63  (from osc_clk +)
+   Destination:    Port       Pad            sinGen
+
+   Data Path Delay:     6.863ns  (64.0% logic, 36.0% route), 3 logic levels.
+
+   Clock Path Delay:    1.234ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.234ns delay PLL1/PLLInst_0 to ncoGen/SLICE_724 and
+      6.863ns delay ncoGen/SLICE_724 to sinGen (totaling 8.097ns) meets
+     20.000ns offset PLL1/PLLInst_0 to sinGen by 11.903ns
+
+ Physical Path Details:
+
+      Clock path PLL1/PLLInst_0 to ncoGen/SLICE_724:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 1.234 *LInst_0.CLKOP to *SLICE_724.CLK osc_clk
+                  --------
+                    1.234   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path ncoGen/SLICE_724 to sinGen:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_724.CLK to */SLICE_724.Q1 ncoGen/SLICE_724 (from osc_clk)
+ROUTE         3   e 1.234 */SLICE_724.Q1 to *SLICE_2554.A0 phase_accum_63
+CTOF_DEL    ---     0.495 *SLICE_2554.A0 to *SLICE_2554.F0 ncoGen/SLICE_2554
+ROUTE         1   e 1.234 *SLICE_2554.F0 to      142.PADDO sinGen_c
+DOPAD_DEL   ---     3.448      142.PADDO to        142.PAD sinGen
+                  --------
+                    6.863   (64.0% logic, 36.0% route), 3 logic levels.
+
+Report:    8.097ns is the minimum offset for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "osc_clk" 80.000000 MHz ; |   80.000 MHz|   65.428 MHz|  36 *
+                                        |             |             |
+FREQUENCY NET "XIn_c" 8.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+CLOCK_TO_OUT ALLPORTS 20.000000 ns      |             |             |
+CLKNET "osc_clk" ;                      |    20.000 ns|     8.097 ns|   3  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+n12214                                  |       1|    3659|     89.33%
+                                        |        |        |
+n12213                                  |       1|    3581|     87.43%
+                                        |        |        |
+n12212                                  |       1|    3517|     85.86%
+                                        |        |        |
+n12211                                  |       1|    3395|     82.89%
+                                        |        |        |
+n12215                                  |       1|    3385|     82.64%
+                                        |        |        |
+n12210                                  |       1|    3274|     79.93%
+                                        |        |        |
+n12209                                  |       1|    3105|     75.81%
+                                        |        |        |
+n12216                                  |       1|    2999|     73.22%
+                                        |        |        |
+n12208                                  |       1|    2984|     72.85%
+                                        |        |        |
+n11587                                  |       1|    2918|     71.24%
+                                        |        |        |
+n11586                                  |       1|    2866|     69.97%
+                                        |        |        |
+n12207                                  |       1|    2854|     69.68%
+                                        |        |        |
+n11585                                  |       1|    2791|     68.14%
+                                        |        |        |
+n11588                                  |       1|    2749|     67.11%
+                                        |        |        |
+n12217                                  |       1|    2637|     64.38%
+                                        |        |        |
+n11589                                  |       1|    2626|     64.11%
+                                        |        |        |
+n11590                                  |       1|    2618|     63.92%
+                                        |        |        |
+n12206                                  |       1|    2603|     63.55%
+                                        |        |        |
+n12205                                  |       1|    2481|     60.57%
+                                        |        |        |
+n11584                                  |       1|    2440|     59.57%
+                                        |        |        |
+n11591                                  |       1|    2440|     59.57%
+                                        |        |        |
+n11592                                  |       1|    2437|     59.50%
+                                        |        |        |
+n11593                                  |       1|    2419|     59.06%
+                                        |        |        |
+n12204                                  |       1|    2303|     56.23%
+                                        |        |        |
+n11594                                  |       1|    2167|     52.91%
+                                        |        |        |
+n11583                                  |       1|    2062|     50.34%
+                                        |        |        |
+n12203                                  |       1|    2051|     50.07%
+                                        |        |        |
+n12218                                  |       1|    1982|     48.39%
+                                        |        |        |
+n11595                                  |       1|    1915|     46.75%
+                                        |        |        |
+n12202                                  |       1|    1799|     43.92%
+                                        |        |        |
+n12201                                  |       1|    1667|     40.70%
+                                        |        |        |
+n11596                                  |       1|    1663|     40.60%
+                                        |        |        |
+n12200                                  |       1|    1659|     40.50%
+                                        |        |        |
+n11597                                  |       1|    1615|     39.43%
+                                        |        |        |
+n12199                                  |       1|    1526|     37.26%
+                                        |        |        |
+n12198                                  |       1|    1454|     35.50%
+                                        |        |        |
+n12197                                  |       1|    1436|     35.06%
+                                        |        |        |
+n11582                                  |       1|    1389|     33.91%
+                                        |        |        |
+n11598                                  |       1|    1363|     33.28%
+                                        |        |        |
+n12196                                  |       1|    1189|     29.03%
+                                        |        |        |
+n11599                                  |       1|    1112|     27.15%
+                                        |        |        |
+n11600                                  |       1|    1112|     27.15%
+                                        |        |        |
+n12219                                  |       1|    1076|     26.27%
+                                        |        |        |
+n11601                                  |       1|     943|     23.02%
+                                        |        |        |
+n12195                                  |       1|     941|     22.97%
+                                        |        |        |
+n11602                                  |       1|     822|     20.07%
+                                        |        |        |
+n12194                                  |       1|     798|     19.48%
+                                        |        |        |
+n11603                                  |       1|     701|     17.11%
+                                        |        |        |
+n12193                                  |       1|     589|     14.38%
+                                        |        |        |
+n11604                                  |       1|     579|     14.14%
+                                        |        |        |
+n2875                                   |       1|     559|     13.65%
+                                        |        |        |
+uart_tx1/n13147                         |       1|     540|     13.18%
+                                        |        |        |
+n12872                                  |       4|     540|     13.18%
+                                        |        |        |
+n2876                                   |       1|     517|     12.62%
+                                        |        |        |
+n11581                                  |       1|     496|     12.11%
+                                        |        |        |
+phase_inc_carrGen_2                     |       3|     496|     12.11%
+                                        |        |        |
+phase_inc_carrGen_3                     |       4|     481|     11.74%
+                                        |        |        |
+n2877                                   |       1|     474|     11.57%
+                                        |        |        |
+n2878                                   |       1|     432|     10.55%
+                                        |        |        |
+n12192                                  |       1|     429|     10.47%
+                                        |        |        |
+phase_inc_carrGen_4                     |       4|     412|     10.06%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: uart_tx1/UartClk[2]   Source: uart_tx1/SLICE_35.Q1   Loads: 48
+   No transfer within this clock domain is found
+
+Clock Domain: osc_clk   Source: PLL1/PLLInst_0.CLKOP   Loads: 1359
+   Covered under: FREQUENCY NET "osc_clk" 80.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: uart_tx1/UartClk[2]   Source: uart_tx1/SLICE_35.Q1
+      Covered under: FREQUENCY NET "osc_clk" 80.000000 MHz ;   Transfers: 9
+
+   Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2203.Q0
+      Covered under: FREQUENCY NET "osc_clk" 80.000000 MHz ;   Transfers: 10
+
+Clock Domain: XIn_c   Source: XIn.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2203.Q0   Loads: 153
+   No transfer within this clock domain is found
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4096  Score: 8237034
+Cumulative negative slack: 8237034
+
+Constraints cover 1540544 paths, 2 nets, and 14201 connections (84.61% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.2.446
+Sun Apr 05 20:40:33 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o FPGASDR_impl1.tw1 -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml FPGASDR_impl1_map.ncd FPGASDR_impl1.prf 
+Design file:     fpgasdr_impl1_map.ncd
+Preference file: fpgasdr_impl1.prf
+Device,speed:    LCMXO2-7000HE,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "osc_clk" 80.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              Mixer1/RFInR1_13  (from osc_clk +)
+   Destination:    FF         Data in        Mixer1/RFInR_14  (to osc_clk +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay Mixer1/SLICE_2228 to Mixer1/SLICE_2228 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path Mixer1/SLICE_2228 to Mixer1/SLICE_2228:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *LICE_2228.CLK to *SLICE_2228.Q1 Mixer1/SLICE_2228 (from osc_clk)
+ROUTE         2   e 0.199 *SLICE_2228.Q1 to *SLICE_2228.M0 DiffOut_c (to osc_clk)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "XIn_c" 8.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Preference: CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.116ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              CIC1Sin/d_out_i0_i6  (from osc_clk +)
+   Destination:    Port       Pad            MYLED[0]
+
+   Data Path Delay:     1.601ns  (67.8% logic, 32.2% route), 2 logic levels.
+
+   Clock Path Delay:    0.515ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.515ns delay PLL1/PLLInst_0 to CIC1Sin/SLICE_2224 and
+      1.601ns delay CIC1Sin/SLICE_2224 to MYLED[0] (totaling 2.116ns) meets
+      0.000ns hold offset PLL1/PLLInst_0 to MYLED[0] by 2.116ns
+
+ Physical Path Details:
+
+      Clock path PLL1/PLLInst_0 to CIC1Sin/SLICE_2224:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.515 *LInst_0.CLKOP to *LICE_2224.CLK osc_clk
+                  --------
+                    0.515   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path CIC1Sin/SLICE_2224 to MYLED[0]:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *LICE_2224.CLK to *SLICE_2224.Q0 CIC1Sin/SLICE_2224 (from osc_clk)
+ROUTE         2   e 0.515 *SLICE_2224.Q0 to       97.PADDO MYLED_c_0
+DOPAD_DEL   ---     0.953       97.PADDO to         97.PAD MYLED[0]
+                  --------
+                    1.601   (67.8% logic, 32.2% route), 2 logic levels.
+
+Report:    2.116ns is the maximum offset for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "osc_clk" 80.000000 MHz ; |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+FREQUENCY NET "XIn_c" 8.000000 MHz ;    |            -|            -|   0  
+                                        |             |             |
+CLOCK_TO_OUT ALLPORTS 20.000000 ns      |             |             |
+CLKNET "osc_clk" ;                      |     0.000 ns|     2.116 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: uart_tx1/UartClk[2]   Source: uart_tx1/SLICE_35.Q1   Loads: 48
+   No transfer within this clock domain is found
+
+Clock Domain: osc_clk   Source: PLL1/PLLInst_0.CLKOP   Loads: 1359
+   Covered under: FREQUENCY NET "osc_clk" 80.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: uart_tx1/UartClk[2]   Source: uart_tx1/SLICE_35.Q1
+      Covered under: FREQUENCY NET "osc_clk" 80.000000 MHz ;   Transfers: 9
+
+   Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2203.Q0
+      Covered under: FREQUENCY NET "osc_clk" 80.000000 MHz ;   Transfers: 10
+
+Clock Domain: XIn_c   Source: XIn.PAD   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2203.Q0   Loads: 153
+   No transfer within this clock domain is found
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 1540544 paths, 2 nets, and 14206 connections (84.64% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4096 (setup), 0 (hold)
+Score: 8237034 (setup), 0 (hold)
+Cumulative negative slack: 8237034 (8237034+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

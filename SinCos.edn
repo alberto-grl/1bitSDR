@@ -1,0 +1,2468 @@
+(edif SinCos
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timestamp 2020 1 11 17 46 30)
+      (program "SCUBA" (version "Diamond (64-bit) 3.11.0.396.4"))))
+      (comment "C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n SinCos -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 8 -width 13 -pfu -input_reg -mode 2 -output_reg -area -pipeline 1 ")
+  (library ORCLIB
+    (edifLevel 0)
+    (technology
+      (numberDefinition))
+    (cell AND2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port B
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell FADD2B
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A0
+            (direction INPUT))
+          (port A1
+            (direction INPUT))
+          (port B0
+            (direction INPUT))
+          (port B1
+            (direction INPUT))
+          (port CI
+            (direction INPUT))
+          (port COUT
+            (direction OUTPUT))
+          (port S0
+            (direction OUTPUT))
+          (port S1
+            (direction OUTPUT)))))
+    (cell FD1P3DX
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port D
+            (direction INPUT))
+          (port SP
+            (direction INPUT))
+          (port CK
+            (direction INPUT))
+          (port CD
+            (direction INPUT))
+          (port Q
+            (direction OUTPUT)))))
+    (cell INV
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell MUX21
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port D0
+            (direction INPUT))
+          (port D1
+            (direction INPUT))
+          (port SD
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell ROM16X1A
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port AD3
+            (direction INPUT))
+          (port AD2
+            (direction INPUT))
+          (port AD1
+            (direction INPUT))
+          (port AD0
+            (direction INPUT))
+          (port DO0
+            (direction OUTPUT)))))
+    (cell ROM64X1A
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port AD5
+            (direction INPUT))
+          (port AD4
+            (direction INPUT))
+          (port AD3
+            (direction INPUT))
+          (port AD2
+            (direction INPUT))
+          (port AD1
+            (direction INPUT))
+          (port AD0
+            (direction INPUT))
+          (port DO0
+            (direction OUTPUT)))))
+    (cell VHI
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell VLO
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Z
+            (direction OUTPUT)))))
+    (cell XOR2
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port A
+            (direction INPUT))
+          (port B
+            (direction INPUT))
+          (port Z
+            (direction OUTPUT)))))
+    (cell SinCos
+      (cellType GENERIC)
+      (view view1
+        (viewType NETLIST)
+        (interface
+          (port Clock
+            (direction INPUT))
+          (port ClkEn
+            (direction INPUT))
+          (port Reset
+            (direction INPUT))
+          (port (array (rename Theta "Theta(7:0)") 8)
+            (direction INPUT))
+          (port (array (rename Sine "Sine(12:0)") 13)
+            (direction OUTPUT))
+          (port (array (rename Cosine "Cosine(12:0)") 13)
+            (direction OUTPUT)))
+        (property NGD_DRC_MASK (integer 1))
+        (contents
+          (instance INV_33
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_32
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_31
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_30
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_29
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_28
+            (viewRef view1 
+              (cellRef INV)))
+          (instance XOR2_t1
+            (viewRef view1 
+              (cellRef XOR2)))
+          (instance INV_27
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_26
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_25
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_24
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_23
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_22
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_21
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_20
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_19
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_18
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_17
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_16
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_15
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_14
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_13
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_12
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_11
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_10
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_9
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_8
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_7
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_6
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_5
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_4
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_3
+            (viewRef view1 
+              (cellRef INV)))
+          (instance INV_2
+            (viewRef view1 
+              (cellRef INV)))
+          (instance LUT4_1
+            (viewRef view1 
+              (cellRef ROM16X1A))
+            (property initval
+              (string "0xfffe")))
+          (instance LUT4_0
+            (viewRef view1 
+              (cellRef ROM16X1A))
+            (property initval
+              (string "0xfffe")))
+          (instance INV_1
+            (viewRef view1 
+              (cellRef INV)))
+          (instance AND2_t0
+            (viewRef view1 
+              (cellRef AND2)))
+          (instance INV_0
+            (viewRef view1 
+              (cellRef INV)))
+          (instance FF_62
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_61
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_60
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_59
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_58
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_57
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_56
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_55
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance muxb_57
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_56
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_55
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_54
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_53
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_52
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance FF_54
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_53
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_52
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_51
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_50
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_49
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_48
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_47
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_46
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_45
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_44
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_43
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_42
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_41
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_40
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_39
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_38
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_37
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_36
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_35
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_34
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_33
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_32
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_31
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_30
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_29
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_28
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_27
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance muxb_51
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_50
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_49
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_48
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_47
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_46
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_45
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_44
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_43
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_42
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_41
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_40
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_39
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_38
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_37
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_36
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_35
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_34
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_33
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_32
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_31
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_30
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_29
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_28
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_27
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_26
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance FF_26
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance muxb_25
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_24
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_23
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_22
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_21
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_20
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_19
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_18
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_17
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_16
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_15
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_14
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_13
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_12
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_11
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_10
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_9
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_8
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_7
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_6
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_5
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_4
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_3
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_2
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_1
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance muxb_0
+            (viewRef view1 
+              (cellRef MUX21)))
+          (instance FF_25
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_24
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_23
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_22
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_21
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_20
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_19
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_18
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_17
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_16
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_15
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_14
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_13
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_12
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_11
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_10
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_9
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_8
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_7
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_6
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_5
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_4
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_3
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_2
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_1
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance FF_0
+            (viewRef view1 
+              (cellRef FD1P3DX))
+            (property GSR
+              (string "ENABLED")))
+          (instance neg_rom_addr0_r_n_0
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_addr0_r_n_1
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_addr0_r_n_2
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_addr0_r_n_3
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance triglut_1_0_25
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x0000000000000000")))
+          (instance triglut_1_0_24
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x0000000000000000")))
+          (instance triglut_1_0_23
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xFFFFFFFFFFC00000")))
+          (instance triglut_1_0_22
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xFFFFFFF8003FF800")))
+          (instance triglut_1_0_21
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xFFFFF007F03F07C0")))
+          (instance triglut_1_0_20
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xFFFC0F878E38E738")))
+          (instance triglut_1_0_19
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xFFC38E664DB496B4")))
+          (instance triglut_1_0_18
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xFE3369552926CC66")))
+          (instance triglut_1_0_17
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xF92ACC00736B55AA")))
+          (instance triglut_1_0_16
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xE59C54FF6ACE00F0")))
+          (instance triglut_1_0_15
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xD0A33D7CCC5600CC")))
+          (instance triglut_1_0_14
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xF6E25BBA73027CAA")))
+          (instance triglut_1_0_13
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x894A657E52789278")))
+          (instance triglut_1_0_12
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x0000000000000000")))
+          (instance triglut_1_0_11
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x0000000000000001")))
+          (instance triglut_1_0_10
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x000007FFFFFFFFFE")))
+          (instance triglut_1_0_9
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x003FF8003FFFFFFE")))
+          (instance triglut_1_0_8
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x07C1F81FC01FFFFE")))
+          (instance triglut_1_0_7
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x39CE38E3C3E07FFE")))
+          (instance triglut_1_0_6
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x5AD25B64CCE387FE")))
+          (instance triglut_1_0_5
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xCC66C929552D98FE")))
+          (instance triglut_1_0_4
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xAB55AD9C0066A93E")))
+          (instance triglut_1_0_3
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x1E00E6ADFE54734E")))
+          (instance triglut_1_0_2
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x6600D4667D798A16")))
+          (instance triglut_1_0_1
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0xAA7C819CBBB48EDE")))
+          (instance triglut_1_0_0
+            (viewRef view1 
+              (cellRef ROM64X1A))
+            (property initval
+              (string "0x3C923C94FD4CA522")))
+          (instance neg_rom_dout_s_n_0
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_n_1
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_n_2
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_n_3
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_n_4
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_n_5
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_n_6
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_s_nd
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance scuba_vhi_inst
+            (viewRef view1 
+              (cellRef VHI)))
+          (instance neg_rom_dout_c_n_0
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_c_n_1
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_c_n_2
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_c_n_3
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_c_n_4
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_c_n_5
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance neg_rom_dout_c_n_6
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (instance scuba_vlo_inst
+            (viewRef view1 
+              (cellRef VLO)))
+          (instance neg_rom_dout_c_nd
+            (viewRef view1 
+              (cellRef FADD2B)))
+          (net func_or_inet
+            (joined
+              (portRef AD3 (instanceRef LUT4_0))
+              (portRef DO0 (instanceRef LUT4_1))))
+          (net lx_ne0
+            (joined
+              (portRef A (instanceRef INV_1))
+              (portRef DO0 (instanceRef LUT4_0))))
+          (net lx_ne0_inv
+            (joined
+              (portRef B (instanceRef AND2_t0))
+              (portRef Z (instanceRef INV_1))))
+          (net mx_ctrl_r_1_inv
+            (joined
+              (portRef Z (instanceRef INV_0))))
+          (net rom_addr0_r
+            (joined
+              (portRef D0 (instanceRef muxb_57))
+              (portRef A (instanceRef INV_28))
+              (portRef Q (instanceRef FF_62))))
+          (net rom_addr0_r_1
+            (joined
+              (portRef D0 (instanceRef muxb_56))
+              (portRef A (instanceRef INV_29))
+              (portRef Q (instanceRef FF_61))))
+          (net rom_addr0_r_2
+            (joined
+              (portRef D0 (instanceRef muxb_55))
+              (portRef A (instanceRef INV_30))
+              (portRef Q (instanceRef FF_60))))
+          (net rom_addr0_r_3
+            (joined
+              (portRef D0 (instanceRef muxb_54))
+              (portRef A (instanceRef INV_31))
+              (portRef Q (instanceRef FF_59))))
+          (net rom_addr0_r_4
+            (joined
+              (portRef D0 (instanceRef muxb_53))
+              (portRef A (instanceRef INV_32))
+              (portRef Q (instanceRef FF_58))))
+          (net mx_ctrl_r
+            (joined
+              (portRef SD (instanceRef muxb_52))
+              (portRef A (instanceRef XOR2_t1))
+              (portRef A (instanceRef AND2_t0))
+              (portRef Q (instanceRef FF_56))
+              (portRef SD (instanceRef muxb_57))
+              (portRef SD (instanceRef muxb_56))
+              (portRef SD (instanceRef muxb_55))
+              (portRef SD (instanceRef muxb_54))
+              (portRef SD (instanceRef muxb_53))))
+          (net rom_addr0_r_5
+            (joined
+              (portRef D0 (instanceRef muxb_52))
+              (portRef A (instanceRef INV_33))
+              (portRef Q (instanceRef FF_57))))
+          (net cosromoutsel_i
+            (joined
+              (portRef D (instanceRef FF_28))
+              (portRef Z (instanceRef XOR2_t1))))
+          (net rom_dout
+            (joined
+              (portRef D0 (instanceRef muxb_51))
+              (portRef A (instanceRef INV_15))
+              (portRef Q (instanceRef FF_42))))
+          (net rom_dout_1
+            (joined
+              (portRef D0 (instanceRef muxb_50))
+              (portRef A (instanceRef INV_16))
+              (portRef Q (instanceRef FF_43))))
+          (net rom_dout_2
+            (joined
+              (portRef D0 (instanceRef muxb_49))
+              (portRef A (instanceRef INV_17))
+              (portRef Q (instanceRef FF_44))))
+          (net rom_dout_3
+            (joined
+              (portRef D0 (instanceRef muxb_48))
+              (portRef A (instanceRef INV_18))
+              (portRef Q (instanceRef FF_45))))
+          (net rom_dout_4
+            (joined
+              (portRef D0 (instanceRef muxb_47))
+              (portRef A (instanceRef INV_19))
+              (portRef Q (instanceRef FF_46))))
+          (net rom_dout_5
+            (joined
+              (portRef D0 (instanceRef muxb_46))
+              (portRef A (instanceRef INV_20))
+              (portRef Q (instanceRef FF_47))))
+          (net rom_dout_6
+            (joined
+              (portRef D0 (instanceRef muxb_45))
+              (portRef A (instanceRef INV_21))
+              (portRef Q (instanceRef FF_48))))
+          (net rom_dout_7
+            (joined
+              (portRef D0 (instanceRef muxb_44))
+              (portRef A (instanceRef INV_22))
+              (portRef Q (instanceRef FF_49))))
+          (net rom_dout_8
+            (joined
+              (portRef D0 (instanceRef muxb_43))
+              (portRef A (instanceRef INV_23))
+              (portRef Q (instanceRef FF_50))))
+          (net rom_dout_9
+            (joined
+              (portRef D0 (instanceRef muxb_42))
+              (portRef A (instanceRef INV_24))
+              (portRef Q (instanceRef FF_51))))
+          (net rom_dout_10
+            (joined
+              (portRef D0 (instanceRef muxb_41))
+              (portRef A (instanceRef INV_25))
+              (portRef Q (instanceRef FF_52))))
+          (net rom_dout_11
+            (joined
+              (portRef D0 (instanceRef muxb_40))
+              (portRef A (instanceRef INV_26))
+              (portRef Q (instanceRef FF_53))))
+          (net sinromoutsel
+            (joined
+              (portRef SD (instanceRef muxb_39))
+              (portRef Q (instanceRef FF_27))
+              (portRef SD (instanceRef muxb_51))
+              (portRef SD (instanceRef muxb_50))
+              (portRef SD (instanceRef muxb_49))
+              (portRef SD (instanceRef muxb_48))
+              (portRef SD (instanceRef muxb_47))
+              (portRef SD (instanceRef muxb_46))
+              (portRef SD (instanceRef muxb_45))
+              (portRef SD (instanceRef muxb_44))
+              (portRef SD (instanceRef muxb_43))
+              (portRef SD (instanceRef muxb_42))
+              (portRef SD (instanceRef muxb_41))
+              (portRef SD (instanceRef muxb_40))))
+          (net rom_dout_12
+            (joined
+              (portRef D0 (instanceRef muxb_39))
+              (portRef A (instanceRef INV_27))
+              (portRef Q (instanceRef FF_54))))
+          (net rom_dout_13
+            (joined
+              (portRef D0 (instanceRef muxb_38))
+              (portRef A (instanceRef INV_2))
+              (portRef Q (instanceRef FF_29))))
+          (net rom_dout_14
+            (joined
+              (portRef D0 (instanceRef muxb_37))
+              (portRef A (instanceRef INV_3))
+              (portRef Q (instanceRef FF_30))))
+          (net rom_dout_15
+            (joined
+              (portRef D0 (instanceRef muxb_36))
+              (portRef A (instanceRef INV_4))
+              (portRef Q (instanceRef FF_31))))
+          (net rom_dout_16
+            (joined
+              (portRef D0 (instanceRef muxb_35))
+              (portRef A (instanceRef INV_5))
+              (portRef Q (instanceRef FF_32))))
+          (net rom_dout_17
+            (joined
+              (portRef D0 (instanceRef muxb_34))
+              (portRef A (instanceRef INV_6))
+              (portRef Q (instanceRef FF_33))))
+          (net rom_dout_18
+            (joined
+              (portRef D0 (instanceRef muxb_33))
+              (portRef A (instanceRef INV_7))
+              (portRef Q (instanceRef FF_34))))
+          (net rom_dout_19
+            (joined
+              (portRef D0 (instanceRef muxb_32))
+              (portRef A (instanceRef INV_8))
+              (portRef Q (instanceRef FF_35))))
+          (net rom_dout_20
+            (joined
+              (portRef D0 (instanceRef muxb_31))
+              (portRef A (instanceRef INV_9))
+              (portRef Q (instanceRef FF_36))))
+          (net rom_dout_21
+            (joined
+              (portRef D0 (instanceRef muxb_30))
+              (portRef A (instanceRef INV_10))
+              (portRef Q (instanceRef FF_37))))
+          (net rom_dout_22
+            (joined
+              (portRef D0 (instanceRef muxb_29))
+              (portRef A (instanceRef INV_11))
+              (portRef Q (instanceRef FF_38))))
+          (net rom_dout_23
+            (joined
+              (portRef D0 (instanceRef muxb_28))
+              (portRef A (instanceRef INV_12))
+              (portRef Q (instanceRef FF_39))))
+          (net rom_dout_24
+            (joined
+              (portRef D0 (instanceRef muxb_27))
+              (portRef A (instanceRef INV_13))
+              (portRef Q (instanceRef FF_40))))
+          (net cosromoutsel
+            (joined
+              (portRef SD (instanceRef muxb_26))
+              (portRef Q (instanceRef FF_28))
+              (portRef SD (instanceRef muxb_38))
+              (portRef SD (instanceRef muxb_37))
+              (portRef SD (instanceRef muxb_36))
+              (portRef SD (instanceRef muxb_35))
+              (portRef SD (instanceRef muxb_34))
+              (portRef SD (instanceRef muxb_33))
+              (portRef SD (instanceRef muxb_32))
+              (portRef SD (instanceRef muxb_31))
+              (portRef SD (instanceRef muxb_30))
+              (portRef SD (instanceRef muxb_29))
+              (portRef SD (instanceRef muxb_28))
+              (portRef SD (instanceRef muxb_27))))
+          (net rom_dout_25
+            (joined
+              (portRef D0 (instanceRef muxb_26))
+              (portRef A (instanceRef INV_14))
+              (portRef Q (instanceRef FF_41))))
+          (net out_sel_i
+            (joined
+              (portRef D (instanceRef FF_26))
+              (portRef Z (instanceRef AND2_t0))))
+          (net rom_dout_s
+            (joined
+              (portRef D0 (instanceRef muxb_25))
+              (portRef Z (instanceRef muxb_51))))
+          (net rom_dout_s_1
+            (joined
+              (portRef D0 (instanceRef muxb_24))
+              (portRef Z (instanceRef muxb_50))))
+          (net rom_dout_s_2
+            (joined
+              (portRef D0 (instanceRef muxb_23))
+              (portRef Z (instanceRef muxb_49))))
+          (net rom_dout_s_3
+            (joined
+              (portRef D0 (instanceRef muxb_22))
+              (portRef Z (instanceRef muxb_48))))
+          (net rom_dout_s_4
+            (joined
+              (portRef D0 (instanceRef muxb_21))
+              (portRef Z (instanceRef muxb_47))))
+          (net rom_dout_s_5
+            (joined
+              (portRef D0 (instanceRef muxb_20))
+              (portRef Z (instanceRef muxb_46))))
+          (net rom_dout_s_6
+            (joined
+              (portRef D0 (instanceRef muxb_19))
+              (portRef Z (instanceRef muxb_45))))
+          (net rom_dout_s_7
+            (joined
+              (portRef D0 (instanceRef muxb_18))
+              (portRef Z (instanceRef muxb_44))))
+          (net rom_dout_s_8
+            (joined
+              (portRef D0 (instanceRef muxb_17))
+              (portRef Z (instanceRef muxb_43))))
+          (net rom_dout_s_9
+            (joined
+              (portRef D0 (instanceRef muxb_16))
+              (portRef Z (instanceRef muxb_42))))
+          (net rom_dout_s_10
+            (joined
+              (portRef D0 (instanceRef muxb_15))
+              (portRef Z (instanceRef muxb_41))))
+          (net rom_dout_s_11
+            (joined
+              (portRef D0 (instanceRef muxb_14))
+              (portRef Z (instanceRef muxb_40))))
+          (net mx_ctrl_r_1
+            (joined
+              (portRef D1 (instanceRef muxb_13))
+              (portRef B (instanceRef XOR2_t1))
+              (portRef A (instanceRef INV_0))
+              (portRef Q (instanceRef FF_55))
+              (portRef D (instanceRef FF_27))))
+          (net rom_dout_s_12
+            (joined
+              (portRef D0 (instanceRef muxb_13))
+              (portRef Z (instanceRef muxb_39))))
+          (net rom_dout_c
+            (joined
+              (portRef D0 (instanceRef muxb_12))
+              (portRef Z (instanceRef muxb_38))))
+          (net rom_dout_c_1
+            (joined
+              (portRef D0 (instanceRef muxb_11))
+              (portRef Z (instanceRef muxb_37))))
+          (net rom_dout_c_2
+            (joined
+              (portRef D0 (instanceRef muxb_10))
+              (portRef Z (instanceRef muxb_36))))
+          (net rom_dout_c_3
+            (joined
+              (portRef D0 (instanceRef muxb_9))
+              (portRef Z (instanceRef muxb_35))))
+          (net rom_dout_c_4
+            (joined
+              (portRef D0 (instanceRef muxb_8))
+              (portRef Z (instanceRef muxb_34))))
+          (net rom_dout_c_5
+            (joined
+              (portRef D0 (instanceRef muxb_7))
+              (portRef Z (instanceRef muxb_33))))
+          (net rom_dout_c_6
+            (joined
+              (portRef D0 (instanceRef muxb_6))
+              (portRef Z (instanceRef muxb_32))))
+          (net rom_dout_c_7
+            (joined
+              (portRef D0 (instanceRef muxb_5))
+              (portRef Z (instanceRef muxb_31))))
+          (net rom_dout_c_8
+            (joined
+              (portRef D0 (instanceRef muxb_4))
+              (portRef Z (instanceRef muxb_30))))
+          (net rom_dout_c_9
+            (joined
+              (portRef D0 (instanceRef muxb_3))
+              (portRef Z (instanceRef muxb_29))))
+          (net rom_dout_c_10
+            (joined
+              (portRef D0 (instanceRef muxb_2))
+              (portRef Z (instanceRef muxb_28))))
+          (net rom_dout_c_11
+            (joined
+              (portRef D0 (instanceRef muxb_1))
+              (portRef Z (instanceRef muxb_27))))
+          (net out_sel
+            (joined
+              (portRef SD (instanceRef muxb_0))
+              (portRef Q (instanceRef FF_26))
+              (portRef SD (instanceRef muxb_25))
+              (portRef SD (instanceRef muxb_24))
+              (portRef SD (instanceRef muxb_23))
+              (portRef SD (instanceRef muxb_22))
+              (portRef SD (instanceRef muxb_21))
+              (portRef SD (instanceRef muxb_20))
+              (portRef SD (instanceRef muxb_19))
+              (portRef SD (instanceRef muxb_18))
+              (portRef SD (instanceRef muxb_17))
+              (portRef SD (instanceRef muxb_16))
+              (portRef SD (instanceRef muxb_15))
+              (portRef SD (instanceRef muxb_14))
+              (portRef SD (instanceRef muxb_13))
+              (portRef SD (instanceRef muxb_12))
+              (portRef SD (instanceRef muxb_11))
+              (portRef SD (instanceRef muxb_10))
+              (portRef SD (instanceRef muxb_9))
+              (portRef SD (instanceRef muxb_8))
+              (portRef SD (instanceRef muxb_7))
+              (portRef SD (instanceRef muxb_6))
+              (portRef SD (instanceRef muxb_5))
+              (portRef SD (instanceRef muxb_4))
+              (portRef SD (instanceRef muxb_3))
+              (portRef SD (instanceRef muxb_2))
+              (portRef SD (instanceRef muxb_1))))
+          (net rom_dout_c_12
+            (joined
+              (portRef D0 (instanceRef muxb_0))
+              (portRef Z (instanceRef muxb_26))))
+          (net sinout_pre
+            (joined
+              (portRef D (instanceRef FF_25))
+              (portRef Z (instanceRef muxb_25))))
+          (net sinout_pre_1
+            (joined
+              (portRef D (instanceRef FF_24))
+              (portRef Z (instanceRef muxb_24))))
+          (net sinout_pre_2
+            (joined
+              (portRef D (instanceRef FF_23))
+              (portRef Z (instanceRef muxb_23))))
+          (net sinout_pre_3
+            (joined
+              (portRef D (instanceRef FF_22))
+              (portRef Z (instanceRef muxb_22))))
+          (net sinout_pre_4
+            (joined
+              (portRef D (instanceRef FF_21))
+              (portRef Z (instanceRef muxb_21))))
+          (net sinout_pre_5
+            (joined
+              (portRef D (instanceRef FF_20))
+              (portRef Z (instanceRef muxb_20))))
+          (net sinout_pre_6
+            (joined
+              (portRef D (instanceRef FF_19))
+              (portRef Z (instanceRef muxb_19))))
+          (net sinout_pre_7
+            (joined
+              (portRef D (instanceRef FF_18))
+              (portRef Z (instanceRef muxb_18))))
+          (net sinout_pre_8
+            (joined
+              (portRef D (instanceRef FF_17))
+              (portRef Z (instanceRef muxb_17))))
+          (net sinout_pre_9
+            (joined
+              (portRef D (instanceRef FF_16))
+              (portRef Z (instanceRef muxb_16))))
+          (net sinout_pre_10
+            (joined
+              (portRef D (instanceRef FF_15))
+              (portRef Z (instanceRef muxb_15))))
+          (net sinout_pre_11
+            (joined
+              (portRef D (instanceRef FF_14))
+              (portRef Z (instanceRef muxb_14))))
+          (net sinout_pre_12
+            (joined
+              (portRef D (instanceRef FF_13))
+              (portRef Z (instanceRef muxb_13))))
+          (net cosout_pre
+            (joined
+              (portRef D (instanceRef FF_12))
+              (portRef Z (instanceRef muxb_12))))
+          (net cosout_pre_1
+            (joined
+              (portRef D (instanceRef FF_11))
+              (portRef Z (instanceRef muxb_11))))
+          (net cosout_pre_2
+            (joined
+              (portRef D (instanceRef FF_10))
+              (portRef Z (instanceRef muxb_10))))
+          (net cosout_pre_3
+            (joined
+              (portRef D (instanceRef FF_9))
+              (portRef Z (instanceRef muxb_9))))
+          (net cosout_pre_4
+            (joined
+              (portRef D (instanceRef FF_8))
+              (portRef Z (instanceRef muxb_8))))
+          (net cosout_pre_5
+            (joined
+              (portRef D (instanceRef FF_7))
+              (portRef Z (instanceRef muxb_7))))
+          (net cosout_pre_6
+            (joined
+              (portRef D (instanceRef FF_6))
+              (portRef Z (instanceRef muxb_6))))
+          (net cosout_pre_7
+            (joined
+              (portRef D (instanceRef FF_5))
+              (portRef Z (instanceRef muxb_5))))
+          (net cosout_pre_8
+            (joined
+              (portRef D (instanceRef FF_4))
+              (portRef Z (instanceRef muxb_4))))
+          (net cosout_pre_9
+            (joined
+              (portRef D (instanceRef FF_3))
+              (portRef Z (instanceRef muxb_3))))
+          (net cosout_pre_10
+            (joined
+              (portRef D (instanceRef FF_2))
+              (portRef Z (instanceRef muxb_2))))
+          (net cosout_pre_11
+            (joined
+              (portRef D (instanceRef FF_1))
+              (portRef Z (instanceRef muxb_1))))
+          (net cosout_pre_12
+            (joined
+              (portRef D (instanceRef FF_0))
+              (portRef Z (instanceRef muxb_0))))
+          (net rom_addr0_r_n
+            (joined
+              (portRef S1 (instanceRef neg_rom_addr0_r_n_0))
+              (portRef D1 (instanceRef muxb_57))))
+          (net rom_addr0_r_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_addr0_r_n_0))
+              (portRef Z (instanceRef INV_28))))
+          (net rom_addr0_r_n_1
+            (joined
+              (portRef S0 (instanceRef neg_rom_addr0_r_n_1))
+              (portRef D1 (instanceRef muxb_56))))
+          (net rom_addr0_r_n_2
+            (joined
+              (portRef S1 (instanceRef neg_rom_addr0_r_n_1))
+              (portRef D1 (instanceRef muxb_55))))
+          (net co0
+            (joined
+              (portRef CI (instanceRef neg_rom_addr0_r_n_1))
+              (portRef COUT (instanceRef neg_rom_addr0_r_n_0))))
+          (net rom_addr0_r_1_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_addr0_r_n_1))
+              (portRef Z (instanceRef INV_29))))
+          (net rom_addr0_r_2_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_addr0_r_n_1))
+              (portRef Z (instanceRef INV_30))))
+          (net rom_addr0_r_n_3
+            (joined
+              (portRef S0 (instanceRef neg_rom_addr0_r_n_2))
+              (portRef D1 (instanceRef muxb_54))))
+          (net rom_addr0_r_n_4
+            (joined
+              (portRef S1 (instanceRef neg_rom_addr0_r_n_2))
+              (portRef D1 (instanceRef muxb_53))))
+          (net co1
+            (joined
+              (portRef CI (instanceRef neg_rom_addr0_r_n_2))
+              (portRef COUT (instanceRef neg_rom_addr0_r_n_1))))
+          (net rom_addr0_r_3_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_addr0_r_n_2))
+              (portRef Z (instanceRef INV_31))))
+          (net rom_addr0_r_4_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_addr0_r_n_2))
+              (portRef Z (instanceRef INV_32))))
+          (net rom_addr0_r_n_5
+            (joined
+              (portRef S0 (instanceRef neg_rom_addr0_r_n_3))
+              (portRef D1 (instanceRef muxb_52))))
+          (net co2
+            (joined
+              (portRef CI (instanceRef neg_rom_addr0_r_n_3))
+              (portRef COUT (instanceRef neg_rom_addr0_r_n_2))))
+          (net rom_addr0_r_5_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_addr0_r_n_3))
+              (portRef Z (instanceRef INV_33))))
+          (net rom_dout_12_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_25))
+              (portRef D (instanceRef FF_54))))
+          (net rom_dout_11_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_24))
+              (portRef D (instanceRef FF_53))))
+          (net rom_dout_10_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_23))
+              (portRef D (instanceRef FF_52))))
+          (net rom_dout_9_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_22))
+              (portRef D (instanceRef FF_51))))
+          (net rom_dout_8_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_21))
+              (portRef D (instanceRef FF_50))))
+          (net rom_dout_7_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_20))
+              (portRef D (instanceRef FF_49))))
+          (net rom_dout_6_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_19))
+              (portRef D (instanceRef FF_48))))
+          (net rom_dout_5_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_18))
+              (portRef D (instanceRef FF_47))))
+          (net rom_dout_4_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_17))
+              (portRef D (instanceRef FF_46))))
+          (net rom_dout_3_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_16))
+              (portRef D (instanceRef FF_45))))
+          (net rom_dout_2_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_15))
+              (portRef D (instanceRef FF_44))))
+          (net rom_dout_1_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_14))
+              (portRef D (instanceRef FF_43))))
+          (net rom_dout_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_13))
+              (portRef D (instanceRef FF_42))))
+          (net rom_dout_25_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_12))
+              (portRef D (instanceRef FF_41))))
+          (net rom_dout_24_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_11))
+              (portRef D (instanceRef FF_40))))
+          (net rom_dout_23_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_10))
+              (portRef D (instanceRef FF_39))))
+          (net rom_dout_22_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_9))
+              (portRef D (instanceRef FF_38))))
+          (net rom_dout_21_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_8))
+              (portRef D (instanceRef FF_37))))
+          (net rom_dout_20_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_7))
+              (portRef D (instanceRef FF_36))))
+          (net rom_dout_19_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_6))
+              (portRef D (instanceRef FF_35))))
+          (net rom_dout_18_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_5))
+              (portRef D (instanceRef FF_34))))
+          (net rom_dout_17_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_4))
+              (portRef D (instanceRef FF_33))))
+          (net rom_dout_16_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_3))
+              (portRef D (instanceRef FF_32))))
+          (net rom_dout_15_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_2))
+              (portRef D (instanceRef FF_31))))
+          (net rom_dout_14_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_1))
+              (portRef D (instanceRef FF_30))))
+          (net rom_dout_13_ffin
+            (joined
+              (portRef DO0 (instanceRef triglut_1_0_0))
+              (portRef D (instanceRef FF_29))))
+          (net rom_addr0_r_6
+            (joined
+              (portRef AD0 (instanceRef triglut_1_0_0))
+              (portRef AD3 (instanceRef LUT4_1))
+              (portRef Z (instanceRef muxb_57))
+              (portRef AD0 (instanceRef triglut_1_0_25))
+              (portRef AD0 (instanceRef triglut_1_0_24))
+              (portRef AD0 (instanceRef triglut_1_0_23))
+              (portRef AD0 (instanceRef triglut_1_0_22))
+              (portRef AD0 (instanceRef triglut_1_0_21))
+              (portRef AD0 (instanceRef triglut_1_0_20))
+              (portRef AD0 (instanceRef triglut_1_0_19))
+              (portRef AD0 (instanceRef triglut_1_0_18))
+              (portRef AD0 (instanceRef triglut_1_0_17))
+              (portRef AD0 (instanceRef triglut_1_0_16))
+              (portRef AD0 (instanceRef triglut_1_0_15))
+              (portRef AD0 (instanceRef triglut_1_0_14))
+              (portRef AD0 (instanceRef triglut_1_0_13))
+              (portRef AD0 (instanceRef triglut_1_0_12))
+              (portRef AD0 (instanceRef triglut_1_0_11))
+              (portRef AD0 (instanceRef triglut_1_0_10))
+              (portRef AD0 (instanceRef triglut_1_0_9))
+              (portRef AD0 (instanceRef triglut_1_0_8))
+              (portRef AD0 (instanceRef triglut_1_0_7))
+              (portRef AD0 (instanceRef triglut_1_0_6))
+              (portRef AD0 (instanceRef triglut_1_0_5))
+              (portRef AD0 (instanceRef triglut_1_0_4))
+              (portRef AD0 (instanceRef triglut_1_0_3))
+              (portRef AD0 (instanceRef triglut_1_0_2))
+              (portRef AD0 (instanceRef triglut_1_0_1))))
+          (net rom_addr0_r_7
+            (joined
+              (portRef AD1 (instanceRef triglut_1_0_0))
+              (portRef AD2 (instanceRef LUT4_1))
+              (portRef Z (instanceRef muxb_56))
+              (portRef AD1 (instanceRef triglut_1_0_25))
+              (portRef AD1 (instanceRef triglut_1_0_24))
+              (portRef AD1 (instanceRef triglut_1_0_23))
+              (portRef AD1 (instanceRef triglut_1_0_22))
+              (portRef AD1 (instanceRef triglut_1_0_21))
+              (portRef AD1 (instanceRef triglut_1_0_20))
+              (portRef AD1 (instanceRef triglut_1_0_19))
+              (portRef AD1 (instanceRef triglut_1_0_18))
+              (portRef AD1 (instanceRef triglut_1_0_17))
+              (portRef AD1 (instanceRef triglut_1_0_16))
+              (portRef AD1 (instanceRef triglut_1_0_15))
+              (portRef AD1 (instanceRef triglut_1_0_14))
+              (portRef AD1 (instanceRef triglut_1_0_13))
+              (portRef AD1 (instanceRef triglut_1_0_12))
+              (portRef AD1 (instanceRef triglut_1_0_11))
+              (portRef AD1 (instanceRef triglut_1_0_10))
+              (portRef AD1 (instanceRef triglut_1_0_9))
+              (portRef AD1 (instanceRef triglut_1_0_8))
+              (portRef AD1 (instanceRef triglut_1_0_7))
+              (portRef AD1 (instanceRef triglut_1_0_6))
+              (portRef AD1 (instanceRef triglut_1_0_5))
+              (portRef AD1 (instanceRef triglut_1_0_4))
+              (portRef AD1 (instanceRef triglut_1_0_3))
+              (portRef AD1 (instanceRef triglut_1_0_2))
+              (portRef AD1 (instanceRef triglut_1_0_1))))
+          (net rom_addr0_r_8
+            (joined
+              (portRef AD2 (instanceRef triglut_1_0_0))
+              (portRef AD1 (instanceRef LUT4_1))
+              (portRef Z (instanceRef muxb_55))
+              (portRef AD2 (instanceRef triglut_1_0_25))
+              (portRef AD2 (instanceRef triglut_1_0_24))
+              (portRef AD2 (instanceRef triglut_1_0_23))
+              (portRef AD2 (instanceRef triglut_1_0_22))
+              (portRef AD2 (instanceRef triglut_1_0_21))
+              (portRef AD2 (instanceRef triglut_1_0_20))
+              (portRef AD2 (instanceRef triglut_1_0_19))
+              (portRef AD2 (instanceRef triglut_1_0_18))
+              (portRef AD2 (instanceRef triglut_1_0_17))
+              (portRef AD2 (instanceRef triglut_1_0_16))
+              (portRef AD2 (instanceRef triglut_1_0_15))
+              (portRef AD2 (instanceRef triglut_1_0_14))
+              (portRef AD2 (instanceRef triglut_1_0_13))
+              (portRef AD2 (instanceRef triglut_1_0_12))
+              (portRef AD2 (instanceRef triglut_1_0_11))
+              (portRef AD2 (instanceRef triglut_1_0_10))
+              (portRef AD2 (instanceRef triglut_1_0_9))
+              (portRef AD2 (instanceRef triglut_1_0_8))
+              (portRef AD2 (instanceRef triglut_1_0_7))
+              (portRef AD2 (instanceRef triglut_1_0_6))
+              (portRef AD2 (instanceRef triglut_1_0_5))
+              (portRef AD2 (instanceRef triglut_1_0_4))
+              (portRef AD2 (instanceRef triglut_1_0_3))
+              (portRef AD2 (instanceRef triglut_1_0_2))
+              (portRef AD2 (instanceRef triglut_1_0_1))))
+          (net rom_addr0_r_9
+            (joined
+              (portRef AD3 (instanceRef triglut_1_0_0))
+              (portRef AD0 (instanceRef LUT4_1))
+              (portRef Z (instanceRef muxb_54))
+              (portRef AD3 (instanceRef triglut_1_0_25))
+              (portRef AD3 (instanceRef triglut_1_0_24))
+              (portRef AD3 (instanceRef triglut_1_0_23))
+              (portRef AD3 (instanceRef triglut_1_0_22))
+              (portRef AD3 (instanceRef triglut_1_0_21))
+              (portRef AD3 (instanceRef triglut_1_0_20))
+              (portRef AD3 (instanceRef triglut_1_0_19))
+              (portRef AD3 (instanceRef triglut_1_0_18))
+              (portRef AD3 (instanceRef triglut_1_0_17))
+              (portRef AD3 (instanceRef triglut_1_0_16))
+              (portRef AD3 (instanceRef triglut_1_0_15))
+              (portRef AD3 (instanceRef triglut_1_0_14))
+              (portRef AD3 (instanceRef triglut_1_0_13))
+              (portRef AD3 (instanceRef triglut_1_0_12))
+              (portRef AD3 (instanceRef triglut_1_0_11))
+              (portRef AD3 (instanceRef triglut_1_0_10))
+              (portRef AD3 (instanceRef triglut_1_0_9))
+              (portRef AD3 (instanceRef triglut_1_0_8))
+              (portRef AD3 (instanceRef triglut_1_0_7))
+              (portRef AD3 (instanceRef triglut_1_0_6))
+              (portRef AD3 (instanceRef triglut_1_0_5))
+              (portRef AD3 (instanceRef triglut_1_0_4))
+              (portRef AD3 (instanceRef triglut_1_0_3))
+              (portRef AD3 (instanceRef triglut_1_0_2))
+              (portRef AD3 (instanceRef triglut_1_0_1))))
+          (net rom_addr0_r_10
+            (joined
+              (portRef AD4 (instanceRef triglut_1_0_0))
+              (portRef AD2 (instanceRef LUT4_0))
+              (portRef Z (instanceRef muxb_53))
+              (portRef AD4 (instanceRef triglut_1_0_25))
+              (portRef AD4 (instanceRef triglut_1_0_24))
+              (portRef AD4 (instanceRef triglut_1_0_23))
+              (portRef AD4 (instanceRef triglut_1_0_22))
+              (portRef AD4 (instanceRef triglut_1_0_21))
+              (portRef AD4 (instanceRef triglut_1_0_20))
+              (portRef AD4 (instanceRef triglut_1_0_19))
+              (portRef AD4 (instanceRef triglut_1_0_18))
+              (portRef AD4 (instanceRef triglut_1_0_17))
+              (portRef AD4 (instanceRef triglut_1_0_16))
+              (portRef AD4 (instanceRef triglut_1_0_15))
+              (portRef AD4 (instanceRef triglut_1_0_14))
+              (portRef AD4 (instanceRef triglut_1_0_13))
+              (portRef AD4 (instanceRef triglut_1_0_12))
+              (portRef AD4 (instanceRef triglut_1_0_11))
+              (portRef AD4 (instanceRef triglut_1_0_10))
+              (portRef AD4 (instanceRef triglut_1_0_9))
+              (portRef AD4 (instanceRef triglut_1_0_8))
+              (portRef AD4 (instanceRef triglut_1_0_7))
+              (portRef AD4 (instanceRef triglut_1_0_6))
+              (portRef AD4 (instanceRef triglut_1_0_5))
+              (portRef AD4 (instanceRef triglut_1_0_4))
+              (portRef AD4 (instanceRef triglut_1_0_3))
+              (portRef AD4 (instanceRef triglut_1_0_2))
+              (portRef AD4 (instanceRef triglut_1_0_1))))
+          (net rom_addr0_r_11
+            (joined
+              (portRef AD5 (instanceRef triglut_1_0_0))
+              (portRef AD1 (instanceRef LUT4_0))
+              (portRef Z (instanceRef muxb_52))
+              (portRef AD5 (instanceRef triglut_1_0_25))
+              (portRef AD5 (instanceRef triglut_1_0_24))
+              (portRef AD5 (instanceRef triglut_1_0_23))
+              (portRef AD5 (instanceRef triglut_1_0_22))
+              (portRef AD5 (instanceRef triglut_1_0_21))
+              (portRef AD5 (instanceRef triglut_1_0_20))
+              (portRef AD5 (instanceRef triglut_1_0_19))
+              (portRef AD5 (instanceRef triglut_1_0_18))
+              (portRef AD5 (instanceRef triglut_1_0_17))
+              (portRef AD5 (instanceRef triglut_1_0_16))
+              (portRef AD5 (instanceRef triglut_1_0_15))
+              (portRef AD5 (instanceRef triglut_1_0_14))
+              (portRef AD5 (instanceRef triglut_1_0_13))
+              (portRef AD5 (instanceRef triglut_1_0_12))
+              (portRef AD5 (instanceRef triglut_1_0_11))
+              (portRef AD5 (instanceRef triglut_1_0_10))
+              (portRef AD5 (instanceRef triglut_1_0_9))
+              (portRef AD5 (instanceRef triglut_1_0_8))
+              (portRef AD5 (instanceRef triglut_1_0_7))
+              (portRef AD5 (instanceRef triglut_1_0_6))
+              (portRef AD5 (instanceRef triglut_1_0_5))
+              (portRef AD5 (instanceRef triglut_1_0_4))
+              (portRef AD5 (instanceRef triglut_1_0_3))
+              (portRef AD5 (instanceRef triglut_1_0_2))
+              (portRef AD5 (instanceRef triglut_1_0_1))))
+          (net rom_dout_s_n
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_0))
+              (portRef D1 (instanceRef muxb_51))))
+          (net rom_dout_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_0))
+              (portRef Z (instanceRef INV_15))))
+          (net rom_dout_s_n_1
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_n_1))
+              (portRef D1 (instanceRef muxb_50))))
+          (net rom_dout_s_n_2
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_1))
+              (portRef D1 (instanceRef muxb_49))))
+          (net co0_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_n_1))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_0))))
+          (net rom_dout_1_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_s_n_1))
+              (portRef Z (instanceRef INV_16))))
+          (net rom_dout_2_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_1))
+              (portRef Z (instanceRef INV_17))))
+          (net rom_dout_s_n_3
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_n_2))
+              (portRef D1 (instanceRef muxb_48))))
+          (net rom_dout_s_n_4
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_2))
+              (portRef D1 (instanceRef muxb_47))))
+          (net co1_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_n_2))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_1))))
+          (net rom_dout_3_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_s_n_2))
+              (portRef Z (instanceRef INV_18))))
+          (net rom_dout_4_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_2))
+              (portRef Z (instanceRef INV_19))))
+          (net rom_dout_s_n_5
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_n_3))
+              (portRef D1 (instanceRef muxb_46))))
+          (net rom_dout_s_n_6
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_3))
+              (portRef D1 (instanceRef muxb_45))))
+          (net co2_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_n_3))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_2))))
+          (net rom_dout_5_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_s_n_3))
+              (portRef Z (instanceRef INV_20))))
+          (net rom_dout_6_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_3))
+              (portRef Z (instanceRef INV_21))))
+          (net rom_dout_s_n_7
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_n_4))
+              (portRef D1 (instanceRef muxb_44))))
+          (net rom_dout_s_n_8
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_4))
+              (portRef D1 (instanceRef muxb_43))))
+          (net co3
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_n_4))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_3))))
+          (net rom_dout_7_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_s_n_4))
+              (portRef Z (instanceRef INV_22))))
+          (net rom_dout_8_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_4))
+              (portRef Z (instanceRef INV_23))))
+          (net rom_dout_s_n_9
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_n_5))
+              (portRef D1 (instanceRef muxb_42))))
+          (net rom_dout_s_n_10
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_5))
+              (portRef D1 (instanceRef muxb_41))))
+          (net co4
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_n_5))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_4))))
+          (net rom_dout_9_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_s_n_5))
+              (portRef Z (instanceRef INV_24))))
+          (net rom_dout_10_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_5))
+              (portRef Z (instanceRef INV_25))))
+          (net rom_dout_s_n_11
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_n_6))
+              (portRef D1 (instanceRef muxb_40))))
+          (net rom_dout_s_n_12
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_s_n_6))
+              (portRef D1 (instanceRef muxb_39))))
+          (net co5
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_n_6))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_5))))
+          (net rom_dout_11_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_s_n_6))
+              (portRef Z (instanceRef INV_26))))
+          (net rom_dout_12_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_s_n_6))
+              (portRef Z (instanceRef INV_27))))
+          (net co6d
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_s_nd))))
+          (net co6
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_s_nd))
+              (portRef COUT (instanceRef neg_rom_dout_s_n_6))))
+          (net rom_dout_c_n
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_0))
+              (portRef D1 (instanceRef muxb_38))))
+          (net scuba_vhi
+            (joined
+              (portRef Z (instanceRef scuba_vhi_inst))
+              (portRef D1 (instanceRef muxb_14))
+              (portRef B1 (instanceRef neg_rom_addr0_r_n_0))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_0))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_0))))
+          (net rom_dout_13_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_0))
+              (portRef Z (instanceRef INV_2))))
+          (net rom_dout_c_n_1
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_n_1))
+              (portRef D1 (instanceRef muxb_37))))
+          (net rom_dout_c_n_2
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_1))
+              (portRef D1 (instanceRef muxb_36))))
+          (net co0_2
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_n_1))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_0))))
+          (net rom_dout_14_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_c_n_1))
+              (portRef Z (instanceRef INV_3))))
+          (net rom_dout_15_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_1))
+              (portRef Z (instanceRef INV_4))))
+          (net rom_dout_c_n_3
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_n_2))
+              (portRef D1 (instanceRef muxb_35))))
+          (net rom_dout_c_n_4
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_2))
+              (portRef D1 (instanceRef muxb_34))))
+          (net co1_2
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_n_2))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_1))))
+          (net rom_dout_16_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_c_n_2))
+              (portRef Z (instanceRef INV_5))))
+          (net rom_dout_17_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_2))
+              (portRef Z (instanceRef INV_6))))
+          (net rom_dout_c_n_5
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_n_3))
+              (portRef D1 (instanceRef muxb_33))))
+          (net rom_dout_c_n_6
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_3))
+              (portRef D1 (instanceRef muxb_32))))
+          (net co2_2
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_n_3))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_2))))
+          (net rom_dout_18_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_c_n_3))
+              (portRef Z (instanceRef INV_7))))
+          (net rom_dout_19_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_3))
+              (portRef Z (instanceRef INV_8))))
+          (net rom_dout_c_n_7
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_n_4))
+              (portRef D1 (instanceRef muxb_31))))
+          (net rom_dout_c_n_8
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_4))
+              (portRef D1 (instanceRef muxb_30))))
+          (net co3_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_n_4))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_3))))
+          (net rom_dout_20_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_c_n_4))
+              (portRef Z (instanceRef INV_9))))
+          (net rom_dout_21_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_4))
+              (portRef Z (instanceRef INV_10))))
+          (net rom_dout_c_n_9
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_n_5))
+              (portRef D1 (instanceRef muxb_29))))
+          (net rom_dout_c_n_10
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_5))
+              (portRef D1 (instanceRef muxb_28))))
+          (net co4_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_n_5))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_4))))
+          (net rom_dout_22_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_c_n_5))
+              (portRef Z (instanceRef INV_11))))
+          (net rom_dout_23_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_5))
+              (portRef Z (instanceRef INV_12))))
+          (net rom_dout_c_n_11
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_n_6))
+              (portRef D1 (instanceRef muxb_27))))
+          (net rom_dout_c_n_12
+            (joined
+              (portRef S1 (instanceRef neg_rom_dout_c_n_6))
+              (portRef D1 (instanceRef muxb_26))))
+          (net co5_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_n_6))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_5))))
+          (net rom_dout_24_inv
+            (joined
+              (portRef A0 (instanceRef neg_rom_dout_c_n_6))
+              (portRef Z (instanceRef INV_13))))
+          (net rom_dout_25_inv
+            (joined
+              (portRef A1 (instanceRef neg_rom_dout_c_n_6))
+              (portRef Z (instanceRef INV_14))))
+          (net co6_1d
+            (joined
+              (portRef S0 (instanceRef neg_rom_dout_c_nd))))
+          (net co6_1
+            (joined
+              (portRef CI (instanceRef neg_rom_dout_c_nd))
+              (portRef COUT (instanceRef neg_rom_dout_c_n_6))))
+          (net scuba_vlo
+            (joined
+              (portRef Z (instanceRef scuba_vlo_inst))
+              (portRef AD0 (instanceRef LUT4_0))
+              (portRef D1 (instanceRef muxb_25))
+              (portRef D1 (instanceRef muxb_24))
+              (portRef D1 (instanceRef muxb_23))
+              (portRef D1 (instanceRef muxb_22))
+              (portRef D1 (instanceRef muxb_21))
+              (portRef D1 (instanceRef muxb_20))
+              (portRef D1 (instanceRef muxb_19))
+              (portRef D1 (instanceRef muxb_18))
+              (portRef D1 (instanceRef muxb_17))
+              (portRef D1 (instanceRef muxb_16))
+              (portRef D1 (instanceRef muxb_15))
+              (portRef D1 (instanceRef muxb_12))
+              (portRef D1 (instanceRef muxb_11))
+              (portRef D1 (instanceRef muxb_10))
+              (portRef D1 (instanceRef muxb_9))
+              (portRef D1 (instanceRef muxb_8))
+              (portRef D1 (instanceRef muxb_7))
+              (portRef D1 (instanceRef muxb_6))
+              (portRef D1 (instanceRef muxb_5))
+              (portRef D1 (instanceRef muxb_4))
+              (portRef D1 (instanceRef muxb_3))
+              (portRef D1 (instanceRef muxb_2))
+              (portRef D1 (instanceRef muxb_1))
+              (portRef D1 (instanceRef muxb_0))
+              (portRef CI (instanceRef neg_rom_addr0_r_n_0))
+              (portRef B0 (instanceRef neg_rom_addr0_r_n_0))
+              (portRef A0 (instanceRef neg_rom_addr0_r_n_0))
+              (portRef B0 (instanceRef neg_rom_addr0_r_n_1))
+              (portRef B1 (instanceRef neg_rom_addr0_r_n_1))
+              (portRef B0 (instanceRef neg_rom_addr0_r_n_2))
+              (portRef B1 (instanceRef neg_rom_addr0_r_n_2))
+              (portRef B0 (instanceRef neg_rom_addr0_r_n_3))
+              (portRef B1 (instanceRef neg_rom_addr0_r_n_3))
+              (portRef A1 (instanceRef neg_rom_addr0_r_n_3))
+              (portRef CI (instanceRef neg_rom_dout_s_n_0))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_0))
+              (portRef A0 (instanceRef neg_rom_dout_s_n_0))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_1))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_1))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_2))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_2))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_3))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_3))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_4))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_4))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_5))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_5))
+              (portRef B0 (instanceRef neg_rom_dout_s_n_6))
+              (portRef B1 (instanceRef neg_rom_dout_s_n_6))
+              (portRef B0 (instanceRef neg_rom_dout_s_nd))
+              (portRef B1 (instanceRef neg_rom_dout_s_nd))
+              (portRef A0 (instanceRef neg_rom_dout_s_nd))
+              (portRef A1 (instanceRef neg_rom_dout_s_nd))
+              (portRef CI (instanceRef neg_rom_dout_c_n_0))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_0))
+              (portRef A0 (instanceRef neg_rom_dout_c_n_0))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_1))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_1))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_2))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_2))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_3))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_3))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_4))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_4))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_5))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_5))
+              (portRef B0 (instanceRef neg_rom_dout_c_n_6))
+              (portRef B1 (instanceRef neg_rom_dout_c_n_6))
+              (portRef B0 (instanceRef neg_rom_dout_c_nd))
+              (portRef B1 (instanceRef neg_rom_dout_c_nd))
+              (portRef A0 (instanceRef neg_rom_dout_c_nd))
+              (portRef A1 (instanceRef neg_rom_dout_c_nd))))
+          (net Cosine_12
+            (joined
+              (portRef (member Cosine 0))
+              (portRef Q (instanceRef FF_0))))
+          (net Cosine_11
+            (joined
+              (portRef (member Cosine 1))
+              (portRef Q (instanceRef FF_1))))
+          (net Cosine_10
+            (joined
+              (portRef (member Cosine 2))
+              (portRef Q (instanceRef FF_2))))
+          (net Cosine_9
+            (joined
+              (portRef (member Cosine 3))
+              (portRef Q (instanceRef FF_3))))
+          (net Cosine_8
+            (joined
+              (portRef (member Cosine 4))
+              (portRef Q (instanceRef FF_4))))
+          (net Cosine_7
+            (joined
+              (portRef (member Cosine 5))
+              (portRef Q (instanceRef FF_5))))
+          (net Cosine_6
+            (joined
+              (portRef (member Cosine 6))
+              (portRef Q (instanceRef FF_6))))
+          (net Cosine_5
+            (joined
+              (portRef (member Cosine 7))
+              (portRef Q (instanceRef FF_7))))
+          (net Cosine_4
+            (joined
+              (portRef (member Cosine 8))
+              (portRef Q (instanceRef FF_8))))
+          (net Cosine_3
+            (joined
+              (portRef (member Cosine 9))
+              (portRef Q (instanceRef FF_9))))
+          (net Cosine_2
+            (joined
+              (portRef (member Cosine 10))
+              (portRef Q (instanceRef FF_10))))
+          (net Cosine_1
+            (joined
+              (portRef (member Cosine 11))
+              (portRef Q (instanceRef FF_11))))
+          (net Cosine_0
+            (joined
+              (portRef (member Cosine 12))
+              (portRef Q (instanceRef FF_12))))
+          (net Sine_12
+            (joined
+              (portRef (member Sine 0))
+              (portRef Q (instanceRef FF_13))))
+          (net Sine_11
+            (joined
+              (portRef (member Sine 1))
+              (portRef Q (instanceRef FF_14))))
+          (net Sine_10
+            (joined
+              (portRef (member Sine 2))
+              (portRef Q (instanceRef FF_15))))
+          (net Sine_9
+            (joined
+              (portRef (member Sine 3))
+              (portRef Q (instanceRef FF_16))))
+          (net Sine_8
+            (joined
+              (portRef (member Sine 4))
+              (portRef Q (instanceRef FF_17))))
+          (net Sine_7
+            (joined
+              (portRef (member Sine 5))
+              (portRef Q (instanceRef FF_18))))
+          (net Sine_6
+            (joined
+              (portRef (member Sine 6))
+              (portRef Q (instanceRef FF_19))))
+          (net Sine_5
+            (joined
+              (portRef (member Sine 7))
+              (portRef Q (instanceRef FF_20))))
+          (net Sine_4
+            (joined
+              (portRef (member Sine 8))
+              (portRef Q (instanceRef FF_21))))
+          (net Sine_3
+            (joined
+              (portRef (member Sine 9))
+              (portRef Q (instanceRef FF_22))))
+          (net Sine_2
+            (joined
+              (portRef (member Sine 10))
+              (portRef Q (instanceRef FF_23))))
+          (net Sine_1
+            (joined
+              (portRef (member Sine 11))
+              (portRef Q (instanceRef FF_24))))
+          (net Sine_0
+            (joined
+              (portRef (member Sine 12))
+              (portRef Q (instanceRef FF_25))))
+          (net Theta_7
+            (joined
+              (portRef (member Theta 0))
+              (portRef D (instanceRef FF_55))))
+          (net Theta_6
+            (joined
+              (portRef (member Theta 1))
+              (portRef D (instanceRef FF_56))))
+          (net Theta_5
+            (joined
+              (portRef (member Theta 2))
+              (portRef D (instanceRef FF_57))))
+          (net Theta_4
+            (joined
+              (portRef (member Theta 3))
+              (portRef D (instanceRef FF_58))))
+          (net Theta_3
+            (joined
+              (portRef (member Theta 4))
+              (portRef D (instanceRef FF_59))))
+          (net Theta_2
+            (joined
+              (portRef (member Theta 5))
+              (portRef D (instanceRef FF_60))))
+          (net Theta_1
+            (joined
+              (portRef (member Theta 6))
+              (portRef D (instanceRef FF_61))))
+          (net Theta_0
+            (joined
+              (portRef (member Theta 7))
+              (portRef D (instanceRef FF_62))))
+          (net Reset
+            (joined
+              (portRef Reset)
+              (portRef CD (instanceRef FF_62))
+              (portRef CD (instanceRef FF_61))
+              (portRef CD (instanceRef FF_60))
+              (portRef CD (instanceRef FF_59))
+              (portRef CD (instanceRef FF_58))
+              (portRef CD (instanceRef FF_57))
+              (portRef CD (instanceRef FF_56))
+              (portRef CD (instanceRef FF_55))
+              (portRef CD (instanceRef FF_54))
+              (portRef CD (instanceRef FF_53))
+              (portRef CD (instanceRef FF_52))
+              (portRef CD (instanceRef FF_51))
+              (portRef CD (instanceRef FF_50))
+              (portRef CD (instanceRef FF_49))
+              (portRef CD (instanceRef FF_48))
+              (portRef CD (instanceRef FF_47))
+              (portRef CD (instanceRef FF_46))
+              (portRef CD (instanceRef FF_45))
+              (portRef CD (instanceRef FF_44))
+              (portRef CD (instanceRef FF_43))
+              (portRef CD (instanceRef FF_42))
+              (portRef CD (instanceRef FF_41))
+              (portRef CD (instanceRef FF_40))
+              (portRef CD (instanceRef FF_39))
+              (portRef CD (instanceRef FF_38))
+              (portRef CD (instanceRef FF_37))
+              (portRef CD (instanceRef FF_36))
+              (portRef CD (instanceRef FF_35))
+              (portRef CD (instanceRef FF_34))
+              (portRef CD (instanceRef FF_33))
+              (portRef CD (instanceRef FF_32))
+              (portRef CD (instanceRef FF_31))
+              (portRef CD (instanceRef FF_30))
+              (portRef CD (instanceRef FF_29))
+              (portRef CD (instanceRef FF_28))
+              (portRef CD (instanceRef FF_27))
+              (portRef CD (instanceRef FF_26))
+              (portRef CD (instanceRef FF_25))
+              (portRef CD (instanceRef FF_24))
+              (portRef CD (instanceRef FF_23))
+              (portRef CD (instanceRef FF_22))
+              (portRef CD (instanceRef FF_21))
+              (portRef CD (instanceRef FF_20))
+              (portRef CD (instanceRef FF_19))
+              (portRef CD (instanceRef FF_18))
+              (portRef CD (instanceRef FF_17))
+              (portRef CD (instanceRef FF_16))
+              (portRef CD (instanceRef FF_15))
+              (portRef CD (instanceRef FF_14))
+              (portRef CD (instanceRef FF_13))
+              (portRef CD (instanceRef FF_12))
+              (portRef CD (instanceRef FF_11))
+              (portRef CD (instanceRef FF_10))
+              (portRef CD (instanceRef FF_9))
+              (portRef CD (instanceRef FF_8))
+              (portRef CD (instanceRef FF_7))
+              (portRef CD (instanceRef FF_6))
+              (portRef CD (instanceRef FF_5))
+              (portRef CD (instanceRef FF_4))
+              (portRef CD (instanceRef FF_3))
+              (portRef CD (instanceRef FF_2))
+              (portRef CD (instanceRef FF_1))
+              (portRef CD (instanceRef FF_0))))
+          (net ClkEn
+            (joined
+              (portRef ClkEn)
+              (portRef SP (instanceRef FF_62))
+              (portRef SP (instanceRef FF_61))
+              (portRef SP (instanceRef FF_60))
+              (portRef SP (instanceRef FF_59))
+              (portRef SP (instanceRef FF_58))
+              (portRef SP (instanceRef FF_57))
+              (portRef SP (instanceRef FF_56))
+              (portRef SP (instanceRef FF_55))
+              (portRef SP (instanceRef FF_54))
+              (portRef SP (instanceRef FF_53))
+              (portRef SP (instanceRef FF_52))
+              (portRef SP (instanceRef FF_51))
+              (portRef SP (instanceRef FF_50))
+              (portRef SP (instanceRef FF_49))
+              (portRef SP (instanceRef FF_48))
+              (portRef SP (instanceRef FF_47))
+              (portRef SP (instanceRef FF_46))
+              (portRef SP (instanceRef FF_45))
+              (portRef SP (instanceRef FF_44))
+              (portRef SP (instanceRef FF_43))
+              (portRef SP (instanceRef FF_42))
+              (portRef SP (instanceRef FF_41))
+              (portRef SP (instanceRef FF_40))
+              (portRef SP (instanceRef FF_39))
+              (portRef SP (instanceRef FF_38))
+              (portRef SP (instanceRef FF_37))
+              (portRef SP (instanceRef FF_36))
+              (portRef SP (instanceRef FF_35))
+              (portRef SP (instanceRef FF_34))
+              (portRef SP (instanceRef FF_33))
+              (portRef SP (instanceRef FF_32))
+              (portRef SP (instanceRef FF_31))
+              (portRef SP (instanceRef FF_30))
+              (portRef SP (instanceRef FF_29))
+              (portRef SP (instanceRef FF_28))
+              (portRef SP (instanceRef FF_27))
+              (portRef SP (instanceRef FF_26))
+              (portRef SP (instanceRef FF_25))
+              (portRef SP (instanceRef FF_24))
+              (portRef SP (instanceRef FF_23))
+              (portRef SP (instanceRef FF_22))
+              (portRef SP (instanceRef FF_21))
+              (portRef SP (instanceRef FF_20))
+              (portRef SP (instanceRef FF_19))
+              (portRef SP (instanceRef FF_18))
+              (portRef SP (instanceRef FF_17))
+              (portRef SP (instanceRef FF_16))
+              (portRef SP (instanceRef FF_15))
+              (portRef SP (instanceRef FF_14))
+              (portRef SP (instanceRef FF_13))
+              (portRef SP (instanceRef FF_12))
+              (portRef SP (instanceRef FF_11))
+              (portRef SP (instanceRef FF_10))
+              (portRef SP (instanceRef FF_9))
+              (portRef SP (instanceRef FF_8))
+              (portRef SP (instanceRef FF_7))
+              (portRef SP (instanceRef FF_6))
+              (portRef SP (instanceRef FF_5))
+              (portRef SP (instanceRef FF_4))
+              (portRef SP (instanceRef FF_3))
+              (portRef SP (instanceRef FF_2))
+              (portRef SP (instanceRef FF_1))
+              (portRef SP (instanceRef FF_0))))
+          (net Clock
+            (joined
+              (portRef Clock)
+              (portRef CK (instanceRef FF_62))
+              (portRef CK (instanceRef FF_61))
+              (portRef CK (instanceRef FF_60))
+              (portRef CK (instanceRef FF_59))
+              (portRef CK (instanceRef FF_58))
+              (portRef CK (instanceRef FF_57))
+              (portRef CK (instanceRef FF_56))
+              (portRef CK (instanceRef FF_55))
+              (portRef CK (instanceRef FF_54))
+              (portRef CK (instanceRef FF_53))
+              (portRef CK (instanceRef FF_52))
+              (portRef CK (instanceRef FF_51))
+              (portRef CK (instanceRef FF_50))
+              (portRef CK (instanceRef FF_49))
+              (portRef CK (instanceRef FF_48))
+              (portRef CK (instanceRef FF_47))
+              (portRef CK (instanceRef FF_46))
+              (portRef CK (instanceRef FF_45))
+              (portRef CK (instanceRef FF_44))
+              (portRef CK (instanceRef FF_43))
+              (portRef CK (instanceRef FF_42))
+              (portRef CK (instanceRef FF_41))
+              (portRef CK (instanceRef FF_40))
+              (portRef CK (instanceRef FF_39))
+              (portRef CK (instanceRef FF_38))
+              (portRef CK (instanceRef FF_37))
+              (portRef CK (instanceRef FF_36))
+              (portRef CK (instanceRef FF_35))
+              (portRef CK (instanceRef FF_34))
+              (portRef CK (instanceRef FF_33))
+              (portRef CK (instanceRef FF_32))
+              (portRef CK (instanceRef FF_31))
+              (portRef CK (instanceRef FF_30))
+              (portRef CK (instanceRef FF_29))
+              (portRef CK (instanceRef FF_28))
+              (portRef CK (instanceRef FF_27))
+              (portRef CK (instanceRef FF_26))
+              (portRef CK (instanceRef FF_25))
+              (portRef CK (instanceRef FF_24))
+              (portRef CK (instanceRef FF_23))
+              (portRef CK (instanceRef FF_22))
+              (portRef CK (instanceRef FF_21))
+              (portRef CK (instanceRef FF_20))
+              (portRef CK (instanceRef FF_19))
+              (portRef CK (instanceRef FF_18))
+              (portRef CK (instanceRef FF_17))
+              (portRef CK (instanceRef FF_16))
+              (portRef CK (instanceRef FF_15))
+              (portRef CK (instanceRef FF_14))
+              (portRef CK (instanceRef FF_13))
+              (portRef CK (instanceRef FF_12))
+              (portRef CK (instanceRef FF_11))
+              (portRef CK (instanceRef FF_10))
+              (portRef CK (instanceRef FF_9))
+              (portRef CK (instanceRef FF_8))
+              (portRef CK (instanceRef FF_7))
+              (portRef CK (instanceRef FF_6))
+              (portRef CK (instanceRef FF_5))
+              (portRef CK (instanceRef FF_4))
+              (portRef CK (instanceRef FF_3))
+              (portRef CK (instanceRef FF_2))
+              (portRef CK (instanceRef FF_1))
+              (portRef CK (instanceRef FF_0))))))))
+  (design SinCos
+    (cellRef SinCos
+      (libraryRef ORCLIB)))
+)

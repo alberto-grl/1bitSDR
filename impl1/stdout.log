@@ -1,0 +1,76 @@
+Running in Lattice mode
+
+Starting:    C:\lscc\diamond\3.10_x64\synpbase\bin64\mbin\synplify.exe
+Install:     C:\lscc\diamond\3.10_x64\synpbase
+Hostname:    RINALDI-I3-PC
+Date:        Sat Jan  4 14:07:12 2020
+Version:     M-2017.03L-SP1-1
+
+Arguments:   -product synplify_pro -tcl C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/launch_synplify.tcl
+ProductType: synplify_pro
+
+
+
+
+
+No project opened.
+TCL script complete: "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/launch_synplify.tcl"
+log file: "C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1.srr"
+Running: impl1 in foreground
+
+Running impl1_syn|impl1
+
+Running: compile (Compile) on impl1_syn|impl1
+# Sat Jan  4 14:07:48 2020
+
+Running: compile_flow (Compile Process) on impl1_syn|impl1
+# Sat Jan  4 14:07:48 2020
+
+Running: compiler (Compile Input) on impl1_syn|impl1
+# Sat Jan  4 14:07:48 2020
+Copied C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synwork\impl1_comp.srs to C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1.srs
+
+compiler completed
+# Sat Jan  4 14:07:55 2020
+
+Return Code: 0
+Run Time:00h:00m:07s
+
+Running: multi_srs_gen (Multi-srs Generator) on impl1_syn|impl1
+# Sat Jan  4 14:07:55 2020
+
+multi_srs_gen completed
+# Sat Jan  4 14:07:56 2020
+
+Return Code: 0
+Run Time:00h:00m:01s
+Copied C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synwork\impl1_mult.srs to C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1.srs
+Complete: Compile Process on impl1_syn|impl1
+
+Running: premap (Pre-mapping) on impl1_syn|impl1
+# Sat Jan  4 14:07:56 2020
+
+premap completed with warnings
+# Sat Jan  4 14:08:00 2020
+
+Return Code: 1
+Run Time:00h:00m:04s
+Complete: Compile on impl1_syn|impl1
+
+Running: map (Map) on impl1_syn|impl1
+# Sat Jan  4 14:08:00 2020
+
+Running: fpga_mapper (Map & Optimize) on impl1_syn|impl1
+# Sat Jan  4 14:08:00 2020
+Copied C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synwork\impl1_m.srm to C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1.srm
+
+fpga_mapper completed with warnings
+# Sat Jan  4 14:08:59 2020
+
+Return Code: 1
+Run Time:00h:00m:59s
+Complete: Map on impl1_syn|impl1
+Complete: Logic Synthesis on impl1_syn|impl1
+0Opening object source file c:\users\rinaldi-i3\lattice\fpgasdr_3\carrierpll.v
+Opening object source file c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v
+exit status=0

@@ -1,0 +1,47 @@
+Starting process: module
+
+Starting process: 
+
+SCUBA, Version Diamond (64-bit) 3.11.0.396.4
+Sat Jan 11 17:46:30 2020
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+
+BEGIN SCUBA Module Synthesis
+
+    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n SinCos -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 8 -width 13 -pfu -input_reg -mode 2 -output_reg -area -pipeline 1 
+    Circuit name     : SinCos
+    Module type      : cosine
+    Module Version   : 1.6
+    Ports            : 
+	Inputs       : Clock, ClkEn, Reset, Theta[7:0]
+	Outputs      : Sine[12:0], Cosine[12:0]
+    I/O buffer       : not inserted
+    EDIF output      : SinCos.edn
+    Verilog output   : SinCos.v
+    Verilog template : SinCos_tmpl.v
+    Verilog testbench: tb_SinCos_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : SinCos.srp
+    Estimated Resource Usage:
+            LUT : 154
+            Reg : 63
+
+END   SCUBA Module Synthesis
+
+File: SinCos.lpc created.
+
+
+End process: completed successfully.
+
+
+Total Warnings:  0
+
+Total Errors:  0
+
+

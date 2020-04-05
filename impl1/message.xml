@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v(38): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v</Navigation>
+            <Navigation>38</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1032): </Dynamic>
+            <Dynamic>PUR</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1032</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/sincos.v(8): </Dynamic>
+            <Dynamic>SinCos</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/sincos.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(563): </Dynamic>
+            <Dynamic>INV</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>563</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1173): </Dynamic>
+            <Dynamic>XOR2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1173</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1051): </Dynamic>
+            <Dynamic>ROM16X1A(initval=16'b1111111111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1051</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(43): </Dynamic>
+            <Dynamic>AND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(187): </Dynamic>
+            <Dynamic>FD1P3DX</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>187</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(723): </Dynamic>
+            <Dynamic>MUX21</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>723</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(138): </Dynamic>
+            <Dynamic>FADD2B</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>138</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111111111111111111111111111111111111111110000000000000000000000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111111111111111111111111111100000000000001111111111100000000000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111111111111111111100000000011111110000001111110000011111000000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111111111111100000011111000011110001110001110001110011100111000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111111111000011100011100110011001001101101101001001011010110100)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111111000110011011010010101010100101001001001101100110001100110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111100100101010110011000000000001110011011010110101010110101010)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1110010110011100010101001111111101101010110011100000000011110000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1101000010100011001111010111110011001100010101100000000011001100)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1111011011100010010110111011101001110011000000100111110010101010)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1000100101001010011001010111111001010010011110001001001001111000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b01)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b01111111111111111111111111111111111111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b0111111111110000000000000111111111111111111111111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b011111000001111110000001111111000000000111111111111111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b011100111001110001110001110001111000011111000000111111111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b0101101011010010010110110110010011001100111000111000011111111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1100110001100110110010010010100101010101001011011001100011111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1010101101010101101011011001110000000000011001101010100100111110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b01111000000000111001101010110111111110010101000111001101001110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b0110011000000000110101000110011001111101011110011000101000010110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b1010101001111100100000011001110010111011101101001000111011011110)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1089): </Dynamic>
+            <Dynamic>ROM64X1A(initval=64'b011110010010010001111001001010011111101010011001010010100100010)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1089</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/nco.v(13): </Dynamic>
+            <Dynamic>nco_sig</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/nco.v</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/mixer.v(2): </Dynamic>
+            <Dynamic>Mixer</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/mixer.v</Navigation>
+            <Navigation>2</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/cic.v(20): </Dynamic>
+            <Dynamic>CIC(width=72,decimation_ratio=4096)</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/cic.v</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35901209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/cic.v(119): </Dynamic>
+            <Dynamic>72</Dynamic>
+            <Dynamic>12</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/cic.v</Navigation>
+            <Navigation>119</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/pwm.v(1): </Dynamic>
+            <Dynamic>PWM</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/pwm.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/pll.v(8): </Dynamic>
+            <Dynamic>PLL</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/pll.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
+            <Dynamic>EHXPLLJ(CLKFB_DIV=10,CLKOP_DIV=6,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=5,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1730</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/amdemod.v(8): </Dynamic>
+            <Dynamic>AMDemodulator</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/amdemod.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/multiplier.v(8): </Dynamic>
+            <Dynamic>Multiplier</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/multiplier.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(797): </Dynamic>
+            <Dynamic>ND2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>797</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(684): </Dynamic>
+            <Dynamic>MULT2</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>684</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uartrx.v(19): </Dynamic>
+            <Dynamic>uart_rx(CLKS_PER_BIT=87)</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uartrx.v</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uarttx.v(14): </Dynamic>
+            <Dynamic>uart_tx(CLKS_PER_BIT=87)</Dynamic>
+            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uarttx.v</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>MYLED[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>XOut</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>sin_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>CIC_out_clkSin</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>CICGain</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>CICGain</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>CICGain</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>CICGain</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>CICGain</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>CICGain</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+</BaliMessageLog>

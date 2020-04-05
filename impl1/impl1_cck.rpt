@@ -1,0 +1,113 @@
+# Synopsys Constraint Checker, version maplat, Build 1796R, built Aug  4 2017
+# Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+# Written on Sat Jan  4 14:07:59 2020
+
+
+##### DESIGN INFO #######################################################
+
+Top View:                "top"
+Constraint File(s):      (none)
+
+
+
+
+##### SUMMARY ############################################################
+
+Found 0 issues in 0 out of 0 constraints
+
+
+##### DETAILS ############################################################
+
+
+
+Clock Relationships
+*******************
+
+Starting                                              Ending                                                |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PLL|CLKOP_inferred_clock                              PLL|CLKOP_inferred_clock                              |     1000.000         |     No paths         |     No paths         |     No paths                         
+PLL|CLKOP_inferred_clock                              CIC_23s_8s_0|d_clk_derived_clock                      |     1000.000         |     No paths         |     No paths         |     No paths                         
+PLL|CLKOP_inferred_clock                              CIC_23s_8s_1|d_clk_derived_clock                      |     1000.000         |     No paths         |     No paths         |     No paths                         
+CIC_23s_8s_0|d_clk_derived_clock                      PLL|CLKOP_inferred_clock                              |     1000.000         |     No paths         |     No paths         |     No paths                         
+CIC_23s_8s_0|d_clk_derived_clock                      CIC_23s_8s_0|d_clk_derived_clock                      |     1000.000         |     No paths         |     No paths         |     No paths                         
+CIC_23s_8s_1|d_clk_derived_clock                      PLL|CLKOP_inferred_clock                              |     1000.000         |     No paths         |     No paths         |     No paths                         
+CIC_23s_8s_1|d_clk_derived_clock                      CIC_23s_8s_1|d_clk_derived_clock                      |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2]       uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2]       |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2]       uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2]       |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       |     1000.000         |     No paths         |     No paths         |     No paths                         
+uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     |     1000.000         |     No paths         |     No paths         |     No paths                         
+=======================================================================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+Unconstrained Start/End Points
+******************************
+
+p:CIC_out_clkSin
+p:DiffOut
+p:MYLED[0]
+p:MYLED[1]
+p:MYLED[2]
+p:MYLED[3]
+p:MYLED[4]
+p:MYLED[5]
+p:MYLED[6]
+p:MYLED[7]
+p:MixerOutSin[0]
+p:MixerOutSin[1]
+p:MixerOutSin[2]
+p:MixerOutSin[3]
+p:MixerOutSin[4]
+p:MixerOutSin[5]
+p:MixerOutSin[6]
+p:MixerOutSin[7]
+p:PWMOut
+p:RFIn
+p:XIn
+p:XOut
+p:i_Rx_Serial
+p:o_Rx_Byte[0]
+p:o_Rx_Byte[1]
+p:o_Rx_Byte[2]
+p:o_Rx_Byte[3]
+p:o_Rx_Byte[4]
+p:o_Rx_Byte[5]
+p:o_Rx_Byte[6]
+p:o_Rx_Byte[7]
+p:o_Rx_DV
+p:o_Tx_Serial
+p:sinGen
+p:sin_out
+
+
+Inapplicable constraints
+************************
+
+(none)
+
+
+Applicable constraints with issues
+**********************************
+
+(none)
+
+
+Constraints with matching wildcard expressions
+**********************************************
+
+(none)
+
+
+Library Report
+**************
+
+
+# End of Constraint Checker Report

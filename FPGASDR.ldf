@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="FPGASDR" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="timingstrategytest1">
+        <Options def_top="NCOAdder" top="top"/>
+        <Source name="impl1/source/top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="impl1/source/UartRX.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/source/UartTX.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="NCO.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Mixer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CIC.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="PWM.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="Multiplier.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="AMDemod.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="SinCos.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="PLL.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="NCOAdder.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="g3r/g3r.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Implementation title="sim2" dir="sim2" description="sim2" synthesis="lse" default_strategy="Area">
+        <Options def_top="Mixer"/>
+        <Source name="sim2/source/Mixer.v" type="Verilog" type_short="Verilog">
+            <Options top_module="Mixer"/>
+        </Source>
+        <Source name="MixerSim.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="FPGASDR.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim3/sim3.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="FPGASDR1.sty"/>
+    <Strategy name="timingstrategytest1" file="timingstrategytest1.sty"/>
+</BaliProject>

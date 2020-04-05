@@ -1,0 +1,48 @@
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused register d_scaled[22:0]. Make sure that there are no unused intermediate registers.
+@W: CL271 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused bits 14 to 0 of d10[22:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused register d_scaled[47:0]. Make sure that there are no unused intermediate registers.
+@W: CL271 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused bits 39 to 0 of d10[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG133 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v":8:10:8:14|Object SimIn is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":14:8:14:11|Removing wire XOut, as there is no assignment to it.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":20:8:20:14|Removing wire sin_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":25:11:25:19|Removing wire i_Tx_Byte, as there is no assignment to it.
+@W: CG133 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":26:11:26:24|Object phase_inc_carr is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":39:11:39:17|Removing wire IIR_out, as there is no assignment to it.
+@W: CG133 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":40:18:40:30|Object NCO_PLL_Accum is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL157 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":11:17:11:21|*Output MYLED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":14:8:14:11|*Output XOut has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":20:8:20:14|*Output sin_out has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Pruning register bits 15 to 8 of r_Clock_Count[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL260 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":21:1:21:6|Pruning register bit 0 of PhaseInc[63:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":21:1:21:6|Pruning register bits 63 to 2 of PhaseInc[63:1]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+

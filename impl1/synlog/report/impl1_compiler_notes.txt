@@ -1,0 +1,35 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1032:7:1032:9|Synthesizing module PUR in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1062:7:1062:15|Synthesizing module ROM256X1A in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\SinCos.v":8:7:8:12|Synthesizing module SinCos in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\NCO.v":18:7:18:13|Synthesizing module nco_sig in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\Mixer.v":2:7:2:11|Synthesizing module Mixer in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":25:7:25:9|Synthesizing module CIC in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":25:7:25:9|Synthesizing module CIC in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v":1:7:1:9|Synthesizing module PWM in library work.
+@N: CG179 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v":27:19:27:30|Removing redundant assignment.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PLL.v":8:7:8:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":3:7:3:16|Synthesizing module CarrierPLL in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":19:7:19:13|Synthesizing module uart_rx in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":14:7:14:13|Synthesizing module uart_tx in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":4:7:4:9|Synthesizing module top in library work.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[8] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[9] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[10] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[11] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[12] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[13] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[14] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[15] is always 0.
+@N: CL201 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Trying to extract state machine for register r_SM_Main.
+@N: CL201 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":73:2:73:7|Trying to extract state machine for register r_SM_Main.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":21:1:21:6|Register bit PhaseInc[0] is always 1.
+@N: CL159 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\NCO.v":28:20:28:33|Input CarrierPLL_out is unused.
+@N|Running in 64-bit mode
+

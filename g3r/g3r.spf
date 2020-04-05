@@ -1,0 +1,18 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="g3r" simType="Active-HDL">
+    <Source worklib="work" path="impl1/source/TestUart.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="PLL.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="PWM.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="Multiplier.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="HP_IIR.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="CIC.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="Mixer.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="SinCos.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="NCO.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="impl1/source/top.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="impl1/source/UartRX.v" type="VERILOG" include="none"/>
+    <Source worklib="work" path="impl1/source/UartTX.v" type="VERILOG" include="none"/>
+    <SimLib value="pmi_work ovi_machxo2"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="blinking_led"/>
+</BaliSimProject>

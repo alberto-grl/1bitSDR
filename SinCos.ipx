@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="SinCos" module="SinCos" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2020 01 11 17:46:36.113" version="1.6" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="SinCos.lpc" type="lpc" modified="2020 01 11 17:46:30.384"/>
+		<File name="SinCos.v" type="top_level_verilog" modified="2020 01 11 17:46:30.765"/>
+		<File name="SinCos_tmpl.v" type="template_verilog" modified="2020 01 11 17:46:30.766"/>
+		<File name="tb_SinCos_tmpl.v" type="testbench_verilog" modified="2020 01 11 17:46:30.782"/>
+  </Package>
+</DiamondModule>

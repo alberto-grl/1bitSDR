@@ -1,0 +1,12 @@
+#Start recording tcl command: 4/1/2020 21:18:40
+#Project Location: C:/Users/user/lattice/1BitADCFPGASDR; Project name: FPGASDR
+prj_project open "C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.ldf"
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/TestUart.v"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/FPGASDRSim/FPGASDRSim.spf"
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/n6/n6.spf"
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/sim1/sim1.spf"
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/testsim/testsim.spf"
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/sim4/sim4.spf"
+prj_src remove "C:/Users/user/lattice/1BitADCFPGASDR/HP_IIR.v" "C:/Users/user/lattice/1BitADCFPGASDR/CarrierPLL.v"
+#Stop recording: 4/1/2020 21:30:39

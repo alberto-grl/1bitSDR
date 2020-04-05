@@ -1,0 +1,2 @@
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@W: MT529 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\sincos.v":33:12:33:16|Found inferred clock PLL|CLKOP_inferred_clock which controls 955 sequential elements including SinCos1.FF_15. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 

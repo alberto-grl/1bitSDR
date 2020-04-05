@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version M-2017.03L-SP1-1
+#--  Project file C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1_syn.prd
+#--  Written on Sat Jan  4 14:12:52 2020
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

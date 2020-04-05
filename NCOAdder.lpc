@@ -1,0 +1,39 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-7000HE
+PartName=LCMXO2-7000HE-4TG144C
+SpeedGrade=4
+Package=TQFP144
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Adder
+CoreRevision=3.5
+ModuleName=NCOAdder
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=03/29/2020
+Time=16:12:04
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+InputWidth=64
+Representation=Unsigned
+UseCIport=0
+COport=None
+OutReg=0
+Complex=0
+Stage=1
+
+[Command]
+cmd_line= -w -n NCOAdder -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type mgaddsub -width 64 -unsigned -pipeline 1

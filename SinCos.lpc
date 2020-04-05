@@ -1,0 +1,41 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-7000HE
+PartName=LCMXO2-7000HE-4TG144C
+SpeedGrade=4
+Package=TQFP144
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=Sin-Cos_Table
+CoreRevision=1.6
+ModuleName=SinCos
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=01/11/2020
+Time=17:46:30
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=Big Endian [MSB:LSB]
+IO=0
+pmi_implemenntation=LUT
+pmi_dataa_width=8
+pmi_datab_width=13
+pmi_output_mode=Sin-Cos
+pmi_optimize_mem=1
+pmi_use_1bit=0
+pmi_input_reg=1
+pmi_output_reg=1
+pmi_pipeline=1
+
+[Command]
+cmd_line= -w -n SinCos -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type cosine -addr_width 8 -width 13 -pfu -input_reg -mode 2 -output_reg -area -pipeline 1

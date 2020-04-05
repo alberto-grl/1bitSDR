@@ -1,0 +1,85 @@
+#--  Synopsys, Inc.
+#--  Version M-2017.03L-SP1-1
+#--  Project file C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\run_options.txt
+#--  Written on Sat Jan  4 14:07:48 2020
+
+
+#project files
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/top.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartRX.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/impl1/source/UartTX.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/NCO.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/Mixer.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/SinCos.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CIC.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PWM.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/HP_shift.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/frequency_select.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/PLL.v"
+add_file -verilog "C:/Users/Rinaldi-i3/lattice/FPGASDR_3/CarrierPLL.v"
+
+
+
+#implementation: "impl1"
+impl -add impl1 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std sysv
+set_option -project_relative_includes 1
+set_option -include_path {C:/Users/Rinaldi-i3/lattice/FPGASDR_3}
+
+#device options
+set_option -technology MACHXO2
+set_option -part LCMXO2_7000HE
+set_option -package TG144C
+set_option -speed_grade -4
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "top"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+
+# mapper_without_write_options
+set_option -frequency auto
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 1000
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr no
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "./impl1.edi"
+impl -active "impl1"

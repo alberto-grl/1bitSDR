@@ -1,0 +1,4 @@
+blinking_led,/,C:/Users/user/lattice/FPGASDR/impl1/source/TestUart.v
+top,/,C:/Users/user/lattice/FPGASDR/impl1/source/top.v
+uart_rx,/,C:/Users/user/lattice/FPGASDR/impl1/source/UartRX.v
+uart_tx,/,C:/Users/user/lattice/FPGASDR/impl1/source/UartTX.v

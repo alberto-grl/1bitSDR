@@ -1,0 +1,24 @@
+Results of NGD DRC are available in Mixer_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.10_x64/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'sin_in[1]' has no load.
+WARNING - synthesis: input pad net 'sin_in[1]' has no legal load.
+WARNING - synthesis: logical net 'sin_in[0]' has no load.
+WARNING - synthesis: input pad net 'sin_in[0]' has no legal load.
+WARNING - synthesis: logical net 'cos_in[1]' has no load.
+WARNING - synthesis: input pad net 'cos_in[1]' has no legal load.
+WARNING - synthesis: logical net 'cos_in[0]' has no load.
+WARNING - synthesis: input pad net 'cos_in[0]' has no legal load.
+WARNING - synthesis: DRC complete with 8 warnings.
+
+Design Results:
+    136 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file FPGASDR_impl1.ngd.

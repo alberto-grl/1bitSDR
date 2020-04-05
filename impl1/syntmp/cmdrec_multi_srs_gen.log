@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe  -link  -top  top  -multisrs  C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synwork\impl1_comp.srs  -osyn  C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synwork\impl1_mult.srs  -log  C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synlog\impl1_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe -link -top top -multisrs ..\synwork\impl1_comp.srs -osyn ..\synwork\impl1_mult.srs -log ..\synlog\impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:1
+file:..\synwork\impl1_comp.srs|io:i|time:1578143274|size:32292|exec:0|csum:C7B1CE48A1FA4EDFB664B4D44B2C7F90
+file:..\synwork\impl1_mult.srs|io:o|time:1578143276|size:6671|exec:0|csum:
+file:..\synlog\impl1_multi_srs_gen.srr|io:o|time:1578143276|size:409|exec:0|csum:
+file:..\..\..\..\..\..\lscc\diamond\3.10_x64\synpbase\bin64\syn_nfilter.exe|io:i|time:1501881390|size:8865280|exec:1|csum:B37FCE9CF34F30C81898D8440E6E88C7

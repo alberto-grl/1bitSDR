@@ -1,0 +1,3 @@
+## UMR3 MESSAGE PORT CONFIGURATION FILE
+## ************************************
+XTOR_DPI_MSG_PORT_UMR_ADDR_VERSION=0

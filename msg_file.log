@@ -1,0 +1,34 @@
+SCUBA, Version Diamond (64-bit) 3.11.2.446
+Sun Mar 29 16:12:04 2020
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\3.11_x64\ispfpga\bin\nt64\scuba.exe -w -n NCOAdder -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type mgaddsub -width 64 -unsigned -pipeline 1 
+    Circuit name     : NCOAdder
+    Module type      : add
+    Module Version   : 3.5
+    Width            : 64
+    Ports            : 
+    Inputs       : DataA[63:0], DataB[63:0], Clock, Reset
+    Outputs      : Result[63:0]
+    I/O buffer       : not inserted
+    Representation   : unsigned number
+    EDIF output      : NCOAdder.edn
+    Verilog output   : NCOAdder.v
+    Verilog template : NCOAdder_tmpl.v
+    Verilog testbench: tb_NCOAdder_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : NCOAdder.srp
+    Estimated Resource Usage:
+            LUT : 66
+            Reg : 64
+  
+END   SCUBA Module Synthesis
+

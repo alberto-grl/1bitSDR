@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "C:/Users/user/lattice/1BitADCFPGASDR"  

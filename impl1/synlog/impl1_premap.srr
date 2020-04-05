@@ -1,0 +1,97 @@
+# Sat Jan  4 14:07:57 2020
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1_scck.rpt 
+Printing clock  summary report in "C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 116MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":11:17:11:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[6] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":14:8:14:11|Tristate driver XOut (in view: work.top(verilog)) on net XOut (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":20:8:20:14|Tristate driver sin_out (in view: work.top(verilog)) on net sin_out (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_clk (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":61:1:61:6|Removing sequential instance d_clk_tmp (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\uarttx.v":45:2:45:7|Removing sequential instance r_Tx_Active (in view: work.uart_tx_130s_0_1_2_3_4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\uarttx.v":45:2:45:7|Removing sequential instance r_Tx_Done (in view: work.uart_tx_130s_0_1_2_3_4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                   Requested     Requested     Clock                                       Clock                     Clock
+Level     Clock                                                   Frequency     Period        Type                                        Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       PLL|CLKOP_inferred_clock                                1.0 MHz       1000.000      inferred                                    Autoconstr_clkgroup_0     955  
+1 .         CIC_23s_8s_1|d_clk_derived_clock                      1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     755  
+1 .         CIC_23s_8s_0|d_clk_derived_clock                      1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     753  
+1 .         uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     30   
+1 .         uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     20   
+1 .         uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2]       1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     3    
+1 .         uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     3    
+=========================================================================================================================================================================
+
+@W: MT529 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\sincos.v":33:12:33:16|Found inferred clock PLL|CLKOP_inferred_clock which controls 955 sequential elements including SinCos1.FF_15. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 148MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 148MB)
+
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[46] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[45] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[44] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[43] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[42] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[41] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[40] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[6] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[5] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[4] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[3] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[2] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[1] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[0] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[41] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[40] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[1] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[0] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 148MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 61MB peak: 148MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sat Jan  4 14:08:00 2020
+
+###########################################################]

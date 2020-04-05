@@ -1,0 +1,929 @@
+#Build: Synplify Pro (R) M-2017.03L-SP1-1, Build 086R, Aug  4 2017
+#install: C:\lscc\diamond\3.10_x64\synpbase
+#OS: Windows 7 6.1
+#Hostname: RINALDI-I3-PC
+
+# Sat Jan  4 14:07:48 2020
+
+#Implementation: impl1
+
+Synopsys HDL Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+Synopsys Verilog Compiler, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+
+@N:: Running Verilog Compiler in System Verilog mode
+@N:: Running Verilog Compiler in Multiple File Compilation Unit mode
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\pmi_def.v" (library work)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\hypermods.v" (library __hyper__lib__)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\umr_capim.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_objects.v" (library snps_haps)
+@I::"C:\lscc\diamond\3.10_x64\synpbase\lib\vlog\scemi_pipes.svh" (library snps_haps)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\NCO.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\Mixer.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\SinCos.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\HP_shift.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\frequency_select.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PLL.v" (library work)
+@I::"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v" (library work)
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1032:7:1032:9|Synthesizing module PUR in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":187:7:187:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1062:7:1062:15|Synthesizing module ROM256X1A in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\SinCos.v":8:7:8:12|Synthesizing module SinCos in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\NCO.v":18:7:18:13|Synthesizing module nco_sig in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\Mixer.v":2:7:2:11|Synthesizing module Mixer in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":25:7:25:9|Synthesizing module CIC in library work.
+
+	width=32'b00000000000000000000000000010111
+	decimation_ratio=32'b00000000000000000000000000001000
+   Generated name = CIC_23s_8s
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused register d_scaled[22:0]. Make sure that there are no unused intermediate registers.
+@W: CL271 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused bits 14 to 0 of d10[22:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":25:7:25:9|Synthesizing module CIC in library work.
+
+	width=32'b00000000000000000000000000110000
+	decimation_ratio=32'b00000000000000000000000100000000
+   Generated name = CIC_48s_256s
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused register d_scaled[47:0]. Make sure that there are no unused intermediate registers.
+@W: CL271 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CIC.v":97:1:97:6|Pruning unused bits 39 to 0 of d10[47:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v":1:7:1:9|Synthesizing module PWM in library work.
+@N: CG179 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v":27:19:27:30|Removing redundant assignment.
+@W: CG133 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PWM.v":8:10:8:14|Object SimIn is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1124:7:1124:9|Synthesizing module VLO in library work.
+@N: CG364 :"C:\lscc\diamond\3.10_x64\synpbase\lib\lucent\machxo2.v":1730:7:1730:13|Synthesizing module EHXPLLJ in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\PLL.v":8:7:8:9|Synthesizing module PLL in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":3:7:3:16|Synthesizing module CarrierPLL in library work.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":19:7:19:13|Synthesizing module uart_rx in library work.
+
+	CLKS_PER_BIT=32'b00000000000000000000000010000010
+	s_IDLE=3'b000
+	s_RX_START_BIT=3'b001
+	s_RX_DATA_BITS=3'b010
+	s_RX_STOP_BIT=3'b011
+	s_CLEANUP=3'b100
+   Generated name = uart_rx_130s_0_1_2_3_4
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":14:7:14:13|Synthesizing module uart_tx in library work.
+
+	CLKS_PER_BIT=32'b00000000000000000000000010000010
+	s_IDLE=3'b000
+	s_TX_START_BIT=3'b001
+	s_TX_DATA_BITS=3'b010
+	s_TX_STOP_BIT=3'b011
+	s_CLEANUP=3'b100
+   Generated name = uart_tx_130s_0_1_2_3_4
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CG364 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":4:7:4:9|Synthesizing module top in library work.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":14:8:14:11|Removing wire XOut, as there is no assignment to it.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":20:8:20:14|Removing wire sin_out, as there is no assignment to it.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":25:11:25:19|Removing wire i_Tx_Byte, as there is no assignment to it.
+@W: CG133 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":26:11:26:24|Object phase_inc_carr is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG360 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":39:11:39:17|Removing wire IIR_out, as there is no assignment to it.
+@W: CG133 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":40:18:40:30|Object NCO_PLL_Accum is declared but not assigned. Either assign a value or remove the declaration.
+@W: CL157 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":11:17:11:21|*Output MYLED has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":14:8:14:11|*Output XOut has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\top.v":20:8:20:14|*Output sin_out has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[8] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[9] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[10] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[11] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[12] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[13] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[14] is always 0.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Register bit r_Clock_Count[15] is always 0.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Pruning register bits 15 to 8 of r_Clock_Count[15:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":40:3:40:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartTX.v":45:2:45:7|Trying to extract state machine for register r_SM_Main.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning register bits 7 to 3 of UartClk[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL169 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":58:3:58:8|Pruning unused register UartClk[2:0]. Make sure that there are no unused intermediate registers.
+@N: CL201 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\source\UartRX.v":73:2:73:7|Trying to extract state machine for register r_SM_Main.
+@N: CL189 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":21:1:21:6|Register bit PhaseInc[0] is always 1.
+@W: CL260 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":21:1:21:6|Pruning register bit 0 of PhaseInc[63:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL279 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\CarrierPLL.v":21:1:21:6|Pruning register bits 63 to 2 of PhaseInc[63:1]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL159 :"C:\Users\Rinaldi-i3\lattice\FPGASDR_3\NCO.v":28:20:28:33|Input CarrierPLL_out is unused.
+
+At c_ver Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 76MB peak: 81MB)
+
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+
+Process completed successfully.
+# Sat Jan  4 14:07:53 2020
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 69MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jan  4 14:07:54 2020
+
+###########################################################]
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:03s; Memory used current: 3MB peak: 4MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:03s cputime
+
+Process completed successfully.
+# Sat Jan  4 14:07:54 2020
+
+###########################################################]
+Synopsys Netlist Linker, version comp2017q2p1, Build 190R, built Aug  4 2017
+@N|Running in 64-bit mode
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 69MB peak: 70MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Sat Jan  4 14:07:56 2020
+
+###########################################################]
+Pre-mapping Report
+
+# Sat Jan  4 14:07:57 2020
+
+Synopsys Lattice Technology Pre-mapping, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@A: MF827 |No constraint file specified.
+@L: C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1_scck.rpt 
+Printing clock  summary report in "C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1_scck.rpt" file 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 104MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 114MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 113MB peak: 116MB)
+
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":11:17:11:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[6] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":14:8:14:11|Tristate driver XOut (in view: work.top(verilog)) on net XOut (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":20:8:20:14|Tristate driver sin_out (in view: work.top(verilog)) on net sin_out (in view: work.top(verilog)) has its enable tied to GND.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_clk (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":61:1:61:6|Removing sequential instance d_clk_tmp (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.sdffse(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\uarttx.v":45:2:45:7|Removing sequential instance r_Tx_Active (in view: work.uart_tx_130s_0_1_2_3_4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\uarttx.v":45:2:45:7|Removing sequential instance r_Tx_Done (in view: work.uart_tx_130s_0_1_2_3_4(verilog)) of type view:PrimLib.dffr(prim) because it does not drive other instances.
+ICG Latch Removal Summary:
+Number of ICG latches removed:	0
+Number of ICG latches not removed:	0
+syn_allowed_resources : blockrams=26  set on top level netlist top
+
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 147MB peak: 148MB)
+
+
+
+Clock Summary
+******************
+
+          Start                                                   Requested     Requested     Clock                                       Clock                     Clock
+Level     Clock                                                   Frequency     Period        Type                                        Group                     Load 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+0 -       PLL|CLKOP_inferred_clock                                1.0 MHz       1000.000      inferred                                    Autoconstr_clkgroup_0     955  
+1 .         CIC_23s_8s_1|d_clk_derived_clock                      1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     755  
+1 .         CIC_23s_8s_0|d_clk_derived_clock                      1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     753  
+1 .         uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     30   
+1 .         uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2]     1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     20   
+1 .         uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2]       1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     3    
+1 .         uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2]       1.0 MHz       1000.000      derived (from PLL|CLKOP_inferred_clock)     Autoconstr_clkgroup_0     3    
+=========================================================================================================================================================================
+
+@W: MT529 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\sincos.v":33:12:33:16|Found inferred clock PLL|CLKOP_inferred_clock which controls 955 sequential elements including SinCos1.FF_15. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+
+Finished Pre Mapping Phase.
+
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 148MB)
+
+
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 148MB)
+
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[46] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[45] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[44] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[43] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[42] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[41] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[40] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[6] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[5] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[4] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[3] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[2] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[1] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[0] (in view: work.CIC_48s_256s_0(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[41] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d10[40] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[1] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance d_out[0] (in view: work.CIC_48s_256s_1(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+None
+None
+
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 146MB peak: 148MB)
+
+Pre-mapping successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 61MB peak: 148MB)
+
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Sat Jan  4 14:08:00 2020
+
+###########################################################]
+Map & Optimize Report
+
+# Sat Jan  4 14:08:00 2020
+
+Synopsys Lattice Technology Mapper, Version maplat, Build 1796R, Built Aug  4 2017 11:10:16
+Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
+Product Version M-2017.03L-SP1-1
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 99MB)
+
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 98MB peak: 100MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 111MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 113MB)
+
+
+
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 141MB peak: 143MB)
+
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":20:8:20:14|Tristate driver sin_out (in view: work.top(verilog)) on net sin_out (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":14:8:14:11|Tristate driver XOut (in view: work.top(verilog)) on net XOut (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":11:17:11:21|Tristate driver MYLED_1 (in view: work.top(verilog)) on net MYLED[6] (in view: work.top(verilog)) has its enable tied to GND.
+
+Available hyper_sources - for debug and ip models
+	None Found
+
+@N: MT206 |Auto Constrain mode is enabled
+@N: FX493 |Applying initial value "000" on instance uart_rx1.r_SM_Main[2:0].
+@N: FX493 |Applying initial value "00000000" on instance uart_rx1.r_Rx_Byte[7:0].
+@N: FX493 |Applying initial value "000" on instance uart_tx1.r_SM_Main[2:0].
+@N: FX493 |Applying initial value "00000000" on instance uart_tx1.r_Tx_Data[7:0].
+
+Finished RTL optimizations (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 144MB peak: 147MB)
+
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Sin.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Sin.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Sin.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Boundary register CIC2Sin.d_out[1] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Sin.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
+@A: BN291 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Boundary register CIC2Sin.d_out[0] (in view: work.top(verilog)) is packed into a complex cell. To disable register packing, set syn_keep=1 on the net between the register and the complex cell. 
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[46] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[45] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[44] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[43] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[42] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[41] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d10[40] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[6] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[5] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[4] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[3] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[2] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[1] (in view: work.top(verilog)) because it does not drive other instances.
+@N: BN362 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Removing sequential instance CIC2Cos.d_out[0] (in view: work.top(verilog)) because it does not drive other instances.
+@N: MO231 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\pwm.v":21:0:21:5|Found counter in view:work.top(verilog) instance PWM1.counter[7:0] 
+
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 148MB peak: 148MB)
+
+
+Finished factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 149MB peak: 150MB)
+
+
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 149MB peak: 151MB)
+
+
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 150MB peak: 151MB)
+
+
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 151MB peak: 152MB)
+
+
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:19s; Memory used current: 158MB peak: 159MB)
+
+
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:28s; Memory used current: 159MB peak: 159MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:29s; Memory used current: 157MB peak: 159MB)
+
+
+Finished preparing to map (Real Time elapsed 0h:00m:33s; CPU Time elapsed 0h:00m:32s; Memory used current: 158MB peak: 159MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:36s; CPU Time elapsed 0h:00m:35s; Memory used current: 167MB peak: 171MB)
+
+Pass		 CPU time		Worst Slack		Luts / Registers
+------------------------------------------------------------
+   1		0h:00m:36s		    -2.79ns		 354 /      2479
+   2		0h:00m:36s		    -2.79ns		 352 /      2479
+   3		0h:00m:37s		    -2.82ns		 331 /      2479
+   4		0h:00m:37s		    -2.55ns		 328 /      2479
+   5		0h:00m:37s		    -2.41ns		 328 /      2479
+   6		0h:00m:37s		    -2.55ns		 327 /      2479
+@N: FX271 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\carrierpll.v":21:1:21:6|Replicating instance CarrierPLL1.PhaseInc[1] (in view: work.top(verilog)) with 97 loads 3 times to improve timing.
+@N: FX271 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Replicating instance CIC1Sin.d_out[7] (in view: work.top(verilog)) with 42 loads 3 times to improve timing.
+@N: FX271 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\cic.v":97:1:97:6|Replicating instance CIC1Cos.d_out[7] (in view: work.top(verilog)) with 41 loads 3 times to improve timing.
+Timing driven replication report
+Added 9 Registers via timing driven replication
+Added 0 LUTs via timing driven replication
+
+   7		0h:00m:43s		    -2.62ns		 335 /      2488
+
+@N: FX271 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\uartrx.v":73:2:73:7|Replicating instance uart_rx1.r_SM_Main[1] (in view: work.top(verilog)) with 14 loads 1 time to improve timing.
+Added 1 Registers via timing driven replication
+Added 1 LUTs via timing driven replication
+
+   8		0h:00m:43s		    -2.45ns		 338 /      2489
+   9		0h:00m:43s		    -2.41ns		 338 /      2489
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:45s; CPU Time elapsed 0h:00m:44s; Memory used current: 168MB peak: 171MB)
+
+@N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":11:17:11:21|Tristate driver MYLED_obuft_6_.un1[0] (in view: work.top(verilog)) on net MYLED[6] (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":14:8:14:11|Tristate driver XOut_obuft.un1[0] (in view: work.top(verilog)) on net XOut (in view: work.top(verilog)) has its enable tied to GND.
+@N: MO111 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\impl1\source\top.v":20:8:20:14|Tristate driver sin_out_obuft.un1[0] (in view: work.top(verilog)) on net sin_out (in view: work.top(verilog)) has its enable tied to GND.
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:50s; Memory used current: 167MB peak: 171MB)
+
+@N: MT611 :|Automatically generated clock CIC_23s_8s_0|d_clk_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock CIC_23s_8s_1|d_clk_derived_clock is not used and is being removed
+@N: MT611 :|Automatically generated clock uart_rx_130s_0_1_2_3_4|UartClk_derived_clock[2] is not used and is being removed
+@N: MT611 :|Automatically generated clock uart_rx_130s_0_1_2_3_4|UartClk_1_derived_clock[2] is not used and is being removed
+@N: MT611 :|Automatically generated clock uart_tx_130s_0_1_2_3_4|UartClk_derived_clock[2] is not used and is being removed
+@N: MT611 :|Automatically generated clock uart_tx_130s_0_1_2_3_4|UartClk_1_derived_clock[2] is not used and is being removed
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 gated/generated clock tree(s) driving 2505 clock pin(s) of sequential element(s)
+0 instances converted, 2505 sequential instances remain driven by gated/generated clocks
+
+==================================================================================================== Gated/Generated Clocks ====================================================================================================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance           Explanation                                                                                                                   
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       PLL1.PLLInst_0      EHXPLLJ                2505       uart_tx1.UartClk_1[2]     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+================================================================================================================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:52s; CPU Time elapsed 0h:00m:51s; Memory used current: 126MB peak: 171MB)
+
+Writing Analyst data base C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\synwork\impl1_m.srm
+
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:54s; CPU Time elapsed 0h:00m:53s; Memory used current: 163MB peak: 171MB)
+
+Writing EDIF Netlist and constraint files
+@N: FX1056 |Writing EDF file: C:\Users\Rinaldi-i3\lattice\FPGASDR_3\impl1\impl1.edi
+M-2017.03L-SP1-1
+@N: BW106 |Synplicity Constraint File capacitance units using default value of 1pF 
+
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:57s; CPU Time elapsed 0h:00m:56s; Memory used current: 167MB peak: 171MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 167MB peak: 171MB)
+
+@W: MT246 :"c:\users\rinaldi-i3\lattice\fpgasdr_3\pll.v":64:12:64:20|Blackbox EHXPLLJ is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT420 |Found inferred clock PLL|CLKOP_inferred_clock with period 8.14ns. Please declare a user-defined clock on object "n:PLL1.CLKOP"
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Sat Jan  4 14:08:59 2020
+#
+
+
+Top view:               top
+Requested Frequency:    122.8 MHz
+Wire load mode:         top
+Paths requested:        5
+Constraint File(s):    
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+@N: MT322 |Clock constraints include only register-to-register paths associated with each individual clock.
+
+
+
+Performance Summary
+*******************
+
+
+Worst slack in design: -1.437
+
+                             Requested     Estimated     Requested     Estimated                Clock        Clock                
+Starting Clock               Frequency     Frequency     Period        Period        Slack      Type         Group                
+----------------------------------------------------------------------------------------------------------------------------------
+PLL|CLKOP_inferred_clock     122.8 MHz     104.4 MHz     8.144         9.582         -1.437     inferred     Autoconstr_clkgroup_0
+System                       1.0 MHz       NA            1000.000      NA            NA         system       system_clkgroup      
+==================================================================================================================================
+Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
+
+
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                              |    rise  to  rise    |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+-------------------------------------------------------------------------------------------------------------------------------------------
+Starting                  Ending                    |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
+-------------------------------------------------------------------------------------------------------------------------------------------
+PLL|CLKOP_inferred_clock  PLL|CLKOP_inferred_clock  |  8.144       -1.437  |  No paths    -      |  No paths    -      |  No paths    -    
+===========================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+No IO constraint found
+
+
+
+====================================
+Detailed Report for Clock: PLL|CLKOP_inferred_clock
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                               Arrival           
+Instance                       Reference                    Type        Pin     Net                   Time        Slack 
+                               Clock                                                                                    
+------------------------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[2]      PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[2]      1.180       -1.437
+uart_rx1.r_Clock_Count[3]      PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[3]      1.180       -1.437
+uart_rx1.r_Clock_Count[6]      PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[6]      1.180       -1.437
+uart_rx1.r_Clock_Count[7]      PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[7]      1.180       -1.437
+uart_rx1.r_Clock_Count[8]      PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[8]      1.148       -0.461
+uart_rx1.r_Clock_Count[9]      PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[9]      1.148       -0.461
+uart_rx1.r_Clock_Count[10]     PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[10]     1.148       -0.461
+uart_rx1.r_Clock_Count[11]     PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[11]     1.148       -0.461
+uart_rx1.r_Clock_Count[12]     PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[12]     1.148       -0.461
+uart_rx1.r_Clock_Count[13]     PLL|CLKOP_inferred_clock     FD1P3IX     Q       r_Clock_Count[13]     1.148       -0.461
+========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                               Starting                                                                      Required           
+Instance                       Reference                    Type        Pin     Net                          Time         Slack 
+                               Clock                                                                                            
+--------------------------------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[15]     PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[15]     8.039        -1.437
+uart_rx1.r_Clock_Count[13]     PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[13]     8.039        -1.295
+uart_rx1.r_Clock_Count[14]     PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[14]     8.039        -1.295
+uart_rx1.r_Clock_Count[11]     PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[11]     8.039        -1.152
+uart_rx1.r_Clock_Count[12]     PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[12]     8.039        -1.152
+uart_rx1.r_Clock_Count[6]      PLL|CLKOP_inferred_clock     FD1P3IX     D       r_Clock_Count_8[6]           8.233        -1.146
+uart_rx1.r_Clock_Count[9]      PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[9]      8.039        -1.009
+uart_rx1.r_Clock_Count[10]     PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[10]     8.039        -1.009
+uart_rx1.r_Clock_Count[7]      PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[7]      8.039        -0.866
+uart_rx1.r_Clock_Count[8]      PLL|CLKOP_inferred_clock     FD1P3IX     D       un1_r_Clock_Count_15[8]      8.039        -0.866
+================================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      8.144
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.039
+
+    - Propagation time:                      9.476
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.437
+
+    Number of logic level(s):                13
+    Starting point:                          uart_rx1.r_Clock_Count[2] / Q
+    Ending point:                            uart_rx1.r_Clock_Count[15] / D
+    The start point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[2]                  FD1P3IX      Q        Out     1.180     1.180       -         
+r_Clock_Count[2]                           Net          -        -       -         -           5         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     A        In      0.000     1.180       -         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     Z        Out     1.017     2.197       -         
+r_Clock_Count_RNIM4PQ1[2]                  Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     B        In      0.000     2.197       -         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     Z        Out     1.017     3.213       -         
+g0_i_a5_0_6_0                              Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     A        In      0.000     3.213       -         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     Z        Out     1.017     4.230       -         
+N_15_1                                     Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     C        In      0.000     4.230       -         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     Z        Out     1.153     5.383       -         
+r_SM_Main_RNILOCVB[2]                      Net          -        -       -         -           3         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        B0       In      0.000     5.383       -         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        COUT     Out     1.544     6.928       -         
+un1_r_Clock_Count_15_cry_0                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        CIN      In      0.000     6.928       -         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        COUT     Out     0.143     7.070       -         
+un1_r_Clock_Count_15_cry_2                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        CIN      In      0.000     7.070       -         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        COUT     Out     0.143     7.213       -         
+un1_r_Clock_Count_15_cry_4                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        CIN      In      0.000     7.213       -         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        COUT     Out     0.143     7.356       -         
+un1_r_Clock_Count_15_cry_6                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        CIN      In      0.000     7.356       -         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        COUT     Out     0.143     7.499       -         
+un1_r_Clock_Count_15_cry_8                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        CIN      In      0.000     7.499       -         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        COUT     Out     0.143     7.641       -         
+un1_r_Clock_Count_15_cry_10                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        CIN      In      0.000     7.641       -         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        COUT     Out     0.143     7.784       -         
+un1_r_Clock_Count_15_cry_12                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        CIN      In      0.000     7.784       -         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        COUT     Out     0.143     7.927       -         
+un1_r_Clock_Count_15_cry_14                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        CIN      In      0.000     7.927       -         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        S0       Out     1.549     9.476       -         
+un1_r_Clock_Count_15[15]                   Net          -        -       -         -           1         
+uart_rx1.r_Clock_Count[15]                 FD1P3IX      D        In      0.000     9.476       -         
+=========================================================================================================
+
+
+Path information for path number 2: 
+      Requested Period:                      8.144
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.039
+
+    - Propagation time:                      9.476
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.437
+
+    Number of logic level(s):                13
+    Starting point:                          uart_rx1.r_Clock_Count[3] / Q
+    Ending point:                            uart_rx1.r_Clock_Count[15] / D
+    The start point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[3]                  FD1P3IX      Q        Out     1.180     1.180       -         
+r_Clock_Count[3]                           Net          -        -       -         -           5         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     B        In      0.000     1.180       -         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     Z        Out     1.017     2.197       -         
+r_Clock_Count_RNIM4PQ1[2]                  Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     B        In      0.000     2.197       -         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     Z        Out     1.017     3.213       -         
+g0_i_a5_0_6_0                              Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     A        In      0.000     3.213       -         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     Z        Out     1.017     4.230       -         
+N_15_1                                     Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     C        In      0.000     4.230       -         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     Z        Out     1.153     5.383       -         
+r_SM_Main_RNILOCVB[2]                      Net          -        -       -         -           3         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        B0       In      0.000     5.383       -         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        COUT     Out     1.544     6.928       -         
+un1_r_Clock_Count_15_cry_0                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        CIN      In      0.000     6.928       -         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        COUT     Out     0.143     7.070       -         
+un1_r_Clock_Count_15_cry_2                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        CIN      In      0.000     7.070       -         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        COUT     Out     0.143     7.213       -         
+un1_r_Clock_Count_15_cry_4                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        CIN      In      0.000     7.213       -         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        COUT     Out     0.143     7.356       -         
+un1_r_Clock_Count_15_cry_6                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        CIN      In      0.000     7.356       -         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        COUT     Out     0.143     7.499       -         
+un1_r_Clock_Count_15_cry_8                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        CIN      In      0.000     7.499       -         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        COUT     Out     0.143     7.641       -         
+un1_r_Clock_Count_15_cry_10                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        CIN      In      0.000     7.641       -         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        COUT     Out     0.143     7.784       -         
+un1_r_Clock_Count_15_cry_12                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        CIN      In      0.000     7.784       -         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        COUT     Out     0.143     7.927       -         
+un1_r_Clock_Count_15_cry_14                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        CIN      In      0.000     7.927       -         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        S0       Out     1.549     9.476       -         
+un1_r_Clock_Count_15[15]                   Net          -        -       -         -           1         
+uart_rx1.r_Clock_Count[15]                 FD1P3IX      D        In      0.000     9.476       -         
+=========================================================================================================
+
+
+Path information for path number 3: 
+      Requested Period:                      8.144
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.039
+
+    - Propagation time:                      9.476
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.437
+
+    Number of logic level(s):                13
+    Starting point:                          uart_rx1.r_Clock_Count[6] / Q
+    Ending point:                            uart_rx1.r_Clock_Count[15] / D
+    The start point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[6]                  FD1P3IX      Q        Out     1.180     1.180       -         
+r_Clock_Count[6]                           Net          -        -       -         -           5         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     C        In      0.000     1.180       -         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     Z        Out     1.017     2.197       -         
+r_Clock_Count_RNIM4PQ1[2]                  Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     B        In      0.000     2.197       -         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     Z        Out     1.017     3.213       -         
+g0_i_a5_0_6_0                              Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     A        In      0.000     3.213       -         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     Z        Out     1.017     4.230       -         
+N_15_1                                     Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     C        In      0.000     4.230       -         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     Z        Out     1.153     5.383       -         
+r_SM_Main_RNILOCVB[2]                      Net          -        -       -         -           3         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        B0       In      0.000     5.383       -         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        COUT     Out     1.544     6.928       -         
+un1_r_Clock_Count_15_cry_0                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        CIN      In      0.000     6.928       -         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        COUT     Out     0.143     7.070       -         
+un1_r_Clock_Count_15_cry_2                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        CIN      In      0.000     7.070       -         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        COUT     Out     0.143     7.213       -         
+un1_r_Clock_Count_15_cry_4                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        CIN      In      0.000     7.213       -         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        COUT     Out     0.143     7.356       -         
+un1_r_Clock_Count_15_cry_6                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        CIN      In      0.000     7.356       -         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        COUT     Out     0.143     7.499       -         
+un1_r_Clock_Count_15_cry_8                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        CIN      In      0.000     7.499       -         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        COUT     Out     0.143     7.641       -         
+un1_r_Clock_Count_15_cry_10                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        CIN      In      0.000     7.641       -         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        COUT     Out     0.143     7.784       -         
+un1_r_Clock_Count_15_cry_12                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        CIN      In      0.000     7.784       -         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        COUT     Out     0.143     7.927       -         
+un1_r_Clock_Count_15_cry_14                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        CIN      In      0.000     7.927       -         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        S0       Out     1.549     9.476       -         
+un1_r_Clock_Count_15[15]                   Net          -        -       -         -           1         
+uart_rx1.r_Clock_Count[15]                 FD1P3IX      D        In      0.000     9.476       -         
+=========================================================================================================
+
+
+Path information for path number 4: 
+      Requested Period:                      8.144
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.039
+
+    - Propagation time:                      9.476
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -1.437
+
+    Number of logic level(s):                13
+    Starting point:                          uart_rx1.r_Clock_Count[7] / Q
+    Ending point:                            uart_rx1.r_Clock_Count[15] / D
+    The start point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[7]                  FD1P3IX      Q        Out     1.180     1.180       -         
+r_Clock_Count[7]                           Net          -        -       -         -           5         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     D        In      0.000     1.180       -         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     Z        Out     1.017     2.197       -         
+r_Clock_Count_RNIM4PQ1[2]                  Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     B        In      0.000     2.197       -         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     Z        Out     1.017     3.213       -         
+g0_i_a5_0_6_0                              Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     A        In      0.000     3.213       -         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     Z        Out     1.017     4.230       -         
+N_15_1                                     Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     C        In      0.000     4.230       -         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     Z        Out     1.153     5.383       -         
+r_SM_Main_RNILOCVB[2]                      Net          -        -       -         -           3         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        B0       In      0.000     5.383       -         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        COUT     Out     1.544     6.928       -         
+un1_r_Clock_Count_15_cry_0                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        CIN      In      0.000     6.928       -         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        COUT     Out     0.143     7.070       -         
+un1_r_Clock_Count_15_cry_2                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        CIN      In      0.000     7.070       -         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        COUT     Out     0.143     7.213       -         
+un1_r_Clock_Count_15_cry_4                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        CIN      In      0.000     7.213       -         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        COUT     Out     0.143     7.356       -         
+un1_r_Clock_Count_15_cry_6                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        CIN      In      0.000     7.356       -         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        COUT     Out     0.143     7.499       -         
+un1_r_Clock_Count_15_cry_8                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        CIN      In      0.000     7.499       -         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        COUT     Out     0.143     7.641       -         
+un1_r_Clock_Count_15_cry_10                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        CIN      In      0.000     7.641       -         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        COUT     Out     0.143     7.784       -         
+un1_r_Clock_Count_15_cry_12                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        CIN      In      0.000     7.784       -         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        COUT     Out     0.143     7.927       -         
+un1_r_Clock_Count_15_cry_14                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        CIN      In      0.000     7.927       -         
+uart_rx1.un1_r_Clock_Count_15_s_15_0       CCU2D        S0       Out     1.549     9.476       -         
+un1_r_Clock_Count_15[15]                   Net          -        -       -         -           1         
+uart_rx1.r_Clock_Count[15]                 FD1P3IX      D        In      0.000     9.476       -         
+=========================================================================================================
+
+
+Path information for path number 5: 
+      Requested Period:                      8.144
+    - Setup time:                            0.106
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         8.039
+
+    - Propagation time:                      9.333
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (non-critical) :                 -1.295
+
+    Number of logic level(s):                12
+    Starting point:                          uart_rx1.r_Clock_Count[2] / Q
+    Ending point:                            uart_rx1.r_Clock_Count[13] / D
+    The start point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+    The end   point is clocked by            PLL|CLKOP_inferred_clock [rising] on pin CK
+
+Instance / Net                                          Pin      Pin               Arrival     No. of    
+Name                                       Type         Name     Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------------
+uart_rx1.r_Clock_Count[2]                  FD1P3IX      Q        Out     1.180     1.180       -         
+r_Clock_Count[2]                           Net          -        -       -         -           5         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     A        In      0.000     1.180       -         
+uart_rx1.r_Clock_Count_RNIM4PQ1[2]         ORCALUT4     Z        Out     1.017     2.197       -         
+r_Clock_Count_RNIM4PQ1[2]                  Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     B        In      0.000     2.197       -         
+uart_rx1.r_SM_Main_fast_RNI5B122[1]        ORCALUT4     Z        Out     1.017     3.213       -         
+g0_i_a5_0_6_0                              Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     A        In      0.000     3.213       -         
+uart_rx1.r_SM_Main_fast_RNI1Q5N5[1]        ORCALUT4     Z        Out     1.017     4.230       -         
+N_15_1                                     Net          -        -       -         -           1         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     C        In      0.000     4.230       -         
+uart_rx1.r_SM_Main_RNILOCVB[2]             ORCALUT4     Z        Out     1.153     5.383       -         
+r_SM_Main_RNILOCVB[2]                      Net          -        -       -         -           3         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        B0       In      0.000     5.383       -         
+uart_rx1.un1_r_Clock_Count_15_cry_0_0      CCU2D        COUT     Out     1.544     6.928       -         
+un1_r_Clock_Count_15_cry_0                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        CIN      In      0.000     6.928       -         
+uart_rx1.un1_r_Clock_Count_15_cry_1_0      CCU2D        COUT     Out     0.143     7.070       -         
+un1_r_Clock_Count_15_cry_2                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        CIN      In      0.000     7.070       -         
+uart_rx1.un1_r_Clock_Count_15_cry_3_0      CCU2D        COUT     Out     0.143     7.213       -         
+un1_r_Clock_Count_15_cry_4                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        CIN      In      0.000     7.213       -         
+uart_rx1.un1_r_Clock_Count_15_cry_5_0      CCU2D        COUT     Out     0.143     7.356       -         
+un1_r_Clock_Count_15_cry_6                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        CIN      In      0.000     7.356       -         
+uart_rx1.un1_r_Clock_Count_15_cry_7_0      CCU2D        COUT     Out     0.143     7.499       -         
+un1_r_Clock_Count_15_cry_8                 Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        CIN      In      0.000     7.499       -         
+uart_rx1.un1_r_Clock_Count_15_cry_9_0      CCU2D        COUT     Out     0.143     7.641       -         
+un1_r_Clock_Count_15_cry_10                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        CIN      In      0.000     7.641       -         
+uart_rx1.un1_r_Clock_Count_15_cry_11_0     CCU2D        COUT     Out     0.143     7.784       -         
+un1_r_Clock_Count_15_cry_12                Net          -        -       -         -           1         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        CIN      In      0.000     7.784       -         
+uart_rx1.un1_r_Clock_Count_15_cry_13_0     CCU2D        S0       Out     1.549     9.333       -         
+un1_r_Clock_Count_15[13]                   Net          -        -       -         -           1         
+uart_rx1.r_Clock_Count[13]                 FD1P3IX      D        In      0.000     9.333       -         
+=========================================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+
+Timing exceptions that could not be applied
+None
+
+Finished final timing analysis (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 167MB peak: 171MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 167MB peak: 171MB)
+
+---------------------------------------
+Resource Usage Report
+Part: lcmxo2_7000he-4
+
+Register bits: 2505 of 6864 (36%)
+PIC Latch:       0
+I/O cells:       35
+
+
+Details:
+CCU2D:          885
+EHXPLLJ:        1
+FD1P3AX:        2011
+FD1P3AY:        1
+FD1P3DX:        16
+FD1P3IX:        30
+FD1S3AX:        364
+FD1S3AY:        1
+FD1S3IX:        44
+FD1S3JX:        29
+GSR:            1
+IB:             3
+IFS1P3BX:       2
+INV:            10
+L6MUX21:        1
+OB:             29
+OBZ:            3
+OFS1P3DX:       7
+ORCALUT4:       334
+PFUMX:          5
+PUR:            1
+ROM256X1A:      16
+VHI:            13
+VLO:            13
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:59s; CPU Time elapsed 0h:00m:58s; Memory used current: 40MB peak: 171MB)
+
+Process took 0h:00m:59s realtime, 0h:00m:58s cputime
+# Sat Jan  4 14:08:59 2020
+
+###########################################################]
