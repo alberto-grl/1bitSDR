@@ -42,7 +42,8 @@ module uart_tx
 	  UartClk <= UartClk + 1'b1;
     end  
 	
-  always @(posedge UartClk[2])
+  //always @(posedge UartClk[2])
+	  always @(posedge osc_clk)
     begin
        
       case (r_SM_Main)

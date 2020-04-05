@@ -33,7 +33,6 @@
 -p "C:/Users/user/lattice/1BitADCFPGASDR"
 -ver "C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/top.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/UartRX.v"
-"C:/Users/user/lattice/1BitADCFPGASDR/impl1/source/UartTX.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/NCO.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/Mixer.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/CIC.v"
@@ -41,7 +40,6 @@
 "C:/Users/user/lattice/1BitADCFPGASDR/Multiplier.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/AMDemod.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/SinCos.v"
-"C:/Users/user/lattice/1BitADCFPGASDR/PLL.v"
 "C:/Users/user/lattice/1BitADCFPGASDR/NCOAdder.v"
 -top top
 

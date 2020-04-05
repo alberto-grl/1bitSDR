@@ -9,7 +9,7 @@
         <Source name="impl1/source/UartRX.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="impl1/source/UartTX.v" type="Verilog" type_short="Verilog">
+        <Source name="impl1/source/UartTX.v" type="Verilog" type_short="Verilog" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="NCO.v" type="Verilog" type_short="Verilog">
@@ -33,7 +33,7 @@
         <Source name="SinCos.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
-        <Source name="PLL.ipx" type="IPX_Module" type_short="IPX">
+        <Source name="PLL.ipx" type="IPX_Module" type_short="IPX" excluded="TRUE">
             <Options/>
         </Source>
         <Source name="NCOAdder.ipx" type="IPX_Module" type_short="IPX">

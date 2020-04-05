@@ -35,25 +35,40 @@ TODO: Real user inteface
 
 // IP Express reference : https://www.latticesemi.com/-/media/LatticeSemi/Documents/UserManuals/EI2/FPGA-IPUG-02032-1-0-Arithmetic-Modules.ashx?document_id=52235
 
+
+
+`define CLOCK_IS_83_MHZ
+// `define CLOCK_IS_80_MHZ
+
+
+
 module top 
   (
    input    i_Rx_Serial,
- //  input Reset,
    output o_Tx_Serial,
    output   o_Rx_DV,
    output[7:0] o_Rx_Byte,
    	output [7:0] MYLED,
+	`ifdef CLOCK_IS_80_MHZ 
 	input XIn,
+	`endif
 	output XOut,
 	input  RFIn, 
 	output DiffOut,
-	output PWMOut,
+	output PWMOut,	
+	output PWMOutP1,
+	output PWMOutP2,
+	output PWMOutP3,
+	output PWMOutP4,
+	output PWMOutN1,
+	output PWMOutN2,
+	output PWMOutN3,
+	output PWMOutN4,
 	output sinGen,
 	output sin_out,
 	output CIC_out_clkSin
    );
   wire osc_clk;
-wire reset;
 reg [31:0] DelayCounter; 
 wire [7:0] i_Tx_Byte;
 
@@ -80,7 +95,25 @@ wire signed [11:0] DemodOut;
 
 reg [7:0] CICGain;
 
+/*
+ Valid values are 2.08,2.15,2.22,2.29,2.38,2.46,2.56,2.66,2.77,2.89,3.02,3.17,3.33,3.50,3.69,3.91,4.16,
+ 4.29,4.43,4.59,4.75,4.93,5.12,5.32,5.54,5.78,6.05,6.33,6.65,7.00,7.39,7.82,8.31,8.58,8.87,9.17,9.50,9.85,
+ 10.23,10.64,11.08,11.57,12.09,12.67,13.30,14.00,14.78,15.65,16.63,17.73,19.00,20.46,22.17,24.18,26.60,
+ 29.56,33.25,38.00,44.33,53.20,66.50,88.67,133.00 MHz. 
 
+*/
+
+//// Internal Oscillator - 88.67 oscillates at about 83 MHz on my board
+
+`ifdef CLOCK_IS_83_MHZ 
+	defparam OSCH_inst.NOM_FREQ = "88.67";
+	OSCH OSCH_inst
+		( 
+		.STDBY(1'b0), 		// 0=Enabled, 1=Disabled also Disabled with Bandgap=OFF
+		.OSC(osc_clk),
+		.SEDSTDBY()     		// this signal is not required if not using SED
+		);
+`endif
 	
 //	GSR GSR_INST (.GSR (1'b1));
 
@@ -92,7 +125,14 @@ PUR PUR_INST    (.PUR(1'b1));
 
 
 
-assign reset = 1'b0;
+assign PWMOutP1 = PWMOut;
+assign PWMOutP2 = PWMOut;
+assign PWMOutP3 = PWMOut;
+assign PWMOutP4 = PWMOut;
+assign PWMOutN1 = !PWMOut;
+assign PWMOutN2 = !PWMOut;
+assign PWMOutN3 = !PWMOut;
+assign PWMOutN4 = !PWMOut;
 
 
 SinCos SinCos1 (
@@ -151,10 +191,11 @@ PWM PWM1 (
 .PWMOut (PWMOut)
 );
 
+`ifdef CLOCK_IS_80_MHZ 
 PLL PLL1 (
-.CLKI (XIn),.CLKOP (osc_clk)
+.CLKI (),.CLKOP (osc_clk)
 );
-
+`endif
 	  
 //assign MYLED[5:0] = MixerOutSin[7:2];
 assign MYLED[5:0] = CIC1_outSin [11:6];
@@ -180,7 +221,7 @@ uart_rx  #(.CLKS_PER_BIT(87))  uart_rx1 (
 .o_Rx_Byte (o_Rx_Byte)
 );
 	
-
+/*
 uart_tx  #(.CLKS_PER_BIT(87))  uart_tx1 (
 .osc_clk (osc_clk), 
 .o_Tx_Serial (o_Tx_Serial),
@@ -189,6 +230,7 @@ uart_tx  #(.CLKS_PER_BIT(87))  uart_tx1 (
 .o_Tx_Active (o_Tx_Active),
 .o_Tx_Done (o_Tx_Done)
 );	
+*/
 
 always @ (posedge osc_clk)
 	begin
@@ -203,34 +245,41 @@ always @ (posedge osc_clk)
 	50  : CICGain <= 7'd2; // 2
 	51  : CICGain <= 7'd3; // 3
  endcase
-  
+   
+`ifdef CLOCK_IS_80_MHZ 
    case (o_Rx_Byte)
-    7'd97  : phase_inc_carrGen <= 64'h 2e147ae147ae147; //a Siziano 900 KHz
+    97  : phase_inc_carrGen <= 64'h 2e147ae147ae147; //a Siziano 900 KHz
     98  : phase_inc_carrGen <= 64'h 1ba5e353f7ced91; //b Kossuth Budapest 540 KHz
 	99  : phase_inc_carrGen <= 64'h 2bc6a7ef9db22d0; //c Romania Actualitati 855 KHz
 	100  : phase_inc_carrGen <= 64'h bfb15b573eab36; //d RTL R. Luxembourg 234 KHz
 	101  : phase_inc_carrGen <= 64'h 4f41f212d77318f; //e Voice of Russia / Capital gold radio 1548 KHz
-//	102  : phase_inc_carrGen <= 64'h 3be76c8b4395810; //f Capodistria 1170 KHz
-//	103  : phase_inc_carrGen <= 64'h 138ef34d6a161e4; //g GAZ NDB 382 KHz
-	104  : phase_inc_carrGen <= 64'h 84b5dcc63f1412; //h  Allouis Freq Standard 162 KHz
-//	105  : phase_inc_carrGen <= 64'h 1072b020c49ba5e3; //i Charleston Radio International 5140 KHz
-//	106  : phase_inc_carrGen <= 64'h 12e978d4fdf3b645; //j R Romania 5910 KHz
-	107  : phase_inc_carrGen <= 64'h 1747ae147ae147ae; //k  7275 KHz
-	108  : phase_inc_carrGen <= 64'h 17ba5e353f7ced91; //l  CHINA RADIO INTERNATIONAL 7415 KHz
-	
+	102  : phase_inc_carrGen <= 64'h 3be76c8b4395810; //f Capodistria 1170 KHz
+	103  : phase_inc_carrGen <= 64'h 37c1bda5119ce07; //g Talk Sport Radio 1089 KHz
 	110 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 75f6fd21ff2e4 ; //n - 9KHz
 	109 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 75f6fd21ff2e4 ; //m + 9 KHz 
-	
-//	113 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 51eb851eb851eb ; //q - 100 KHz
-//	119 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 51eb851eb851eb ; //w + 100 KHz 
-	
-	114 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 14f8b588e368 ; //r - 100 Hz
-	116 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 14f8b588e368 ; //t + 100 Hz 
-	
-//	55 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 89705f41 ; //7 - 0.01 Hz
-//	56 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 89705f41 ; //8 + 0.01 Hz 
   endcase
+`endif	
+
+	
+`ifdef CLOCK_IS_83_MHZ
+   case (o_Rx_Byte)
+    97  : phase_inc_carrGen <= 64'h 2c6a19e88f1cfe2; //a Siziano 900 KHz
+    98  : phase_inc_carrGen <= 64'h 1aa60f8b8911654; //b Kossuth Budapest 540 KHz
+//	99  : phase_inc_carrGen <= 64'h 2bc6a7ef9db22d0; //c Romania Actualitati 855 KHz
+//	100  : phase_inc_carrGen <= 64'h bfb15b573eab36; //d RTL R. Luxembourg 234 KHz
+//	101  : phase_inc_carrGen <= 64'h 4f41f212d77318f; //e Voice of Russia / Capital gold radio 1548 KHz
+	102  : phase_inc_carrGen <= 64'h 1dc38c076704516d; //f 9650 KHz
+	103  : phase_inc_carrGen <= 64'h 1d60d923295482c6; //g Radio China 9525 KHz
+	110 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 71b375868d170 ; //n - 9KHz
+	109 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 71b375868d170 ; //m + 9KHz 
+	111 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 1436a8cdf6f3  ; //o - 100 Hz
+	112 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 1436a8cdf6f3 ; //p + 100 Hz 
+	113 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h ca22980ba57e6 ; //q - 1KHz
+	104 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h ca22980ba57e ; //r + 1 KHz 
+  endcase
+`endif		
   end
 end
-	 
+	
+
 endmodule

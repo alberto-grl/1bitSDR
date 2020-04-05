@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: TQFP144
 // ncd File: fpgasdr_impl1.ncd
 // Version: Diamond (64-bit) 3.11.2.446
-// Written on Sun Apr 05 20:43:09 2020
+// Written on Sun Apr 05 23:02:04 2020
 // M: Minimum Performance Grade
 // iotiming FPGASDR_impl1.ncd FPGASDR_impl1.prf -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml
 
@@ -41,43 +41,52 @@ Worst Case Results across Performance Grades (M, 6, 5, 4):
 
 Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-RFIn  XIn   R     1.481      4      -0.288     M
+(no input setup/hold data)
 
 
 // Clock to Output Delay
 
-Port     Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-DiffOut  XIn   R     7.713         4        2.348          M
-MYLED[0] XIn   R     7.466         4        2.307          M
-MYLED[1] XIn   R     7.987         4        2.443          M
-MYLED[2] XIn   R     7.561         4        2.338          M
-MYLED[3] XIn   R     7.394         4        2.272          M
-MYLED[4] XIn   R     6.664         4        2.086          M
-MYLED[5] XIn   R     7.364         4        2.278          M
-PWMOut   XIn   R    10.625         4        3.134          M
-o_Rx_DV  XIn   R     8.702         4        2.620          M
-sinGen   XIn   R    10.302         4        2.967          M
+(no clock to output min/max data)
 
 
 // Internal_Clock to Input
 
 Port  Internal_Clock     
 --------------------------------------------------------
-i_Rx_ uart_tx1/UartClk[2]
+RFIn  osc_clk            
+i_Rx_ uart_rx1/UartClk[2]
 
 
 // Internal_Clock to Output
 
 Port         Internal_Clock     
 --------------------------------------------------------
-MYLED[6]     uart_tx1/UartClk[2]
-o_Rx_Byte[0] uart_tx1/UartClk[2]
-o_Rx_Byte[1] uart_tx1/UartClk[2]
-o_Rx_Byte[2] uart_tx1/UartClk[2]
-o_Rx_Byte[3] uart_tx1/UartClk[2]
-o_Rx_Byte[4] uart_tx1/UartClk[2]
-o_Rx_Byte[5] uart_tx1/UartClk[2]
-o_Rx_Byte[6] uart_tx1/UartClk[2]
-o_Rx_Byte[7] uart_tx1/UartClk[2]
-o_Tx_Serial  uart_tx1/UartClk[2]
+DiffOut      osc_clk            
+MYLED[0]     osc_clk            
+MYLED[1]     osc_clk            
+MYLED[2]     osc_clk            
+MYLED[3]     osc_clk            
+MYLED[4]     osc_clk            
+MYLED[5]     osc_clk            
+MYLED[6]     uart_rx1/UartClk[2]
+PWMOut       osc_clk            
+PWMOutN1     osc_clk            
+PWMOutN2     osc_clk            
+PWMOutN3     osc_clk            
+PWMOutN4     osc_clk            
+PWMOutP1     osc_clk            
+PWMOutP2     osc_clk            
+PWMOutP3     osc_clk            
+PWMOutP4     osc_clk            
+o_Rx_Byte[0] uart_rx1/UartClk[2]
+o_Rx_Byte[1] uart_rx1/UartClk[2]
+o_Rx_Byte[2] uart_rx1/UartClk[2]
+o_Rx_Byte[3] uart_rx1/UartClk[2]
+o_Rx_Byte[4] uart_rx1/UartClk[2]
+o_Rx_Byte[5] uart_rx1/UartClk[2]
+o_Rx_Byte[6] uart_rx1/UartClk[2]
+o_Rx_Byte[7] uart_rx1/UartClk[2]
+o_Rx_DV      osc_clk            
+sinGen       osc_clk            

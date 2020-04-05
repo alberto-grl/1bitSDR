@@ -14,6 +14,24 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100990</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf(54): Semantic error in &quot;MULTICYCLE FROM CELL &quot;uart_rx1/o_Rx_Byte_i6&quot; CLKNET &quot;uart_tx1/UartClk[2]&quot; TO CELL &quot;phase_inc_carrGen_i0_i63&quot; CLKNET &quot;osc_clk&quot; 8.000000 X ;&quot;: </Dynamic>
+            <Dynamic>&quot;uart_tx1/UartClk[2]&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf</Navigation>
+            <Navigation>54</Navigation>
+        </Message>
+        <Message>
+            <ID>1100990</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf(55): Semantic error in &quot;MULTICYCLE FROM CELL &quot;uart_rx1/o_Rx_Byte_i6&quot; CLKNET &quot;uart_tx1/UartClk[2]&quot; TO CELL &quot;phase_inc_carrGen_i0_i62&quot; CLKNET &quot;osc_clk&quot; 8.000000 X ;&quot;: </Dynamic>
+            <Dynamic>&quot;uart_tx1/UartClk[2]&quot; matches no clknets in the design. </Dynamic>
+            <Navigation>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf</Navigation>
+            <Navigation>55</Navigation>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -26,10 +44,18 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v(38): </Dynamic>
+            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v(45): </Dynamic>
             <Dynamic>top</Dynamic>
             <Navigation>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/top.v</Navigation>
-            <Navigation>38</Navigation>
+            <Navigation>45</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1793): </Dynamic>
+            <Dynamic>OSCH(NOM_FREQ=&quot;88.67&quot;)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1793</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -355,22 +381,6 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/pll.v(8): </Dynamic>
-            <Dynamic>PLL</Dynamic>
-            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/pll.v</Navigation>
-            <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
-            <Dynamic>EHXPLLJ(CLKFB_DIV=10,CLKOP_DIV=6,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS_ENABLE=&quot;DISABLED&quot;,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=5,CLKOS_TRIM_POL=&quot;FALLING&quot;)</Dynamic>
-            <Navigation>C:/lscc/diamond/3.11_x64/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
-            <Navigation>1730</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
             <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/amdemod.v(8): </Dynamic>
             <Dynamic>AMDemodulator</Dynamic>
             <Navigation>c:/users/user/lattice/1bitadcfpgasdr/amdemod.v</Navigation>
@@ -409,12 +419,9 @@
             <Navigation>19</Navigation>
         </Message>
         <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uarttx.v(14): </Dynamic>
-            <Dynamic>uart_tx(CLKS_PER_BIT=87)</Dynamic>
-            <Navigation>c:/users/user/lattice/1bitadcfpgasdr/impl1/source/uarttx.v</Navigation>
-            <Navigation>14</Navigation>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>o_Tx_Serial</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>
