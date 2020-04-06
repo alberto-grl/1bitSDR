@@ -4,7 +4,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 06 13:41:37 2020
+Mon Apr 06 16:32:44 2020
 
 C:/lscc/diamond/3.11_x64/ispfpga\bin\nt64\par -f FPGASDR_impl1.p2t
 FPGASDR_impl1_map.ncd FPGASDR_impl1.dir FPGASDR_impl1.prf -gui -msgset
@@ -16,11 +16,11 @@ Preference file: FPGASDR_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -3.119       7336209      0.306        0            01:13        Completed
+5_1   *      0            -3.872       10296979     0.303        0            01:43        Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 1 mins 13 secs 
+Total (real) run time for 1-seed: 1 mins 43 secs 
 
 par done!
 

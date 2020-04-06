@@ -17,7 +17,7 @@ I/O cells:      25
                                 GSR         1          100.0
                                  IB         2          100.0
                                 INV        33          100.0
-                               LUT4       399          100.0
+                               LUT4       397          100.0
                               MULT2        72          100.0
                               MUX21        54          100.0
                                 ND2        44          100.0
@@ -39,7 +39,7 @@ CIC(width=72,decimation_ratio=4096)_U1         1
                              SinCos         1
                             nco_sig         1
            uart_rx(CLKS_PER_BIT=87)         1
-                              TOTAL      5164
+                              TOTAL      5162
 ----------------------------------------------------------------------
 Report for cell PWM.v1
 Instance Path : PWM1
@@ -61,9 +61,9 @@ Instance Path : uart_rx1
                             FD1S3AX         4            0.4
                             FD1S3AY         2           50.0
                             FD1S3IX         4           11.1
-                               LUT4        47           11.8
+                               LUT4        46           11.6
                               PFUMX         2           22.2
-                              TOTAL       106
+                              TOTAL       105
 ----------------------------------------------------------------------
 Report for cell Mixer.v1
 Instance Path : Mixer1
@@ -98,7 +98,7 @@ Instance Path : CIC1Sin
                             FD1S3AX       375           37.7
                             FD1S3IX        16           44.4
                             FD1S3JX         1          100.0
-                               LUT4       100           25.1
+                               LUT4       100           25.2
                               PFUMX         4           44.4
                               TOTAL      1817
 ----------------------------------------------------------------------
@@ -110,18 +110,6 @@ Instance Path : ncoGen
                             FD1S3AX        64            6.4
                                LUT4         2            0.5
                               TOTAL        98
-----------------------------------------------------------------------
-Report for cell CIC(width=72,decimation_ratio=4096)_U1.v1
-Instance Path : CIC1Cos
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2D       574           39.9
-                            FD1P3AX       747           47.0
-                            FD1S3AX       374           37.6
-                            FD1S3IX        16           44.4
-                               LUT4        55           13.8
-                              PFUMX         2           22.2
-                              TOTAL      1768
 ----------------------------------------------------------------------
 Report for cell AMDemodulator.v1
 Instance Path : AMDemodulator1
@@ -161,3 +149,15 @@ Instance Path : AMDemodulator1.Multiplier1
                               MULT2        36           50.0
                                 ND2        22           50.0
                               TOTAL       221
+----------------------------------------------------------------------
+Report for cell CIC(width=72,decimation_ratio=4096)_U1.v1
+Instance Path : CIC1Cos
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       574           39.9
+                            FD1P3AX       747           47.0
+                            FD1S3AX       374           37.6
+                            FD1S3IX        16           44.4
+                               LUT4        54           13.6
+                              PFUMX         2           22.2
+                              TOTAL      1767

@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: TQFP144
 // ncd File: fpgasdr_impl1.ncd
 // Version: Diamond (64-bit) 3.11.2.446
-// Written on Mon Apr 06 13:43:00 2020
+// Written on Mon Apr 06 16:34:40 2020
 // M: Minimum Performance Grade
 // iotiming FPGASDR_impl1.ncd FPGASDR_impl1.prf -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml
 

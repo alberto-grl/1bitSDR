@@ -280,8 +280,8 @@ always @ (posedge osc_clk)
 	109 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 71b375868d170 ; //m + 9KHz 
 	111 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 1436a8cdf6f3  ; //o - 100 Hz
 	112 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 1436a8cdf6f3 ; //p + 100 Hz 
-	113 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h ca22980ba57e6 ; //q - 1KHz
-	104 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h ca22980ba57e6 ; //r + 1 KHz 
+	113 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h ca22980ba57e ; //q - 1KHz
+	104 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h ca22980ba57e ; //r + 1 KHz 
   endcase
 `endif		
   end

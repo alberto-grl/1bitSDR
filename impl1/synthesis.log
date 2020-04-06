@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2019 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Apr 06 13:41:01 2020
+Mon Apr 06 16:32:07 2020
 
 
 Command Line:  synthesis -f FPGASDR_impl1_lattice.synproj -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml 
@@ -1255,6 +1255,50 @@ Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-
 Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
 Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
 Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier1/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier1/FF_76.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_98 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_86.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_97 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_85.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_96 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_84.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_95 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_83.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_94 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_82.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_93 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_81.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_92 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_80.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_91 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_79.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_90 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_78.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_89 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_77.
+Duplicate register/latch removal. \AMDemodulator1/Multiplier2/FF_88 is a one-to-one match with \AMDemodulator1/Multiplier2/FF_76.
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in top_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.11_x64/ispfpga/xo2c00a/data/xo2alib.ngl'...
@@ -1279,7 +1323,7 @@ FD1S3JX => 1
 GSR => 1
 IB => 2
 INV => 33
-LUT4 => 399
+LUT4 => 397
 MULT2 => 72
 MUX21 => 54
 ND2 => 44
@@ -1317,13 +1361,13 @@ Top 10 highest fanout Clock Enables:
   Net : CIC1Cos/osc_clk_enable_847, loads : 50
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
+  Net : CIC1Sin/osc_clk_enable_210, loads : 100
   Net : CIC1Sin/osc_clk_enable_160, loads : 100
   Net : CIC1Sin/osc_clk_enable_660, loads : 100
-  Net : CIC1Sin/osc_clk_enable_210, loads : 100
+  Net : CIC1Sin/osc_clk_enable_560, loads : 100
   Net : CIC1Sin/osc_clk_enable_260, loads : 100
   Net : CIC1Sin/osc_clk_enable_360, loads : 100
   Net : CIC1Sin/osc_clk_enable_510, loads : 100
-  Net : CIC1Sin/osc_clk_enable_560, loads : 100
   Net : CIC1Sin/osc_clk_enable_610, loads : 100
   Net : CIC1Cos/osc_clk_enable_897, loads : 100
   Net : CIC1Cos/osc_clk_enable_947, loads : 100
@@ -1336,10 +1380,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 12.500000 -name    |             |             |
-clk2 [get_nets \uart_rx1/UartClk[2]]    |   80.000 MHz|   89.678 MHz|     6  
+clk2 [get_nets CIC1_out_clkSin]         |   80.000 MHz|   16.267 MHz|   105 *
                                         |             |             |
 create_clock -period 12.500000 -name    |             |             |
-clk1 [get_nets CIC1_out_clkSin]         |   80.000 MHz|   16.267 MHz|   105 *
+clk1 [get_nets \uart_rx1/UartClk[2]]    |   80.000 MHz|   91.676 MHz|     6  
                                         |             |             |
 create_clock -period 12.500000 -name    |             |             |
 clk0 [get_nets osc_clk]                 |   80.000 MHz|   56.398 MHz|    37 *
@@ -1350,8 +1394,8 @@ clk0 [get_nets osc_clk]                 |   80.000 MHz|   56.398 MHz|    37 *
 2 constraints not met.
 
 
-Peak Memory Usage: 149.258  MB
+Peak Memory Usage: 149.289  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 19.048  secs
+Elapsed CPU time for LSE flow : 21.107  secs
 --------------------------------------------------------------

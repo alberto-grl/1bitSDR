@@ -9,7 +9,7 @@
 <PRE><A name="Map_Twr"></A><B><U><big>Lattice Synthesis Timing Report</big></U></B>
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Mon Apr 06 13:41:17 2020
+Mon Apr 06 16:32:25 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -27,118 +27,7 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 12.500000 -name clk2 [get_nets \uart_rx1/UartClk[2]]
-            1592 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed:  The following path meets requirements by 1.349ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_1009__i15  (from \uart_rx1/UartClk[2] +)
-   Destination:    FD1P3IX    SP             \uart_rx1/r_Clock_Count_1009__i0  (to \uart_rx1/UartClk[2] +)
-
-   Delay:                  10.866ns  (26.8% logic, 73.2% route), 6 logic levels.
-
- Constraint Details:
-
-     10.866ns data_path \uart_rx1/r_Clock_Count_1009__i15 to \uart_rx1/r_Clock_Count_1009__i0 meets
-     12.500ns delay constraint less
-      0.285ns LCE_S requirement (totaling 12.215ns) by 1.349ns
-
- Path Details: \uart_rx1/r_Clock_Count_1009__i15 to \uart_rx1/r_Clock_Count_1009__i0
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_1009__i15 (from \uart_rx1/UartClk[2])
-Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut
-Route         1   e 0.941                                  \uart_rx1/n12746
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut
-Route        10   e 1.604                                  \uart_rx1/n12501
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_53
-Route         2   e 1.141                                  \uart_rx1/n12226
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_52
-Route         3   e 1.258                                  \uart_rx1/r_SM_Main_2__N_2424[0]
-LUT4        ---     0.493              C to Z              \uart_rx1/i5376_4_lut
-Route        16   e 1.815                                  \uart_rx1/UartClk[2]_enable_30
-                  --------
-                   10.866  (26.8% logic, 73.2% route), 6 logic levels.
-
-
-Passed:  The following path meets requirements by 1.349ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_1009__i15  (from \uart_rx1/UartClk[2] +)
-   Destination:    FD1P3IX    SP             \uart_rx1/r_Clock_Count_1009__i15  (to \uart_rx1/UartClk[2] +)
-
-   Delay:                  10.866ns  (26.8% logic, 73.2% route), 6 logic levels.
-
- Constraint Details:
-
-     10.866ns data_path \uart_rx1/r_Clock_Count_1009__i15 to \uart_rx1/r_Clock_Count_1009__i15 meets
-     12.500ns delay constraint less
-      0.285ns LCE_S requirement (totaling 12.215ns) by 1.349ns
-
- Path Details: \uart_rx1/r_Clock_Count_1009__i15 to \uart_rx1/r_Clock_Count_1009__i15
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_1009__i15 (from \uart_rx1/UartClk[2])
-Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut
-Route         1   e 0.941                                  \uart_rx1/n12746
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut
-Route        10   e 1.604                                  \uart_rx1/n12501
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_53
-Route         2   e 1.141                                  \uart_rx1/n12226
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_52
-Route         3   e 1.258                                  \uart_rx1/r_SM_Main_2__N_2424[0]
-LUT4        ---     0.493              C to Z              \uart_rx1/i5376_4_lut
-Route        16   e 1.815                                  \uart_rx1/UartClk[2]_enable_30
-                  --------
-                   10.866  (26.8% logic, 73.2% route), 6 logic levels.
-
-
-Passed:  The following path meets requirements by 1.349ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_1009__i15  (from \uart_rx1/UartClk[2] +)
-   Destination:    FD1P3IX    SP             \uart_rx1/r_Clock_Count_1009__i14  (to \uart_rx1/UartClk[2] +)
-
-   Delay:                  10.866ns  (26.8% logic, 73.2% route), 6 logic levels.
-
- Constraint Details:
-
-     10.866ns data_path \uart_rx1/r_Clock_Count_1009__i15 to \uart_rx1/r_Clock_Count_1009__i14 meets
-     12.500ns delay constraint less
-      0.285ns LCE_S requirement (totaling 12.215ns) by 1.349ns
-
- Path Details: \uart_rx1/r_Clock_Count_1009__i15 to \uart_rx1/r_Clock_Count_1009__i14
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_1009__i15 (from \uart_rx1/UartClk[2])
-Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut
-Route         1   e 0.941                                  \uart_rx1/n12746
-LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut
-Route        10   e 1.604                                  \uart_rx1/n12501
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_53
-Route         2   e 1.141                                  \uart_rx1/n12226
-LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_52
-Route         3   e 1.258                                  \uart_rx1/r_SM_Main_2__N_2424[0]
-LUT4        ---     0.493              C to Z              \uart_rx1/i5376_4_lut
-Route        16   e 1.815                                  \uart_rx1/UartClk[2]_enable_30
-                  --------
-                   10.866  (26.8% logic, 73.2% route), 6 logic levels.
-
-Report: 11.151 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
-Constraint: create_clock -period 12.500000 -name clk1 [get_nets CIC1_out_clkSin]
+Constraint: create_clock -period 12.500000 -name clk2 [get_nets CIC1_out_clkSin]
             4096 items scored, 4096 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -163,13 +52,13 @@ Error:  The following path violates requirements by 48.973ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \AMDemodulator1/ISquare_i25 (from CIC1_out_clkSin)
 Route        40   e 2.110                                  \AMDemodulator1/ISquare[31]
-LUT4        ---     0.493              A to Z              \AMDemodulator1/i1335_1_lut
+LUT4        ---     0.493              A to Z              \AMDemodulator1/i1332_1_lut
 Route         2   e 1.141                                  \AMDemodulator1/n209
-A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3130_4
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3132_4
 Route         1   e 0.020                                  \AMDemodulator1/n12157
-FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3130_6
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3132_6
 Route         1   e 0.020                                  \AMDemodulator1/n12158
-FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3130_8
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3132_8
 Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1872[17]
 A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_517_1
 Route         1   e 0.020                                  \AMDemodulator1/n10698
@@ -395,13 +284,13 @@ Error:  The following path violates requirements by 48.973ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \AMDemodulator1/ISquare_i25 (from CIC1_out_clkSin)
 Route        40   e 2.110                                  \AMDemodulator1/ISquare[31]
-LUT4        ---     0.493              A to Z              \AMDemodulator1/i1335_1_lut
+LUT4        ---     0.493              A to Z              \AMDemodulator1/i1332_1_lut
 Route         2   e 1.141                                  \AMDemodulator1/n209
-A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3130_4
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3132_4
 Route         1   e 0.020                                  \AMDemodulator1/n12157
-FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3130_6
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3132_6
 Route         1   e 0.020                                  \AMDemodulator1/n12158
-FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3130_8
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3132_8
 Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1872[17]
 A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_517_1
 Route         1   e 0.020                                  \AMDemodulator1/n10698
@@ -627,13 +516,13 @@ Error:  The following path violates requirements by 48.947ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              \AMDemodulator1/ISquare_i25 (from CIC1_out_clkSin)
 Route        40   e 2.110                                  \AMDemodulator1/ISquare[31]
-LUT4        ---     0.493              A to Z              \AMDemodulator1/i1335_1_lut
+LUT4        ---     0.493              A to Z              \AMDemodulator1/i1332_1_lut
 Route         2   e 1.141                                  \AMDemodulator1/n209
-A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3130_4
+A1_TO_FCO   ---     0.827           A[2] to COUT           \AMDemodulator1/add_3132_4
 Route         1   e 0.020                                  \AMDemodulator1/n12157
-FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3130_6
+FCI_TO_FCO  ---     0.157            CIN to COUT           \AMDemodulator1/add_3132_6
 Route         1   e 0.020                                  \AMDemodulator1/n12158
-FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3130_8
+FCI_TO_F    ---     0.598            CIN to S[2]           \AMDemodulator1/add_3132_8
 Route        21   e 2.176                                  \AMDemodulator1/d_out_d_11__N_1872[17]
 LUT4        ---     0.493              A to Z              \AMDemodulator1/d_out_d_11__I_0_1_lut
 Route         2   e 1.141                                  \AMDemodulator1/d_out_d_11__N_1871
@@ -835,6 +724,117 @@ Warning: 61.473 ns is the maximum delay for this constraint.
 
 
 ================================================================================
+Constraint: create_clock -period 12.500000 -name clk1 [get_nets \uart_rx1/UartClk[2]]
+            1592 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.592ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_1006__i15  (from \uart_rx1/UartClk[2] +)
+   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_1006__i0  (to \uart_rx1/UartClk[2] +)
+
+   Delay:                  10.748ns  (27.1% logic, 72.9% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.748ns data_path \uart_rx1/r_Clock_Count_1006__i15 to \uart_rx1/r_Clock_Count_1006__i0 meets
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 1.592ns
+
+ Path Details: \uart_rx1/r_Clock_Count_1006__i15 to \uart_rx1/r_Clock_Count_1006__i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_1006__i15 (from \uart_rx1/UartClk[2])
+Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut_adj_52
+Route         1   e 0.941                                  \uart_rx1/n12746
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_51
+Route        10   e 1.604                                  \uart_rx1/n12501
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut
+Route         4   e 1.340                                  \uart_rx1/r_SM_Main_2__N_2424[0]
+LUT4        ---     0.493              C to Z              \uart_rx1/i5112_3_lut
+Route         1   e 0.941                                  \uart_rx1/n12594
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_54
+Route        16   e 1.815                                  \uart_rx1/n8431
+                  --------
+                   10.748  (27.1% logic, 72.9% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 1.592ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_1006__i15  (from \uart_rx1/UartClk[2] +)
+   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_1006__i15  (to \uart_rx1/UartClk[2] +)
+
+   Delay:                  10.748ns  (27.1% logic, 72.9% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.748ns data_path \uart_rx1/r_Clock_Count_1006__i15 to \uart_rx1/r_Clock_Count_1006__i15 meets
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 1.592ns
+
+ Path Details: \uart_rx1/r_Clock_Count_1006__i15 to \uart_rx1/r_Clock_Count_1006__i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_1006__i15 (from \uart_rx1/UartClk[2])
+Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut_adj_52
+Route         1   e 0.941                                  \uart_rx1/n12746
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_51
+Route        10   e 1.604                                  \uart_rx1/n12501
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut
+Route         4   e 1.340                                  \uart_rx1/r_SM_Main_2__N_2424[0]
+LUT4        ---     0.493              C to Z              \uart_rx1/i5112_3_lut
+Route         1   e 0.941                                  \uart_rx1/n12594
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_54
+Route        16   e 1.815                                  \uart_rx1/n8431
+                  --------
+                   10.748  (27.1% logic, 72.9% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 1.592ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \uart_rx1/r_Clock_Count_1006__i15  (from \uart_rx1/UartClk[2] +)
+   Destination:    FD1P3IX    CD             \uart_rx1/r_Clock_Count_1006__i14  (to \uart_rx1/UartClk[2] +)
+
+   Delay:                  10.748ns  (27.1% logic, 72.9% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.748ns data_path \uart_rx1/r_Clock_Count_1006__i15 to \uart_rx1/r_Clock_Count_1006__i14 meets
+     12.500ns delay constraint less
+      0.160ns L_S requirement (totaling 12.340ns) by 1.592ns
+
+ Path Details: \uart_rx1/r_Clock_Count_1006__i15 to \uart_rx1/r_Clock_Count_1006__i14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \uart_rx1/r_Clock_Count_1006__i15 (from \uart_rx1/UartClk[2])
+Route         2   e 1.198                                  \uart_rx1/r_Clock_Count[15]
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_2_lut_adj_52
+Route         1   e 0.941                                  \uart_rx1/n12746
+LUT4        ---     0.493              A to Z              \uart_rx1/i1_4_lut_adj_51
+Route        10   e 1.604                                  \uart_rx1/n12501
+LUT4        ---     0.493              C to Z              \uart_rx1/i1_4_lut
+Route         4   e 1.340                                  \uart_rx1/r_SM_Main_2__N_2424[0]
+LUT4        ---     0.493              C to Z              \uart_rx1/i5112_3_lut
+Route         1   e 0.941                                  \uart_rx1/n12594
+LUT4        ---     0.493              B to Z              \uart_rx1/i1_4_lut_adj_54
+Route        16   e 1.815                                  \uart_rx1/n8431
+                  --------
+                   10.748  (27.1% logic, 72.9% route), 6 logic levels.
+
+Report: 10.908 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
 Constraint: create_clock -period 12.500000 -name clk0 [get_nets osc_clk]
             4096 items scored, 4096 timing errors detected.
 --------------------------------------------------------------------------------
@@ -860,12 +860,12 @@ Error:  The following path violates requirements by 5.231ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              o_Rx_Byte_i6 (from osc_clk)
 Route         6   e 1.515                                  o_Rx_Byte[6]
-LUT4        ---     0.493              C to Z              i1_4_lut_adj_61
-Route         4   e 1.340                                  n8257
-LUT4        ---     0.493              A to Z              i1_4_lut_adj_60
+LUT4        ---     0.493              C to Z              i1_4_lut_adj_60
+Route         4   e 1.340                                  n8250
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_59
 Route         5   e 1.405                                  n12533
 LUT4        ---     0.493              B to Z              i345_2_lut_rep_82_3_lut
-Route        52   e 2.258                                  n13056
+Route        52   e 2.258                                  n13057
 LUT4        ---     0.493              C to Z              mux_322_i2_4_lut
 Route         1   e 0.941                                  n2361
 A1_TO_FCO   ---     0.827           C[2] to COUT           add_749_3
@@ -956,12 +956,12 @@ Error:  The following path violates requirements by 5.231ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              o_Rx_Byte_i6 (from osc_clk)
 Route         6   e 1.515                                  o_Rx_Byte[6]
-LUT4        ---     0.493              C to Z              i1_4_lut_adj_61
-Route         4   e 1.340                                  n8257
-LUT4        ---     0.493              A to Z              i1_4_lut_adj_60
+LUT4        ---     0.493              C to Z              i1_4_lut_adj_60
+Route         4   e 1.340                                  n8250
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_59
 Route         5   e 1.405                                  n12533
 LUT4        ---     0.493              B to Z              i345_2_lut_rep_82_3_lut
-Route        52   e 2.258                                  n13056
+Route        52   e 2.258                                  n13057
 LUT4        ---     0.493              C to Z              mux_322_i2_4_lut
 Route         1   e 0.941                                  n2361
 A1_TO_FCO   ---     0.827           C[2] to COUT           add_749_3
@@ -1052,12 +1052,12 @@ Error:  The following path violates requirements by 5.114ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.444             CK to Q              o_Rx_Byte_i5 (from osc_clk)
 Route         4   e 1.398                                  o_Rx_Byte[5]
-LUT4        ---     0.493              A to Z              i1_4_lut_adj_61
-Route         4   e 1.340                                  n8257
 LUT4        ---     0.493              A to Z              i1_4_lut_adj_60
+Route         4   e 1.340                                  n8250
+LUT4        ---     0.493              A to Z              i1_4_lut_adj_59
 Route         5   e 1.405                                  n12533
 LUT4        ---     0.493              B to Z              i345_2_lut_rep_82_3_lut
-Route        52   e 2.258                                  n13056
+Route        52   e 2.258                                  n13057
 LUT4        ---     0.493              C to Z              mux_322_i2_4_lut
 Route         1   e 0.941                                  n2361
 A1_TO_FCO   ---     0.827           C[2] to COUT           add_749_3
@@ -1137,10 +1137,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 12.500000 -name    |             |             |
-clk2 [get_nets \uart_rx1/UartClk[2]]    |    12.500 ns|    11.151 ns|     6  
+clk2 [get_nets CIC1_out_clkSin]         |    12.500 ns|    61.473 ns|   105 *
                                         |             |             |
 create_clock -period 12.500000 -name    |             |             |
-clk1 [get_nets CIC1_out_clkSin]         |    12.500 ns|    61.473 ns|   105 *
+clk1 [get_nets \uart_rx1/UartClk[2]]    |    12.500 ns|    10.908 ns|     6  
                                         |             |             |
 create_clock -period 12.500000 -name    |             |             |
 clk0 [get_nets osc_clk]                 |    12.500 ns|    17.731 ns|    37 *
@@ -1243,15 +1243,13 @@ Critical Nets                           |   Loads|  Errors| % of total
                                         |        |        |
 \AMDemodulator1/n12158                  |       1|    4096|     50.00%
                                         |        |        |
-n10992                                  |       1|    4090|     49.93%
-                                        |        |        |
 n10993                                  |       1|    4090|     49.93%
                                         |        |        |
 n10994                                  |       1|    4090|     49.93%
                                         |        |        |
 n10995                                  |       1|    4090|     49.93%
                                         |        |        |
-n10996                                  |       1|    4090|     49.93%
+n10996                                  |       1|    4088|     49.90%
                                         |        |        |
 \AMDemodulator1/n11356                  |       1|    4086|     49.88%
                                         |        |        |
@@ -1265,6 +1263,8 @@ n10996                                  |       1|    4090|     49.93%
                                         |        |        |
 \AMDemodulator1/n11361                  |       1|    4086|     49.88%
                                         |        |        |
+n10992                                  |       1|    4086|     49.88%
+                                        |        |        |
 \AMDemodulator1/n11459                  |       1|    4084|     49.85%
                                         |        |        |
 \AMDemodulator1/n12056                  |       1|    4084|     49.85%
@@ -1275,17 +1275,17 @@ n10996                                  |       1|    4090|     49.93%
                                         |        |        |
 \AMDemodulator1/n12098                  |       1|    4084|     49.85%
                                         |        |        |
-n10997                                  |       1|    4082|     49.83%
+n10997                                  |       1|    4080|     49.80%
                                         |        |        |
 \AMDemodulator1/n11355                  |       1|    4074|     49.73%
                                         |        |        |
-n10991                                  |       1|    4074|     49.73%
+n10991                                  |       1|    4066|     49.63%
                                         |        |        |
-n10998                                  |       1|    4066|     49.63%
+n10998                                  |       1|    4060|     49.56%
                                         |        |        |
-n10999                                  |       1|    4034|     49.24%
+n10999                                  |       1|    4026|     49.15%
                                         |        |        |
-n10990                                  |       1|    4026|     49.15%
+n10990                                  |       1|    4014|     49.00%
                                         |        |        |
 \AMDemodulator1/n11458                  |       1|    3992|     48.73%
                                         |        |        |
@@ -1299,8 +1299,6 @@ n10990                                  |       1|    4026|     49.15%
                                         |        |        |
 \AMDemodulator1/n11354                  |       1|    3982|     48.61%
                                         |        |        |
-n11000                                  |       1|    3976|     48.54%
-                                        |        |        |
 \AMDemodulator1/n12148                  |       1|    3970|     48.46%
                                         |        |        |
 \AMDemodulator1/n12149                  |       1|    3970|     48.46%
@@ -1311,29 +1309,27 @@ n11000                                  |       1|    3976|     48.54%
                                         |        |        |
 \AMDemodulator1/n12152                  |       1|    3970|     48.46%
                                         |        |        |
+n11000                                  |       1|    3964|     48.39%
+                                        |        |        |
 \AMDemodulator1/n12147                  |       1|    3958|     48.32%
                                         |        |        |
-n10989                                  |       1|    3946|     48.17%
+n10989                                  |       1|    3930|     47.97%
                                         |        |        |
-n11001                                  |       1|    3886|     47.44%
+n11001                                  |       1|    3870|     47.24%
                                         |        |        |
 \AMDemodulator1/n12146                  |       1|    3866|     47.19%
                                         |        |        |
-n10988                                  |       1|    3832|     46.78%
+n10988                                  |       1|    3812|     46.53%
                                         |        |        |
-n11002                                  |       1|    3754|     45.83%
+n11002                                  |       1|    3736|     45.61%
                                         |        |        |
-n10987                                  |       1|    3740|     45.65%
+n10987                                  |       1|    3718|     45.39%
                                         |        |        |
-n10986                                  |       1|    3616|     44.14%
+n10986                                  |       1|    3592|     43.85%
                                         |        |        |
-n11003                                  |       1|    3578|     43.68%
+n11003                                  |       1|    3552|     43.36%
                                         |        |        |
 \AMDemodulator1/n12157                  |       1|    3434|     41.92%
-                                        |        |        |
-n10985                                  |       1|    3352|     40.92%
-                                        |        |        |
-n11004                                  |       1|    3348|     40.87%
                                         |        |        |
 \AMDemodulator1/n11457                  |       1|    3324|     40.58%
                                         |        |        |
@@ -1343,7 +1339,11 @@ n11004                                  |       1|    3348|     40.87%
                                         |        |        |
 \AMDemodulator1/n12096                  |       1|    3324|     40.58%
                                         |        |        |
+n10985                                  |       1|    3324|     40.58%
+                                        |        |        |
 \AMDemodulator1/n12082                  |       1|    3323|     40.56%
+                                        |        |        |
+n11004                                  |       1|    3320|     40.53%
                                         |        |        |
 \AMDemodulator1/n11353                  |       1|    3313|     40.44%
                                         |        |        |
@@ -1367,31 +1367,31 @@ n11004                                  |       1|    3348|     40.87%
                                         |        |        |
 \AMDemodulator1/n11500                  |       1|    3176|     38.77%
                                         |        |        |
-n10984                                  |       1|    3156|     38.53%
-                                        |        |        |
 \AMDemodulator1/n12043                  |       1|    3134|     38.26%
+                                        |        |        |
+n10984                                  |       1|    3126|     38.16%
                                         |        |        |
 \AMDemodulator1/n11499                  |       1|    3098|     37.82%
                                         |        |        |
-n11005                                  |       1|    3056|     37.30%
+n11005                                  |       1|    3026|     36.94%
                                         |        |        |
-n8257                                   |       4|    2942|     35.91%
+n8250                                   |       4|    2966|     36.21%
                                         |        |        |
-n10983                                  |       1|    2802|     34.20%
+n10983                                  |       1|    2764|     33.74%
                                         |        |        |
-n11006                                  |       1|    2684|     32.76%
+n11006                                  |       1|    2658|     32.45%
                                         |        |        |
 \AMDemodulator1/n12042                  |       1|    2592|     31.64%
                                         |        |        |
 \AMDemodulator1/n11498                  |       1|    2572|     31.40%
                                         |        |        |
-n12533                                  |       5|    2504|     30.57%
+n12533                                  |       5|    2550|     31.13%
                                         |        |        |
 \AMDemodulator1/d_out_d_11__N_1871      |       2|    2482|     30.30%
                                         |        |        |
-n10982                                  |       1|    2322|     28.34%
+n10982                                  |       1|    2276|     27.78%
                                         |        |        |
-n11007                                  |       1|    2214|     27.03%
+n11007                                  |       1|    2188|     26.71%
                                         |        |        |
 \AMDemodulator1/d_out_d_11__N_2335[17]  |       1|    2083|     25.43%
                                         |        |        |
@@ -1425,13 +1425,11 @@ n11007                                  |       1|    2214|     27.03%
                                         |        |        |
 \AMDemodulator1/n12139                  |       1|    2013|     24.57%
                                         |        |        |
-n10981                                  |       1|    1932|     23.58%
+n10981                                  |       1|    1876|     22.90%
                                         |        |        |
 \AMDemodulator1/n11485                  |       1|    1742|     21.26%
                                         |        |        |
 \AMDemodulator1/n12132                  |       1|    1672|     20.41%
-                                        |        |        |
-n11008                                  |       1|    1622|     19.80%
                                         |        |        |
 \AMDemodulator1/n10701                  |       1|    1614|     19.70%
                                         |        |        |
@@ -1439,19 +1437,21 @@ n11008                                  |       1|    1622|     19.80%
                                         |        |        |
 \AMDemodulator1/n10700                  |       1|    1610|     19.65%
                                         |        |        |
+n11008                                  |       1|    1601|     19.54%
+                                        |        |        |
 \AMDemodulator1/n10699                  |       1|    1578|     19.26%
                                         |        |        |
 \AMDemodulator1/n10698                  |       1|    1328|     16.21%
                                         |        |        |
-n13056                                  |      52|    1266|     15.45%
+n13057                                  |      52|    1312|     16.02%
                                         |        |        |
-n10980                                  |       1|    1210|     14.77%
+n10980                                  |       1|    1168|     14.26%
                                         |        |        |
 n2563                                   |      49|    1034|     12.62%
                                         |        |        |
 \AMDemodulator1/d_out_d_11__N_1873      |       2|     908|     11.08%
                                         |        |        |
-n11009                                  |       1|     886|     10.82%
+n11009                                  |       1|     874|     10.67%
                                         |        |        |
 \AMDemodulator1/d_out_d_11__N_1875      |       3|     870|     10.62%
                                         |        |        |
@@ -1461,12 +1461,12 @@ n11009                                  |       1|     886|     10.82%
 <A name="mtw1_ts"></A><B><U><big>Timing summary:</big></U></B>
 ---------------
 
-Timing errors: 8192  Score: 212165104
+Timing errors: 8192  Score: 212137672
 
-Constraints cover >4294967295 paths, 7638 nets, and 18291 connections (99.6% coverage)
+Constraints cover >4294967295 paths, 7634 nets, and 18286 connections (99.6% coverage)
 
 
-Peak memory: 155979776 bytes, TRCE: 47702016 bytes, DLYMAN: 843776 bytes
+Peak memory: 155934720 bytes, TRCE: 47611904 bytes, DLYMAN: 708608 bytes
 CPU_TIME_REPORT: 1 secs 
 
 
