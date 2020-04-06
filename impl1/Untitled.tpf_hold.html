@@ -14,7 +14,7 @@
 <BR><PRE><A name="Report Header"></A>
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.2.446
-Sun Apr 05 23:02:22 2020
+Mon Apr 06 13:43:07 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -37,133 +37,174 @@ Preference: FREQUENCY NET "osc_clk" 88.670000 MHz ;
 --------------------------------------------------------------------------------
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.302ns
+Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2186">CIC1Sin/v_comb_66</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_1947">CIC1Sin/d10__i11</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2167">CIC1Sin/d_tmp_i0_i53</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2130">CIC1Sin/d_d_tmp_i0_i53</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
-   Delay:               0.278ns  (47.8% logic, 52.2% route), 1 logic levels.
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.278ns physical path delay CIC1Sin/SLICE_2186 to CIC1Sin/SLICE_1947 meets
-     -0.024ns CE_HLD and
+      0.287ns physical path delay CIC1Sin/SLICE_2167 to CIC1Sin/SLICE_2130 meets
+     -0.019ns M_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.024ns) by 0.302ns
+      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R15C29B.CLK,R15C29B.Q0,CIC1Sin/SLICE_2186:ROUTE, 0.145,R15C29B.Q0,R15C29A.CE,CIC1Sin/v_comb">Data path</A> CIC1Sin/SLICE_2186 to CIC1Sin/SLICE_1947:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R12C38B.CLK,R12C38B.Q1,CIC1Sin/SLICE_2167:ROUTE, 0.154,R12C38B.Q1,R12C38D.M1,CIC1Sin/d_tmp_53">Data path</A> CIC1Sin/SLICE_2167 to CIC1Sin/SLICE_2130:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R15C29B.CLK to     R15C29B.Q0 <A href="#@comp:CIC1Sin/SLICE_2186">CIC1Sin/SLICE_2186</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE        16     0.145<A href="#@net:CIC1Sin/v_comb:R15C29B.Q0:R15C29A.CE:0.145">     R15C29B.Q0 to R15C29A.CE    </A> <A href="#@net:CIC1Sin/v_comb">CIC1Sin/v_comb</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R12C38B.CLK to     R12C38B.Q1 <A href="#@comp:CIC1Sin/SLICE_2167">CIC1Sin/SLICE_2167</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.154<A href="#@net:CIC1Sin/d_tmp_53:R12C38B.Q1:R12C38D.M1:0.154">     R12C38B.Q1 to R12C38D.M1    </A> <A href="#@net:CIC1Sin/d_tmp_53">CIC1Sin/d_tmp_53</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
-                    0.278   (47.8% logic, 52.2% route), 1 logic levels.
+                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R15C29B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2186:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R12C38B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2167:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R15C29B.CLK:1.443">        OSC.OSC to R15C29B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R12C38B.CLK:1.443">        OSC.OSC to R12C38B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R15C29A.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_1947:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R12C38D.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2130:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R15C29A.CLK:1.443">        OSC.OSC to R15C29A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R12C38D.CLK:1.443">        OSC.OSC to R12C38D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.303ns
+Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2183">CIC1Sin/v_comb_66_rep_91</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2056">CIC1Sin/d_d8_i0_i52</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
-                   FF                        <A href="#@net:CIC1Sin/d_d8_i0_i51">CIC1Sin/d_d8_i0_i51</A>
+   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1898">CIC1Cos/d_tmp_i0_i13</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1861">CIC1Cos/d_d_tmp_i0_i13</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
-   Delay:               0.279ns  (47.7% logic, 52.3% route), 1 logic levels.
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.279ns physical path delay CIC1Sin/SLICE_2183 to CIC1Sin/SLICE_2056 meets
-     -0.024ns CE_HLD and
+      0.287ns physical path delay CIC1Cos/SLICE_1898 to CIC1Cos/SLICE_1861 meets
+     -0.019ns M_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.024ns) by 0.303ns
+      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R22C26B.CLK,R22C26B.Q1,CIC1Sin/SLICE_2183:ROUTE, 0.146,R22C26B.Q1,R22C26D.CE,CIC1Sin/osc_clk_enable_547">Data path</A> CIC1Sin/SLICE_2183 to CIC1Sin/SLICE_2056:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R23C19B.CLK,R23C19B.Q1,CIC1Cos/SLICE_1898:ROUTE, 0.154,R23C19B.Q1,R23C19D.M1,CIC1Cos/d_tmp_13">Data path</A> CIC1Cos/SLICE_1898 to CIC1Cos/SLICE_1861:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R22C26B.CLK to     R22C26B.Q1 <A href="#@comp:CIC1Sin/SLICE_2183">CIC1Sin/SLICE_2183</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE        25     0.146<A href="#@net:CIC1Sin/osc_clk_enable_547:R22C26B.Q1:R22C26D.CE:0.146">     R22C26B.Q1 to R22C26D.CE    </A> <A href="#@net:CIC1Sin/osc_clk_enable_547">CIC1Sin/osc_clk_enable_547</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R23C19B.CLK to     R23C19B.Q1 <A href="#@comp:CIC1Cos/SLICE_1898">CIC1Cos/SLICE_1898</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.154<A href="#@net:CIC1Cos/d_tmp_13:R23C19B.Q1:R23C19D.M1:0.154">     R23C19B.Q1 to R23C19D.M1    </A> <A href="#@net:CIC1Cos/d_tmp_13">CIC1Cos/d_tmp_13</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
-                    0.279   (47.7% logic, 52.3% route), 1 logic levels.
+                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.425,OSC.OSC,R22C26B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2183:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.425,OSC.OSC,R23C19B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1898:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.425<A href="#@net:osc_clk:OSC.OSC:R22C26B.CLK:1.425">        OSC.OSC to R22C26B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.425<A href="#@net:osc_clk:OSC.OSC:R23C19B.CLK:1.425">        OSC.OSC to R23C19B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.425   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.425,OSC.OSC,R22C26D.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2056:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.425,OSC.OSC,R23C19D.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1861:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.425<A href="#@net:osc_clk:OSC.OSC:R22C26D.CLK:1.425">        OSC.OSC to R22C26D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.425<A href="#@net:osc_clk:OSC.OSC:R23C19D.CLK:1.425">        OSC.OSC to R23C19D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.425   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
 
-Passed: The following path meets requirements by 0.304ns
+Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1933">CIC1Cos/v_comb_66_rep_111</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1822">CIC1Cos/d_d9_i0_i8</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
-                   FF                        <A href="#@net:CIC1Cos/d_d9_i0_i7">CIC1Cos/d_d9_i0_i7</A>
+   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1893">CIC1Cos/d_tmp_i0_i3</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1856">CIC1Cos/d_d_tmp_i0_i3</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
-   Delay:               0.280ns  (47.5% logic, 52.5% route), 1 logic levels.
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.280ns physical path delay CIC1Cos/SLICE_1933 to CIC1Cos/SLICE_1822 meets
-     -0.024ns CE_HLD and
+      0.287ns physical path delay CIC1Cos/SLICE_1893 to CIC1Cos/SLICE_1856 meets
+     -0.019ns M_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.024ns) by 0.304ns
+      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R16C15C.CLK,R16C15C.Q1,CIC1Cos/SLICE_1933:ROUTE, 0.147,R16C15C.Q1,R16C15B.CE,CIC1Cos/osc_clk_enable_1334">Data path</A> CIC1Cos/SLICE_1933 to CIC1Cos/SLICE_1822:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R22C17A.CLK,R22C17A.Q1,CIC1Cos/SLICE_1893:ROUTE, 0.154,R22C17A.Q1,R22C17C.M1,CIC1Cos/d_tmp_3">Data path</A> CIC1Cos/SLICE_1893 to CIC1Cos/SLICE_1856:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R16C15C.CLK to     R16C15C.Q1 <A href="#@comp:CIC1Cos/SLICE_1933">CIC1Cos/SLICE_1933</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE        25     0.147<A href="#@net:CIC1Cos/osc_clk_enable_1334:R16C15C.Q1:R16C15B.CE:0.147">     R16C15C.Q1 to R16C15B.CE    </A> <A href="#@net:CIC1Cos/osc_clk_enable_1334">CIC1Cos/osc_clk_enable_1334</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R22C17A.CLK to     R22C17A.Q1 <A href="#@comp:CIC1Cos/SLICE_1893">CIC1Cos/SLICE_1893</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.154<A href="#@net:CIC1Cos/d_tmp_3:R22C17A.Q1:R22C17C.M1:0.154">     R22C17A.Q1 to R22C17C.M1    </A> <A href="#@net:CIC1Cos/d_tmp_3">CIC1Cos/d_tmp_3</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
-                    0.280   (47.5% logic, 52.5% route), 1 logic levels.
+                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R16C15C.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1933:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.425,OSC.OSC,R22C17A.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1893:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R16C15C.CLK:1.443">        OSC.OSC to R16C15C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.425<A href="#@net:osc_clk:OSC.OSC:R22C17A.CLK:1.425">        OSC.OSC to R22C17A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.425,OSC.OSC,R22C17C.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1856:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.425<A href="#@net:osc_clk:OSC.OSC:R22C17C.CLK:1.425">        OSC.OSC to R22C17C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.425   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.306ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2164">CIC1Sin/d_tmp_i0_i47</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2127">CIC1Sin/d_d_tmp_i0_i47</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+
+   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.287ns physical path delay CIC1Sin/SLICE_2164 to CIC1Sin/SLICE_2127 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R7C37B.CLK,R7C37B.Q1,CIC1Sin/SLICE_2164:ROUTE, 0.154,R7C37B.Q1,R7C37A.M1,CIC1Sin/d_tmp_47">Data path</A> CIC1Sin/SLICE_2164 to CIC1Sin/SLICE_2127:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R7C37B.CLK to      R7C37B.Q1 <A href="#@comp:CIC1Sin/SLICE_2164">CIC1Sin/SLICE_2164</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.154<A href="#@net:CIC1Sin/d_tmp_47:R7C37B.Q1:R7C37A.M1:0.154">      R7C37B.Q1 to R7C37A.M1     </A> <A href="#@net:CIC1Sin/d_tmp_47">CIC1Sin/d_tmp_47</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+                  --------
+                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R7C37B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2164:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R7C37B.CLK:1.443">        OSC.OSC to R7C37B.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R16C15B.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1822:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R7C37A.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2127:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R16C15B.CLK:1.443">        OSC.OSC to R16C15B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R7C37A.CLK:1.443">        OSC.OSC to R7C37A.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -172,41 +213,41 @@ Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1917">CIC1Cos/d_tmp_i0_i50</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1880">CIC1Cos/d_d_tmp_i0_i50</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1921">CIC1Cos/d_tmp_i0_i58</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1884">CIC1Cos/d_d_tmp_i0_i58</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
    Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.287ns physical path delay CIC1Cos/SLICE_1917 to CIC1Cos/SLICE_1880 meets
+      0.287ns physical path delay CIC1Cos/SLICE_1921 to CIC1Cos/SLICE_1884 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R14C13B.CLK,R14C13B.Q0,CIC1Cos/SLICE_1917:ROUTE, 0.154,R14C13B.Q0,R14C13C.M1,CIC1Cos/d_tmp_50">Data path</A> CIC1Cos/SLICE_1917 to CIC1Cos/SLICE_1880:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R14C23D.CLK,R14C23D.Q0,CIC1Cos/SLICE_1921:ROUTE, 0.154,R14C23D.Q0,R14C23C.M1,CIC1Cos/d_tmp_58">Data path</A> CIC1Cos/SLICE_1921 to CIC1Cos/SLICE_1884:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R14C13B.CLK to     R14C13B.Q0 <A href="#@comp:CIC1Cos/SLICE_1917">CIC1Cos/SLICE_1917</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         3     0.154<A href="#@net:CIC1Cos/d_tmp_50:R14C13B.Q0:R14C13C.M1:0.154">     R14C13B.Q0 to R14C13C.M1    </A> <A href="#@net:CIC1Cos/d_tmp_50">CIC1Cos/d_tmp_50</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R14C23D.CLK to     R14C23D.Q0 <A href="#@comp:CIC1Cos/SLICE_1921">CIC1Cos/SLICE_1921</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.154<A href="#@net:CIC1Cos/d_tmp_58:R14C23D.Q0:R14C23C.M1:0.154">     R14C23D.Q0 to R14C23C.M1    </A> <A href="#@net:CIC1Cos/d_tmp_58">CIC1Cos/d_tmp_58</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
                     0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R14C13B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1917:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R14C23D.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1921:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R14C13B.CLK:1.443">        OSC.OSC to R14C13B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R14C23D.CLK:1.443">        OSC.OSC to R14C23D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R14C13C.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1880:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R14C23C.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1884:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R14C13C.CLK:1.443">        OSC.OSC to R14C13C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R14C23C.CLK:1.443">        OSC.OSC to R14C23C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -215,41 +256,41 @@ Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1907">CIC1Cos/d_tmp_i0_i31</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1870">CIC1Cos/d_d_tmp_i0_i31</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1918">CIC1Cos/d_tmp_i0_i53</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1882">CIC1Cos/d_d_tmp_i0_i53</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
    Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.287ns physical path delay CIC1Cos/SLICE_1907 to CIC1Cos/SLICE_1870 meets
+      0.287ns physical path delay CIC1Cos/SLICE_1918 to CIC1Cos/SLICE_1882 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R18C11A.CLK,R18C11A.Q1,CIC1Cos/SLICE_1907:ROUTE, 0.154,R18C11A.Q1,R18C11B.M1,CIC1Cos/d_tmp_31">Data path</A> CIC1Cos/SLICE_1907 to CIC1Cos/SLICE_1870:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R16C23C.CLK,R16C23C.Q1,CIC1Cos/SLICE_1918:ROUTE, 0.154,R16C23C.Q1,R16C23B.M0,CIC1Cos/d_tmp_53">Data path</A> CIC1Cos/SLICE_1918 to CIC1Cos/SLICE_1882:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R18C11A.CLK to     R18C11A.Q1 <A href="#@comp:CIC1Cos/SLICE_1907">CIC1Cos/SLICE_1907</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.154<A href="#@net:CIC1Cos/d_tmp_31:R18C11A.Q1:R18C11B.M1:0.154">     R18C11A.Q1 to R18C11B.M1    </A> <A href="#@net:CIC1Cos/d_tmp_31">CIC1Cos/d_tmp_31</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R16C23C.CLK to     R16C23C.Q1 <A href="#@comp:CIC1Cos/SLICE_1918">CIC1Cos/SLICE_1918</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.154<A href="#@net:CIC1Cos/d_tmp_53:R16C23C.Q1:R16C23B.M0:0.154">     R16C23C.Q1 to R16C23B.M0    </A> <A href="#@net:CIC1Cos/d_tmp_53">CIC1Cos/d_tmp_53</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
                     0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R18C11A.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1907:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R16C23C.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1918:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R18C11A.CLK:1.443">        OSC.OSC to R18C11A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R16C23C.CLK:1.443">        OSC.OSC to R16C23C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R18C11B.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1870:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R16C23B.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1882:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R18C11B.CLK:1.443">        OSC.OSC to R18C11B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R16C23B.CLK:1.443">        OSC.OSC to R16C23B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -258,41 +299,41 @@ Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_1954">CIC1Sin/d7_i0_i28</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2007">CIC1Sin/d_d7_i0_i28</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1916">CIC1Cos/d_tmp_i0_i49</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1880">CIC1Cos/d_d_tmp_i0_i49</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
    Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.287ns physical path delay CIC1Sin/SLICE_1954 to CIC1Sin/SLICE_2007 meets
+      0.287ns physical path delay CIC1Cos/SLICE_1916 to CIC1Cos/SLICE_1880 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R17C29C.CLK,R17C29C.Q0,CIC1Sin/SLICE_1954:ROUTE, 0.154,R17C29C.Q0,R17C29B.M1,CIC1Sin/d7_28">Data path</A> CIC1Sin/SLICE_1954 to CIC1Sin/SLICE_2007:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R14C22D.CLK,R14C22D.Q1,CIC1Cos/SLICE_1916:ROUTE, 0.154,R14C22D.Q1,R14C22A.M0,CIC1Cos/d_tmp_49">Data path</A> CIC1Cos/SLICE_1916 to CIC1Cos/SLICE_1880:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R17C29C.CLK to     R17C29C.Q0 <A href="#@comp:CIC1Sin/SLICE_1954">CIC1Sin/SLICE_1954</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.154<A href="#@net:CIC1Sin/d7_28:R17C29C.Q0:R17C29B.M1:0.154">     R17C29C.Q0 to R17C29B.M1    </A> <A href="#@net:CIC1Sin/d7_28">CIC1Sin/d7_28</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R14C22D.CLK to     R14C22D.Q1 <A href="#@comp:CIC1Cos/SLICE_1916">CIC1Cos/SLICE_1916</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.154<A href="#@net:CIC1Cos/d_tmp_49:R14C22D.Q1:R14C22A.M0:0.154">     R14C22D.Q1 to R14C22A.M0    </A> <A href="#@net:CIC1Cos/d_tmp_49">CIC1Cos/d_tmp_49</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
                     0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R17C29C.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_1954:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R14C22D.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1916:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R17C29C.CLK:1.443">        OSC.OSC to R17C29C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R14C22D.CLK:1.443">        OSC.OSC to R14C22D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R17C29B.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2007:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R14C22A.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1880:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R17C29B.CLK:1.443">        OSC.OSC to R17C29B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R14C22A.CLK:1.443">        OSC.OSC to R14C22A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -301,41 +342,41 @@ Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1906">CIC1Cos/d_tmp_i0_i29</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1869">CIC1Cos/d_d_tmp_i0_i29</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2169">CIC1Sin/d_tmp_i0_i57</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2132">CIC1Sin/d_d_tmp_i0_i57</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
    Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.287ns physical path delay CIC1Cos/SLICE_1906 to CIC1Cos/SLICE_1869 meets
+      0.287ns physical path delay CIC1Sin/SLICE_2169 to CIC1Sin/SLICE_2132 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R19C12C.CLK,R19C12C.Q1,CIC1Cos/SLICE_1906:ROUTE, 0.154,R19C12C.Q1,R19C12B.M1,CIC1Cos/d_tmp_29">Data path</A> CIC1Cos/SLICE_1906 to CIC1Cos/SLICE_1869:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R7C38B.CLK,R7C38B.Q1,CIC1Sin/SLICE_2169:ROUTE, 0.154,R7C38B.Q1,R7C38C.M1,CIC1Sin/d_tmp_57">Data path</A> CIC1Sin/SLICE_2169 to CIC1Sin/SLICE_2132:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R19C12C.CLK to     R19C12C.Q1 <A href="#@comp:CIC1Cos/SLICE_1906">CIC1Cos/SLICE_1906</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.154<A href="#@net:CIC1Cos/d_tmp_29:R19C12C.Q1:R19C12B.M1:0.154">     R19C12C.Q1 to R19C12B.M1    </A> <A href="#@net:CIC1Cos/d_tmp_29">CIC1Cos/d_tmp_29</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133     R7C38B.CLK to      R7C38B.Q1 <A href="#@comp:CIC1Sin/SLICE_2169">CIC1Sin/SLICE_2169</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.154<A href="#@net:CIC1Sin/d_tmp_57:R7C38B.Q1:R7C38C.M1:0.154">      R7C38B.Q1 to R7C38C.M1     </A> <A href="#@net:CIC1Sin/d_tmp_57">CIC1Sin/d_tmp_57</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
                     0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R19C12C.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1906:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R7C38B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2169:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R19C12C.CLK:1.443">        OSC.OSC to R19C12C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R7C38B.CLK:1.443">        OSC.OSC to R7C38B.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R19C12B.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1869:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R7C38C.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2132:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R19C12B.CLK:1.443">        OSC.OSC to R19C12B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R7C38C.CLK:1.443">        OSC.OSC to R7C38C.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -344,41 +385,41 @@ Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Cos/SLICE_1904">CIC1Cos/d_tmp_i0_i24</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Cos/SLICE_1867">CIC1Cos/d_d_tmp_i0_i24</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2144">CIC1Sin/d_tmp_i0_i8</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2107">CIC1Sin/d_d_tmp_i0_i8</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
    Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.287ns physical path delay CIC1Cos/SLICE_1904 to CIC1Cos/SLICE_1867 meets
+      0.287ns physical path delay CIC1Sin/SLICE_2144 to CIC1Sin/SLICE_2107 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R18C10D.CLK,R18C10D.Q0,CIC1Cos/SLICE_1904:ROUTE, 0.154,R18C10D.Q0,R18C10B.M0,CIC1Cos/d_tmp_24">Data path</A> CIC1Cos/SLICE_1904 to CIC1Cos/SLICE_1867:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R11C27B.CLK,R11C27B.Q1,CIC1Sin/SLICE_2144:ROUTE, 0.154,R11C27B.Q1,R11C27A.M1,CIC1Sin/d_tmp_8">Data path</A> CIC1Sin/SLICE_2144 to CIC1Sin/SLICE_2107:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R18C10D.CLK to     R18C10D.Q0 <A href="#@comp:CIC1Cos/SLICE_1904">CIC1Cos/SLICE_1904</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.154<A href="#@net:CIC1Cos/d_tmp_24:R18C10D.Q0:R18C10B.M0:0.154">     R18C10D.Q0 to R18C10B.M0    </A> <A href="#@net:CIC1Cos/d_tmp_24">CIC1Cos/d_tmp_24</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R11C27B.CLK to     R11C27B.Q1 <A href="#@comp:CIC1Sin/SLICE_2144">CIC1Sin/SLICE_2144</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.154<A href="#@net:CIC1Sin/d_tmp_8:R11C27B.Q1:R11C27A.M1:0.154">     R11C27B.Q1 to R11C27A.M1    </A> <A href="#@net:CIC1Sin/d_tmp_8">CIC1Sin/d_tmp_8</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
                     0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R18C10D.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1904:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R11C27B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2144:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R18C10D.CLK:1.443">        OSC.OSC to R18C10D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R11C27B.CLK:1.443">        OSC.OSC to R11C27B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R18C10B.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Cos/SLICE_1867:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R11C27A.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2107:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R18C10B.CLK:1.443">        OSC.OSC to R18C10B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R11C27A.CLK:1.443">        OSC.OSC to R11C27A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 <font color=#000000> 
@@ -387,84 +428,41 @@ Passed: The following path meets requirements by 0.306ns
  </font>
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2142">CIC1Sin/d_tmp_i0_i0</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2104">CIC1Sin/d_d_tmp_i0_i0</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2140">CIC1Sin/d_tmp_i0_i0</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2103">CIC1Sin/d_d_tmp_i0_i0</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
 
    Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
 
  Constraint Details:
 
-      0.287ns physical path delay CIC1Sin/SLICE_2142 to CIC1Sin/SLICE_2104 meets
+      0.287ns physical path delay CIC1Sin/SLICE_2140 to CIC1Sin/SLICE_2103 meets
      -0.019ns M_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling -0.019ns) by 0.306ns
 
  Physical Path Details:
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R16C30B.CLK,R16C30B.Q0,CIC1Sin/SLICE_2142:ROUTE, 0.154,R16C30B.Q0,R16C30C.M0,CIC1Sin/d_tmp_0">Data path</A> CIC1Sin/SLICE_2142 to CIC1Sin/SLICE_2104:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R12C24A.CLK,R12C24A.Q0,CIC1Sin/SLICE_2140:ROUTE, 0.154,R12C24A.Q0,R12C24C.M0,CIC1Sin/d_tmp_0">Data path</A> CIC1Sin/SLICE_2140 to CIC1Sin/SLICE_2103:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R16C30B.CLK to     R16C30B.Q0 <A href="#@comp:CIC1Sin/SLICE_2142">CIC1Sin/SLICE_2142</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.154<A href="#@net:CIC1Sin/d_tmp_0:R16C30B.Q0:R16C30C.M0:0.154">     R16C30B.Q0 to R16C30C.M0    </A> <A href="#@net:CIC1Sin/d_tmp_0">CIC1Sin/d_tmp_0</A> (to <A href="#@net:osc_clk">osc_clk</A>)
+REG_DEL     ---     0.133    R12C24A.CLK to     R12C24A.Q0 <A href="#@comp:CIC1Sin/SLICE_2140">CIC1Sin/SLICE_2140</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.154<A href="#@net:CIC1Sin/d_tmp_0:R12C24A.Q0:R12C24C.M0:0.154">     R12C24A.Q0 to R12C24C.M0    </A> <A href="#@net:CIC1Sin/d_tmp_0">CIC1Sin/d_tmp_0</A> (to <A href="#@net:osc_clk">osc_clk</A>)
                   --------
                     0.287   (46.3% logic, 53.7% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R16C30B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2142:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R12C24A.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2140:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R16C30B.CLK:1.443">        OSC.OSC to R16C30B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R12C24A.CLK:1.443">        OSC.OSC to R12C24A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R16C30C.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2104:
+      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R12C24C.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2103:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R16C30C.CLK:1.443">        OSC.OSC to R16C30C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.443   (0.0% logic, 100.0% route), 0 logic levels.
-<font color=#000000> 
-
-Passed: The following path meets requirements by 0.306ns
- </font>
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2158">CIC1Sin/d_tmp_i0_i32</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    FF         Data in        <A href="#@comp:CIC1Sin/SLICE_2121">CIC1Sin/d_d_tmp_i0_i32</A>  (to <A href="#@net:osc_clk">osc_clk</A> +)
-
-   Delay:               0.287ns  (46.3% logic, 53.7% route), 1 logic levels.
-
- Constraint Details:
-
-      0.287ns physical path delay CIC1Sin/SLICE_2158 to CIC1Sin/SLICE_2121 meets
-     -0.019ns M_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling -0.019ns) by 0.306ns
-
- Physical Path Details:
-
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:REG_DEL, 0.133,R12C35B.CLK,R12C35B.Q1,CIC1Sin/SLICE_2158:ROUTE, 0.154,R12C35B.Q1,R12C35A.M0,CIC1Sin/d_tmp_32">Data path</A> CIC1Sin/SLICE_2158 to CIC1Sin/SLICE_2121:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R12C35B.CLK to     R12C35B.Q1 <A href="#@comp:CIC1Sin/SLICE_2158">CIC1Sin/SLICE_2158</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.154<A href="#@net:CIC1Sin/d_tmp_32:R12C35B.Q1:R12C35A.M0:0.154">     R12C35B.Q1 to R12C35A.M0    </A> <A href="#@net:CIC1Sin/d_tmp_32">CIC1Sin/d_tmp_32</A> (to <A href="#@net:osc_clk">osc_clk</A>)
-                  --------
-                    0.287   (46.3% logic, 53.7% route), 1 logic levels.
-
- Clock Skew Details: 
-
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R12C35B.CLK,osc_clk">Source Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2158:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R12C35B.CLK:1.443">        OSC.OSC to R12C35B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.443   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:FREQUENCY NET 'osc_clk' 88.670000 MHz ;:ROUTE, 1.443,OSC.OSC,R12C35A.CLK,osc_clk">Destination Clock Path</A> OSCH_inst to CIC1Sin/SLICE_2121:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R12C35A.CLK:1.443">        OSC.OSC to R12C35A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.443<A href="#@net:osc_clk:OSC.OSC:R12C24C.CLK:1.443">        OSC.OSC to R12C24C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.443   (0.0% logic, 100.0% route), 0 logic levels.
 
@@ -475,283 +473,213 @@ Preference: CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" ;
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 2.857ns
+Passed:  The following path meets requirements by 2.722ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:Mixer1/SLICE_2224">Mixer1/RFInR1_13</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:Mixer1/SLICE_2223">Mixer1/RFInR1_13</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
    Destination:    Port       Pad            <A href="#@comp:DiffOut">DiffOut</A>
 
-   Data Path Delay:     1.666ns  (73.0% logic, 27.0% route), 2 logic levels.
+   Data Path Delay:     1.531ns  (79.5% logic, 20.5% route), 2 logic levels.
 
    Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
 
  Constraint Details:
-      1.191ns delay OSCH_inst to Mixer1/SLICE_2224 and
-      1.666ns delay Mixer1/SLICE_2224 to DiffOut (totaling 2.857ns) meets
-      0.000ns hold offset OSCH_inst to DiffOut by 2.857ns
+      1.191ns delay OSCH_inst to Mixer1/SLICE_2223 and
+      1.531ns delay Mixer1/SLICE_2223 to DiffOut (totaling 2.722ns) meets
+      0.000ns hold offset OSCH_inst to DiffOut by 2.722ns
 
  Physical Path Details:
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R2C22B.CLK,osc_clk">Clock path</A> OSCH_inst to Mixer1/SLICE_2224:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R2C24A.CLK,osc_clk">Clock path</A> OSCH_inst to Mixer1/SLICE_2223:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R2C22B.CLK:1.191">        OSC.OSC to R2C22B.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R2C24A.CLK:1.191">        OSC.OSC to R2C24A.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.191   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R2C22B.CLK,R2C22B.Q1,Mixer1/SLICE_2224:ROUTE, 0.449,R2C22B.Q1,122.PADDO,DiffOut_c:DOPAD_DEL, 1.084,122.PADDO,122.PAD,DiffOut">Data path</A> Mixer1/SLICE_2224 to DiffOut:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R2C24A.CLK,R2C24A.Q1,Mixer1/SLICE_2223:ROUTE, 0.314,R2C24A.Q1,122.PADDO,DiffOut_c:DOPAD_DEL, 1.084,122.PADDO,122.PAD,DiffOut">Data path</A> Mixer1/SLICE_2223 to DiffOut:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R2C22B.CLK to      R2C22B.Q1 <A href="#@comp:Mixer1/SLICE_2224">Mixer1/SLICE_2224</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.449<A href="#@net:DiffOut_c:R2C22B.Q1:122.PADDO:0.449">      R2C22B.Q1 to 122.PADDO     </A> <A href="#@net:DiffOut_c">DiffOut_c</A>
+REG_DEL     ---     0.133     R2C24A.CLK to      R2C24A.Q1 <A href="#@comp:Mixer1/SLICE_2223">Mixer1/SLICE_2223</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.314<A href="#@net:DiffOut_c:R2C24A.Q1:122.PADDO:0.314">      R2C24A.Q1 to 122.PADDO     </A> <A href="#@net:DiffOut_c">DiffOut_c</A>
 DOPAD_DEL   ---     1.084      122.PADDO to        122.PAD <A href="#@comp:DiffOut">DiffOut</A>
                   --------
-                    1.666   (73.0% logic, 27.0% route), 2 logic levels.
+                    1.531   (79.5% logic, 20.5% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 2.859ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:uart_rx1/SLICE_2288">uart_rx1/o_Rx_DV_59</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    Port       Pad            <A href="#@comp:o_Rx_DV">o_Rx_DV</A>
-
-   Data Path Delay:     1.668ns  (73.0% logic, 27.0% route), 2 logic levels.
-
-   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
-
- Constraint Details:
-      1.191ns delay OSCH_inst to uart_rx1/SLICE_2288 and
-      1.668ns delay uart_rx1/SLICE_2288 to o_Rx_DV (totaling 2.859ns) meets
-      0.000ns hold offset OSCH_inst to o_Rx_DV by 2.859ns
-
- Physical Path Details:
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R3C10A.CLK,osc_clk">Clock path</A> OSCH_inst to uart_rx1/SLICE_2288:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R3C10A.CLK:1.191">        OSC.OSC to R3C10A.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R3C10A.CLK,R3C10A.Q0,uart_rx1/SLICE_2288:ROUTE, 0.451,R3C10A.Q0,143.PADDO,o_Rx_DV_c:DOPAD_DEL, 1.084,143.PADDO,143.PAD,o_Rx_DV">Data path</A> uart_rx1/SLICE_2288 to o_Rx_DV:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133     R3C10A.CLK to      R3C10A.Q0 <A href="#@comp:uart_rx1/SLICE_2288">uart_rx1/SLICE_2288</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         3     0.451<A href="#@net:o_Rx_DV_c:R3C10A.Q0:143.PADDO:0.451">      R3C10A.Q0 to 143.PADDO     </A> <A href="#@net:o_Rx_DV_c">o_Rx_DV_c</A>
-DOPAD_DEL   ---     1.084      143.PADDO to        143.PAD <A href="#@comp:o_Rx_DV">o_Rx_DV</A>
-                  --------
-                    1.668   (73.0% logic, 27.0% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.935ns
+Passed:  The following path meets requirements by 2.840ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:PWM1/SLICE_6">PWM1/PWMOut_15</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    Port       Pad            <A href="#@comp:PWMOutP4">PWMOutP4</A>
-
-   Data Path Delay:     1.763ns  (69.0% logic, 31.0% route), 2 logic levels.
-
-   Clock Path Delay:    1.172ns  (0.0% logic, 100.0% route), 0 logic levels.
-
- Constraint Details:
-      1.172ns delay OSCH_inst to PWM1/SLICE_6 and
-      1.763ns delay PWM1/SLICE_6 to PWMOutP4 (totaling 2.935ns) meets
-      0.000ns hold offset OSCH_inst to PWMOutP4 by 2.935ns
-
- Physical Path Details:
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.172,OSC.OSC,R23C40B.CLK,osc_clk">Clock path</A> OSCH_inst to PWM1/SLICE_6:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.172<A href="#@net:osc_clk:OSC.OSC:R23C40B.CLK:1.172">        OSC.OSC to R23C40B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.172   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R23C40B.CLK,R23C40B.Q1,PWM1/SLICE_6:ROUTE, 0.546,R23C40B.Q1,69.PADDO,PWMOutP4_c:DOPAD_DEL, 1.084,69.PADDO,69.PAD,PWMOutP4">Data path</A> PWM1/SLICE_6 to PWMOutP4:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R23C40B.CLK to     R23C40B.Q1 <A href="#@comp:PWM1/SLICE_6">PWM1/SLICE_6</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         6     0.546<A href="#@net:PWMOutP4_c:R23C40B.Q1:69.PADDO:0.546">     R23C40B.Q1 to 69.PADDO      </A> <A href="#@net:PWMOutP4_c">PWMOutP4_c</A>
-DOPAD_DEL   ---     1.084       69.PADDO to         69.PAD <A href="#@comp:PWMOutP4">PWMOutP4</A>
-                  --------
-                    1.763   (69.0% logic, 31.0% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.935ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:PWM1/SLICE_6">PWM1/PWMOut_15</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    Port       Pad            <A href="#@comp:PWMOutP3">PWMOutP3</A>
-
-   Data Path Delay:     1.763ns  (69.0% logic, 31.0% route), 2 logic levels.
-
-   Clock Path Delay:    1.172ns  (0.0% logic, 100.0% route), 0 logic levels.
-
- Constraint Details:
-      1.172ns delay OSCH_inst to PWM1/SLICE_6 and
-      1.763ns delay PWM1/SLICE_6 to PWMOutP3 (totaling 2.935ns) meets
-      0.000ns hold offset OSCH_inst to PWMOutP3 by 2.935ns
-
- Physical Path Details:
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.172,OSC.OSC,R23C40B.CLK,osc_clk">Clock path</A> OSCH_inst to PWM1/SLICE_6:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.172<A href="#@net:osc_clk:OSC.OSC:R23C40B.CLK:1.172">        OSC.OSC to R23C40B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.172   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R23C40B.CLK,R23C40B.Q1,PWM1/SLICE_6:ROUTE, 0.546,R23C40B.Q1,68.PADDO,PWMOutP4_c:DOPAD_DEL, 1.084,68.PADDO,68.PAD,PWMOutP3">Data path</A> PWM1/SLICE_6 to PWMOutP3:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R23C40B.CLK to     R23C40B.Q1 <A href="#@comp:PWM1/SLICE_6">PWM1/SLICE_6</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         6     0.546<A href="#@net:PWMOutP4_c:R23C40B.Q1:68.PADDO:0.546">     R23C40B.Q1 to 68.PADDO      </A> <A href="#@net:PWMOutP4_c">PWMOutP4_c</A>
-DOPAD_DEL   ---     1.084       68.PADDO to         68.PAD <A href="#@comp:PWMOutP3">PWMOutP3</A>
-                  --------
-                    1.763   (69.0% logic, 31.0% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.941ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2220">CIC1Sin/d_out_i0_i6</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2218">CIC1Sin/d_out_i0_i6</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
    Destination:    Port       Pad            <A href="#@comp:MYLED[0]">MYLED[0]</A>
 
-   Data Path Delay:     1.750ns  (62.1% logic, 37.9% route), 2 logic levels.
+   Data Path Delay:     1.649ns  (65.9% logic, 34.1% route), 2 logic levels.
 
    Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
 
  Constraint Details:
-      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2220 and
-      1.750ns delay CIC1Sin/SLICE_2220 to MYLED[0] (totaling 2.941ns) meets
-      0.000ns hold offset OSCH_inst to MYLED[0] by 2.941ns
+      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2218 and
+      1.649ns delay CIC1Sin/SLICE_2218 to MYLED[0] (totaling 2.840ns) meets
+      0.000ns hold offset OSCH_inst to MYLED[0] by 2.840ns
 
  Physical Path Details:
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R10C28C.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2220:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R8C28D.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2218:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R10C28C.CLK:1.191">        OSC.OSC to R10C28C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R8C28D.CLK:1.191">        OSC.OSC to R8C28D.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.191   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R10C28C.CLK,R10C28C.Q0,CIC1Sin/SLICE_2220:ROUTE, 0.664,R10C28C.Q0,97.PADDO,MYLED_c_0:DOPAD_DEL, 0.953,97.PADDO,97.PAD,MYLED[0]">Data path</A> CIC1Sin/SLICE_2220 to MYLED[0]:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R8C28D.CLK,R8C28D.Q0,CIC1Sin/SLICE_2218:ROUTE, 0.563,R8C28D.Q0,97.PADDO,MYLED_c_0:DOPAD_DEL, 0.953,97.PADDO,97.PAD,MYLED[0]">Data path</A> CIC1Sin/SLICE_2218 to MYLED[0]:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R10C28C.CLK to     R10C28C.Q0 <A href="#@comp:CIC1Sin/SLICE_2220">CIC1Sin/SLICE_2220</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.664<A href="#@net:MYLED_c_0:R10C28C.Q0:97.PADDO:0.664">     R10C28C.Q0 to 97.PADDO      </A> <A href="#@net:MYLED_c_0">MYLED_c_0</A>
+REG_DEL     ---     0.133     R8C28D.CLK to      R8C28D.Q0 <A href="#@comp:CIC1Sin/SLICE_2218">CIC1Sin/SLICE_2218</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.563<A href="#@net:MYLED_c_0:R8C28D.Q0:97.PADDO:0.563">      R8C28D.Q0 to 97.PADDO      </A> <A href="#@net:MYLED_c_0">MYLED_c_0</A>
 DOPAD_DEL   ---     0.953       97.PADDO to         97.PAD <A href="#@comp:MYLED[0]">MYLED[0]</A>
                   --------
-                    1.750   (62.1% logic, 37.9% route), 2 logic levels.
+                    1.649   (65.9% logic, 34.1% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 2.941ns
+Passed:  The following path meets requirements by 2.875ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2220">CIC1Sin/d_out_i0_i7</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2219">CIC1Sin/d_out_i0_i8</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    Port       Pad            <A href="#@comp:MYLED[2]">MYLED[2]</A>
+
+   Data Path Delay:     1.684ns  (64.5% logic, 35.5% route), 2 logic levels.
+
+   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2219 and
+      1.684ns delay CIC1Sin/SLICE_2219 to MYLED[2] (totaling 2.875ns) meets
+      0.000ns hold offset OSCH_inst to MYLED[2] by 2.875ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R8C29D.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2219:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R8C29D.CLK:1.191">        OSC.OSC to R8C29D.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R8C29D.CLK,R8C29D.Q0,CIC1Sin/SLICE_2219:ROUTE, 0.598,R8C29D.Q0,99.PADDO,MYLED_c_2:DOPAD_DEL, 0.953,99.PADDO,99.PAD,MYLED[2]">Data path</A> CIC1Sin/SLICE_2219 to MYLED[2]:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R8C29D.CLK to      R8C29D.Q0 <A href="#@comp:CIC1Sin/SLICE_2219">CIC1Sin/SLICE_2219</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.598<A href="#@net:MYLED_c_2:R8C29D.Q0:99.PADDO:0.598">      R8C29D.Q0 to 99.PADDO      </A> <A href="#@net:MYLED_c_2">MYLED_c_2</A>
+DOPAD_DEL   ---     0.953       99.PADDO to         99.PAD <A href="#@comp:MYLED[2]">MYLED[2]</A>
+                  --------
+                    1.684   (64.5% logic, 35.5% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 2.940ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2218">CIC1Sin/d_out_i0_i7</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
    Destination:    Port       Pad            <A href="#@comp:MYLED[1]">MYLED[1]</A>
 
-   Data Path Delay:     1.750ns  (62.1% logic, 37.9% route), 2 logic levels.
+   Data Path Delay:     1.749ns  (62.1% logic, 37.9% route), 2 logic levels.
+
+   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2218 and
+      1.749ns delay CIC1Sin/SLICE_2218 to MYLED[1] (totaling 2.940ns) meets
+      0.000ns hold offset OSCH_inst to MYLED[1] by 2.940ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R8C28D.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2218:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R8C28D.CLK:1.191">        OSC.OSC to R8C28D.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R8C28D.CLK,R8C28D.Q1,CIC1Sin/SLICE_2218:ROUTE, 0.663,R8C28D.Q1,98.PADDO,MYLED_c_1:DOPAD_DEL, 0.953,98.PADDO,98.PAD,MYLED[1]">Data path</A> CIC1Sin/SLICE_2218 to MYLED[1]:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R8C28D.CLK to      R8C28D.Q1 <A href="#@comp:CIC1Sin/SLICE_2218">CIC1Sin/SLICE_2218</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.663<A href="#@net:MYLED_c_1:R8C28D.Q1:98.PADDO:0.663">      R8C28D.Q1 to 98.PADDO      </A> <A href="#@net:MYLED_c_1">MYLED_c_1</A>
+DOPAD_DEL   ---     0.953       98.PADDO to         98.PAD <A href="#@comp:MYLED[1]">MYLED[1]</A>
+                  --------
+                    1.749   (62.1% logic, 37.9% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 2.956ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2219">CIC1Sin/d_out_i0_i9</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    Port       Pad            <A href="#@comp:MYLED[3]">MYLED[3]</A>
+
+   Data Path Delay:     1.765ns  (61.5% logic, 38.5% route), 2 logic levels.
+
+   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2219 and
+      1.765ns delay CIC1Sin/SLICE_2219 to MYLED[3] (totaling 2.956ns) meets
+      0.000ns hold offset OSCH_inst to MYLED[3] by 2.956ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R8C29D.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2219:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R8C29D.CLK:1.191">        OSC.OSC to R8C29D.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R8C29D.CLK,R8C29D.Q1,CIC1Sin/SLICE_2219:ROUTE, 0.679,R8C29D.Q1,100.PADDO,MYLED_c_3:DOPAD_DEL, 0.953,100.PADDO,100.PAD,MYLED[3]">Data path</A> CIC1Sin/SLICE_2219 to MYLED[3]:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R8C29D.CLK to      R8C29D.Q1 <A href="#@comp:CIC1Sin/SLICE_2219">CIC1Sin/SLICE_2219</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.679<A href="#@net:MYLED_c_3:R8C29D.Q1:100.PADDO:0.679">      R8C29D.Q1 to 100.PADDO     </A> <A href="#@net:MYLED_c_3">MYLED_c_3</A>
+DOPAD_DEL   ---     0.953      100.PADDO to        100.PAD <A href="#@comp:MYLED[3]">MYLED[3]</A>
+                  --------
+                    1.765   (61.5% logic, 38.5% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 2.986ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2220">CIC1Sin/d_out_i0_i10</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    Port       Pad            <A href="#@comp:MYLED[4]">MYLED[4]</A>
+
+   Data Path Delay:     1.795ns  (60.5% logic, 39.5% route), 2 logic levels.
 
    Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
 
  Constraint Details:
       1.191ns delay OSCH_inst to CIC1Sin/SLICE_2220 and
-      1.750ns delay CIC1Sin/SLICE_2220 to MYLED[1] (totaling 2.941ns) meets
-      0.000ns hold offset OSCH_inst to MYLED[1] by 2.941ns
+      1.795ns delay CIC1Sin/SLICE_2220 to MYLED[4] (totaling 2.986ns) meets
+      0.000ns hold offset OSCH_inst to MYLED[4] by 2.986ns
 
  Physical Path Details:
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R10C28C.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2220:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R8C29B.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2220:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R10C28C.CLK:1.191">        OSC.OSC to R10C28C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R8C29B.CLK:1.191">        OSC.OSC to R8C29B.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.191   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R10C28C.CLK,R10C28C.Q1,CIC1Sin/SLICE_2220:ROUTE, 0.664,R10C28C.Q1,98.PADDO,MYLED_c_1:DOPAD_DEL, 0.953,98.PADDO,98.PAD,MYLED[1]">Data path</A> CIC1Sin/SLICE_2220 to MYLED[1]:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R8C29B.CLK,R8C29B.Q0,CIC1Sin/SLICE_2220:ROUTE, 0.709,R8C29B.Q0,104.PADDO,MYLED_c_4:DOPAD_DEL, 0.953,104.PADDO,104.PAD,MYLED[4]">Data path</A> CIC1Sin/SLICE_2220 to MYLED[4]:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R10C28C.CLK to     R10C28C.Q1 <A href="#@comp:CIC1Sin/SLICE_2220">CIC1Sin/SLICE_2220</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.664<A href="#@net:MYLED_c_1:R10C28C.Q1:98.PADDO:0.664">     R10C28C.Q1 to 98.PADDO      </A> <A href="#@net:MYLED_c_1">MYLED_c_1</A>
-DOPAD_DEL   ---     0.953       98.PADDO to         98.PAD <A href="#@comp:MYLED[1]">MYLED[1]</A>
-                  --------
-                    1.750   (62.1% logic, 37.9% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.981ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2222">CIC1Sin/d_out_i0_i10</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    Port       Pad            <A href="#@comp:MYLED[4]">MYLED[4]</A>
-
-   Data Path Delay:     1.790ns  (60.7% logic, 39.3% route), 2 logic levels.
-
-   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
-
- Constraint Details:
-      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2222 and
-      1.790ns delay CIC1Sin/SLICE_2222 to MYLED[4] (totaling 2.981ns) meets
-      0.000ns hold offset OSCH_inst to MYLED[4] by 2.981ns
-
- Physical Path Details:
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R11C28C.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2222:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R11C28C.CLK:1.191">        OSC.OSC to R11C28C.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R11C28C.CLK,R11C28C.Q0,CIC1Sin/SLICE_2222:ROUTE, 0.704,R11C28C.Q0,104.PADDO,MYLED_c_4:DOPAD_DEL, 0.953,104.PADDO,104.PAD,MYLED[4]">Data path</A> CIC1Sin/SLICE_2222 to MYLED[4]:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R11C28C.CLK to     R11C28C.Q0 <A href="#@comp:CIC1Sin/SLICE_2222">CIC1Sin/SLICE_2222</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.704<A href="#@net:MYLED_c_4:R11C28C.Q0:104.PADDO:0.704">     R11C28C.Q0 to 104.PADDO     </A> <A href="#@net:MYLED_c_4">MYLED_c_4</A>
+REG_DEL     ---     0.133     R8C29B.CLK to      R8C29B.Q0 <A href="#@comp:CIC1Sin/SLICE_2220">CIC1Sin/SLICE_2220</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.709<A href="#@net:MYLED_c_4:R8C29B.Q0:104.PADDO:0.709">      R8C29B.Q0 to 104.PADDO     </A> <A href="#@net:MYLED_c_4">MYLED_c_4</A>
 DOPAD_DEL   ---     0.953      104.PADDO to        104.PAD <A href="#@comp:MYLED[4]">MYLED[4]</A>
                   --------
-                    1.790   (60.7% logic, 39.3% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.986ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2221">CIC1Sin/d_out_i0_i8</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    Port       Pad            <A href="#@comp:MYLED[2]">MYLED[2]</A>
-
-   Data Path Delay:     1.795ns  (60.5% logic, 39.5% route), 2 logic levels.
-
-   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
-
- Constraint Details:
-      1.191ns delay OSCH_inst to CIC1Sin/SLICE_2221 and
-      1.795ns delay CIC1Sin/SLICE_2221 to MYLED[2] (totaling 2.986ns) meets
-      0.000ns hold offset OSCH_inst to MYLED[2] by 2.986ns
-
- Physical Path Details:
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R11C28A.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2221:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R11C28A.CLK:1.191">        OSC.OSC to R11C28A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
-                  --------
-                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
-
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R11C28A.CLK,R11C28A.Q0,CIC1Sin/SLICE_2221:ROUTE, 0.709,R11C28A.Q0,99.PADDO,MYLED_c_2:DOPAD_DEL, 0.953,99.PADDO,99.PAD,MYLED[2]">Data path</A> CIC1Sin/SLICE_2221 to MYLED[2]:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R11C28A.CLK to     R11C28A.Q0 <A href="#@comp:CIC1Sin/SLICE_2221">CIC1Sin/SLICE_2221</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.709<A href="#@net:MYLED_c_2:R11C28A.Q0:99.PADDO:0.709">     R11C28A.Q0 to 99.PADDO      </A> <A href="#@net:MYLED_c_2">MYLED_c_2</A>
-DOPAD_DEL   ---     0.953       99.PADDO to         99.PAD <A href="#@comp:MYLED[2]">MYLED[2]</A>
-                  --------
                     1.795   (60.5% logic, 39.5% route), 2 logic levels.
 
 
@@ -759,8 +687,8 @@ Passed:  The following path meets requirements by 2.986ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2221">CIC1Sin/d_out_i0_i9</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
-   Destination:    Port       Pad            <A href="#@comp:MYLED[3]">MYLED[3]</A>
+   Source:         FF         Q              <A href="#@comp:CIC1Sin/SLICE_2221">CIC1Sin/d_out_i0_i11</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    Port       Pad            <A href="#@comp:MYLED[5]">MYLED[5]</A>
 
    Data Path Delay:     1.795ns  (60.5% logic, 39.5% route), 2 logic levels.
 
@@ -768,63 +696,135 @@ Passed:  The following path meets requirements by 2.986ns
 
  Constraint Details:
       1.191ns delay OSCH_inst to CIC1Sin/SLICE_2221 and
-      1.795ns delay CIC1Sin/SLICE_2221 to MYLED[3] (totaling 2.986ns) meets
-      0.000ns hold offset OSCH_inst to MYLED[3] by 2.986ns
+      1.795ns delay CIC1Sin/SLICE_2221 to MYLED[5] (totaling 2.986ns) meets
+      0.000ns hold offset OSCH_inst to MYLED[5] by 2.986ns
 
  Physical Path Details:
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R11C28A.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2221:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R8C29A.CLK,osc_clk">Clock path</A> OSCH_inst to CIC1Sin/SLICE_2221:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R11C28A.CLK:1.191">        OSC.OSC to R11C28A.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R8C29A.CLK:1.191">        OSC.OSC to R8C29A.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
                     1.191   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R11C28A.CLK,R11C28A.Q1,CIC1Sin/SLICE_2221:ROUTE, 0.709,R11C28A.Q1,100.PADDO,MYLED_c_3:DOPAD_DEL, 0.953,100.PADDO,100.PAD,MYLED[3]">Data path</A> CIC1Sin/SLICE_2221 to MYLED[3]:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R8C29A.CLK,R8C29A.Q0,CIC1Sin/SLICE_2221:ROUTE, 0.709,R8C29A.Q0,105.PADDO,MYLED_c_5:DOPAD_DEL, 0.953,105.PADDO,105.PAD,MYLED[5]">Data path</A> CIC1Sin/SLICE_2221 to MYLED[5]:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R11C28A.CLK to     R11C28A.Q1 <A href="#@comp:CIC1Sin/SLICE_2221">CIC1Sin/SLICE_2221</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         2     0.709<A href="#@net:MYLED_c_3:R11C28A.Q1:100.PADDO:0.709">     R11C28A.Q1 to 100.PADDO     </A> <A href="#@net:MYLED_c_3">MYLED_c_3</A>
-DOPAD_DEL   ---     0.953      100.PADDO to        100.PAD <A href="#@comp:MYLED[3]">MYLED[3]</A>
+REG_DEL     ---     0.133     R8C29A.CLK to      R8C29A.Q0 <A href="#@comp:CIC1Sin/SLICE_2221">CIC1Sin/SLICE_2221</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         2     0.709<A href="#@net:MYLED_c_5:R8C29A.Q0:105.PADDO:0.709">      R8C29A.Q0 to 105.PADDO     </A> <A href="#@net:MYLED_c_5">MYLED_c_5</A>
+DOPAD_DEL   ---     0.953      105.PADDO to        105.PAD <A href="#@comp:MYLED[5]">MYLED[5]</A>
                   --------
                     1.795   (60.5% logic, 39.5% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 3.110ns
+Passed:  The following path meets requirements by 3.273ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:ncoGen/SLICE_725">ncoGen/phase_accum_i63</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    Port       Pad            <A href="#@comp:sinGen">sinGen</A>
+
+   Data Path Delay:     2.082ns  (63.3% logic, 36.7% route), 3 logic levels.
+
+   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.191ns delay OSCH_inst to ncoGen/SLICE_725 and
+      2.082ns delay ncoGen/SLICE_725 to sinGen (totaling 3.273ns) meets
+      0.000ns hold offset OSCH_inst to sinGen by 3.273ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R12C10D.CLK,osc_clk">Clock path</A> OSCH_inst to ncoGen/SLICE_725:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R12C10D.CLK:1.191">        OSC.OSC to R12C10D.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R12C10D.CLK,R12C10D.Q1,ncoGen/SLICE_725:ROUTE, 0.452,R12C10D.Q1,R2C10B.A0,phase_accum_63:CTOF_DEL, 0.101,R2C10B.A0,R2C10B.F0,ncoGen/SLICE_2510:ROUTE, 0.312,R2C10B.F0,142.PADDO,sinGen_c:DOPAD_DEL, 1.084,142.PADDO,142.PAD,sinGen">Data path</A> ncoGen/SLICE_725 to sinGen:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133    R12C10D.CLK to     R12C10D.Q1 <A href="#@comp:ncoGen/SLICE_725">ncoGen/SLICE_725</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         3     0.452<A href="#@net:phase_accum_63:R12C10D.Q1:R2C10B.A0:0.452">     R12C10D.Q1 to R2C10B.A0     </A> <A href="#@net:phase_accum_63">phase_accum_63</A>
+CTOF_DEL    ---     0.101      R2C10B.A0 to      R2C10B.F0 <A href="#@comp:ncoGen/SLICE_2510">ncoGen/SLICE_2510</A>
+ROUTE         1     0.312<A href="#@net:sinGen_c:R2C10B.F0:142.PADDO:0.312">      R2C10B.F0 to 142.PADDO     </A> <A href="#@net:sinGen_c">sinGen_c</A>
+DOPAD_DEL   ---     1.084      142.PADDO to        142.PAD <A href="#@comp:sinGen">sinGen</A>
+                  --------
+                    2.082   (63.3% logic, 36.7% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 3.415ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:PWM1/SLICE_6">PWM1/PWMOut_15</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
+   Destination:    Port       Pad            <A href="#@comp:PWMOut">PWMOut</A>
+
+   Data Path Delay:     2.224ns  (54.7% logic, 45.3% route), 2 logic levels.
+
+   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      1.191ns delay OSCH_inst to PWM1/SLICE_6 and
+      2.224ns delay PWM1/SLICE_6 to PWMOut (totaling 3.415ns) meets
+      0.000ns hold offset OSCH_inst to PWMOut by 3.415ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R3C14B.CLK,osc_clk">Clock path</A> OSCH_inst to PWM1/SLICE_6:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R3C14B.CLK:1.191">        OSC.OSC to R3C14B.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
+                  --------
+                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R3C14B.CLK,R3C14B.Q1,PWM1/SLICE_6:ROUTE, 1.007,R3C14B.Q1,43.PADDO,PWMOutP4_c:DOPAD_DEL, 1.084,43.PADDO,43.PAD,PWMOut">Data path</A> PWM1/SLICE_6 to PWMOut:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R3C14B.CLK to      R3C14B.Q1 <A href="#@comp:PWM1/SLICE_6">PWM1/SLICE_6</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         6     1.007<A href="#@net:PWMOutP4_c:R3C14B.Q1:43.PADDO:1.007">      R3C14B.Q1 to 43.PADDO      </A> <A href="#@net:PWMOutP4_c">PWMOutP4_c</A>
+DOPAD_DEL   ---     1.084       43.PADDO to         43.PAD <A href="#@comp:PWMOut">PWMOut</A>
+                  --------
+                    2.224   (54.7% logic, 45.3% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 3.706ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
    Source:         FF         Q              <A href="#@comp:PWM1/SLICE_6">PWM1/PWMOut_15</A>  (from <A href="#@net:osc_clk">osc_clk</A> +)
    Destination:    Port       Pad            <A href="#@comp:PWMOutP1">PWMOutP1</A>
 
-   Data Path Delay:     1.938ns  (62.8% logic, 37.2% route), 2 logic levels.
+   Data Path Delay:     2.515ns  (48.4% logic, 51.6% route), 2 logic levels.
 
-   Clock Path Delay:    1.172ns  (0.0% logic, 100.0% route), 0 logic levels.
+   Clock Path Delay:    1.191ns  (0.0% logic, 100.0% route), 0 logic levels.
 
  Constraint Details:
-      1.172ns delay OSCH_inst to PWM1/SLICE_6 and
-      1.938ns delay PWM1/SLICE_6 to PWMOutP1 (totaling 3.110ns) meets
-      0.000ns hold offset OSCH_inst to PWMOutP1 by 3.110ns
+      1.191ns delay OSCH_inst to PWM1/SLICE_6 and
+      2.515ns delay PWM1/SLICE_6 to PWMOutP1 (totaling 3.706ns) meets
+      0.000ns hold offset OSCH_inst to PWMOutP1 by 3.706ns
 
  Physical Path Details:
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.172,OSC.OSC,R23C40B.CLK,osc_clk">Clock path</A> OSCH_inst to PWM1/SLICE_6:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:ROUTE, 1.191,OSC.OSC,R3C14B.CLK,osc_clk">Clock path</A> OSCH_inst to PWM1/SLICE_6:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999     1.172<A href="#@net:osc_clk:OSC.OSC:R23C40B.CLK:1.172">        OSC.OSC to R23C40B.CLK   </A> <A href="#@net:osc_clk">osc_clk</A>
+ROUTE       999     1.191<A href="#@net:osc_clk:OSC.OSC:R3C14B.CLK:1.191">        OSC.OSC to R3C14B.CLK    </A> <A href="#@net:osc_clk">osc_clk</A>
                   --------
-                    1.172   (0.0% logic, 100.0% route), 0 logic levels.
+                    1.191   (0.0% logic, 100.0% route), 0 logic levels.
 
-      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R23C40B.CLK,R23C40B.Q1,PWM1/SLICE_6:ROUTE, 0.721,R23C40B.Q1,61.PADDO,PWMOutP4_c:DOPAD_DEL, 1.084,61.PADDO,61.PAD,PWMOutP1">Data path</A> PWM1/SLICE_6 to PWMOutP1:
+      <A href="#@path:CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET 'osc_clk' ;:REG_DEL, 0.133,R3C14B.CLK,R3C14B.Q1,PWM1/SLICE_6:ROUTE, 1.298,R3C14B.Q1,61.PADDO,PWMOutP4_c:DOPAD_DEL, 1.084,61.PADDO,61.PAD,PWMOutP1">Data path</A> PWM1/SLICE_6 to PWMOutP1:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133    R23C40B.CLK to     R23C40B.Q1 <A href="#@comp:PWM1/SLICE_6">PWM1/SLICE_6</A> (from <A href="#@net:osc_clk">osc_clk</A>)
-ROUTE         6     0.721<A href="#@net:PWMOutP4_c:R23C40B.Q1:61.PADDO:0.721">     R23C40B.Q1 to 61.PADDO      </A> <A href="#@net:PWMOutP4_c">PWMOutP4_c</A>
+REG_DEL     ---     0.133     R3C14B.CLK to      R3C14B.Q1 <A href="#@comp:PWM1/SLICE_6">PWM1/SLICE_6</A> (from <A href="#@net:osc_clk">osc_clk</A>)
+ROUTE         6     1.298<A href="#@net:PWMOutP4_c:R3C14B.Q1:61.PADDO:1.298">      R3C14B.Q1 to 61.PADDO      </A> <A href="#@net:PWMOutP4_c">PWMOutP4_c</A>
 DOPAD_DEL   ---     1.084       61.PADDO to         61.PAD <A href="#@comp:PWMOutP1">PWMOutP1</A>
                   --------
-                    1.938   (62.8% logic, 37.2% route), 2 logic levels.
+                    2.515   (48.4% logic, 51.6% route), 2 logic levels.
 
-Report:    2.857ns is the maximum offset for this preference.
+Report:    2.722ns is the maximum offset for this preference.
 
 <A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
 --------------
@@ -832,10 +832,10 @@ Report:    2.857ns is the maximum offset for this preference.
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "osc_clk" 88.670000 MHz ; |     0.000 ns|     0.302 ns|   1  
+FREQUENCY NET "osc_clk" 88.670000 MHz ; |     0.000 ns|     0.306 ns|   1  
                                         |             |             |
 CLOCK_TO_OUT ALLPORTS 20.000000 ns      |             |             |
-CLKNET "osc_clk" ;                      |     0.000 ns|     2.857 ns|   2  
+CLKNET "osc_clk" ;                      |     0.000 ns|     2.722 ns|   2  
                                         |             |             |
 ----------------------------------------------------------------------------
 
@@ -848,20 +848,20 @@ All preferences were met.
 
 Found 3 clocks:
 
-Clock Domain: <A href="#@net:uart_rx1/UartClk[2]">uart_rx1/UartClk[2]</A>   Source: uart_rx1/SLICE_12.Q1   Loads: 30
+Clock Domain: <A href="#@net:uart_rx1/UartClk[2]">uart_rx1/UartClk[2]</A>   Source: uart_rx1/SLICE_12.Q1   Loads: 29
    No transfer within this clock domain is found
 
-Clock Domain: <A href="#@net:osc_clk">osc_clk</A>   Source: OSCH_inst.OSC   Loads: 1362
+Clock Domain: <A href="#@net:osc_clk">osc_clk</A>   Source: OSCH_inst.OSC   Loads: 1367
    Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;
 
    Data transfers from:
    Clock Domain: <A href="#@net:uart_rx1/UartClk[2]">uart_rx1/UartClk[2]</A>   Source: uart_rx1/SLICE_12.Q1
       Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;   Transfers: 9
 
-   Clock Domain: <A href="#@net:CIC1_out_clkSin">CIC1_out_clkSin</A>   Source: CIC1Sin/SLICE_2199.Q0
+   Clock Domain: <A href="#@net:CIC1_out_clkSin">CIC1_out_clkSin</A>   Source: CIC1Sin/SLICE_2197.Q0
       Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;   Transfers: 10
 
-Clock Domain: <A href="#@net:CIC1_out_clkSin">CIC1_out_clkSin</A>   Source: CIC1Sin/SLICE_2199.Q0   Loads: 153
+Clock Domain: <A href="#@net:CIC1_out_clkSin">CIC1_out_clkSin</A>   Source: CIC1Sin/SLICE_2197.Q0   Loads: 153
    No transfer within this clock domain is found
 
 
@@ -871,7 +871,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1622454 paths, 1 nets, and 16498 connections (99.99% coverage)
+Constraints cover 1466977 paths, 1 nets, and 16496 connections (99.99% coverage)
 
 
 
@@ -879,5 +879,5 @@ Timing summary (Setup and Hold):
 ---------------
 
 Timing errors: 10 (setup), 0 (hold)
-Score: 71326 (setup), 0 (hold)
-Cumulative negative slack: 71326 (71326+0)
+Score: 30054 (setup), 0 (hold)
+Cumulative negative slack: 30054 (30054+0)

@@ -51,5 +51,3 @@ LOCATE COMP "PWMOutP1" SITE "61" ;
 LOCATE COMP "PWMOutP2" SITE "62" ;
 LOCATE COMP "PWMOutP3" SITE "68" ;
 LOCATE COMP "PWMOutP4" SITE "69" ;
-MULTICYCLE FROM CELL "uart_rx1/o_Rx_Byte_i6" CLKNET "uart_tx1/UartClk[2]" TO CELL "phase_inc_carrGen_i0_i63" CLKNET "osc_clk" 8.000000 X ;
-MULTICYCLE FROM CELL "uart_rx1/o_Rx_Byte_i6" CLKNET "uart_tx1/UartClk[2]" TO CELL "phase_inc_carrGen_i0_i62" CLKNET "osc_clk" 8.000000 X ;

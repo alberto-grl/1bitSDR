@@ -46,8 +46,6 @@ module top
   (
    input    i_Rx_Serial,
    output o_Tx_Serial,
-   output   o_Rx_DV,
-   output[7:0] o_Rx_Byte,
    	output [7:0] MYLED,
 	`ifdef CLOCK_IS_80_MHZ 
 	input XIn,
@@ -71,6 +69,11 @@ module top
   wire osc_clk;
 reg [31:0] DelayCounter; 
 wire [7:0] i_Tx_Byte;
+reg o_Rx_DV;
+reg[7:0] o_Rx_Byte;
+
+wire o_Rx_DV1;
+wire[7:0] o_Rx_Byte1;
 
 reg [63:0] phase_inc_carr;
 //wire  sin_out, cos_out;
@@ -217,8 +220,8 @@ DemodOut);
 uart_rx  #(.CLKS_PER_BIT(87))  uart_rx1 (
 .osc_clk (osc_clk), 
 .i_Rx_Serial (i_Rx_Serial),
-.o_Rx_DV  (o_Rx_DV),
-.o_Rx_Byte (o_Rx_Byte)
+.o_Rx_DV  (o_Rx_DV1),
+.o_Rx_Byte (o_Rx_Byte1)
 );
 	
 /*
@@ -235,6 +238,9 @@ uart_tx  #(.CLKS_PER_BIT(87))  uart_tx1 (
 always @ (posedge osc_clk)
 	begin
 	phase_inc_carrGen1 <= phase_inc_carrGen;	
+	
+	o_Rx_DV <= o_Rx_DV1;
+    o_Rx_Byte <= o_Rx_Byte1;
 	
 	if (o_Rx_DV)
 		begin
@@ -275,7 +281,7 @@ always @ (posedge osc_clk)
 	111 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h 1436a8cdf6f3  ; //o - 100 Hz
 	112 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h 1436a8cdf6f3 ; //p + 100 Hz 
 	113 :  phase_inc_carrGen <= phase_inc_carrGen - 64'h ca22980ba57e6 ; //q - 1KHz
-	104 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h ca22980ba57e ; //r + 1 KHz 
+	104 :  phase_inc_carrGen <= phase_inc_carrGen + 64'h ca22980ba57e6 ; //r + 1 KHz 
   endcase
 `endif		
   end

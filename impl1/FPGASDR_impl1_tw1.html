@@ -22,7 +22,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.11.2.446</big></U></B>
-Sun Apr 05 22:59:59 2020
+Mon Apr 06 13:41:25 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -43,7 +43,7 @@ Report level:    verbose report, limited to 1 item per preference
 
 <FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "osc_clk" 88.670000 MHz (4096 errors)</FONT></A></LI>
 </FONT>            4096 items scored, 4096 timing errors detected.
-Warning:  59.776MHz is the maximum frequency for this preference.
+Warning:  65.824MHz is the maximum frequency for this preference.
 
 <LI><A href='#map_twr_pref_0_1' Target='right'>CLOCK_TO_OUT ALLPORTS 20.000000 ns CLKNET "osc_clk" (0 errors)</A></LI>            18 items scored, 0 timing errors detected.
 
@@ -60,102 +60,104 @@ BLOCK JTAG PATHS
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 5.451ns
+Error: The following path exceeds requirements by 3.914ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              uart_rx1/o_Rx_Byte_i8  (from uart_rx1/UartClk[2] +)
+   Source:         FF         Q              o_Rx_Byte_i5  (from osc_clk +)
    Destination:    FF         Data in        phase_inc_carrGen_i0_i63  (to osc_clk +)
 
-   Delay:              16.563ns  (55.1% logic, 44.9% route), 36 logic levels.
+   Delay:              15.026ns  (58.7% logic, 41.3% route), 37 logic levels.
 
  Constraint Details:
 
-     16.563ns physical path delay SLICE_2408 to SLICE_55 exceeds
+     15.026ns physical path delay SLICE_2289 to SLICE_55 exceeds
      11.278ns delay constraint less
-      0.166ns DIN_SET requirement (totaling 11.112ns) by 5.451ns
+      0.166ns DIN_SET requirement (totaling 11.112ns) by 3.914ns
 
  Physical Path Details:
 
-      Data path SLICE_2408 to SLICE_55:
+      Data path SLICE_2289 to SLICE_55:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.452 SLICE_2408.CLK to  SLICE_2408.Q0 SLICE_2408 (from uart_rx1/UartClk[2])
-ROUTE         3   e 1.234  SLICE_2408.Q0 to  SLICE_2406.A0 o_Rx_Byte_c_7
-CTOF_DEL    ---     0.495  SLICE_2406.A0 to  SLICE_2406.F0 SLICE_2406
-ROUTE         2   e 1.234  SLICE_2406.F0 to  SLICE_2475.D1 n13390
-CTOF_DEL    ---     0.495  SLICE_2475.D1 to  SLICE_2475.F1 SLICE_2475
-ROUTE         1   e 1.234  SLICE_2475.F1 to  SLICE_2405.D1 n12931
-CTOF_DEL    ---     0.495  SLICE_2405.D1 to  SLICE_2405.F1 SLICE_2405
-ROUTE         1   e 1.234  SLICE_2405.F1 to  SLICE_2403.B1 n13372
-CTOF_DEL    ---     0.495  SLICE_2403.B1 to  SLICE_2403.F1 SLICE_2403
-ROUTE        75   e 1.234  SLICE_2403.F1 to  SLICE_2475.C0 n9000
-CTOF_DEL    ---     0.495  SLICE_2475.C0 to  SLICE_2475.F0 SLICE_2475
-ROUTE         1   e 1.234  SLICE_2475.F0 to    SLICE_84.A0 n9593
-C0TOFCO_DE  ---     1.023    SLICE_84.A0 to   SLICE_84.FCO SLICE_84
-ROUTE         1   e 0.001   SLICE_84.FCO to   SLICE_83.FCI n11274
+REG_DEL     ---     0.452 SLICE_2289.CLK to  SLICE_2289.Q0 SLICE_2289 (from osc_clk)
+ROUTE         4   e 1.234  SLICE_2289.Q0 to  SLICE_2475.A0 o_Rx_Byte_5
+CTOF_DEL    ---     0.495  SLICE_2475.A0 to  SLICE_2475.F0 SLICE_2475
+ROUTE         4   e 1.234  SLICE_2475.F0 to  SLICE_2449.A0 n8257
+CTOF_DEL    ---     0.495  SLICE_2449.A0 to  SLICE_2449.F0 SLICE_2449
+ROUTE         5   e 1.234  SLICE_2449.F0 to  SLICE_2387.C1 n12533
+CTOF_DEL    ---     0.495  SLICE_2387.C1 to  SLICE_2387.F1 SLICE_2387
+ROUTE        49   e 1.234  SLICE_2387.F1 to  SLICE_2414.D0 n2563
+CTOF_DEL    ---     0.495  SLICE_2414.D0 to  SLICE_2414.F0 SLICE_2414
+ROUTE         1   e 1.234  SLICE_2414.F0 to    SLICE_86.C1 n2361
+C1TOFCO_DE  ---     0.889    SLICE_86.C1 to   SLICE_86.FCO SLICE_86
+ROUTE         1   e 0.001   SLICE_86.FCO to   SLICE_85.FCI n10979
+FCITOFCO_D  ---     0.162   SLICE_85.FCI to   SLICE_85.FCO SLICE_85
+ROUTE         1   e 0.001   SLICE_85.FCO to   SLICE_84.FCI n10980
+FCITOFCO_D  ---     0.162   SLICE_84.FCI to   SLICE_84.FCO SLICE_84
+ROUTE         1   e 0.001   SLICE_84.FCO to   SLICE_83.FCI n10981
 FCITOFCO_D  ---     0.162   SLICE_83.FCI to   SLICE_83.FCO SLICE_83
-ROUTE         1   e 0.001   SLICE_83.FCO to   SLICE_82.FCI n11275
+ROUTE         1   e 0.001   SLICE_83.FCO to   SLICE_82.FCI n10982
 FCITOFCO_D  ---     0.162   SLICE_82.FCI to   SLICE_82.FCO SLICE_82
-ROUTE         1   e 0.001   SLICE_82.FCO to   SLICE_81.FCI n11276
+ROUTE         1   e 0.001   SLICE_82.FCO to   SLICE_81.FCI n10983
 FCITOFCO_D  ---     0.162   SLICE_81.FCI to   SLICE_81.FCO SLICE_81
-ROUTE         1   e 0.001   SLICE_81.FCO to   SLICE_80.FCI n11277
+ROUTE         1   e 0.001   SLICE_81.FCO to   SLICE_80.FCI n10984
 FCITOFCO_D  ---     0.162   SLICE_80.FCI to   SLICE_80.FCO SLICE_80
-ROUTE         1   e 0.001   SLICE_80.FCO to   SLICE_79.FCI n11278
+ROUTE         1   e 0.001   SLICE_80.FCO to   SLICE_79.FCI n10985
 FCITOFCO_D  ---     0.162   SLICE_79.FCI to   SLICE_79.FCO SLICE_79
-ROUTE         1   e 0.001   SLICE_79.FCO to   SLICE_78.FCI n11279
+ROUTE         1   e 0.001   SLICE_79.FCO to   SLICE_78.FCI n10986
 FCITOFCO_D  ---     0.162   SLICE_78.FCI to   SLICE_78.FCO SLICE_78
-ROUTE         1   e 0.001   SLICE_78.FCO to   SLICE_77.FCI n11280
+ROUTE         1   e 0.001   SLICE_78.FCO to   SLICE_77.FCI n10987
 FCITOFCO_D  ---     0.162   SLICE_77.FCI to   SLICE_77.FCO SLICE_77
-ROUTE         1   e 0.001   SLICE_77.FCO to   SLICE_76.FCI n11281
+ROUTE         1   e 0.001   SLICE_77.FCO to   SLICE_76.FCI n10988
 FCITOFCO_D  ---     0.162   SLICE_76.FCI to   SLICE_76.FCO SLICE_76
-ROUTE         1   e 0.001   SLICE_76.FCO to   SLICE_75.FCI n11282
+ROUTE         1   e 0.001   SLICE_76.FCO to   SLICE_75.FCI n10989
 FCITOFCO_D  ---     0.162   SLICE_75.FCI to   SLICE_75.FCO SLICE_75
-ROUTE         1   e 0.001   SLICE_75.FCO to   SLICE_74.FCI n11283
+ROUTE         1   e 0.001   SLICE_75.FCO to   SLICE_74.FCI n10990
 FCITOFCO_D  ---     0.162   SLICE_74.FCI to   SLICE_74.FCO SLICE_74
-ROUTE         1   e 0.001   SLICE_74.FCO to   SLICE_73.FCI n11284
+ROUTE         1   e 0.001   SLICE_74.FCO to   SLICE_73.FCI n10991
 FCITOFCO_D  ---     0.162   SLICE_73.FCI to   SLICE_73.FCO SLICE_73
-ROUTE         1   e 0.001   SLICE_73.FCO to   SLICE_72.FCI n11285
+ROUTE         1   e 0.001   SLICE_73.FCO to   SLICE_72.FCI n10992
 FCITOFCO_D  ---     0.162   SLICE_72.FCI to   SLICE_72.FCO SLICE_72
-ROUTE         1   e 0.001   SLICE_72.FCO to   SLICE_71.FCI n11286
+ROUTE         1   e 0.001   SLICE_72.FCO to   SLICE_71.FCI n10993
 FCITOFCO_D  ---     0.162   SLICE_71.FCI to   SLICE_71.FCO SLICE_71
-ROUTE         1   e 0.001   SLICE_71.FCO to   SLICE_70.FCI n11287
+ROUTE         1   e 0.001   SLICE_71.FCO to   SLICE_70.FCI n10994
 FCITOFCO_D  ---     0.162   SLICE_70.FCI to   SLICE_70.FCO SLICE_70
-ROUTE         1   e 0.001   SLICE_70.FCO to   SLICE_69.FCI n11288
+ROUTE         1   e 0.001   SLICE_70.FCO to   SLICE_69.FCI n10995
 FCITOFCO_D  ---     0.162   SLICE_69.FCI to   SLICE_69.FCO SLICE_69
-ROUTE         1   e 0.001   SLICE_69.FCO to   SLICE_68.FCI n11289
+ROUTE         1   e 0.001   SLICE_69.FCO to   SLICE_68.FCI n10996
 FCITOFCO_D  ---     0.162   SLICE_68.FCI to   SLICE_68.FCO SLICE_68
-ROUTE         1   e 0.001   SLICE_68.FCO to   SLICE_67.FCI n11290
+ROUTE         1   e 0.001   SLICE_68.FCO to   SLICE_67.FCI n10997
 FCITOFCO_D  ---     0.162   SLICE_67.FCI to   SLICE_67.FCO SLICE_67
-ROUTE         1   e 0.001   SLICE_67.FCO to   SLICE_66.FCI n11291
+ROUTE         1   e 0.001   SLICE_67.FCO to   SLICE_66.FCI n10998
 FCITOFCO_D  ---     0.162   SLICE_66.FCI to   SLICE_66.FCO SLICE_66
-ROUTE         1   e 0.001   SLICE_66.FCO to   SLICE_65.FCI n11292
+ROUTE         1   e 0.001   SLICE_66.FCO to   SLICE_65.FCI n10999
 FCITOFCO_D  ---     0.162   SLICE_65.FCI to   SLICE_65.FCO SLICE_65
-ROUTE         1   e 0.001   SLICE_65.FCO to   SLICE_64.FCI n11293
+ROUTE         1   e 0.001   SLICE_65.FCO to   SLICE_64.FCI n11000
 FCITOFCO_D  ---     0.162   SLICE_64.FCI to   SLICE_64.FCO SLICE_64
-ROUTE         1   e 0.001   SLICE_64.FCO to   SLICE_63.FCI n11294
+ROUTE         1   e 0.001   SLICE_64.FCO to   SLICE_63.FCI n11001
 FCITOFCO_D  ---     0.162   SLICE_63.FCI to   SLICE_63.FCO SLICE_63
-ROUTE         1   e 0.001   SLICE_63.FCO to   SLICE_62.FCI n11295
+ROUTE         1   e 0.001   SLICE_63.FCO to   SLICE_62.FCI n11002
 FCITOFCO_D  ---     0.162   SLICE_62.FCI to   SLICE_62.FCO SLICE_62
-ROUTE         1   e 0.001   SLICE_62.FCO to   SLICE_61.FCI n11296
+ROUTE         1   e 0.001   SLICE_62.FCO to   SLICE_61.FCI n11003
 FCITOFCO_D  ---     0.162   SLICE_61.FCI to   SLICE_61.FCO SLICE_61
-ROUTE         1   e 0.001   SLICE_61.FCO to   SLICE_60.FCI n11297
+ROUTE         1   e 0.001   SLICE_61.FCO to   SLICE_60.FCI n11004
 FCITOFCO_D  ---     0.162   SLICE_60.FCI to   SLICE_60.FCO SLICE_60
-ROUTE         1   e 0.001   SLICE_60.FCO to   SLICE_59.FCI n11298
+ROUTE         1   e 0.001   SLICE_60.FCO to   SLICE_59.FCI n11005
 FCITOFCO_D  ---     0.162   SLICE_59.FCI to   SLICE_59.FCO SLICE_59
-ROUTE         1   e 0.001   SLICE_59.FCO to   SLICE_58.FCI n11299
+ROUTE         1   e 0.001   SLICE_59.FCO to   SLICE_58.FCI n11006
 FCITOFCO_D  ---     0.162   SLICE_58.FCI to   SLICE_58.FCO SLICE_58
-ROUTE         1   e 0.001   SLICE_58.FCO to   SLICE_57.FCI n11300
+ROUTE         1   e 0.001   SLICE_58.FCO to   SLICE_57.FCI n11007
 FCITOFCO_D  ---     0.162   SLICE_57.FCI to   SLICE_57.FCO SLICE_57
-ROUTE         1   e 0.001   SLICE_57.FCO to   SLICE_56.FCI n11301
+ROUTE         1   e 0.001   SLICE_57.FCO to   SLICE_56.FCI n11008
 FCITOFCO_D  ---     0.162   SLICE_56.FCI to   SLICE_56.FCO SLICE_56
-ROUTE         1   e 0.001   SLICE_56.FCO to   SLICE_55.FCI n11302
+ROUTE         1   e 0.001   SLICE_56.FCO to   SLICE_55.FCI n11009
 FCITOF1_DE  ---     0.643   SLICE_55.FCI to    SLICE_55.F1 SLICE_55
-ROUTE         1   e 0.001    SLICE_55.F1 to   SLICE_55.DI1 n2797 (to osc_clk)
+ROUTE         1   e 0.001    SLICE_55.F1 to   SLICE_55.DI1 n2817 (to osc_clk)
                   --------
-                   16.563   (55.1% logic, 44.9% route), 36 logic levels.
+                   15.026   (58.7% logic, 41.3% route), 37 logic levels.
 
-Warning:  59.776MHz is the maximum frequency for this preference.
+Warning:  65.824MHz is the maximum frequency for this preference.
 
 
 ================================================================================
@@ -193,9 +195,9 @@ ROUTE       999   e 1.234  OSCH_inst.OSC to *1/SLICE_6.CLK osc_clk
 
    Name    Fanout   Delay (ns)          Site               Resource
 REG_DEL     ---     0.452 *1/SLICE_6.CLK to *M1/SLICE_6.Q1 PWM1/SLICE_6 (from osc_clk)
-ROUTE         6   e 1.234 *M1/SLICE_6.Q1 to  SLICE_2486.A0 PWMOutP4_c
-CTOF_DEL    ---     0.495  SLICE_2486.A0 to  SLICE_2486.F0 SLICE_2486
-ROUTE         4   e 1.234  SLICE_2486.F0 to       65.PADDO PWMOutN4_c
+ROUTE         6   e 1.234 *M1/SLICE_6.Q1 to  SLICE_2496.A0 PWMOutP4_c
+CTOF_DEL    ---     0.495  SLICE_2496.A0 to  SLICE_2496.F0 SLICE_2496
+ROUTE         4   e 1.234  SLICE_2496.F0 to       65.PADDO PWMOutN4_c
 DOPAD_DEL   ---     3.448       65.PADDO to         65.PAD PWMOutN1
                   --------
                     6.863   (64.0% logic, 36.0% route), 3 logic levels.
@@ -208,7 +210,7 @@ Report:    8.097ns is the minimum offset for this preference.
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "osc_clk" 88.670000 MHz ; |   88.670 MHz|   59.776 MHz|  36 *
+FREQUENCY NET "osc_clk" 88.670000 MHz ; |   88.670 MHz|   65.824 MHz|  37 *
                                         |             |             |
 CLOCK_TO_OUT ALLPORTS 20.000000 ns      |             |             |
 CLKNET "osc_clk" ;                      |    20.000 ns|     8.097 ns|   3  
@@ -221,115 +223,123 @@ CLKNET "osc_clk" ;                      |    20.000 ns|     8.097 ns|   3
 ----------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 ----------------------------------------------------------------------------
-n11290                                  |       1|    3967|     96.85%
+n11000                                  |       1|    3718|     90.77%
                                         |        |        |
-n11291                                  |       1|    3892|     95.02%
+n10998                                  |       1|    3672|     89.65%
                                         |        |        |
-n11288                                  |       1|    3831|     93.53%
+n11001                                  |       1|    3667|     89.53%
                                         |        |        |
-n11292                                  |       1|    3814|     93.12%
+n10997                                  |       1|    3660|     89.36%
                                         |        |        |
-n11289                                  |       1|    3813|     93.09%
+n10999                                  |       1|    3651|     89.14%
                                         |        |        |
-n11293                                  |       1|    3733|     91.14%
+n10996                                  |       1|    3633|     88.70%
                                         |        |        |
-n11285                                  |       1|    3672|     89.65%
+n10995                                  |       1|    3600|     87.89%
                                         |        |        |
-n11286                                  |       1|    3660|     89.36%
+n11002                                  |       1|    3588|     87.60%
                                         |        |        |
-n11287                                  |       1|    3642|     88.92%
+n10994                                  |       1|    3567|     87.08%
                                         |        |        |
-n11294                                  |       1|    3637|     88.79%
+n10993                                  |       1|    3534|     86.28%
                                         |        |        |
-n11295                                  |       1|    3510|     85.69%
+n10992                                  |       1|    3495|     85.33%
                                         |        |        |
-n11281                                  |       1|    3402|     83.06%
+n11003                                  |       1|    3470|     84.72%
                                         |        |        |
-n11282                                  |       1|    3402|     83.06%
+n10991                                  |       1|    3438|     83.94%
                                         |        |        |
-n11283                                  |       1|    3402|     83.06%
+n10990                                  |       1|    3357|     81.96%
                                         |        |        |
-n11284                                  |       1|    3402|     83.06%
+n11004                                  |       1|    3311|     80.83%
                                         |        |        |
-n11296                                  |       1|    3296|     80.47%
+n10989                                  |       1|    3252|     79.39%
                                         |        |        |
-n11280                                  |       1|    3289|     80.30%
+n10988                                  |       1|    3123|     76.25%
                                         |        |        |
-n11279                                  |       1|    3271|     79.86%
+n11005                                  |       1|    3085|     75.32%
                                         |        |        |
-n11297                                  |       1|    3027|     73.90%
+n10987                                  |       1|    3002|     73.29%
                                         |        |        |
-n11278                                  |       1|    2747|     67.07%
+n10986                                  |       1|    2851|     69.60%
                                         |        |        |
-n11298                                  |       1|    2721|     66.43%
+n11006                                  |       1|    2831|     69.12%
                                         |        |        |
-n11277                                  |       1|    2705|     66.04%
+n8257                                   |       4|    2715|     66.28%
                                         |        |        |
-n11276                                  |       1|    2651|     64.72%
+n10985                                  |       1|    2524|     61.62%
                                         |        |        |
-n11275                                  |       1|    2561|     62.52%
+n11007                                  |       1|    2480|     60.55%
                                         |        |        |
-n11299                                  |       1|    2386|     58.25%
+n10984                                  |       1|    2313|     56.47%
                                         |        |        |
-n11274                                  |       1|    2145|     52.37%
+n12533                                  |       5|    2284|     55.76%
                                         |        |        |
-n11300                                  |       1|    1952|     47.66%
+n10983                                  |       1|    1999|     48.80%
                                         |        |        |
-n9000                                   |      75|    1951|     47.63%
+n11008                                  |       1|    1971|     48.12%
                                         |        |        |
-n13372                                  |       1|    1951|     47.63%
+n10982                                  |       1|    1619|     39.53%
                                         |        |        |
-n8225                                   |      10|    1644|     40.14%
+n10981                                  |       1|    1306|     31.88%
                                         |        |        |
-n11301                                  |       1|    1416|     34.57%
+n11009                                  |       1|    1138|     27.78%
                                         |        |        |
-n12931                                  |       1|    1332|     32.52%
+n13056                                  |      52|    1006|     24.56%
                                         |        |        |
-n13390                                  |       2|    1188|     29.00%
+n2563                                   |      49|     973|     23.75%
                                         |        |        |
-n12803                                  |       6|    1015|     24.78%
+n10810                                  |       1|     859|     20.97%
                                         |        |        |
-o_Rx_Byte_c_5                           |       3|     878|     21.44%
+n10811                                  |       1|     854|     20.85%
                                         |        |        |
-o_Rx_DV_c                               |       3|     878|     21.44%
+n10809                                  |       1|     834|     20.36%
                                         |        |        |
-n11302                                  |       1|     753|     18.38%
+o_Rx_Byte_5                             |       4|     803|     19.60%
                                         |        |        |
-n9593                                   |       1|     727|     17.75%
+o_Rx_Byte_6                             |       6|     803|     19.60%
                                         |        |        |
-n9591                                   |       1|     673|     16.43%
+o_Rx_DV                                 |       4|     803|     19.60%
                                         |        |        |
-n11273                                  |       1|     625|     15.26%
+n10812                                  |       1|     770|     18.80%
                                         |        |        |
-n12919                                  |       1|     619|     15.11%
+n10980                                  |       1|     745|     18.19%
                                         |        |        |
-o_Rx_Byte_c_7                           |       3|     594|     14.50%
+n10813                                  |       1|     743|     18.14%
                                         |        |        |
-n11105                                  |       1|     545|     13.31%
+n10814                                  |       1|     727|     17.75%
                                         |        |        |
-o_Rx_Byte_c_6                           |       4|     530|     12.94%
+n10815                                  |       1|     709|     17.31%
                                         |        |        |
-n9571                                   |       1|     494|     12.06%
+n10816                                  |       1|     676|     16.50%
                                         |        |        |
-n11104                                  |       1|     486|     11.87%
+n10808                                  |       1|     658|     16.06%
                                         |        |        |
-n11108                                  |       1|     469|     11.45%
+n10817                                  |       1|     643|     15.70%
                                         |        |        |
-n11109                                  |       1|     469|     11.45%
+n10818                                  |       1|     610|     14.89%
                                         |        |        |
-n11110                                  |       1|     469|     11.45%
+n2817                                   |       1|     608|     14.84%
                                         |        |        |
-n11111                                  |       1|     469|     11.45%
+n10819                                  |       1|     577|     14.09%
                                         |        |        |
-n11107                                  |       1|     462|     11.28%
+n10820                                  |       1|     544|     13.28%
                                         |        |        |
-n2338                                   |       1|     448|     10.94%
+n2818                                   |       1|     530|     12.94%
                                         |        |        |
-n11106                                  |       1|     444|     10.84%
+n10821                                  |       1|     511|     12.48%
                                         |        |        |
-n2337                                   |       1|     420|     10.25%
+n10822                                  |       1|     478|     11.67%
                                         |        |        |
-n11103                                  |       1|     410|     10.01%
+n10979                                  |       1|     468|     11.43%
+                                        |        |        |
+n2819                                   |       1|     461|     11.25%
+                                        |        |        |
+n10823                                  |       1|     445|     10.86%
+                                        |        |        |
+n13063                                  |      44|     419|     10.23%
+                                        |        |        |
+n10824                                  |       1|     412|     10.06%
                                         |        |        |
 ----------------------------------------------------------------------------
 
@@ -339,34 +349,34 @@ n11103                                  |       1|     410|     10.01%
 
 Found 3 clocks:
 
-Clock Domain: uart_rx1/UartClk[2]   Source: uart_rx1/SLICE_12.Q1   Loads: 30
+Clock Domain: uart_rx1/UartClk[2]   Source: uart_rx1/SLICE_12.Q1   Loads: 29
    No transfer within this clock domain is found
 
-Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 1362
+Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 1367
    Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;
 
    Data transfers from:
    Clock Domain: uart_rx1/UartClk[2]   Source: uart_rx1/SLICE_12.Q1
       Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;   Transfers: 9
 
-   Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2199.Q0
+   Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2197.Q0
       Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;   Transfers: 10
 
-Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2199.Q0   Loads: 153
+Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2197.Q0   Loads: 153
    No transfer within this clock domain is found
 
 
 <A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
 ---------------
 
-Timing errors: 4096  Score: 13047644
-Cumulative negative slack: 13047644
+Timing errors: 4096  Score: 9205729
+Cumulative negative slack: 9205729
 
-Constraints cover 1622454 paths, 1 nets, and 16498 connections (99.99% coverage)
+Constraints cover 1466977 paths, 1 nets, and 16496 connections (99.99% coverage)
 
 --------------------------------------------------------------------------------
 <A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.11.2.446</big></U></B>
-Sun Apr 05 23:00:00 2020
+Mon Apr 06 13:41:25 2020
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -413,17 +423,17 @@ Passed: The following path meets requirements by 0.351ns
 
  Constraint Details:
 
-      0.332ns physical path delay Mixer1/SLICE_2224 to Mixer1/SLICE_2224 meets
+      0.332ns physical path delay Mixer1/SLICE_2223 to Mixer1/SLICE_2223 meets
      -0.019ns M_HLD and
       0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
 
  Physical Path Details:
 
-      Data path Mixer1/SLICE_2224 to Mixer1/SLICE_2224:
+      Data path Mixer1/SLICE_2223 to Mixer1/SLICE_2223:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133 *LICE_2224.CLK to *SLICE_2224.Q1 Mixer1/SLICE_2224 (from osc_clk)
-ROUTE         2   e 0.199 *SLICE_2224.Q1 to *SLICE_2224.M0 DiffOut_c (to osc_clk)
+REG_DEL     ---     0.133 *LICE_2223.CLK to *SLICE_2223.Q1 Mixer1/SLICE_2223 (from osc_clk)
+ROUTE         2   e 0.199 *SLICE_2223.Q1 to *SLICE_2223.M0 DiffOut_c (to osc_clk)
                   --------
                     0.332   (40.1% logic, 59.9% route), 1 logic levels.
 
@@ -446,24 +456,24 @@ Passed:  The following path meets requirements by 2.116ns
    Clock Path Delay:    0.515ns  (0.0% logic, 100.0% route), 0 logic levels.
 
  Constraint Details:
-      0.515ns delay OSCH_inst to CIC1Sin/SLICE_2220 and
-      1.601ns delay CIC1Sin/SLICE_2220 to MYLED[0] (totaling 2.116ns) meets
+      0.515ns delay OSCH_inst to CIC1Sin/SLICE_2218 and
+      1.601ns delay CIC1Sin/SLICE_2218 to MYLED[0] (totaling 2.116ns) meets
       0.000ns hold offset OSCH_inst to MYLED[0] by 2.116ns
 
  Physical Path Details:
 
-      Clock path OSCH_inst to CIC1Sin/SLICE_2220:
+      Clock path OSCH_inst to CIC1Sin/SLICE_2218:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE       999   e 0.515  OSCH_inst.OSC to *LICE_2220.CLK osc_clk
+ROUTE       999   e 0.515  OSCH_inst.OSC to *LICE_2218.CLK osc_clk
                   --------
                     0.515   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Data path CIC1Sin/SLICE_2220 to MYLED[0]:
+      Data path CIC1Sin/SLICE_2218 to MYLED[0]:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.133 *LICE_2220.CLK to *SLICE_2220.Q0 CIC1Sin/SLICE_2220 (from osc_clk)
-ROUTE         2   e 0.515 *SLICE_2220.Q0 to       97.PADDO MYLED_c_0
+REG_DEL     ---     0.133 *LICE_2218.CLK to *SLICE_2218.Q0 CIC1Sin/SLICE_2218 (from osc_clk)
+ROUTE         2   e 0.515 *SLICE_2218.Q0 to       97.PADDO MYLED_c_0
 DOPAD_DEL   ---     0.953       97.PADDO to         97.PAD MYLED[0]
                   --------
                     1.601   (67.8% logic, 32.2% route), 2 logic levels.
@@ -492,20 +502,20 @@ All preferences were met.
 
 Found 3 clocks:
 
-Clock Domain: uart_rx1/UartClk[2]   Source: uart_rx1/SLICE_12.Q1   Loads: 30
+Clock Domain: uart_rx1/UartClk[2]   Source: uart_rx1/SLICE_12.Q1   Loads: 29
    No transfer within this clock domain is found
 
-Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 1362
+Clock Domain: osc_clk   Source: OSCH_inst.OSC   Loads: 1367
    Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;
 
    Data transfers from:
    Clock Domain: uart_rx1/UartClk[2]   Source: uart_rx1/SLICE_12.Q1
       Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;   Transfers: 9
 
-   Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2199.Q0
+   Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2197.Q0
       Covered under: FREQUENCY NET "osc_clk" 88.670000 MHz ;   Transfers: 10
 
-Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2199.Q0   Loads: 153
+Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2197.Q0   Loads: 153
    No transfer within this clock domain is found
 
 
@@ -515,7 +525,7 @@ Clock Domain: CIC1_out_clkSin   Source: CIC1Sin/SLICE_2199.Q0   Loads: 153
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 1622454 paths, 1 nets, and 16498 connections (99.99% coverage)
+Constraints cover 1466977 paths, 1 nets, and 16496 connections (99.99% coverage)
 
 
 
@@ -523,8 +533,8 @@ Constraints cover 1622454 paths, 1 nets, and 16498 connections (99.99% coverage)
 ---------------
 
 Timing errors: 4096 (setup), 0 (hold)
-Score: 13047644 (setup), 0 (hold)
-Cumulative negative slack: 13047644 (13047644+0)
+Score: 9205729 (setup), 0 (hold)
+Cumulative negative slack: 9205729 (9205729+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

@@ -14,24 +14,6 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
-    <Task name="Map">
-        <Message>
-            <ID>1100990</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf(54): Semantic error in &quot;MULTICYCLE FROM CELL &quot;uart_rx1/o_Rx_Byte_i6&quot; CLKNET &quot;uart_tx1/UartClk[2]&quot; TO CELL &quot;phase_inc_carrGen_i0_i63&quot; CLKNET &quot;osc_clk&quot; 8.000000 X ;&quot;: </Dynamic>
-            <Dynamic>&quot;uart_tx1/UartClk[2]&quot; matches no clknets in the design. </Dynamic>
-            <Navigation>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf</Navigation>
-            <Navigation>54</Navigation>
-        </Message>
-        <Message>
-            <ID>1100990</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf(55): Semantic error in &quot;MULTICYCLE FROM CELL &quot;uart_rx1/o_Rx_Byte_i6&quot; CLKNET &quot;uart_tx1/UartClk[2]&quot; TO CELL &quot;phase_inc_carrGen_i0_i62&quot; CLKNET &quot;osc_clk&quot; 8.000000 X ;&quot;: </Dynamic>
-            <Dynamic>&quot;uart_tx1/UartClk[2]&quot; matches no clknets in the design. </Dynamic>
-            <Navigation>C:/Users/user/lattice/1BitADCFPGASDR/FPGASDR.lpf</Navigation>
-            <Navigation>55</Navigation>
-        </Message>
-    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>

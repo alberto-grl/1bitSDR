@@ -29,7 +29,7 @@ Performance Hardware Data Status:   Final          Version 34.4.
 // Package: TQFP144
 // ncd File: fpgasdr_impl1.ncd
 // Version: Diamond (64-bit) 3.11.2.446
-// Written on Sun Apr 05 23:02:04 2020
+// Written on Mon Apr 06 13:43:00 2020
 // M: Minimum Performance Grade
 // iotiming FPGASDR_impl1.ncd FPGASDR_impl1.prf -gui -msgset C:/Users/user/lattice/1BitADCFPGASDR/promote.xml
 
@@ -53,40 +53,31 @@ Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 
 // Internal_Clock to Input
 
-Port  Internal_Clock     
+Port  Internal_Clock
 --------------------------------------------------------
-RFIn  osc_clk            
-i_Rx_ uart_rx1/UartClk[2]
+RFIn  osc_clk       
+i_Rx_ uart_rx1/UartC
 
 
 // Internal_Clock to Output
 
-Port         Internal_Clock     
+Port     Internal_Clock
 --------------------------------------------------------
-DiffOut      osc_clk            
-MYLED[0]     osc_clk            
-MYLED[1]     osc_clk            
-MYLED[2]     osc_clk            
-MYLED[3]     osc_clk            
-MYLED[4]     osc_clk            
-MYLED[5]     osc_clk            
-MYLED[6]     uart_rx1/UartClk[2]
-PWMOut       osc_clk            
-PWMOutN1     osc_clk            
-PWMOutN2     osc_clk            
-PWMOutN3     osc_clk            
-PWMOutN4     osc_clk            
-PWMOutP1     osc_clk            
-PWMOutP2     osc_clk            
-PWMOutP3     osc_clk            
-PWMOutP4     osc_clk            
-o_Rx_Byte[0] uart_rx1/UartClk[2]
-o_Rx_Byte[1] uart_rx1/UartClk[2]
-o_Rx_Byte[2] uart_rx1/UartClk[2]
-o_Rx_Byte[3] uart_rx1/UartClk[2]
-o_Rx_Byte[4] uart_rx1/UartClk[2]
-o_Rx_Byte[5] uart_rx1/UartClk[2]
-o_Rx_Byte[6] uart_rx1/UartClk[2]
-o_Rx_Byte[7] uart_rx1/UartClk[2]
-o_Rx_DV      osc_clk            
-sinGen       osc_clk            
+DiffOut  osc_clk       
+MYLED[0] osc_clk       
+MYLED[1] osc_clk       
+MYLED[2] osc_clk       
+MYLED[3] osc_clk       
+MYLED[4] osc_clk       
+MYLED[5] osc_clk       
+MYLED[6] osc_clk       
+PWMOut   osc_clk       
+PWMOutN1 osc_clk       
+PWMOutN2 osc_clk       
+PWMOutN3 osc_clk       
+PWMOutN4 osc_clk       
+PWMOutP1 osc_clk       
+PWMOutP2 osc_clk       
+PWMOutP3 osc_clk       
+PWMOutP4 osc_clk       
+sinGen   osc_clk       

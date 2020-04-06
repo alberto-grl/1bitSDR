@@ -1,22 +1,13 @@
 NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
 NOTE All Rights Reserved *
-NOTE DATE CREATED: Sun Apr 05 23:02:14 2020 *
+NOTE DATE CREATED: Mon Apr 06 13:33:57 2020 *
 NOTE DESIGN NAME: top *
 NOTE DEVICE NAME: LCMXO2-7000HE-4TQFP144 *
 NOTE PIN ASSIGNMENTS *
-NOTE PINS o_Rx_Byte[7] : 2 : out *
-NOTE PINS o_Rx_Byte[6] : 140 : out *
-NOTE PINS o_Rx_DV : 143 : out *
-NOTE PINS o_Tx_Serial : 74 : out *
-NOTE PINS o_Rx_Byte[5] : 1 : out *
-NOTE PINS o_Rx_Byte[4] : 141 : out *
-NOTE PINS o_Rx_Byte[3] : 139 : out *
-NOTE PINS o_Rx_Byte[2] : 138 : out *
-NOTE PINS o_Rx_Byte[1] : 125 : out *
-NOTE PINS o_Rx_Byte[0] : 128 : out *
-NOTE PINS MYLED[7] : 107 : out *
 NOTE PINS MYLED[6] : 106 : out *
 NOTE PINS MYLED[5] : 105 : out *
+NOTE PINS MYLED[7] : 107 : out *
+NOTE PINS o_Tx_Serial : 74 : out *
 NOTE PINS MYLED[4] : 104 : out *
 NOTE PINS MYLED[3] : 100 : out *
 NOTE PINS MYLED[2] : 99 : out *
@@ -35,7 +26,7 @@ NOTE PINS PWMOutN3 : 70 : out *
 NOTE PINS PWMOutN4 : 71 : out *
 NOTE PINS sinGen : 142 : out *
 NOTE PINS sin_out : 54 : out *
-NOTE PINS CIC_out_clkSin : 59 : out *
+NOTE PINS CIC_out_clkSin : 57 : out *
 NOTE PINS i_Rx_Serial : 73 : in *
 NOTE PINS RFIn : 133 : in *
 NOTE CONFIGURATION MODE: NONE *

@@ -10,7 +10,7 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-   5154 blocks expanded
+   5156 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file FPGASDR_impl1.ngd.

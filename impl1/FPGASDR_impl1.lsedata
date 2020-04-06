@@ -21,21 +21,12 @@
 <unit name = "top">
 
     <!--
-        Top Level Pins: 34
+        Top Level Pins: 25
     -->
 
     <pins>
         <pitem  name = "i_Rx_Serial"  direction = "in"  />
         <pitem  name = "o_Tx_Serial"  direction = "out"  />
-        <pitem  name = "o_Rx_DV"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[7]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[6]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[5]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[4]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[3]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[2]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[1]"  direction = "out"  />
-        <pitem  name = "o_Rx_Byte[0]"  direction = "out"  />
         <pitem  name = "MYLED[7]"  direction = "out"  />
         <pitem  name = "MYLED[6]"  direction = "out"  />
         <pitem  name = "MYLED[5]"  direction = "out"  />
@@ -62,7 +53,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 1050
+        Instances in netlist: 1052
     -->
 
     <instance  name = "SinCos1/INV_29"  library = "work"  arch = ""  type = "comb">
@@ -201,7 +192,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -237,7 +228,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -273,7 +264,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -309,7 +300,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2430,7 +2421,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2466,7 +2457,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2502,7 +2493,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2538,7 +2529,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2574,7 +2565,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2610,7 +2601,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2646,7 +2637,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2682,7 +2673,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2718,7 +2709,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -2754,7 +2745,7 @@
         <nitem  name = "o_Rx_Byte[4]"  />
         <nitem  name = "o_Rx_Byte[3]"  />
         <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
+        <nitem  name = "MYLED[6]"  />
         <nitem  name = "o_Rx_Byte[0]"  />
         <nitem  name = "gnd"  />
         <nitem  name = "pwr"  />
@@ -4553,6 +4544,82 @@
         <nitem  name = "phase_inc_carrGen_63__N_1[2]"  />
         <nitem  name = "phase_inc_carrGen_63__N_1[1]"  />
         <nitem  name = "phase_inc_carrGen_63__N_1[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "o_Rx_DV_40"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "o_Rx_DV1"  />
+        <nitem  name = "osc_clk"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "o_Rx_DV"  />
+        </nets>
+    </instance>
+
+    <instance  name = "o_Rx_Byte"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "o_Rx_Byte1[7]"  />
+        <nitem  name = "o_Rx_Byte1[6]"  />
+        <nitem  name = "o_Rx_Byte1[5]"  />
+        <nitem  name = "o_Rx_Byte1[4]"  />
+        <nitem  name = "o_Rx_Byte1[3]"  />
+        <nitem  name = "o_Rx_Byte1[2]"  />
+        <nitem  name = "o_Rx_Byte1[1]"  />
+        <nitem  name = "o_Rx_Byte1[0]"  />
+        <nitem  name = "gnd"  />
+        <nitem  name = "osc_clk"  />
+        <nitem  name = "o_Rx_Byte[7]"  />
+        <nitem  name = "o_Rx_Byte[6]"  />
+        <nitem  name = "o_Rx_Byte[5]"  />
+        <nitem  name = "o_Rx_Byte[4]"  />
+        <nitem  name = "o_Rx_Byte[3]"  />
+        <nitem  name = "o_Rx_Byte[2]"  />
+        <nitem  name = "MYLED[6]"  />
+        <nitem  name = "o_Rx_Byte[0]"  />
         </nets>
     </instance>
 
@@ -52678,7 +52745,7 @@
         <nets>
         <nitem  name = "uart_rx1/gnd"  />
         <nitem  name = "osc_clk"  />
-        <nitem  name = "o_Rx_DV"  />
+        <nitem  name = "o_Rx_DV1"  />
         <nitem  name = "uart_rx1/o_Rx_DV_N_2481"  />
         </nets>
     </instance>
@@ -53821,14 +53888,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "o_Rx_Byte[7]"  />
-        <nitem  name = "o_Rx_Byte[6]"  />
-        <nitem  name = "o_Rx_Byte[5]"  />
-        <nitem  name = "o_Rx_Byte[4]"  />
-        <nitem  name = "o_Rx_Byte[3]"  />
-        <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
-        <nitem  name = "o_Rx_Byte[0]"  />
+        <nitem  name = "o_Rx_Byte1[7]"  />
+        <nitem  name = "o_Rx_Byte1[6]"  />
+        <nitem  name = "o_Rx_Byte1[5]"  />
+        <nitem  name = "o_Rx_Byte1[4]"  />
+        <nitem  name = "o_Rx_Byte1[3]"  />
+        <nitem  name = "o_Rx_Byte1[2]"  />
+        <nitem  name = "o_Rx_Byte1[1]"  />
+        <nitem  name = "o_Rx_Byte1[0]"  />
         <nitem  name = "uart_rx1/r_Rx_Byte[7]"  />
         <nitem  name = "uart_rx1/r_Rx_Byte[6]"  />
         <nitem  name = "uart_rx1/r_Rx_Byte[5]"  />
@@ -54236,14 +54303,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "o_Rx_Byte[7]"  />
-        <nitem  name = "o_Rx_Byte[6]"  />
-        <nitem  name = "o_Rx_Byte[5]"  />
-        <nitem  name = "o_Rx_Byte[4]"  />
-        <nitem  name = "o_Rx_Byte[3]"  />
-        <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
-        <nitem  name = "o_Rx_Byte[0]"  />
+        <nitem  name = "o_Rx_Byte1[7]"  />
+        <nitem  name = "o_Rx_Byte1[6]"  />
+        <nitem  name = "o_Rx_Byte1[5]"  />
+        <nitem  name = "o_Rx_Byte1[4]"  />
+        <nitem  name = "o_Rx_Byte1[3]"  />
+        <nitem  name = "o_Rx_Byte1[2]"  />
+        <nitem  name = "o_Rx_Byte1[1]"  />
+        <nitem  name = "o_Rx_Byte1[0]"  />
         <nitem  name = "uart_rx1/r_SM_Main[2]"  />
         <nitem  name = "uart_rx1/r_SM_Main[1]"  />
         <nitem  name = "uart_rx1/r_SM_Main[0]"  />
@@ -54590,14 +54657,14 @@
 
         <nets>
         <nitem  name = "uart_rx1/gnd"  />
-        <nitem  name = "o_Rx_Byte[7]"  />
-        <nitem  name = "o_Rx_Byte[6]"  />
-        <nitem  name = "o_Rx_Byte[5]"  />
-        <nitem  name = "o_Rx_Byte[4]"  />
-        <nitem  name = "o_Rx_Byte[3]"  />
-        <nitem  name = "o_Rx_Byte[2]"  />
-        <nitem  name = "o_Rx_Byte[1]"  />
-        <nitem  name = "o_Rx_Byte[0]"  />
+        <nitem  name = "o_Rx_Byte1[7]"  />
+        <nitem  name = "o_Rx_Byte1[6]"  />
+        <nitem  name = "o_Rx_Byte1[5]"  />
+        <nitem  name = "o_Rx_Byte1[4]"  />
+        <nitem  name = "o_Rx_Byte1[3]"  />
+        <nitem  name = "o_Rx_Byte1[2]"  />
+        <nitem  name = "o_Rx_Byte1[1]"  />
+        <nitem  name = "o_Rx_Byte1[0]"  />
         <nitem  name = "uart_rx1/UartClk[2]"  />
         <nitem  name = "uart_rx1/o_Rx_Byte_7__N_2372[7]"  />
         <nitem  name = "uart_rx1/o_Rx_Byte_7__N_2372[6]"  />
@@ -63864,10 +63931,12 @@
     <instance  name = "triglut_1_0_9"  />
     <instance  name = "uart_rx1"  />
     <!--
-        REG instances in netlist: 69
+        REG instances in netlist: 71
     -->
 
     <regs>
+        <reg  name = "o_Rx_DV_40"  />
+        <reg  name = "o_Rx_Byte"  />
         <reg  name = "CICGain"  />
         <reg  name = "phase_inc_carrGen"  />
         <reg  name = "phase_inc_carrGen1"  />
