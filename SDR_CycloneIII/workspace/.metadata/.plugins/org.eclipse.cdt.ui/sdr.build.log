@@ -1,0 +1,10 @@
+
+**** Build of configuration Nios II for project sdr ****
+
+make all 
+Info: Building ../sdr_bsp/
+make --no-print-directory -C ../sdr_bsp/
+[BSP build complete]
+[sdr build complete]
+
+**** Build Finished ****

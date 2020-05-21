@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu May 21 10:11:06 2020
+Quartus II 64-Bit Version : 13.1.4 Build 182 03/12/2014 SJ Full Version
+Revision Name : sdr
+Top-level Entity Name : sdr
+Family : Cyclone III
+Device : EP3C16F484C6
+Timing Models : Final
+Total logic elements : 5,819 / 15,408 ( 38 % )
+    Total combinational functions : 4,554 / 15,408 ( 30 % )
+    Dedicated logic registers : 4,447 / 15,408 ( 29 % )
+Total registers : 4515
+Total pins : 47 / 347 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 150,528 / 516,096 ( 29 % )
+Embedded Multiplier 9-bit elements : 8 / 112 ( 7 % )
+Total PLLs : 1 / 4 ( 25 % )

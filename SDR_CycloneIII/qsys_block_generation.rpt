@@ -1,0 +1,192 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/ --output-directory=D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/ --report-file=bsf:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block.bsf --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block.qsys
+Progress: Loading SDR_CycloneIII/qsys_block.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.1]
+Progress: Parameterizing module clock
+Progress: Adding NIOS [altera_nios2_qsys 13.1]
+Progress: Parameterizing module NIOS
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_ram [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_ram
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding cic_gain [altera_avalon_pio 13.1]
+Progress: Parameterizing module cic_gain
+Progress: Adding phase_increment [altera_avalon_pio 13.1]
+Progress: Parameterizing module phase_increment
+Progress: Adding ps2 [ps2_keyboard 1.0]
+Progress: Parameterizing module ps2
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/ --output-directory=D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/ --file-set=QUARTUS_SYNTH --report-file=html:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block.html --report-file=sopcinfo:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block.sopcinfo --report-file=cmp:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block.cmp --report-file=qip:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/qsys_block.qip --report-file=svd --report-file=regmap:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/qsys_block.regmap --report-file=debuginfo:D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/qsys_block.debuginfo --system-info=DEVICE_FAMILY="Cyclone III" --system-info=DEVICE=EP3C16F484C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block.qsys --language=VERILOG
+Progress: Loading SDR_CycloneIII/qsys_block.qsys
+Progress: Reading input file
+Progress: Adding clock [clock_source 13.1]
+Progress: Parameterizing module clock
+Progress: Adding NIOS [altera_nios2_qsys 13.1]
+Progress: Parameterizing module NIOS
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 13.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding onchip_ram [altera_avalon_onchip_memory2 13.1]
+Progress: Parameterizing module onchip_ram
+Progress: Adding sdram [altera_avalon_new_sdram_controller 13.1]
+Progress: Parameterizing module sdram
+Progress: Adding cic_gain [altera_avalon_pio 13.1]
+Progress: Parameterizing module cic_gain
+Progress: Adding phase_increment [altera_avalon_pio 13.1]
+Progress: Parameterizing module phase_increment
+Progress: Adding ps2 [ps2_keyboard 1.0]
+Progress: Parameterizing module ps2
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys_block: Generating qsys_block "qsys_block" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 8 modules, 26 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 8 modules, 24 connections
+Info: merlin_translator_transform: After transform: 17 modules, 51 connections
+Info: merlin_domain_transform: After transform: 35 modules, 142 connections
+Info: merlin_router_transform: After transform: 44 modules, 169 connections
+Info: merlin_burst_transform: After transform: 45 modules, 172 connections
+Info: merlin_network_to_switch_transform: After transform: 62 modules, 210 connections
+Info: merlin_width_transform: After transform: 64 modules, 216 connections
+Warning: Pipeline stage not inserted between frame_reader_avalon_master_translator_avalon_universal_master_0_agent.cp and addr_router_001.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between addr_router_001.src and limiter.cmd_sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_demux_001.src1 and width_adapter_001.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between width_adapter_001.src and cmd_xbar_mux_003.sink0 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_mux_003.src and burst_adapter_001.sink0 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between burst_adapter_001.source0 and vip_bridge_s0_translator_avalon_universal_slave_0_agent.cp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_demux_001.src0 and crosser.in because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between crosser.out and cmd_xbar_mux_002.sink1 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_mux_004.src and periph_bridge_s0_translator_avalon_universal_slave_0_agent.cp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_mux_005.src and frame_reader_avalon_slave_translator_avalon_universal_slave_0_agent.cp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_mux.src and nios2e_jtag_debug_module_translator_avalon_universal_slave_0_agent.cp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between width_adapter.src and cmd_xbar_mux_002.sink0 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between width_adapter_002.src and cmd_xbar_mux_002.sink2 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between cmd_xbar_mux_002.src and burst_adapter.sink0 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_mux_002.src and nios2e_data_master_translator_avalon_universal_master_0_agent.rp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between width_adapter_004.src and rsp_xbar_mux_002.sink2 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between width_adapter_003.src and rsp_xbar_mux.sink2 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_004.src0 and rsp_xbar_mux_002.sink3 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_mux_003.src and vip_bridge_m0_translator_avalon_universal_master_0_agent.rp because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_001.src1 and rsp_xbar_mux_002.sink1 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux.src1 and rsp_xbar_mux_002.sink0 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_005.src0 and rsp_xbar_mux_002.sink4 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between id_router_002.src and rsp_xbar_demux_002.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_002.src2 and width_adapter_004.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_002.src1 and crosser_001.in because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_002.src0 and width_adapter_003.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between crosser_001.out and rsp_xbar_mux_001.sink0 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between width_adapter_005.src and rsp_xbar_mux_001.sink1 because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between vip_bridge_s0_translator_avalon_universal_slave_0_agent.rp and id_router_003.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Warning: Pipeline stage not inserted between rsp_xbar_demux_003.src0 and width_adapter_005.sink because they are unconnected in the interconnect. Please remove stale pipeline stage requirements.
+Info: com_altera_sopcmodel_transforms_avalon_SpotPipelineTransform: After transform: 70 modules, 234 connections
+Info: merlin_clock_and_reset_bridge_transform: After transform: 73 modules, 306 connections
+Info: merlin_hierarchy_transform: After transform: 9 modules, 28 connections
+Info: merlin_mm_transform: After transform: 9 modules, 28 connections
+Info: merlin_interrupt_mapper_transform: After transform: 10 modules, 31 connections
+Info: reset_adaptation_transform: After transform: 12 modules, 41 connections
+Info: NIOS: Starting RTL generation for module 'qsys_block_NIOS'
+Info: NIOS:   Generation command is [exec C:/altera/13.1/quartus/bin/eperlcmd.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=qsys_block_NIOS --dir=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0001_NIOS_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0001_NIOS_gen//qsys_block_NIOS_processor_configuration.pl  --do_build_sim=0  ]
+Info: NIOS: # 2020.05.21 10:07:05 (*) Starting Nios II generation
+Info: NIOS: # 2020.05.21 10:07:05 (*)   Checking for plaintext license.
+Info: NIOS: # 2020.05.21 10:07:06 (*)   Plaintext license not found.
+Info: NIOS: # 2020.05.21 10:07:06 (*)   No license required to generate encrypted Nios II/e.
+Info: NIOS: # 2020.05.21 10:07:06 (*)   Elaborating CPU configuration settings
+Info: NIOS: # 2020.05.21 10:07:06 (*)   Creating all objects for CPU
+Info: NIOS: # 2020.05.21 10:07:07 (*)   Generating RTL from CPU objects
+Info: NIOS: # 2020.05.21 10:07:07 (*)   Creating plain-text RTL
+Info: NIOS: # 2020.05.21 10:07:09 (*) Done Nios II generation
+Info: NIOS: Done RTL generation for module 'qsys_block_NIOS'
+Info: NIOS: "qsys_block" instantiated altera_nios2_qsys "NIOS"
+Info: jtag_uart: Starting RTL generation for module 'qsys_block_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=qsys_block_jtag_uart --dir=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0002_jtag_uart_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0002_jtag_uart_gen//qsys_block_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'qsys_block_jtag_uart'
+Info: jtag_uart: "qsys_block" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: onchip_ram: Starting RTL generation for module 'qsys_block_onchip_ram'
+Info: onchip_ram:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=qsys_block_onchip_ram --dir=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0003_onchip_ram_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0003_onchip_ram_gen//qsys_block_onchip_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: onchip_ram: Done RTL generation for module 'qsys_block_onchip_ram'
+Info: onchip_ram: "qsys_block" instantiated altera_avalon_onchip_memory2 "onchip_ram"
+Info: sdram: Starting RTL generation for module 'qsys_block_sdram'
+Info: sdram:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=qsys_block_sdram --dir=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0004_sdram_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0004_sdram_gen//qsys_block_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'qsys_block_sdram'
+Info: sdram: "qsys_block" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: cic_gain: Starting RTL generation for module 'qsys_block_cic_gain'
+Info: cic_gain:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=qsys_block_cic_gain --dir=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0005_cic_gain_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0005_cic_gain_gen//qsys_block_cic_gain_component_configuration.pl  --do_build_sim=0  ]
+Info: cic_gain: Done RTL generation for module 'qsys_block_cic_gain'
+Info: cic_gain: "qsys_block" instantiated altera_avalon_pio "cic_gain"
+Info: phase_increment: Starting RTL generation for module 'qsys_block_phase_increment'
+Info: phase_increment:   Generation command is [exec C:/altera/13.1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.1/quartus/bin/perl/lib -I C:/altera/13.1/quartus/sopc_builder/bin/europa -I C:/altera/13.1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.1/quartus/sopc_builder/bin -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/altera/13.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=qsys_block_phase_increment --dir=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0006_phase_increment_gen/ --quartus_dir=C:/altera/13.1/quartus --verilog --config=C:/Users/SteveG/AppData/Local/Temp/alt8402_3993020821141748902.dir/0006_phase_increment_gen//qsys_block_phase_increment_component_configuration.pl  --do_build_sim=0  ]
+Info: phase_increment: Done RTL generation for module 'qsys_block_phase_increment'
+Info: phase_increment: "qsys_block" instantiated altera_avalon_pio "phase_increment"
+Info: ps2: "qsys_block" instantiated ps2_keyboard "ps2"
+Info: pipeline_bridge_swap_transform: After transform: 65 modules, 213 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: merlin_initial_interconnect_transform: After transform: 0 modules, 0 connections
+Info: No Avalon connections, skipping transform 
+Info: merlin_hierarchy_transform: After transform: 65 modules, 213 connections
+Info: mm_interconnect_0: "qsys_block" instantiated altera_merlin_interconnect_wrapper "mm_interconnect_0"
+Info: irq_mapper: "qsys_block" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "qsys_block" instantiated altera_reset_controller "rst_controller"
+Info: NIOS_instruction_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "NIOS_instruction_master_translator"
+Info: NIOS_jtag_debug_module_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "NIOS_jtag_debug_module_translator"
+Info: NIOS_instruction_master_translator_avalon_universal_master_0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "NIOS_instruction_master_translator_avalon_universal_master_0_agent"
+Info: NIOS_jtag_debug_module_translator_avalon_universal_slave_0_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "NIOS_jtag_debug_module_translator_avalon_universal_slave_0_agent"
+Info: NIOS_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "NIOS_jtag_debug_module_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "mm_interconnect_0" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "mm_interconnect_0" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "mm_interconnect_0" instantiated altera_merlin_router "id_router"
+Info: id_router_002: "mm_interconnect_0" instantiated altera_merlin_router "id_router_002"
+Info: id_router_003: "mm_interconnect_0" instantiated altera_merlin_router "id_router_003"
+Info: burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: cmd_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: cmd_xbar_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_xbar_mux_003"
+Info: Reusing file D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_003"
+Info: rsp_xbar_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/qsys_block/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: pipeline_stage: "mm_interconnect_0" instantiated altera_avalon_st_pipeline_stage "pipeline_stage"
+Info: qsys_block: Done "qsys_block" with 32 modules, 50 files, 1172324 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

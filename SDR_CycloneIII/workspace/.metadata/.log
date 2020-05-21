@@ -1,0 +1,25 @@
+!SESSION 2020-05-21 10:08:05.438 -----------------------------------------------
+eclipse.buildId=M20120208-0800
+java.version=1.6.0_23
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_NZ
+Framework arguments:  -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.cpp.product -perspective com.altera.sbtgui.ui.cPerspective
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-05-21 10:08:42.403
+!MESSAGE Indexed 'sdr_bsp' (78 sources, 109 headers) in 1.88 sec: 2,761 declarations; 4,867 references; 50 unresolved inclusions; 379 syntax errors; 203 unresolved names (2.59%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-05-21 10:08:43.333
+!MESSAGE Indexed 'sdr' (2 sources, 13 headers) in 0.03 sec: 25 declarations; 107 references; 21 unresolved inclusions; 0 syntax errors; 8 unresolved names (5.71%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-05-21 10:11:28.016
+!MESSAGE Indexed 'sdr_bsp' (78 sources, 104 headers) in 1.17 sec: 2,448 declarations; 4,455 references; 74 unresolved inclusions; 188 syntax errors; 177 unresolved names (2.50%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-05-21 10:11:29.392
+!MESSAGE Indexed 'sdr' (1 sources, 13 headers) in 0.02 sec: 1 declarations; 1 references; 14 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-05-21 10:13:10.682
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --stop]
+
+!ENTRY com.altera.sbtgui.launch 1 0 2020-05-21 10:13:12.834
+!MESSAGE Executing: [C:/altera/13.1/quartus\bin\cygwin\bin\bash.exe, -c, nios2-download '--cable=USB-Blaster on localhost [USB-0]' --device=1 --instance=0 --go /cygdrive/d/QuartusProjects/Development_Kits/DE0_CYCLONEIII/SDR_CycloneIII/software/sdr/sdr.elf]
